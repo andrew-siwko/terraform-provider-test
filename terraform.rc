@@ -1,0 +1,6 @@
+provider_installation {
+  dev_overrides {
+    "registry.terraform.io/andrew/property-mirror" = "C:/Users/asiwk/OneDrive/python/terraform-provider-test.exe"
+  }
+  direct {}
+}
