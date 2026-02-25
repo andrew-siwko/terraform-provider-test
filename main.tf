@@ -8,9 +8,9 @@ terraform {
 }
 
 resource "mirror_variable" "rhel_test" {
-  value = "Running on RHEL 9"
+  value = "Running on RHEL 9.7"
 }
 
 resource "mirror_variable" "rhel_test_2" {
-  value = "Also Running on RHEL 9"
+  value = "Also Running on RHEL 9.7"
 }
