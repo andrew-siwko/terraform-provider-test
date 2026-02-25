@@ -11,3 +11,6 @@ This code implements a terraform provider which stores the tf resource values in
   * go get github.com/hashicorp/terraform-plugin-go/tfprotov6
   * go mod tidy
   * go build -o terraform-provider-test.exe
+  * setup.ps1 to create terraform.rc
+  * setup.bash to create terraform.rc
+  
