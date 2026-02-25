@@ -18,7 +18,7 @@ import (
 func main() {
 	// The Serve function and Opts live in the providerserver package in recent versions
 	err := providerserver.Serve(context.Background(), New, providerserver.ServeOpts{
-		Address: "registry.terraform.io/andrew/hashivar",
+		Address: "registry.terraform.io/andrew/property-mirror",
 	})
 
 	if err != nil {
@@ -33,7 +33,7 @@ func New() provider.Provider {
 type hashivarProvider struct{}
 
 func (p *hashivarProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
-	resp.TypeName = "hashivar"
+	resp.TypeName = "mirror"
 }
 
 func (p *hashivarProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
