@@ -1,5 +1,5 @@
 # Simple Terraform Provider
-This code implements a terraform provider which stores the tf resource values in the state.
+This code implements a terraform provider which stores tf resource values in the state.
 
 
 ## Notes
