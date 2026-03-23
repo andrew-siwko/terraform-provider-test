@@ -15,6 +15,10 @@ resource "mirror_variable" "rhel_test_2" {
   value = "Also Running on RHEL 9.7"
 }
 
+resource "mirror_variable" "rhel_test_3" {
+  value = "Also Running on RHEL 9.7 - new!"
+}
+
 output "var_1" {
   value = mirror_variable.rhel_test_1.value
 }
