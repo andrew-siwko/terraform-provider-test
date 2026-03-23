@@ -5,6 +5,9 @@ terraform {
       source = "registry.terraform.io/andrew/property-mirror"
     }
   }
+  backend "local" {
+    path = "/container_shared/tfstate/property-mirror.tfstate"
+  }
 }
 
 resource "mirror_variable" "rhel_test_1" {
