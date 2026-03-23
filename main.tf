@@ -2,7 +2,7 @@
 terraform {
   required_providers {
     mirror = {
-      source = "registry.terraform.io/andrew/property-mirror"
+      source = "andrew/property-mirror"
     }
   }
   backend "local" {
