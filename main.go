@@ -67,20 +67,24 @@ func (r *variableResource) Metadata(_ context.Context, req resource.MetadataRequ
 }
 
 func (r *variableResource) Schema(_ context.Context, _ resource.SchemaRequest, resp *resource.SchemaResponse) {
-	// Use resschema (Resource Schema) here
-	resp.Schema = resschema.Schema{
-		Attributes: map[string]resschema.Attribute{
-			"id": resschema.StringAttribute{
-				Computed: true,
-				PlanModifiers: []planmodifier.String{
-					stringplanmodifier.UseStateForUnknown(),
-				},
-			},
-			"value": resschema.StringAttribute{
-				Required: true,
-			},
-		},
-	}
+    resp.Schema = resschema.Schema{
+        // You can also add a description for the resource itself!
+        MarkdownDescription: "Manages a specific configuration variable within the system.",
+
+        Attributes: map[string]resschema.Attribute{
+            "id": resschema.StringAttribute{
+                MarkdownDescription: "Unique identifier for the variable.",
+                Computed:            true,
+                PlanModifiers: []planmodifier.String{
+                    stringplanmodifier.UseStateForUnknown(),
+                },
+            },
+            "value": resschema.StringAttribute{
+                MarkdownDescription: "The actual value assigned to the variable. Must be a valid string.",
+                Required:            true,
+            },
+        },
+    }
 }
 
 func (r *variableResource) Create(ctx context.Context, req resource.CreateRequest, resp *resource.CreateResponse) {
