@@ -4,15 +4,15 @@ import (
 	"context"
 	"log"
 
-	"github.com/hashicorp/terraform-plugin-framework/datasource"
-	"github.com/hashicorp/terraform-plugin-framework/provider"
-	provschema "github.com/hashicorp/terraform-plugin-framework/provider/schema"
-	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"github.com/hashicorp/terraform-plugin-framework/resource"
-	resschema "github.com/hashicorp/terraform-plugin-framework/resource/schema"
-	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
-	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
-	"github.com/hashicorp/terraform-plugin-framework/types"
+	// "github.com/hashicorp/terraform-plugin-framework/datasource"
+	// "github.com/hashicorp/terraform-plugin-framework/provider"
+	// provschema "github.com/hashicorp/terraform-plugin-framework/provider/schema"
+	// "github.com/hashicorp/terraform-plugin-framework/providerserver"
+	// "github.com/hashicorp/terraform-plugin-framework/resource"
+	// resschema "github.com/hashicorp/terraform-plugin-framework/resource/schema"
+	// "github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
+	// "github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
+	// "github.com/hashicorp/terraform-plugin-framework/types"
 )
 
 func main() {
