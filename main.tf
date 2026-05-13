@@ -29,3 +29,15 @@ output "var_1" {
 output "var_2" {
   value = mirror_variable.rhel_test_2.value
 } 
+
+data "mirror_coffee" "my_espresso" {
+  id = 1
+}
+
+output "coffee_name" {
+  value = data.examplecoffee_coffee.my_espresso.name
+}
+
+output "coffee_price" {
+  value = data.examplecoffee_coffee.my_espresso.price
+}
