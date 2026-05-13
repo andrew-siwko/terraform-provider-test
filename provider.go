@@ -10,9 +10,9 @@ import (
 	// "github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	// resschema "github.com/hashicorp/terraform-plugin-framework/resource/schema"
-	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
-	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
-	"github.com/hashicorp/terraform-plugin-framework/types"
+	// "github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
+	// "github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
+	// "github.com/hashicorp/terraform-plugin-framework/types"
 )
 
 func New() provider.Provider {
