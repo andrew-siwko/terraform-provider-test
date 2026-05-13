@@ -4,10 +4,6 @@ import (
 	"context"
 	// "log"
 
-	// "github.com/hashicorp/terraform-plugin-framework/datasource"
-	// "github.com/hashicorp/terraform-plugin-framework/provider"
-	// provschema "github.com/hashicorp/terraform-plugin-framework/provider/schema"
-	// "github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	resschema "github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
@@ -72,5 +68,4 @@ func (r *variableResource) Update(ctx context.Context, req resource.UpdateReques
 	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
 
-// Fixed: Added pointer (*) to DeleteResponse
 func (r *variableResource) Delete(_ context.Context, _ resource.DeleteRequest, _ *resource.DeleteResponse) {}
