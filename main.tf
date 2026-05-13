@@ -35,9 +35,9 @@ data "mirror_coffee" "my_espresso" {
 }
 
 output "coffee_name" {
-  value = data.examplecoffee_coffee.my_espresso.name
+  value = data.mirror_coffee_coffee.my_espresso.name
 }
 
 output "coffee_price" {
-  value = data.examplecoffee_coffee.my_espresso.price
+  value = data.mirror_coffee.my_espresso.price
 }
