@@ -5,8 +5,9 @@ package vboxapi
 import (
 	"context"
 	"encoding/xml"
-	"github.com/hooklift/gowsdl/soap"
 	"time"
+
+	"github.com/hooklift/gowsdl/soap"
 )
 
 // against "unused imports"
@@ -2940,7 +2941,7 @@ const (
 type IVirtualBoxErrorInfo_getResultCode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getResultCode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getResultCodeResponse struct {
@@ -2952,7 +2953,7 @@ type IVirtualBoxErrorInfo_getResultCodeResponse struct {
 type IVirtualBoxErrorInfo_getResultDetail struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getResultDetail"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getResultDetailResponse struct {
@@ -2964,7 +2965,7 @@ type IVirtualBoxErrorInfo_getResultDetailResponse struct {
 type IVirtualBoxErrorInfo_getInterfaceID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getInterfaceID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getInterfaceIDResponse struct {
@@ -2976,7 +2977,7 @@ type IVirtualBoxErrorInfo_getInterfaceIDResponse struct {
 type IVirtualBoxErrorInfo_getComponent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getComponent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getComponentResponse struct {
@@ -2988,7 +2989,7 @@ type IVirtualBoxErrorInfo_getComponentResponse struct {
 type IVirtualBoxErrorInfo_getText struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getText"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getTextResponse struct {
@@ -3000,7 +3001,7 @@ type IVirtualBoxErrorInfo_getTextResponse struct {
 type IVirtualBoxErrorInfo_getNext struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBoxErrorInfo_getNext"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBoxErrorInfo_getNextResponse struct {
@@ -3012,7 +3013,7 @@ type IVirtualBoxErrorInfo_getNextResponse struct {
 type INATNetwork_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getNetworkNameResponse struct {
@@ -3024,7 +3025,7 @@ type INATNetwork_getNetworkNameResponse struct {
 type INATNetwork_setNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -3036,7 +3037,7 @@ type INATNetwork_setNetworkNameResponse struct {
 type INATNetwork_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getEnabledResponse struct {
@@ -3048,7 +3049,7 @@ type INATNetwork_getEnabledResponse struct {
 type INATNetwork_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -3060,7 +3061,7 @@ type INATNetwork_setEnabledResponse struct {
 type INATNetwork_getNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getNetworkResponse struct {
@@ -3072,7 +3073,7 @@ type INATNetwork_getNetworkResponse struct {
 type INATNetwork_setNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 }
@@ -3084,7 +3085,7 @@ type INATNetwork_setNetworkResponse struct {
 type INATNetwork_getGateway struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getGateway"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getGatewayResponse struct {
@@ -3096,7 +3097,7 @@ type INATNetwork_getGatewayResponse struct {
 type INATNetwork_getIPv6Enabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getIPv6Enabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getIPv6EnabledResponse struct {
@@ -3108,7 +3109,7 @@ type INATNetwork_getIPv6EnabledResponse struct {
 type INATNetwork_setIPv6Enabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setIPv6Enabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPv6Enabled bool `xml:"IPv6Enabled,omitempty" json:"IPv6Enabled,omitempty"`
 }
@@ -3120,7 +3121,7 @@ type INATNetwork_setIPv6EnabledResponse struct {
 type INATNetwork_getIPv6Prefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getIPv6Prefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getIPv6PrefixResponse struct {
@@ -3132,7 +3133,7 @@ type INATNetwork_getIPv6PrefixResponse struct {
 type INATNetwork_setIPv6Prefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setIPv6Prefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPv6Prefix string `xml:"IPv6Prefix,omitempty" json:"IPv6Prefix,omitempty"`
 }
@@ -3144,7 +3145,7 @@ type INATNetwork_setIPv6PrefixResponse struct {
 type INATNetwork_getAdvertiseDefaultIPv6RouteEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getAdvertiseDefaultIPv6RouteEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getAdvertiseDefaultIPv6RouteEnabledResponse struct {
@@ -3156,7 +3157,7 @@ type INATNetwork_getAdvertiseDefaultIPv6RouteEnabledResponse struct {
 type INATNetwork_setAdvertiseDefaultIPv6RouteEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setAdvertiseDefaultIPv6RouteEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AdvertiseDefaultIPv6RouteEnabled bool `xml:"advertiseDefaultIPv6RouteEnabled,omitempty" json:"advertiseDefaultIPv6RouteEnabled,omitempty"`
 }
@@ -3168,7 +3169,7 @@ type INATNetwork_setAdvertiseDefaultIPv6RouteEnabledResponse struct {
 type INATNetwork_getNeedDhcpServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getNeedDhcpServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getNeedDhcpServerResponse struct {
@@ -3180,7 +3181,7 @@ type INATNetwork_getNeedDhcpServerResponse struct {
 type INATNetwork_setNeedDhcpServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setNeedDhcpServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NeedDhcpServer bool `xml:"needDhcpServer,omitempty" json:"needDhcpServer,omitempty"`
 }
@@ -3192,7 +3193,7 @@ type INATNetwork_setNeedDhcpServerResponse struct {
 type INATNetwork_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getEventSourceResponse struct {
@@ -3204,7 +3205,7 @@ type INATNetwork_getEventSourceResponse struct {
 type INATNetwork_getPortForwardRules4 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getPortForwardRules4"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getPortForwardRules4Response struct {
@@ -3216,7 +3217,7 @@ type INATNetwork_getPortForwardRules4Response struct {
 type INATNetwork_getLocalMappings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getLocalMappings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getLocalMappingsResponse struct {
@@ -3228,7 +3229,7 @@ type INATNetwork_getLocalMappingsResponse struct {
 type INATNetwork_getLocalhostReachable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getLocalhostReachable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getLocalhostReachableResponse struct {
@@ -3240,7 +3241,7 @@ type INATNetwork_getLocalhostReachableResponse struct {
 type INATNetwork_setLocalhostReachable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setLocalhostReachable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LocalhostReachable bool `xml:"localhostReachable,omitempty" json:"localhostReachable,omitempty"`
 }
@@ -3252,7 +3253,7 @@ type INATNetwork_setLocalhostReachableResponse struct {
 type INATNetwork_getForwardBroadcast struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getForwardBroadcast"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getForwardBroadcastResponse struct {
@@ -3264,7 +3265,7 @@ type INATNetwork_getForwardBroadcastResponse struct {
 type INATNetwork_setForwardBroadcast struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setForwardBroadcast"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ForwardBroadcast bool `xml:"forwardBroadcast,omitempty" json:"forwardBroadcast,omitempty"`
 }
@@ -3276,7 +3277,7 @@ type INATNetwork_setForwardBroadcastResponse struct {
 type INATNetwork_getNatMTU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getNatMTU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getNatMTUResponse struct {
@@ -3288,7 +3289,7 @@ type INATNetwork_getNatMTUResponse struct {
 type INATNetwork_setNatMTU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setNatMTU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NatMTU uint32 `xml:"natMTU,omitempty" json:"natMTU,omitempty"`
 }
@@ -3300,7 +3301,7 @@ type INATNetwork_setNatMTUResponse struct {
 type INATNetwork_getNatMRU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getNatMRU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getNatMRUResponse struct {
@@ -3312,7 +3313,7 @@ type INATNetwork_getNatMRUResponse struct {
 type INATNetwork_setNatMRU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setNatMRU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NatMRU uint32 `xml:"natMRU,omitempty" json:"natMRU,omitempty"`
 }
@@ -3324,7 +3325,7 @@ type INATNetwork_setNatMRUResponse struct {
 type INATNetwork_getLoopbackIp6 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getLoopbackIp6"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getLoopbackIp6Response struct {
@@ -3336,7 +3337,7 @@ type INATNetwork_getLoopbackIp6Response struct {
 type INATNetwork_setLoopbackIp6 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_setLoopbackIp6"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LoopbackIp6 int32 `xml:"loopbackIp6,omitempty" json:"loopbackIp6,omitempty"`
 }
@@ -3348,7 +3349,7 @@ type INATNetwork_setLoopbackIp6Response struct {
 type INATNetwork_getPortForwardRules6 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_getPortForwardRules6"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_getPortForwardRules6Response struct {
@@ -3360,7 +3361,7 @@ type INATNetwork_getPortForwardRules6Response struct {
 type INATNetwork_addLocalMapping struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_addLocalMapping"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Hostid string `xml:"hostid,omitempty" json:"hostid,omitempty"`
 
@@ -3374,7 +3375,7 @@ type INATNetwork_addLocalMappingResponse struct {
 type INATNetwork_addPortForwardRule struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_addPortForwardRule"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IsIpv6 bool `xml:"isIpv6,omitempty" json:"isIpv6,omitempty"`
 
@@ -3398,7 +3399,7 @@ type INATNetwork_addPortForwardRuleResponse struct {
 type INATNetwork_removePortForwardRule struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_removePortForwardRule"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IsIpv6 bool `xml:"isIpv6,omitempty" json:"isIpv6,omitempty"`
 
@@ -3412,7 +3413,7 @@ type INATNetwork_removePortForwardRuleResponse struct {
 type INATNetwork_start struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_start"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_startResponse struct {
@@ -3422,7 +3423,7 @@ type INATNetwork_startResponse struct {
 type INATNetwork_stop struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetwork_stop"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetwork_stopResponse struct {
@@ -3432,7 +3433,7 @@ type INATNetwork_stopResponse struct {
 type ICloudNetwork_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetwork_getNetworkNameResponse struct {
@@ -3444,7 +3445,7 @@ type ICloudNetwork_getNetworkNameResponse struct {
 type ICloudNetwork_setNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_setNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -3456,7 +3457,7 @@ type ICloudNetwork_setNetworkNameResponse struct {
 type ICloudNetwork_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetwork_getEnabledResponse struct {
@@ -3468,7 +3469,7 @@ type ICloudNetwork_getEnabledResponse struct {
 type ICloudNetwork_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -3480,7 +3481,7 @@ type ICloudNetwork_setEnabledResponse struct {
 type ICloudNetwork_getProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_getProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetwork_getProviderResponse struct {
@@ -3492,7 +3493,7 @@ type ICloudNetwork_getProviderResponse struct {
 type ICloudNetwork_setProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_setProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Provider string `xml:"provider,omitempty" json:"provider,omitempty"`
 }
@@ -3504,7 +3505,7 @@ type ICloudNetwork_setProviderResponse struct {
 type ICloudNetwork_getProfile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_getProfile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetwork_getProfileResponse struct {
@@ -3516,7 +3517,7 @@ type ICloudNetwork_getProfileResponse struct {
 type ICloudNetwork_setProfile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_setProfile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Profile string `xml:"profile,omitempty" json:"profile,omitempty"`
 }
@@ -3528,7 +3529,7 @@ type ICloudNetwork_setProfileResponse struct {
 type ICloudNetwork_getNetworkId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_getNetworkId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetwork_getNetworkIdResponse struct {
@@ -3540,7 +3541,7 @@ type ICloudNetwork_getNetworkIdResponse struct {
 type ICloudNetwork_setNetworkId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetwork_setNetworkId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkId string `xml:"networkId,omitempty" json:"networkId,omitempty"`
 }
@@ -3552,7 +3553,7 @@ type ICloudNetwork_setNetworkIdResponse struct {
 type IHostOnlyNetwork_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getNetworkNameResponse struct {
@@ -3564,7 +3565,7 @@ type IHostOnlyNetwork_getNetworkNameResponse struct {
 type IHostOnlyNetwork_setNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -3576,7 +3577,7 @@ type IHostOnlyNetwork_setNetworkNameResponse struct {
 type IHostOnlyNetwork_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getEnabledResponse struct {
@@ -3588,7 +3589,7 @@ type IHostOnlyNetwork_getEnabledResponse struct {
 type IHostOnlyNetwork_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -3600,7 +3601,7 @@ type IHostOnlyNetwork_setEnabledResponse struct {
 type IHostOnlyNetwork_getNetworkMask struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getNetworkMask"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getNetworkMaskResponse struct {
@@ -3612,7 +3613,7 @@ type IHostOnlyNetwork_getNetworkMaskResponse struct {
 type IHostOnlyNetwork_setNetworkMask struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setNetworkMask"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkMask string `xml:"networkMask,omitempty" json:"networkMask,omitempty"`
 }
@@ -3624,7 +3625,7 @@ type IHostOnlyNetwork_setNetworkMaskResponse struct {
 type IHostOnlyNetwork_getHostIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getHostIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getHostIPResponse struct {
@@ -3636,7 +3637,7 @@ type IHostOnlyNetwork_getHostIPResponse struct {
 type IHostOnlyNetwork_getLowerIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getLowerIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getLowerIPResponse struct {
@@ -3648,7 +3649,7 @@ type IHostOnlyNetwork_getLowerIPResponse struct {
 type IHostOnlyNetwork_setLowerIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setLowerIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LowerIP string `xml:"lowerIP,omitempty" json:"lowerIP,omitempty"`
 }
@@ -3660,7 +3661,7 @@ type IHostOnlyNetwork_setLowerIPResponse struct {
 type IHostOnlyNetwork_getUpperIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getUpperIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getUpperIPResponse struct {
@@ -3672,7 +3673,7 @@ type IHostOnlyNetwork_getUpperIPResponse struct {
 type IHostOnlyNetwork_setUpperIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setUpperIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UpperIP string `xml:"upperIP,omitempty" json:"upperIP,omitempty"`
 }
@@ -3684,7 +3685,7 @@ type IHostOnlyNetwork_setUpperIPResponse struct {
 type IHostOnlyNetwork_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostOnlyNetwork_getIdResponse struct {
@@ -3696,7 +3697,7 @@ type IHostOnlyNetwork_getIdResponse struct {
 type IHostOnlyNetwork_setId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostOnlyNetwork_setId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -3708,7 +3709,7 @@ type IHostOnlyNetwork_setIdResponse struct {
 type IDHCPServer_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getEventSourceResponse struct {
@@ -3720,7 +3721,7 @@ type IDHCPServer_getEventSourceResponse struct {
 type IDHCPServer_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getEnabledResponse struct {
@@ -3732,7 +3733,7 @@ type IDHCPServer_getEnabledResponse struct {
 type IDHCPServer_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -3744,7 +3745,7 @@ type IDHCPServer_setEnabledResponse struct {
 type IDHCPServer_getIPAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getIPAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getIPAddressResponse struct {
@@ -3756,7 +3757,7 @@ type IDHCPServer_getIPAddressResponse struct {
 type IDHCPServer_getNetworkMask struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getNetworkMask"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getNetworkMaskResponse struct {
@@ -3768,7 +3769,7 @@ type IDHCPServer_getNetworkMaskResponse struct {
 type IDHCPServer_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getNetworkNameResponse struct {
@@ -3780,7 +3781,7 @@ type IDHCPServer_getNetworkNameResponse struct {
 type IDHCPServer_getLowerIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getLowerIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getLowerIPResponse struct {
@@ -3792,7 +3793,7 @@ type IDHCPServer_getLowerIPResponse struct {
 type IDHCPServer_getUpperIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getUpperIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getUpperIPResponse struct {
@@ -3804,7 +3805,7 @@ type IDHCPServer_getUpperIPResponse struct {
 type IDHCPServer_getGlobalConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getGlobalConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getGlobalConfigResponse struct {
@@ -3816,7 +3817,7 @@ type IDHCPServer_getGlobalConfigResponse struct {
 type IDHCPServer_getGroupConfigs struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getGroupConfigs"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getGroupConfigsResponse struct {
@@ -3828,7 +3829,7 @@ type IDHCPServer_getGroupConfigsResponse struct {
 type IDHCPServer_getIndividualConfigs struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getIndividualConfigs"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_getIndividualConfigsResponse struct {
@@ -3840,7 +3841,7 @@ type IDHCPServer_getIndividualConfigsResponse struct {
 type IDHCPServer_setConfiguration struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_setConfiguration"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPAddress string `xml:"IPAddress,omitempty" json:"IPAddress,omitempty"`
 
@@ -3858,7 +3859,7 @@ type IDHCPServer_setConfigurationResponse struct {
 type IDHCPServer_start struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_start"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TrunkName string `xml:"trunkName,omitempty" json:"trunkName,omitempty"`
 
@@ -3872,7 +3873,7 @@ type IDHCPServer_startResponse struct {
 type IDHCPServer_stop struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_stop"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_stopResponse struct {
@@ -3882,7 +3883,7 @@ type IDHCPServer_stopResponse struct {
 type IDHCPServer_restart struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_restart"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPServer_restartResponse struct {
@@ -3892,7 +3893,7 @@ type IDHCPServer_restartResponse struct {
 type IDHCPServer_findLeaseByMAC struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_findLeaseByMAC"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Mac string `xml:"mac,omitempty" json:"mac,omitempty"`
 
@@ -3914,7 +3915,7 @@ type IDHCPServer_findLeaseByMACResponse struct {
 type IDHCPServer_getConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPServer_getConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Scope *DHCPConfigScope `xml:"scope,omitempty" json:"scope,omitempty"`
 
@@ -3934,7 +3935,7 @@ type IDHCPServer_getConfigResponse struct {
 type IDHCPConfig_getScope struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getScope"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getScopeResponse struct {
@@ -3946,7 +3947,7 @@ type IDHCPConfig_getScopeResponse struct {
 type IDHCPConfig_getMinLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getMinLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getMinLeaseTimeResponse struct {
@@ -3958,7 +3959,7 @@ type IDHCPConfig_getMinLeaseTimeResponse struct {
 type IDHCPConfig_setMinLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setMinLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MinLeaseTime uint32 `xml:"minLeaseTime,omitempty" json:"minLeaseTime,omitempty"`
 }
@@ -3970,7 +3971,7 @@ type IDHCPConfig_setMinLeaseTimeResponse struct {
 type IDHCPConfig_getDefaultLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getDefaultLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getDefaultLeaseTimeResponse struct {
@@ -3982,7 +3983,7 @@ type IDHCPConfig_getDefaultLeaseTimeResponse struct {
 type IDHCPConfig_setDefaultLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setDefaultLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultLeaseTime uint32 `xml:"defaultLeaseTime,omitempty" json:"defaultLeaseTime,omitempty"`
 }
@@ -3994,7 +3995,7 @@ type IDHCPConfig_setDefaultLeaseTimeResponse struct {
 type IDHCPConfig_getMaxLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getMaxLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getMaxLeaseTimeResponse struct {
@@ -4006,7 +4007,7 @@ type IDHCPConfig_getMaxLeaseTimeResponse struct {
 type IDHCPConfig_setMaxLeaseTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setMaxLeaseTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxLeaseTime uint32 `xml:"maxLeaseTime,omitempty" json:"maxLeaseTime,omitempty"`
 }
@@ -4018,7 +4019,7 @@ type IDHCPConfig_setMaxLeaseTimeResponse struct {
 type IDHCPConfig_getForcedOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getForcedOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getForcedOptionsResponse struct {
@@ -4030,7 +4031,7 @@ type IDHCPConfig_getForcedOptionsResponse struct {
 type IDHCPConfig_setForcedOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setForcedOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ForcedOptions []*DHCPOption `xml:"forcedOptions,omitempty" json:"forcedOptions,omitempty"`
 }
@@ -4042,7 +4043,7 @@ type IDHCPConfig_setForcedOptionsResponse struct {
 type IDHCPConfig_getSuppressedOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getSuppressedOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getSuppressedOptionsResponse struct {
@@ -4054,7 +4055,7 @@ type IDHCPConfig_getSuppressedOptionsResponse struct {
 type IDHCPConfig_setSuppressedOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setSuppressedOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SuppressedOptions []*DHCPOption `xml:"suppressedOptions,omitempty" json:"suppressedOptions,omitempty"`
 }
@@ -4066,7 +4067,7 @@ type IDHCPConfig_setSuppressedOptionsResponse struct {
 type IDHCPConfig_setOption struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_setOption"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Option *DHCPOption `xml:"option,omitempty" json:"option,omitempty"`
 
@@ -4082,7 +4083,7 @@ type IDHCPConfig_setOptionResponse struct {
 type IDHCPConfig_removeOption struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_removeOption"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Option *DHCPOption `xml:"option,omitempty" json:"option,omitempty"`
 }
@@ -4094,7 +4095,7 @@ type IDHCPConfig_removeOptionResponse struct {
 type IDHCPConfig_removeAllOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_removeAllOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_removeAllOptionsResponse struct {
@@ -4104,7 +4105,7 @@ type IDHCPConfig_removeAllOptionsResponse struct {
 type IDHCPConfig_getOption struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getOption"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Option *DHCPOption `xml:"option,omitempty" json:"option,omitempty"`
 }
@@ -4120,7 +4121,7 @@ type IDHCPConfig_getOptionResponse struct {
 type IDHCPConfig_getAllOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_getAllOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_getAllOptionsResponse struct {
@@ -4136,7 +4137,7 @@ type IDHCPConfig_getAllOptionsResponse struct {
 type IDHCPConfig_remove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPConfig_remove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPConfig_removeResponse struct {
@@ -4146,7 +4147,7 @@ type IDHCPConfig_removeResponse struct {
 type IDHCPGroupCondition_getInclusive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_getInclusive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupCondition_getInclusiveResponse struct {
@@ -4158,7 +4159,7 @@ type IDHCPGroupCondition_getInclusiveResponse struct {
 type IDHCPGroupCondition_setInclusive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_setInclusive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Inclusive bool `xml:"inclusive,omitempty" json:"inclusive,omitempty"`
 }
@@ -4170,7 +4171,7 @@ type IDHCPGroupCondition_setInclusiveResponse struct {
 type IDHCPGroupCondition_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupCondition_getTypeResponse struct {
@@ -4182,7 +4183,7 @@ type IDHCPGroupCondition_getTypeResponse struct {
 type IDHCPGroupCondition_setType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_setType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *DHCPGroupConditionType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -4194,7 +4195,7 @@ type IDHCPGroupCondition_setTypeResponse struct {
 type IDHCPGroupCondition_getValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_getValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupCondition_getValueResponse struct {
@@ -4206,7 +4207,7 @@ type IDHCPGroupCondition_getValueResponse struct {
 type IDHCPGroupCondition_setValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_setValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Value string `xml:"value,omitempty" json:"value,omitempty"`
 }
@@ -4218,7 +4219,7 @@ type IDHCPGroupCondition_setValueResponse struct {
 type IDHCPGroupCondition_remove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupCondition_remove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupCondition_removeResponse struct {
@@ -4228,7 +4229,7 @@ type IDHCPGroupCondition_removeResponse struct {
 type IDHCPGroupConfig_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupConfig_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupConfig_getNameResponse struct {
@@ -4240,7 +4241,7 @@ type IDHCPGroupConfig_getNameResponse struct {
 type IDHCPGroupConfig_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupConfig_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -4252,7 +4253,7 @@ type IDHCPGroupConfig_setNameResponse struct {
 type IDHCPGroupConfig_getConditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupConfig_getConditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupConfig_getConditionsResponse struct {
@@ -4264,7 +4265,7 @@ type IDHCPGroupConfig_getConditionsResponse struct {
 type IDHCPGroupConfig_addCondition struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupConfig_addCondition"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Inclusive bool `xml:"inclusive,omitempty" json:"inclusive,omitempty"`
 
@@ -4282,7 +4283,7 @@ type IDHCPGroupConfig_addConditionResponse struct {
 type IDHCPGroupConfig_removeAllConditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPGroupConfig_removeAllConditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPGroupConfig_removeAllConditionsResponse struct {
@@ -4292,7 +4293,7 @@ type IDHCPGroupConfig_removeAllConditionsResponse struct {
 type IDHCPIndividualConfig_getMACAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPIndividualConfig_getMACAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPIndividualConfig_getMACAddressResponse struct {
@@ -4304,7 +4305,7 @@ type IDHCPIndividualConfig_getMACAddressResponse struct {
 type IDHCPIndividualConfig_getMachineId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPIndividualConfig_getMachineId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPIndividualConfig_getMachineIdResponse struct {
@@ -4316,7 +4317,7 @@ type IDHCPIndividualConfig_getMachineIdResponse struct {
 type IDHCPIndividualConfig_getSlot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPIndividualConfig_getSlot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPIndividualConfig_getSlotResponse struct {
@@ -4328,7 +4329,7 @@ type IDHCPIndividualConfig_getSlotResponse struct {
 type IDHCPIndividualConfig_getFixedAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPIndividualConfig_getFixedAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDHCPIndividualConfig_getFixedAddressResponse struct {
@@ -4340,7 +4341,7 @@ type IDHCPIndividualConfig_getFixedAddressResponse struct {
 type IDHCPIndividualConfig_setFixedAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDHCPIndividualConfig_setFixedAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FixedAddress string `xml:"fixedAddress,omitempty" json:"fixedAddress,omitempty"`
 }
@@ -4352,7 +4353,7 @@ type IDHCPIndividualConfig_setFixedAddressResponse struct {
 type IVirtualBox_getVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getVersionResponse struct {
@@ -4364,7 +4365,7 @@ type IVirtualBox_getVersionResponse struct {
 type IVirtualBox_getVersionNormalized struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getVersionNormalized"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getVersionNormalizedResponse struct {
@@ -4376,7 +4377,7 @@ type IVirtualBox_getVersionNormalizedResponse struct {
 type IVirtualBox_getRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getRevisionResponse struct {
@@ -4388,7 +4389,7 @@ type IVirtualBox_getRevisionResponse struct {
 type IVirtualBox_getPackageType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getPackageType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getPackageTypeResponse struct {
@@ -4400,7 +4401,7 @@ type IVirtualBox_getPackageTypeResponse struct {
 type IVirtualBox_getAPIVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getAPIVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getAPIVersionResponse struct {
@@ -4412,7 +4413,7 @@ type IVirtualBox_getAPIVersionResponse struct {
 type IVirtualBox_getAPIRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getAPIRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getAPIRevisionResponse struct {
@@ -4424,7 +4425,7 @@ type IVirtualBox_getAPIRevisionResponse struct {
 type IVirtualBox_getHomeFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getHomeFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getHomeFolderResponse struct {
@@ -4436,7 +4437,7 @@ type IVirtualBox_getHomeFolderResponse struct {
 type IVirtualBox_getSettingsFilePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getSettingsFilePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getSettingsFilePathResponse struct {
@@ -4448,7 +4449,7 @@ type IVirtualBox_getSettingsFilePathResponse struct {
 type IVirtualBox_getHost struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getHost"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getHostResponse struct {
@@ -4460,7 +4461,7 @@ type IVirtualBox_getHostResponse struct {
 type IVirtualBox_getSystemProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getSystemProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getSystemPropertiesResponse struct {
@@ -4472,7 +4473,7 @@ type IVirtualBox_getSystemPropertiesResponse struct {
 type IVirtualBox_getMachines struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getMachines"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getMachinesResponse struct {
@@ -4484,7 +4485,7 @@ type IVirtualBox_getMachinesResponse struct {
 type IVirtualBox_getMachineGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getMachineGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getMachineGroupsResponse struct {
@@ -4496,7 +4497,7 @@ type IVirtualBox_getMachineGroupsResponse struct {
 type IVirtualBox_getHardDisks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getHardDisks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getHardDisksResponse struct {
@@ -4508,7 +4509,7 @@ type IVirtualBox_getHardDisksResponse struct {
 type IVirtualBox_getDVDImages struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getDVDImages"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getDVDImagesResponse struct {
@@ -4520,7 +4521,7 @@ type IVirtualBox_getDVDImagesResponse struct {
 type IVirtualBox_getFloppyImages struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getFloppyImages"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getFloppyImagesResponse struct {
@@ -4532,7 +4533,7 @@ type IVirtualBox_getFloppyImagesResponse struct {
 type IVirtualBox_getProgressOperations struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getProgressOperations"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getProgressOperationsResponse struct {
@@ -4544,7 +4545,7 @@ type IVirtualBox_getProgressOperationsResponse struct {
 type IVirtualBox_getGuestOSTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGuestOSTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getGuestOSTypesResponse struct {
@@ -4556,7 +4557,7 @@ type IVirtualBox_getGuestOSTypesResponse struct {
 type IVirtualBox_getGuestOSFamilies struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGuestOSFamilies"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getGuestOSFamiliesResponse struct {
@@ -4568,7 +4569,7 @@ type IVirtualBox_getGuestOSFamiliesResponse struct {
 type IVirtualBox_getSharedFolders struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getSharedFolders"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getSharedFoldersResponse struct {
@@ -4580,7 +4581,7 @@ type IVirtualBox_getSharedFoldersResponse struct {
 type IVirtualBox_getPerformanceCollector struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getPerformanceCollector"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getPerformanceCollectorResponse struct {
@@ -4592,7 +4593,7 @@ type IVirtualBox_getPerformanceCollectorResponse struct {
 type IVirtualBox_getDHCPServers struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getDHCPServers"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getDHCPServersResponse struct {
@@ -4604,7 +4605,7 @@ type IVirtualBox_getDHCPServersResponse struct {
 type IVirtualBox_getNATNetworks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getNATNetworks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getNATNetworksResponse struct {
@@ -4616,7 +4617,7 @@ type IVirtualBox_getNATNetworksResponse struct {
 type IVirtualBox_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getEventSourceResponse struct {
@@ -4628,7 +4629,7 @@ type IVirtualBox_getEventSourceResponse struct {
 type IVirtualBox_getInternalNetworks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getInternalNetworks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getInternalNetworksResponse struct {
@@ -4640,7 +4641,7 @@ type IVirtualBox_getInternalNetworksResponse struct {
 type IVirtualBox_getHostOnlyNetworks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getHostOnlyNetworks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getHostOnlyNetworksResponse struct {
@@ -4652,7 +4653,7 @@ type IVirtualBox_getHostOnlyNetworksResponse struct {
 type IVirtualBox_getGenericNetworkDrivers struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGenericNetworkDrivers"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getGenericNetworkDriversResponse struct {
@@ -4664,7 +4665,7 @@ type IVirtualBox_getGenericNetworkDriversResponse struct {
 type IVirtualBox_getCloudNetworks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getCloudNetworks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getCloudNetworksResponse struct {
@@ -4676,7 +4677,7 @@ type IVirtualBox_getCloudNetworksResponse struct {
 type IVirtualBox_getCloudProviderManager struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getCloudProviderManager"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getCloudProviderManagerResponse struct {
@@ -4688,7 +4689,7 @@ type IVirtualBox_getCloudProviderManagerResponse struct {
 type IVirtualBox_composeMachineFilename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_composeMachineFilename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -4708,7 +4709,7 @@ type IVirtualBox_composeMachineFilenameResponse struct {
 type IVirtualBox_getPlatformProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getPlatformProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Architecture *PlatformArchitecture `xml:"architecture,omitempty" json:"architecture,omitempty"`
 }
@@ -4722,7 +4723,7 @@ type IVirtualBox_getPlatformPropertiesResponse struct {
 type IVirtualBox_createMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SettingsFile string `xml:"settingsFile,omitempty" json:"settingsFile,omitempty"`
 
@@ -4752,7 +4753,7 @@ type IVirtualBox_createMachineResponse struct {
 type IVirtualBox_openMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_openMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SettingsFile string `xml:"settingsFile,omitempty" json:"settingsFile,omitempty"`
 
@@ -4768,7 +4769,7 @@ type IVirtualBox_openMachineResponse struct {
 type IVirtualBox_registerMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_registerMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Machine string `xml:"machine,omitempty" json:"machine,omitempty"`
 }
@@ -4780,7 +4781,7 @@ type IVirtualBox_registerMachineResponse struct {
 type IVirtualBox_findMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NameOrId string `xml:"nameOrId,omitempty" json:"nameOrId,omitempty"`
 }
@@ -4794,7 +4795,7 @@ type IVirtualBox_findMachineResponse struct {
 type IVirtualBox_getMachinesByGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getMachinesByGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Groups []string `xml:"groups,omitempty" json:"groups,omitempty"`
 }
@@ -4808,7 +4809,7 @@ type IVirtualBox_getMachinesByGroupsResponse struct {
 type IVirtualBox_getMachineStates struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getMachineStates"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Machines []string `xml:"machines,omitempty" json:"machines,omitempty"`
 }
@@ -4822,7 +4823,7 @@ type IVirtualBox_getMachineStatesResponse struct {
 type IVirtualBox_createAppliance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createAppliance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_createApplianceResponse struct {
@@ -4834,7 +4835,7 @@ type IVirtualBox_createApplianceResponse struct {
 type IVirtualBox_createUnattendedInstaller struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createUnattendedInstaller"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_createUnattendedInstallerResponse struct {
@@ -4846,7 +4847,7 @@ type IVirtualBox_createUnattendedInstallerResponse struct {
 type IVirtualBox_createMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format string `xml:"format,omitempty" json:"format,omitempty"`
 
@@ -4866,7 +4867,7 @@ type IVirtualBox_createMediumResponse struct {
 type IVirtualBox_openMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_openMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Location string `xml:"location,omitempty" json:"location,omitempty"`
 
@@ -4886,7 +4887,7 @@ type IVirtualBox_openMediumResponse struct {
 type IVirtualBox_getGuestOSType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGuestOSType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -4900,7 +4901,7 @@ type IVirtualBox_getGuestOSTypeResponse struct {
 type IVirtualBox_getGuestOSSubtypesByFamilyId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGuestOSSubtypesByFamilyId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Family string `xml:"family,omitempty" json:"family,omitempty"`
 }
@@ -4914,7 +4915,7 @@ type IVirtualBox_getGuestOSSubtypesByFamilyIdResponse struct {
 type IVirtualBox_getGuestOSDescsBySubtype struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getGuestOSDescsBySubtype"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	OSSubtype string `xml:"OSSubtype,omitempty" json:"OSSubtype,omitempty"`
 }
@@ -4928,7 +4929,7 @@ type IVirtualBox_getGuestOSDescsBySubtypeResponse struct {
 type IVirtualBox_createSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -4948,7 +4949,7 @@ type IVirtualBox_createSharedFolderResponse struct {
 type IVirtualBox_removeSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_removeSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -4960,7 +4961,7 @@ type IVirtualBox_removeSharedFolderResponse struct {
 type IVirtualBox_getExtraDataKeys struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getExtraDataKeys"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualBox_getExtraDataKeysResponse struct {
@@ -4972,7 +4973,7 @@ type IVirtualBox_getExtraDataKeysResponse struct {
 type IVirtualBox_getExtraData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getExtraData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -4986,7 +4987,7 @@ type IVirtualBox_getExtraDataResponse struct {
 type IVirtualBox_setExtraData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_setExtraData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 
@@ -5000,7 +5001,7 @@ type IVirtualBox_setExtraDataResponse struct {
 type IVirtualBox_setSettingsSecret struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_setSettingsSecret"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Password string `xml:"password,omitempty" json:"password,omitempty"`
 }
@@ -5012,7 +5013,7 @@ type IVirtualBox_setSettingsSecretResponse struct {
 type IVirtualBox_createDHCPServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createDHCPServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -5026,7 +5027,7 @@ type IVirtualBox_createDHCPServerResponse struct {
 type IVirtualBox_findDHCPServerByNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findDHCPServerByNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -5040,7 +5041,7 @@ type IVirtualBox_findDHCPServerByNetworkNameResponse struct {
 type IVirtualBox_removeDHCPServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_removeDHCPServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Server string `xml:"server,omitempty" json:"server,omitempty"`
 }
@@ -5052,7 +5053,7 @@ type IVirtualBox_removeDHCPServerResponse struct {
 type IVirtualBox_createNATNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createNATNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5066,7 +5067,7 @@ type IVirtualBox_createNATNetworkResponse struct {
 type IVirtualBox_findNATNetworkByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findNATNetworkByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5080,7 +5081,7 @@ type IVirtualBox_findNATNetworkByNameResponse struct {
 type IVirtualBox_removeNATNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_removeNATNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 }
@@ -5092,7 +5093,7 @@ type IVirtualBox_removeNATNetworkResponse struct {
 type IVirtualBox_createHostOnlyNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createHostOnlyNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5106,7 +5107,7 @@ type IVirtualBox_createHostOnlyNetworkResponse struct {
 type IVirtualBox_findHostOnlyNetworkByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findHostOnlyNetworkByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5120,7 +5121,7 @@ type IVirtualBox_findHostOnlyNetworkByNameResponse struct {
 type IVirtualBox_findHostOnlyNetworkById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findHostOnlyNetworkById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -5134,7 +5135,7 @@ type IVirtualBox_findHostOnlyNetworkByIdResponse struct {
 type IVirtualBox_removeHostOnlyNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_removeHostOnlyNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 }
@@ -5146,7 +5147,7 @@ type IVirtualBox_removeHostOnlyNetworkResponse struct {
 type IVirtualBox_createCloudNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_createCloudNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5160,7 +5161,7 @@ type IVirtualBox_createCloudNetworkResponse struct {
 type IVirtualBox_findCloudNetworkByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findCloudNetworkByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NetworkName string `xml:"networkName,omitempty" json:"networkName,omitempty"`
 }
@@ -5174,7 +5175,7 @@ type IVirtualBox_findCloudNetworkByNameResponse struct {
 type IVirtualBox_removeCloudNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_removeCloudNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 }
@@ -5186,7 +5187,7 @@ type IVirtualBox_removeCloudNetworkResponse struct {
 type IVirtualBox_checkFirmwarePresent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_checkFirmwarePresent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PlatformArchitecture *PlatformArchitecture `xml:"platformArchitecture,omitempty" json:"platformArchitecture,omitempty"`
 
@@ -5208,7 +5209,7 @@ type IVirtualBox_checkFirmwarePresentResponse struct {
 type IVirtualBox_findProgressById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_findProgressById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -5222,7 +5223,7 @@ type IVirtualBox_findProgressByIdResponse struct {
 type IVirtualBox_getTrackedObject struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getTrackedObject"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TrObjId string `xml:"trObjId,omitempty" json:"trObjId,omitempty"`
 }
@@ -5242,7 +5243,7 @@ type IVirtualBox_getTrackedObjectResponse struct {
 type IVirtualBox_getTrackedObjectIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualBox_getTrackedObjectIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -5256,7 +5257,7 @@ type IVirtualBox_getTrackedObjectIdsResponse struct {
 type IVFSExplorer_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVFSExplorer_getPathResponse struct {
@@ -5268,7 +5269,7 @@ type IVFSExplorer_getPathResponse struct {
 type IVFSExplorer_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVFSExplorer_getTypeResponse struct {
@@ -5280,7 +5281,7 @@ type IVFSExplorer_getTypeResponse struct {
 type IVFSExplorer_update struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_update"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVFSExplorer_updateResponse struct {
@@ -5292,7 +5293,7 @@ type IVFSExplorer_updateResponse struct {
 type IVFSExplorer_cd struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_cd"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Dir string `xml:"dir,omitempty" json:"dir,omitempty"`
 }
@@ -5306,7 +5307,7 @@ type IVFSExplorer_cdResponse struct {
 type IVFSExplorer_cdUp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_cdUp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVFSExplorer_cdUpResponse struct {
@@ -5318,7 +5319,7 @@ type IVFSExplorer_cdUpResponse struct {
 type IVFSExplorer_entryList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_entryList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVFSExplorer_entryListResponse struct {
@@ -5336,7 +5337,7 @@ type IVFSExplorer_entryListResponse struct {
 type IVFSExplorer_exists struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_exists"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names []string `xml:"names,omitempty" json:"names,omitempty"`
 }
@@ -5350,7 +5351,7 @@ type IVFSExplorer_existsResponse struct {
 type IVFSExplorer_remove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVFSExplorer_remove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names []string `xml:"names,omitempty" json:"names,omitempty"`
 }
@@ -5364,7 +5365,7 @@ type IVFSExplorer_removeResponse struct {
 type ICertificate_getVersionNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getVersionNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getVersionNumberResponse struct {
@@ -5376,7 +5377,7 @@ type ICertificate_getVersionNumberResponse struct {
 type ICertificate_getSerialNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSerialNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSerialNumberResponse struct {
@@ -5388,7 +5389,7 @@ type ICertificate_getSerialNumberResponse struct {
 type ICertificate_getSignatureAlgorithmOID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSignatureAlgorithmOID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSignatureAlgorithmOIDResponse struct {
@@ -5400,7 +5401,7 @@ type ICertificate_getSignatureAlgorithmOIDResponse struct {
 type ICertificate_getSignatureAlgorithmName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSignatureAlgorithmName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSignatureAlgorithmNameResponse struct {
@@ -5412,7 +5413,7 @@ type ICertificate_getSignatureAlgorithmNameResponse struct {
 type ICertificate_getIssuerName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getIssuerName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getIssuerNameResponse struct {
@@ -5424,7 +5425,7 @@ type ICertificate_getIssuerNameResponse struct {
 type ICertificate_getSubjectName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSubjectName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSubjectNameResponse struct {
@@ -5436,7 +5437,7 @@ type ICertificate_getSubjectNameResponse struct {
 type ICertificate_getFriendlyName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getFriendlyName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getFriendlyNameResponse struct {
@@ -5448,7 +5449,7 @@ type ICertificate_getFriendlyNameResponse struct {
 type ICertificate_getValidityPeriodNotBefore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getValidityPeriodNotBefore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getValidityPeriodNotBeforeResponse struct {
@@ -5460,7 +5461,7 @@ type ICertificate_getValidityPeriodNotBeforeResponse struct {
 type ICertificate_getValidityPeriodNotAfter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getValidityPeriodNotAfter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getValidityPeriodNotAfterResponse struct {
@@ -5472,7 +5473,7 @@ type ICertificate_getValidityPeriodNotAfterResponse struct {
 type ICertificate_getPublicKeyAlgorithmOID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getPublicKeyAlgorithmOID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getPublicKeyAlgorithmOIDResponse struct {
@@ -5484,7 +5485,7 @@ type ICertificate_getPublicKeyAlgorithmOIDResponse struct {
 type ICertificate_getPublicKeyAlgorithm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getPublicKeyAlgorithm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getPublicKeyAlgorithmResponse struct {
@@ -5496,7 +5497,7 @@ type ICertificate_getPublicKeyAlgorithmResponse struct {
 type ICertificate_getSubjectPublicKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSubjectPublicKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSubjectPublicKeyResponse struct {
@@ -5508,7 +5509,7 @@ type ICertificate_getSubjectPublicKeyResponse struct {
 type ICertificate_getIssuerUniqueIdentifier struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getIssuerUniqueIdentifier"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getIssuerUniqueIdentifierResponse struct {
@@ -5520,7 +5521,7 @@ type ICertificate_getIssuerUniqueIdentifierResponse struct {
 type ICertificate_getSubjectUniqueIdentifier struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSubjectUniqueIdentifier"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSubjectUniqueIdentifierResponse struct {
@@ -5532,7 +5533,7 @@ type ICertificate_getSubjectUniqueIdentifierResponse struct {
 type ICertificate_getCertificateAuthority struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getCertificateAuthority"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getCertificateAuthorityResponse struct {
@@ -5544,7 +5545,7 @@ type ICertificate_getCertificateAuthorityResponse struct {
 type ICertificate_getKeyUsage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getKeyUsage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getKeyUsageResponse struct {
@@ -5556,7 +5557,7 @@ type ICertificate_getKeyUsageResponse struct {
 type ICertificate_getExtendedKeyUsage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getExtendedKeyUsage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getExtendedKeyUsageResponse struct {
@@ -5568,7 +5569,7 @@ type ICertificate_getExtendedKeyUsageResponse struct {
 type ICertificate_getRawCertData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getRawCertData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getRawCertDataResponse struct {
@@ -5580,7 +5581,7 @@ type ICertificate_getRawCertDataResponse struct {
 type ICertificate_getSelfSigned struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getSelfSigned"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getSelfSignedResponse struct {
@@ -5592,7 +5593,7 @@ type ICertificate_getSelfSignedResponse struct {
 type ICertificate_getTrusted struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getTrusted"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getTrustedResponse struct {
@@ -5604,7 +5605,7 @@ type ICertificate_getTrustedResponse struct {
 type ICertificate_getExpired struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_getExpired"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_getExpiredResponse struct {
@@ -5616,7 +5617,7 @@ type ICertificate_getExpiredResponse struct {
 type ICertificate_isCurrentlyExpired struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_isCurrentlyExpired"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICertificate_isCurrentlyExpiredResponse struct {
@@ -5628,7 +5629,7 @@ type ICertificate_isCurrentlyExpiredResponse struct {
 type ICertificate_queryInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICertificate_queryInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	What int32 `xml:"what,omitempty" json:"what,omitempty"`
 }
@@ -5642,7 +5643,7 @@ type ICertificate_queryInfoResponse struct {
 type IAppliance_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getPathResponse struct {
@@ -5654,7 +5655,7 @@ type IAppliance_getPathResponse struct {
 type IAppliance_getDisks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getDisks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getDisksResponse struct {
@@ -5666,7 +5667,7 @@ type IAppliance_getDisksResponse struct {
 type IAppliance_getVirtualSystemDescriptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getVirtualSystemDescriptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getVirtualSystemDescriptionsResponse struct {
@@ -5678,7 +5679,7 @@ type IAppliance_getVirtualSystemDescriptionsResponse struct {
 type IAppliance_getMachines struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getMachines"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getMachinesResponse struct {
@@ -5690,7 +5691,7 @@ type IAppliance_getMachinesResponse struct {
 type IAppliance_getCertificate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getCertificate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getCertificateResponse struct {
@@ -5702,7 +5703,7 @@ type IAppliance_getCertificateResponse struct {
 type IAppliance_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	File string `xml:"file,omitempty" json:"file,omitempty"`
 }
@@ -5716,7 +5717,7 @@ type IAppliance_readResponse struct {
 type IAppliance_interpret struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_interpret"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_interpretResponse struct {
@@ -5726,7 +5727,7 @@ type IAppliance_interpretResponse struct {
 type IAppliance_importMachines struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_importMachines"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Options []*ImportOptions `xml:"options,omitempty" json:"options,omitempty"`
 }
@@ -5740,7 +5741,7 @@ type IAppliance_importMachinesResponse struct {
 type IAppliance_createVFSExplorer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_createVFSExplorer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	URI string `xml:"URI,omitempty" json:"URI,omitempty"`
 }
@@ -5754,7 +5755,7 @@ type IAppliance_createVFSExplorerResponse struct {
 type IAppliance_write struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_write"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format string `xml:"format,omitempty" json:"format,omitempty"`
 
@@ -5772,7 +5773,7 @@ type IAppliance_writeResponse struct {
 type IAppliance_getWarnings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getWarnings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getWarningsResponse struct {
@@ -5784,7 +5785,7 @@ type IAppliance_getWarningsResponse struct {
 type IAppliance_getPasswordIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getPasswordIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAppliance_getPasswordIdsResponse struct {
@@ -5796,7 +5797,7 @@ type IAppliance_getPasswordIdsResponse struct {
 type IAppliance_getMediumIdsForPasswordId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_getMediumIdsForPasswordId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PasswordId string `xml:"passwordId,omitempty" json:"passwordId,omitempty"`
 }
@@ -5810,7 +5811,7 @@ type IAppliance_getMediumIdsForPasswordIdResponse struct {
 type IAppliance_addPasswords struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_addPasswords"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Identifiers []string `xml:"identifiers,omitempty" json:"identifiers,omitempty"`
 
@@ -5824,7 +5825,7 @@ type IAppliance_addPasswordsResponse struct {
 type IAppliance_createVirtualSystemDescriptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAppliance_createVirtualSystemDescriptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Requested uint32 `xml:"requested,omitempty" json:"requested,omitempty"`
 }
@@ -5838,7 +5839,7 @@ type IAppliance_createVirtualSystemDescriptionsResponse struct {
 type IVirtualSystemDescription_getCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_getCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualSystemDescription_getCountResponse struct {
@@ -5850,7 +5851,7 @@ type IVirtualSystemDescription_getCountResponse struct {
 type IVirtualSystemDescription_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualSystemDescription_getDescriptionResponse struct {
@@ -5870,7 +5871,7 @@ type IVirtualSystemDescription_getDescriptionResponse struct {
 type IVirtualSystemDescription_getDescriptionByType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_getDescriptionByType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *VirtualSystemDescriptionType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -5892,7 +5893,7 @@ type IVirtualSystemDescription_getDescriptionByTypeResponse struct {
 type IVirtualSystemDescription_removeDescriptionByType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_removeDescriptionByType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *VirtualSystemDescriptionType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -5904,7 +5905,7 @@ type IVirtualSystemDescription_removeDescriptionByTypeResponse struct {
 type IVirtualSystemDescription_getValuesByType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_getValuesByType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *VirtualSystemDescriptionType `xml:"type,omitempty" json:"type,omitempty"`
 
@@ -5920,7 +5921,7 @@ type IVirtualSystemDescription_getValuesByTypeResponse struct {
 type IVirtualSystemDescription_setFinalValues struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_setFinalValues"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled []bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 
@@ -5936,7 +5937,7 @@ type IVirtualSystemDescription_setFinalValuesResponse struct {
 type IVirtualSystemDescription_addDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescription_addDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *VirtualSystemDescriptionType `xml:"type,omitempty" json:"type,omitempty"`
 
@@ -5952,7 +5953,7 @@ type IVirtualSystemDescription_addDescriptionResponse struct {
 type IUnattended_getIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getIsoPathResponse struct {
@@ -5964,7 +5965,7 @@ type IUnattended_getIsoPathResponse struct {
 type IUnattended_setIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IsoPath string `xml:"isoPath,omitempty" json:"isoPath,omitempty"`
 }
@@ -5976,7 +5977,7 @@ type IUnattended_setIsoPathResponse struct {
 type IUnattended_getMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getMachineResponse struct {
@@ -5988,7 +5989,7 @@ type IUnattended_getMachineResponse struct {
 type IUnattended_setMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Machine string `xml:"machine,omitempty" json:"machine,omitempty"`
 }
@@ -6000,7 +6001,7 @@ type IUnattended_setMachineResponse struct {
 type IUnattended_getUser struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getUser"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getUserResponse struct {
@@ -6012,7 +6013,7 @@ type IUnattended_getUserResponse struct {
 type IUnattended_setUser struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setUser"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	User string `xml:"user,omitempty" json:"user,omitempty"`
 }
@@ -6024,7 +6025,7 @@ type IUnattended_setUserResponse struct {
 type IUnattended_getUserPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getUserPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getUserPasswordResponse struct {
@@ -6036,7 +6037,7 @@ type IUnattended_getUserPasswordResponse struct {
 type IUnattended_setUserPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setUserPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UserPassword string `xml:"userPassword,omitempty" json:"userPassword,omitempty"`
 }
@@ -6048,7 +6049,7 @@ type IUnattended_setUserPasswordResponse struct {
 type IUnattended_getAdminPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getAdminPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getAdminPasswordResponse struct {
@@ -6060,7 +6061,7 @@ type IUnattended_getAdminPasswordResponse struct {
 type IUnattended_setAdminPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setAdminPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AdminPassword string `xml:"adminPassword,omitempty" json:"adminPassword,omitempty"`
 }
@@ -6072,7 +6073,7 @@ type IUnattended_setAdminPasswordResponse struct {
 type IUnattended_getFullUserName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getFullUserName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getFullUserNameResponse struct {
@@ -6084,7 +6085,7 @@ type IUnattended_getFullUserNameResponse struct {
 type IUnattended_setFullUserName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setFullUserName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FullUserName string `xml:"fullUserName,omitempty" json:"fullUserName,omitempty"`
 }
@@ -6096,7 +6097,7 @@ type IUnattended_setFullUserNameResponse struct {
 type IUnattended_getProductKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getProductKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getProductKeyResponse struct {
@@ -6108,7 +6109,7 @@ type IUnattended_getProductKeyResponse struct {
 type IUnattended_setProductKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setProductKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProductKey string `xml:"productKey,omitempty" json:"productKey,omitempty"`
 }
@@ -6120,7 +6121,7 @@ type IUnattended_setProductKeyResponse struct {
 type IUnattended_getAdditionsIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getAdditionsIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getAdditionsIsoPathResponse struct {
@@ -6132,7 +6133,7 @@ type IUnattended_getAdditionsIsoPathResponse struct {
 type IUnattended_setAdditionsIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setAdditionsIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AdditionsIsoPath string `xml:"additionsIsoPath,omitempty" json:"additionsIsoPath,omitempty"`
 }
@@ -6144,7 +6145,7 @@ type IUnattended_setAdditionsIsoPathResponse struct {
 type IUnattended_getInstallGuestAdditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getInstallGuestAdditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getInstallGuestAdditionsResponse struct {
@@ -6156,7 +6157,7 @@ type IUnattended_getInstallGuestAdditionsResponse struct {
 type IUnattended_setInstallGuestAdditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setInstallGuestAdditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	InstallGuestAdditions bool `xml:"installGuestAdditions,omitempty" json:"installGuestAdditions,omitempty"`
 }
@@ -6168,7 +6169,7 @@ type IUnattended_setInstallGuestAdditionsResponse struct {
 type IUnattended_getProductKeyRequired struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getProductKeyRequired"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getProductKeyRequiredResponse struct {
@@ -6180,7 +6181,7 @@ type IUnattended_getProductKeyRequiredResponse struct {
 type IUnattended_getValidationKitIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getValidationKitIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getValidationKitIsoPathResponse struct {
@@ -6192,7 +6193,7 @@ type IUnattended_getValidationKitIsoPathResponse struct {
 type IUnattended_setValidationKitIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setValidationKitIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ValidationKitIsoPath string `xml:"validationKitIsoPath,omitempty" json:"validationKitIsoPath,omitempty"`
 }
@@ -6204,7 +6205,7 @@ type IUnattended_setValidationKitIsoPathResponse struct {
 type IUnattended_getInstallTestExecService struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getInstallTestExecService"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getInstallTestExecServiceResponse struct {
@@ -6216,7 +6217,7 @@ type IUnattended_getInstallTestExecServiceResponse struct {
 type IUnattended_setInstallTestExecService struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setInstallTestExecService"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	InstallTestExecService bool `xml:"installTestExecService,omitempty" json:"installTestExecService,omitempty"`
 }
@@ -6228,7 +6229,7 @@ type IUnattended_setInstallTestExecServiceResponse struct {
 type IUnattended_getUserPayloadIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getUserPayloadIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getUserPayloadIsoPathResponse struct {
@@ -6240,7 +6241,7 @@ type IUnattended_getUserPayloadIsoPathResponse struct {
 type IUnattended_setUserPayloadIsoPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setUserPayloadIsoPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UserPayloadIsoPath string `xml:"userPayloadIsoPath,omitempty" json:"userPayloadIsoPath,omitempty"`
 }
@@ -6252,7 +6253,7 @@ type IUnattended_setUserPayloadIsoPathResponse struct {
 type IUnattended_getInstallUserPayload struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getInstallUserPayload"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getInstallUserPayloadResponse struct {
@@ -6264,7 +6265,7 @@ type IUnattended_getInstallUserPayloadResponse struct {
 type IUnattended_setInstallUserPayload struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setInstallUserPayload"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	InstallUserPayload bool `xml:"installUserPayload,omitempty" json:"installUserPayload,omitempty"`
 }
@@ -6276,7 +6277,7 @@ type IUnattended_setInstallUserPayloadResponse struct {
 type IUnattended_getTimeZone struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getTimeZone"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getTimeZoneResponse struct {
@@ -6288,7 +6289,7 @@ type IUnattended_getTimeZoneResponse struct {
 type IUnattended_setTimeZone struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setTimeZone"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TimeZone string `xml:"timeZone,omitempty" json:"timeZone,omitempty"`
 }
@@ -6300,7 +6301,7 @@ type IUnattended_setTimeZoneResponse struct {
 type IUnattended_getKeyboardLayout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getKeyboardLayout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getKeyboardLayoutResponse struct {
@@ -6312,7 +6313,7 @@ type IUnattended_getKeyboardLayoutResponse struct {
 type IUnattended_setKeyboardLayout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setKeyboardLayout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	KeyboardLayout string `xml:"keyboardLayout,omitempty" json:"keyboardLayout,omitempty"`
 }
@@ -6324,7 +6325,7 @@ type IUnattended_setKeyboardLayoutResponse struct {
 type IUnattended_getKeyboardVariant struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getKeyboardVariant"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getKeyboardVariantResponse struct {
@@ -6336,7 +6337,7 @@ type IUnattended_getKeyboardVariantResponse struct {
 type IUnattended_setKeyboardVariant struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setKeyboardVariant"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	KeyboardVariant string `xml:"keyboardVariant,omitempty" json:"keyboardVariant,omitempty"`
 }
@@ -6348,7 +6349,7 @@ type IUnattended_setKeyboardVariantResponse struct {
 type IUnattended_getLocale struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getLocale"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getLocaleResponse struct {
@@ -6360,7 +6361,7 @@ type IUnattended_getLocaleResponse struct {
 type IUnattended_setLocale struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setLocale"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Locale string `xml:"locale,omitempty" json:"locale,omitempty"`
 }
@@ -6372,7 +6373,7 @@ type IUnattended_setLocaleResponse struct {
 type IUnattended_getLanguage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getLanguage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getLanguageResponse struct {
@@ -6384,7 +6385,7 @@ type IUnattended_getLanguageResponse struct {
 type IUnattended_setLanguage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setLanguage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Language string `xml:"language,omitempty" json:"language,omitempty"`
 }
@@ -6396,7 +6397,7 @@ type IUnattended_setLanguageResponse struct {
 type IUnattended_getCountry struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getCountry"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getCountryResponse struct {
@@ -6408,7 +6409,7 @@ type IUnattended_getCountryResponse struct {
 type IUnattended_setCountry struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setCountry"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Country string `xml:"country,omitempty" json:"country,omitempty"`
 }
@@ -6420,7 +6421,7 @@ type IUnattended_setCountryResponse struct {
 type IUnattended_getProxy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getProxy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getProxyResponse struct {
@@ -6432,7 +6433,7 @@ type IUnattended_getProxyResponse struct {
 type IUnattended_setProxy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setProxy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Proxy string `xml:"proxy,omitempty" json:"proxy,omitempty"`
 }
@@ -6444,7 +6445,7 @@ type IUnattended_setProxyResponse struct {
 type IUnattended_getPackageSelectionAdjustments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getPackageSelectionAdjustments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getPackageSelectionAdjustmentsResponse struct {
@@ -6456,7 +6457,7 @@ type IUnattended_getPackageSelectionAdjustmentsResponse struct {
 type IUnattended_setPackageSelectionAdjustments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setPackageSelectionAdjustments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PackageSelectionAdjustments string `xml:"packageSelectionAdjustments,omitempty" json:"packageSelectionAdjustments,omitempty"`
 }
@@ -6468,7 +6469,7 @@ type IUnattended_setPackageSelectionAdjustmentsResponse struct {
 type IUnattended_getHostname struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getHostname"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getHostnameResponse struct {
@@ -6480,7 +6481,7 @@ type IUnattended_getHostnameResponse struct {
 type IUnattended_setHostname struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setHostname"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Hostname string `xml:"hostname,omitempty" json:"hostname,omitempty"`
 }
@@ -6492,7 +6493,7 @@ type IUnattended_setHostnameResponse struct {
 type IUnattended_getAuxiliaryBasePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getAuxiliaryBasePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getAuxiliaryBasePathResponse struct {
@@ -6504,7 +6505,7 @@ type IUnattended_getAuxiliaryBasePathResponse struct {
 type IUnattended_setAuxiliaryBasePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setAuxiliaryBasePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AuxiliaryBasePath string `xml:"auxiliaryBasePath,omitempty" json:"auxiliaryBasePath,omitempty"`
 }
@@ -6516,7 +6517,7 @@ type IUnattended_setAuxiliaryBasePathResponse struct {
 type IUnattended_getImageIndex struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getImageIndex"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getImageIndexResponse struct {
@@ -6528,7 +6529,7 @@ type IUnattended_getImageIndexResponse struct {
 type IUnattended_setImageIndex struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setImageIndex"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ImageIndex uint32 `xml:"imageIndex,omitempty" json:"imageIndex,omitempty"`
 }
@@ -6540,7 +6541,7 @@ type IUnattended_setImageIndexResponse struct {
 type IUnattended_getScriptTemplatePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getScriptTemplatePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getScriptTemplatePathResponse struct {
@@ -6552,7 +6553,7 @@ type IUnattended_getScriptTemplatePathResponse struct {
 type IUnattended_setScriptTemplatePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setScriptTemplatePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScriptTemplatePath string `xml:"scriptTemplatePath,omitempty" json:"scriptTemplatePath,omitempty"`
 }
@@ -6564,7 +6565,7 @@ type IUnattended_setScriptTemplatePathResponse struct {
 type IUnattended_getPostInstallScriptTemplatePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getPostInstallScriptTemplatePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getPostInstallScriptTemplatePathResponse struct {
@@ -6576,7 +6577,7 @@ type IUnattended_getPostInstallScriptTemplatePathResponse struct {
 type IUnattended_setPostInstallScriptTemplatePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setPostInstallScriptTemplatePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PostInstallScriptTemplatePath string `xml:"postInstallScriptTemplatePath,omitempty" json:"postInstallScriptTemplatePath,omitempty"`
 }
@@ -6588,7 +6589,7 @@ type IUnattended_setPostInstallScriptTemplatePathResponse struct {
 type IUnattended_getPostInstallCommand struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getPostInstallCommand"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getPostInstallCommandResponse struct {
@@ -6600,7 +6601,7 @@ type IUnattended_getPostInstallCommandResponse struct {
 type IUnattended_setPostInstallCommand struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setPostInstallCommand"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PostInstallCommand string `xml:"postInstallCommand,omitempty" json:"postInstallCommand,omitempty"`
 }
@@ -6612,7 +6613,7 @@ type IUnattended_setPostInstallCommandResponse struct {
 type IUnattended_getExtraInstallKernelParameters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getExtraInstallKernelParameters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getExtraInstallKernelParametersResponse struct {
@@ -6624,7 +6625,7 @@ type IUnattended_getExtraInstallKernelParametersResponse struct {
 type IUnattended_setExtraInstallKernelParameters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setExtraInstallKernelParameters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ExtraInstallKernelParameters string `xml:"extraInstallKernelParameters,omitempty" json:"extraInstallKernelParameters,omitempty"`
 }
@@ -6636,7 +6637,7 @@ type IUnattended_setExtraInstallKernelParametersResponse struct {
 type IUnattended_getDetectedOSTypeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedOSTypeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedOSTypeIdResponse struct {
@@ -6648,7 +6649,7 @@ type IUnattended_getDetectedOSTypeIdResponse struct {
 type IUnattended_getDetectedOSVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedOSVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedOSVersionResponse struct {
@@ -6660,7 +6661,7 @@ type IUnattended_getDetectedOSVersionResponse struct {
 type IUnattended_getDetectedOSFlavor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedOSFlavor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedOSFlavorResponse struct {
@@ -6672,7 +6673,7 @@ type IUnattended_getDetectedOSFlavorResponse struct {
 type IUnattended_getDetectedOSLanguages struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedOSLanguages"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedOSLanguagesResponse struct {
@@ -6684,7 +6685,7 @@ type IUnattended_getDetectedOSLanguagesResponse struct {
 type IUnattended_getDetectedOSHints struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedOSHints"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedOSHintsResponse struct {
@@ -6696,7 +6697,7 @@ type IUnattended_getDetectedOSHintsResponse struct {
 type IUnattended_getDetectedImageNames struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedImageNames"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedImageNamesResponse struct {
@@ -6708,7 +6709,7 @@ type IUnattended_getDetectedImageNamesResponse struct {
 type IUnattended_getDetectedImageIndices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getDetectedImageIndices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getDetectedImageIndicesResponse struct {
@@ -6720,7 +6721,7 @@ type IUnattended_getDetectedImageIndicesResponse struct {
 type IUnattended_getIsUnattendedInstallSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getIsUnattendedInstallSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getIsUnattendedInstallSupportedResponse struct {
@@ -6732,7 +6733,7 @@ type IUnattended_getIsUnattendedInstallSupportedResponse struct {
 type IUnattended_getAvoidUpdatesOverNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_getAvoidUpdatesOverNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_getAvoidUpdatesOverNetworkResponse struct {
@@ -6744,7 +6745,7 @@ type IUnattended_getAvoidUpdatesOverNetworkResponse struct {
 type IUnattended_setAvoidUpdatesOverNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_setAvoidUpdatesOverNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AvoidUpdatesOverNetwork bool `xml:"avoidUpdatesOverNetwork,omitempty" json:"avoidUpdatesOverNetwork,omitempty"`
 }
@@ -6756,7 +6757,7 @@ type IUnattended_setAvoidUpdatesOverNetworkResponse struct {
 type IUnattended_detectIsoOS struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_detectIsoOS"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_detectIsoOSResponse struct {
@@ -6766,7 +6767,7 @@ type IUnattended_detectIsoOSResponse struct {
 type IUnattended_prepare struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_prepare"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_prepareResponse struct {
@@ -6776,7 +6777,7 @@ type IUnattended_prepareResponse struct {
 type IUnattended_constructMedia struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_constructMedia"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_constructMediaResponse struct {
@@ -6786,7 +6787,7 @@ type IUnattended_constructMediaResponse struct {
 type IUnattended_reconfigureVM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_reconfigureVM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_reconfigureVMResponse struct {
@@ -6796,7 +6797,7 @@ type IUnattended_reconfigureVMResponse struct {
 type IUnattended_done struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUnattended_done"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUnattended_doneResponse struct {
@@ -6806,7 +6807,7 @@ type IUnattended_doneResponse struct {
 type IGraphicsAdapter_getGraphicsControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_getGraphicsControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGraphicsAdapter_getGraphicsControllerTypeResponse struct {
@@ -6818,7 +6819,7 @@ type IGraphicsAdapter_getGraphicsControllerTypeResponse struct {
 type IGraphicsAdapter_setGraphicsControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_setGraphicsControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	GraphicsControllerType *GraphicsControllerType `xml:"graphicsControllerType,omitempty" json:"graphicsControllerType,omitempty"`
 }
@@ -6830,7 +6831,7 @@ type IGraphicsAdapter_setGraphicsControllerTypeResponse struct {
 type IGraphicsAdapter_getVRAMSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_getVRAMSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGraphicsAdapter_getVRAMSizeResponse struct {
@@ -6842,7 +6843,7 @@ type IGraphicsAdapter_getVRAMSizeResponse struct {
 type IGraphicsAdapter_setVRAMSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_setVRAMSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VRAMSize uint32 `xml:"VRAMSize,omitempty" json:"VRAMSize,omitempty"`
 }
@@ -6854,7 +6855,7 @@ type IGraphicsAdapter_setVRAMSizeResponse struct {
 type IGraphicsAdapter_getMonitorCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_getMonitorCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGraphicsAdapter_getMonitorCountResponse struct {
@@ -6866,7 +6867,7 @@ type IGraphicsAdapter_getMonitorCountResponse struct {
 type IGraphicsAdapter_setMonitorCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_setMonitorCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MonitorCount uint32 `xml:"monitorCount,omitempty" json:"monitorCount,omitempty"`
 }
@@ -6878,7 +6879,7 @@ type IGraphicsAdapter_setMonitorCountResponse struct {
 type IGraphicsAdapter_setFeature struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_setFeature"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Feature *GraphicsFeature `xml:"feature,omitempty" json:"feature,omitempty"`
 
@@ -6892,7 +6893,7 @@ type IGraphicsAdapter_setFeatureResponse struct {
 type IGraphicsAdapter_isFeatureEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGraphicsAdapter_isFeatureEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Feature *GraphicsFeature `xml:"feature,omitempty" json:"feature,omitempty"`
 }
@@ -6906,7 +6907,7 @@ type IGraphicsAdapter_isFeatureEnabledResponse struct {
 type IFirmwareSettings_getFirmwareType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getFirmwareType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getFirmwareTypeResponse struct {
@@ -6918,7 +6919,7 @@ type IFirmwareSettings_getFirmwareTypeResponse struct {
 type IFirmwareSettings_setFirmwareType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setFirmwareType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FirmwareType *FirmwareType `xml:"firmwareType,omitempty" json:"firmwareType,omitempty"`
 }
@@ -6930,7 +6931,7 @@ type IFirmwareSettings_setFirmwareTypeResponse struct {
 type IFirmwareSettings_getLogoFadeIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getLogoFadeIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getLogoFadeInResponse struct {
@@ -6942,7 +6943,7 @@ type IFirmwareSettings_getLogoFadeInResponse struct {
 type IFirmwareSettings_setLogoFadeIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setLogoFadeIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogoFadeIn bool `xml:"logoFadeIn,omitempty" json:"logoFadeIn,omitempty"`
 }
@@ -6954,7 +6955,7 @@ type IFirmwareSettings_setLogoFadeInResponse struct {
 type IFirmwareSettings_getLogoFadeOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getLogoFadeOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getLogoFadeOutResponse struct {
@@ -6966,7 +6967,7 @@ type IFirmwareSettings_getLogoFadeOutResponse struct {
 type IFirmwareSettings_setLogoFadeOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setLogoFadeOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogoFadeOut bool `xml:"logoFadeOut,omitempty" json:"logoFadeOut,omitempty"`
 }
@@ -6978,7 +6979,7 @@ type IFirmwareSettings_setLogoFadeOutResponse struct {
 type IFirmwareSettings_getLogoDisplayTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getLogoDisplayTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getLogoDisplayTimeResponse struct {
@@ -6990,7 +6991,7 @@ type IFirmwareSettings_getLogoDisplayTimeResponse struct {
 type IFirmwareSettings_setLogoDisplayTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setLogoDisplayTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogoDisplayTime uint32 `xml:"logoDisplayTime,omitempty" json:"logoDisplayTime,omitempty"`
 }
@@ -7002,7 +7003,7 @@ type IFirmwareSettings_setLogoDisplayTimeResponse struct {
 type IFirmwareSettings_getLogoImagePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getLogoImagePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getLogoImagePathResponse struct {
@@ -7014,7 +7015,7 @@ type IFirmwareSettings_getLogoImagePathResponse struct {
 type IFirmwareSettings_setLogoImagePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setLogoImagePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogoImagePath string `xml:"logoImagePath,omitempty" json:"logoImagePath,omitempty"`
 }
@@ -7026,7 +7027,7 @@ type IFirmwareSettings_setLogoImagePathResponse struct {
 type IFirmwareSettings_getBootMenuMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getBootMenuMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getBootMenuModeResponse struct {
@@ -7038,7 +7039,7 @@ type IFirmwareSettings_getBootMenuModeResponse struct {
 type IFirmwareSettings_setBootMenuMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setBootMenuMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	BootMenuMode *FirmwareBootMenuMode `xml:"bootMenuMode,omitempty" json:"bootMenuMode,omitempty"`
 }
@@ -7050,7 +7051,7 @@ type IFirmwareSettings_setBootMenuModeResponse struct {
 type IFirmwareSettings_getACPIEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getACPIEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getACPIEnabledResponse struct {
@@ -7062,7 +7063,7 @@ type IFirmwareSettings_getACPIEnabledResponse struct {
 type IFirmwareSettings_setACPIEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setACPIEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ACPIEnabled bool `xml:"ACPIEnabled,omitempty" json:"ACPIEnabled,omitempty"`
 }
@@ -7074,7 +7075,7 @@ type IFirmwareSettings_setACPIEnabledResponse struct {
 type IFirmwareSettings_getIOAPICEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getIOAPICEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getIOAPICEnabledResponse struct {
@@ -7086,7 +7087,7 @@ type IFirmwareSettings_getIOAPICEnabledResponse struct {
 type IFirmwareSettings_setIOAPICEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setIOAPICEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IOAPICEnabled bool `xml:"IOAPICEnabled,omitempty" json:"IOAPICEnabled,omitempty"`
 }
@@ -7098,7 +7099,7 @@ type IFirmwareSettings_setIOAPICEnabledResponse struct {
 type IFirmwareSettings_getAPICMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getAPICMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getAPICModeResponse struct {
@@ -7110,7 +7111,7 @@ type IFirmwareSettings_getAPICModeResponse struct {
 type IFirmwareSettings_setAPICMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setAPICMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	APICMode *APICMode `xml:"APICMode,omitempty" json:"APICMode,omitempty"`
 }
@@ -7122,7 +7123,7 @@ type IFirmwareSettings_setAPICModeResponse struct {
 type IFirmwareSettings_getTimeOffset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getTimeOffset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getTimeOffsetResponse struct {
@@ -7134,7 +7135,7 @@ type IFirmwareSettings_getTimeOffsetResponse struct {
 type IFirmwareSettings_setTimeOffset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setTimeOffset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TimeOffset int64 `xml:"timeOffset,omitempty" json:"timeOffset,omitempty"`
 }
@@ -7146,7 +7147,7 @@ type IFirmwareSettings_setTimeOffsetResponse struct {
 type IFirmwareSettings_getPXEDebugEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getPXEDebugEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getPXEDebugEnabledResponse struct {
@@ -7158,7 +7159,7 @@ type IFirmwareSettings_getPXEDebugEnabledResponse struct {
 type IFirmwareSettings_setPXEDebugEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setPXEDebugEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PXEDebugEnabled bool `xml:"PXEDebugEnabled,omitempty" json:"PXEDebugEnabled,omitempty"`
 }
@@ -7170,7 +7171,7 @@ type IFirmwareSettings_setPXEDebugEnabledResponse struct {
 type IFirmwareSettings_getSMBIOSUuidLittleEndian struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getSMBIOSUuidLittleEndian"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getSMBIOSUuidLittleEndianResponse struct {
@@ -7182,7 +7183,7 @@ type IFirmwareSettings_getSMBIOSUuidLittleEndianResponse struct {
 type IFirmwareSettings_setSMBIOSUuidLittleEndian struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setSMBIOSUuidLittleEndian"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SMBIOSUuidLittleEndian bool `xml:"SMBIOSUuidLittleEndian,omitempty" json:"SMBIOSUuidLittleEndian,omitempty"`
 }
@@ -7194,7 +7195,7 @@ type IFirmwareSettings_setSMBIOSUuidLittleEndianResponse struct {
 type IFirmwareSettings_getAutoSerialNumGen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_getAutoSerialNumGen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFirmwareSettings_getAutoSerialNumGenResponse struct {
@@ -7206,7 +7207,7 @@ type IFirmwareSettings_getAutoSerialNumGenResponse struct {
 type IFirmwareSettings_setAutoSerialNumGen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFirmwareSettings_setAutoSerialNumGen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutoSerialNumGen bool `xml:"AutoSerialNumGen,omitempty" json:"AutoSerialNumGen,omitempty"`
 }
@@ -7218,7 +7219,7 @@ type IFirmwareSettings_setAutoSerialNumGenResponse struct {
 type ITrustedPlatformModule_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ITrustedPlatformModule_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ITrustedPlatformModule_getTypeResponse struct {
@@ -7230,7 +7231,7 @@ type ITrustedPlatformModule_getTypeResponse struct {
 type ITrustedPlatformModule_setType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ITrustedPlatformModule_setType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *TpmType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -7242,7 +7243,7 @@ type ITrustedPlatformModule_setTypeResponse struct {
 type ITrustedPlatformModule_getLocation struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ITrustedPlatformModule_getLocation"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ITrustedPlatformModule_getLocationResponse struct {
@@ -7254,7 +7255,7 @@ type ITrustedPlatformModule_getLocationResponse struct {
 type ITrustedPlatformModule_setLocation struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ITrustedPlatformModule_setLocation"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Location string `xml:"location,omitempty" json:"location,omitempty"`
 }
@@ -7266,7 +7267,7 @@ type ITrustedPlatformModule_setLocationResponse struct {
 type IRecordingScreenSettings_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getIdResponse struct {
@@ -7278,7 +7279,7 @@ type IRecordingScreenSettings_getIdResponse struct {
 type IRecordingScreenSettings_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getEnabledResponse struct {
@@ -7290,7 +7291,7 @@ type IRecordingScreenSettings_getEnabledResponse struct {
 type IRecordingScreenSettings_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -7302,7 +7303,7 @@ type IRecordingScreenSettings_setEnabledResponse struct {
 type IRecordingScreenSettings_getFeatures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getFeatures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getFeaturesResponse struct {
@@ -7314,7 +7315,7 @@ type IRecordingScreenSettings_getFeaturesResponse struct {
 type IRecordingScreenSettings_setFeatures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setFeatures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Features []*RecordingFeature `xml:"features,omitempty" json:"features,omitempty"`
 }
@@ -7326,7 +7327,7 @@ type IRecordingScreenSettings_setFeaturesResponse struct {
 type IRecordingScreenSettings_getDestination struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getDestination"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getDestinationResponse struct {
@@ -7338,7 +7339,7 @@ type IRecordingScreenSettings_getDestinationResponse struct {
 type IRecordingScreenSettings_setDestination struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setDestination"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Destination *RecordingDestination `xml:"destination,omitempty" json:"destination,omitempty"`
 }
@@ -7350,7 +7351,7 @@ type IRecordingScreenSettings_setDestinationResponse struct {
 type IRecordingScreenSettings_getFilename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getFilename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getFilenameResponse struct {
@@ -7362,7 +7363,7 @@ type IRecordingScreenSettings_getFilenameResponse struct {
 type IRecordingScreenSettings_setFilename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setFilename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Filename string `xml:"filename,omitempty" json:"filename,omitempty"`
 }
@@ -7374,7 +7375,7 @@ type IRecordingScreenSettings_setFilenameResponse struct {
 type IRecordingScreenSettings_getMaxTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getMaxTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getMaxTimeResponse struct {
@@ -7386,7 +7387,7 @@ type IRecordingScreenSettings_getMaxTimeResponse struct {
 type IRecordingScreenSettings_setMaxTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setMaxTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxTime uint32 `xml:"maxTime,omitempty" json:"maxTime,omitempty"`
 }
@@ -7398,7 +7399,7 @@ type IRecordingScreenSettings_setMaxTimeResponse struct {
 type IRecordingScreenSettings_getMaxFileSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getMaxFileSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getMaxFileSizeResponse struct {
@@ -7410,7 +7411,7 @@ type IRecordingScreenSettings_getMaxFileSizeResponse struct {
 type IRecordingScreenSettings_setMaxFileSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setMaxFileSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxFileSize uint32 `xml:"maxFileSize,omitempty" json:"maxFileSize,omitempty"`
 }
@@ -7422,7 +7423,7 @@ type IRecordingScreenSettings_setMaxFileSizeResponse struct {
 type IRecordingScreenSettings_getOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getOptionsResponse struct {
@@ -7434,7 +7435,7 @@ type IRecordingScreenSettings_getOptionsResponse struct {
 type IRecordingScreenSettings_setOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Options string `xml:"options,omitempty" json:"options,omitempty"`
 }
@@ -7446,7 +7447,7 @@ type IRecordingScreenSettings_setOptionsResponse struct {
 type IRecordingScreenSettings_getAudioCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioCodecResponse struct {
@@ -7458,7 +7459,7 @@ type IRecordingScreenSettings_getAudioCodecResponse struct {
 type IRecordingScreenSettings_setAudioCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioCodec *RecordingAudioCodec `xml:"audioCodec,omitempty" json:"audioCodec,omitempty"`
 }
@@ -7470,7 +7471,7 @@ type IRecordingScreenSettings_setAudioCodecResponse struct {
 type IRecordingScreenSettings_getAudioRateControlMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioRateControlMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioRateControlModeResponse struct {
@@ -7482,7 +7483,7 @@ type IRecordingScreenSettings_getAudioRateControlModeResponse struct {
 type IRecordingScreenSettings_setAudioRateControlMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioRateControlMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioRateControlMode *RecordingRateControlMode `xml:"audioRateControlMode,omitempty" json:"audioRateControlMode,omitempty"`
 }
@@ -7494,7 +7495,7 @@ type IRecordingScreenSettings_setAudioRateControlModeResponse struct {
 type IRecordingScreenSettings_getAudioDeadline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioDeadline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioDeadlineResponse struct {
@@ -7506,7 +7507,7 @@ type IRecordingScreenSettings_getAudioDeadlineResponse struct {
 type IRecordingScreenSettings_setAudioDeadline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioDeadline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioDeadline *RecordingCodecDeadline `xml:"audioDeadline,omitempty" json:"audioDeadline,omitempty"`
 }
@@ -7518,7 +7519,7 @@ type IRecordingScreenSettings_setAudioDeadlineResponse struct {
 type IRecordingScreenSettings_getAudioHz struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioHz"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioHzResponse struct {
@@ -7530,7 +7531,7 @@ type IRecordingScreenSettings_getAudioHzResponse struct {
 type IRecordingScreenSettings_setAudioHz struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioHz"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioHz uint32 `xml:"audioHz,omitempty" json:"audioHz,omitempty"`
 }
@@ -7542,7 +7543,7 @@ type IRecordingScreenSettings_setAudioHzResponse struct {
 type IRecordingScreenSettings_getAudioBits struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioBits"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioBitsResponse struct {
@@ -7554,7 +7555,7 @@ type IRecordingScreenSettings_getAudioBitsResponse struct {
 type IRecordingScreenSettings_setAudioBits struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioBits"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioBits uint32 `xml:"audioBits,omitempty" json:"audioBits,omitempty"`
 }
@@ -7566,7 +7567,7 @@ type IRecordingScreenSettings_setAudioBitsResponse struct {
 type IRecordingScreenSettings_getAudioChannels struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getAudioChannels"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getAudioChannelsResponse struct {
@@ -7578,7 +7579,7 @@ type IRecordingScreenSettings_getAudioChannelsResponse struct {
 type IRecordingScreenSettings_setAudioChannels struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setAudioChannels"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioChannels uint32 `xml:"audioChannels,omitempty" json:"audioChannels,omitempty"`
 }
@@ -7590,7 +7591,7 @@ type IRecordingScreenSettings_setAudioChannelsResponse struct {
 type IRecordingScreenSettings_getVideoCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoCodecResponse struct {
@@ -7602,7 +7603,7 @@ type IRecordingScreenSettings_getVideoCodecResponse struct {
 type IRecordingScreenSettings_setVideoCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoCodec *RecordingVideoCodec `xml:"videoCodec,omitempty" json:"videoCodec,omitempty"`
 }
@@ -7614,7 +7615,7 @@ type IRecordingScreenSettings_setVideoCodecResponse struct {
 type IRecordingScreenSettings_getVideoDeadline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoDeadline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoDeadlineResponse struct {
@@ -7626,7 +7627,7 @@ type IRecordingScreenSettings_getVideoDeadlineResponse struct {
 type IRecordingScreenSettings_setVideoDeadline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoDeadline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoDeadline *RecordingCodecDeadline `xml:"videoDeadline,omitempty" json:"videoDeadline,omitempty"`
 }
@@ -7638,7 +7639,7 @@ type IRecordingScreenSettings_setVideoDeadlineResponse struct {
 type IRecordingScreenSettings_getVideoWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoWidthResponse struct {
@@ -7650,7 +7651,7 @@ type IRecordingScreenSettings_getVideoWidthResponse struct {
 type IRecordingScreenSettings_setVideoWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoWidth uint32 `xml:"videoWidth,omitempty" json:"videoWidth,omitempty"`
 }
@@ -7662,7 +7663,7 @@ type IRecordingScreenSettings_setVideoWidthResponse struct {
 type IRecordingScreenSettings_getVideoHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoHeightResponse struct {
@@ -7674,7 +7675,7 @@ type IRecordingScreenSettings_getVideoHeightResponse struct {
 type IRecordingScreenSettings_setVideoHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoHeight uint32 `xml:"videoHeight,omitempty" json:"videoHeight,omitempty"`
 }
@@ -7686,7 +7687,7 @@ type IRecordingScreenSettings_setVideoHeightResponse struct {
 type IRecordingScreenSettings_getVideoRate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoRate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoRateResponse struct {
@@ -7698,7 +7699,7 @@ type IRecordingScreenSettings_getVideoRateResponse struct {
 type IRecordingScreenSettings_setVideoRate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoRate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoRate uint32 `xml:"videoRate,omitempty" json:"videoRate,omitempty"`
 }
@@ -7710,7 +7711,7 @@ type IRecordingScreenSettings_setVideoRateResponse struct {
 type IRecordingScreenSettings_getVideoRateControlMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoRateControlMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoRateControlModeResponse struct {
@@ -7722,7 +7723,7 @@ type IRecordingScreenSettings_getVideoRateControlModeResponse struct {
 type IRecordingScreenSettings_setVideoRateControlMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoRateControlMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoRateControlMode *RecordingRateControlMode `xml:"videoRateControlMode,omitempty" json:"videoRateControlMode,omitempty"`
 }
@@ -7734,7 +7735,7 @@ type IRecordingScreenSettings_setVideoRateControlModeResponse struct {
 type IRecordingScreenSettings_getVideoFPS struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoFPS"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoFPSResponse struct {
@@ -7746,7 +7747,7 @@ type IRecordingScreenSettings_getVideoFPSResponse struct {
 type IRecordingScreenSettings_setVideoFPS struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoFPS"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoFPS uint32 `xml:"videoFPS,omitempty" json:"videoFPS,omitempty"`
 }
@@ -7758,7 +7759,7 @@ type IRecordingScreenSettings_setVideoFPSResponse struct {
 type IRecordingScreenSettings_getVideoScalingMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_getVideoScalingMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenSettings_getVideoScalingModeResponse struct {
@@ -7770,7 +7771,7 @@ type IRecordingScreenSettings_getVideoScalingModeResponse struct {
 type IRecordingScreenSettings_setVideoScalingMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_setVideoScalingMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VideoScalingMode *RecordingVideoScalingMode `xml:"videoScalingMode,omitempty" json:"videoScalingMode,omitempty"`
 }
@@ -7782,7 +7783,7 @@ type IRecordingScreenSettings_setVideoScalingModeResponse struct {
 type IRecordingScreenSettings_isFeatureEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenSettings_isFeatureEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Feature *RecordingFeature `xml:"feature,omitempty" json:"feature,omitempty"`
 }
@@ -7796,7 +7797,7 @@ type IRecordingScreenSettings_isFeatureEnabledResponse struct {
 type IRecordingSettings_getPaused struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_getPaused"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_getPausedResponse struct {
@@ -7808,7 +7809,7 @@ type IRecordingSettings_getPausedResponse struct {
 type IRecordingSettings_setPaused struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_setPaused"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Paused bool `xml:"paused,omitempty" json:"paused,omitempty"`
 }
@@ -7820,7 +7821,7 @@ type IRecordingSettings_setPausedResponse struct {
 type IRecordingSettings_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_getEnabledResponse struct {
@@ -7832,7 +7833,7 @@ type IRecordingSettings_getEnabledResponse struct {
 type IRecordingSettings_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -7844,7 +7845,7 @@ type IRecordingSettings_setEnabledResponse struct {
 type IRecordingSettings_getScreens struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_getScreens"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_getScreensResponse struct {
@@ -7856,7 +7857,7 @@ type IRecordingSettings_getScreensResponse struct {
 type IRecordingSettings_getProgress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_getProgress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_getProgressResponse struct {
@@ -7868,7 +7869,7 @@ type IRecordingSettings_getProgressResponse struct {
 type IRecordingSettings_getScreenSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_getScreenSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -7882,7 +7883,7 @@ type IRecordingSettings_getScreenSettingsResponse struct {
 type IRecordingSettings_start struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_start"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_startResponse struct {
@@ -7894,7 +7895,7 @@ type IRecordingSettings_startResponse struct {
 type IRecordingSettings_resume struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingSettings_resume"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingSettings_resumeResponse struct {
@@ -7904,7 +7905,7 @@ type IRecordingSettings_resumeResponse struct {
 type IPCIAddress_getBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_getBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPCIAddress_getBusResponse struct {
@@ -7916,7 +7917,7 @@ type IPCIAddress_getBusResponse struct {
 type IPCIAddress_setBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_setBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Bus int16 `xml:"bus,omitempty" json:"bus,omitempty"`
 }
@@ -7928,7 +7929,7 @@ type IPCIAddress_setBusResponse struct {
 type IPCIAddress_getDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_getDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPCIAddress_getDeviceResponse struct {
@@ -7940,7 +7941,7 @@ type IPCIAddress_getDeviceResponse struct {
 type IPCIAddress_setDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_setDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Device int16 `xml:"device,omitempty" json:"device,omitempty"`
 }
@@ -7952,7 +7953,7 @@ type IPCIAddress_setDeviceResponse struct {
 type IPCIAddress_getDevFunction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_getDevFunction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPCIAddress_getDevFunctionResponse struct {
@@ -7964,7 +7965,7 @@ type IPCIAddress_getDevFunctionResponse struct {
 type IPCIAddress_setDevFunction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_setDevFunction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DevFunction int16 `xml:"devFunction,omitempty" json:"devFunction,omitempty"`
 }
@@ -7976,7 +7977,7 @@ type IPCIAddress_setDevFunctionResponse struct {
 type IPCIAddress_asLong struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_asLong"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPCIAddress_asLongResponse struct {
@@ -7988,7 +7989,7 @@ type IPCIAddress_asLongResponse struct {
 type IPCIAddress_fromLong struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPCIAddress_fromLong"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Number int32 `xml:"number,omitempty" json:"number,omitempty"`
 }
@@ -8000,7 +8001,7 @@ type IPCIAddress_fromLongResponse struct {
 type IUefiVariableStore_getSecureBootEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_getSecureBootEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUefiVariableStore_getSecureBootEnabledResponse struct {
@@ -8012,7 +8013,7 @@ type IUefiVariableStore_getSecureBootEnabledResponse struct {
 type IUefiVariableStore_setSecureBootEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_setSecureBootEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SecureBootEnabled bool `xml:"secureBootEnabled,omitempty" json:"secureBootEnabled,omitempty"`
 }
@@ -8024,7 +8025,7 @@ type IUefiVariableStore_setSecureBootEnabledResponse struct {
 type IUefiVariableStore_addVariable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_addVariable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -8042,7 +8043,7 @@ type IUefiVariableStore_addVariableResponse struct {
 type IUefiVariableStore_deleteVariable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_deleteVariable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -8056,7 +8057,7 @@ type IUefiVariableStore_deleteVariableResponse struct {
 type IUefiVariableStore_changeVariable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_changeVariable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -8070,7 +8071,7 @@ type IUefiVariableStore_changeVariableResponse struct {
 type IUefiVariableStore_queryVariableByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_queryVariableByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -8088,7 +8089,7 @@ type IUefiVariableStore_queryVariableByNameResponse struct {
 type IUefiVariableStore_queryVariables struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_queryVariables"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUefiVariableStore_queryVariablesResponse struct {
@@ -8102,7 +8103,7 @@ type IUefiVariableStore_queryVariablesResponse struct {
 type IUefiVariableStore_enrollOraclePlatformKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_enrollOraclePlatformKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUefiVariableStore_enrollOraclePlatformKeyResponse struct {
@@ -8112,7 +8113,7 @@ type IUefiVariableStore_enrollOraclePlatformKeyResponse struct {
 type IUefiVariableStore_enrollPlatformKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_enrollPlatformKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PlatformKey string `xml:"platformKey,omitempty" json:"platformKey,omitempty"`
 
@@ -8126,7 +8127,7 @@ type IUefiVariableStore_enrollPlatformKeyResponse struct {
 type IUefiVariableStore_addKek struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_addKek"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	KeyEncryptionKey string `xml:"keyEncryptionKey,omitempty" json:"keyEncryptionKey,omitempty"`
 
@@ -8142,7 +8143,7 @@ type IUefiVariableStore_addKekResponse struct {
 type IUefiVariableStore_addSignatureToDb struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_addSignatureToDb"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Signature string `xml:"signature,omitempty" json:"signature,omitempty"`
 
@@ -8158,7 +8159,7 @@ type IUefiVariableStore_addSignatureToDbResponse struct {
 type IUefiVariableStore_addSignatureToDbx struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_addSignatureToDbx"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Signature string `xml:"signature,omitempty" json:"signature,omitempty"`
 
@@ -8174,7 +8175,7 @@ type IUefiVariableStore_addSignatureToDbxResponse struct {
 type IUefiVariableStore_enrollDefaultMsSignatures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_enrollDefaultMsSignatures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUefiVariableStore_enrollDefaultMsSignaturesResponse struct {
@@ -8184,7 +8185,7 @@ type IUefiVariableStore_enrollDefaultMsSignaturesResponse struct {
 type IUefiVariableStore_addSignatureToMok struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUefiVariableStore_addSignatureToMok"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Signature string `xml:"signature,omitempty" json:"signature,omitempty"`
 
@@ -8200,7 +8201,7 @@ type IUefiVariableStore_addSignatureToMokResponse struct {
 type INvramStore_getNonVolatileStorageFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INvramStore_getNonVolatileStorageFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INvramStore_getNonVolatileStorageFileResponse struct {
@@ -8212,7 +8213,7 @@ type INvramStore_getNonVolatileStorageFileResponse struct {
 type INvramStore_getUefiVariableStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INvramStore_getUefiVariableStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INvramStore_getUefiVariableStoreResponse struct {
@@ -8224,7 +8225,7 @@ type INvramStore_getUefiVariableStoreResponse struct {
 type INvramStore_getKeyId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INvramStore_getKeyId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INvramStore_getKeyIdResponse struct {
@@ -8236,7 +8237,7 @@ type INvramStore_getKeyIdResponse struct {
 type INvramStore_getKeyStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INvramStore_getKeyStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INvramStore_getKeyStoreResponse struct {
@@ -8248,7 +8249,7 @@ type INvramStore_getKeyStoreResponse struct {
 type INvramStore_initUefiVariableStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INvramStore_initUefiVariableStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Size uint32 `xml:"size,omitempty" json:"size,omitempty"`
 }
@@ -8260,7 +8261,7 @@ type INvramStore_initUefiVariableStoreResponse struct {
 type IResourceStore_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IResourceStore_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IResourceStore_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -8272,7 +8273,7 @@ type IResourceStore_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IPlatform_getArchitecture struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getArchitecture"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getArchitectureResponse struct {
@@ -8284,7 +8285,7 @@ type IPlatform_getArchitectureResponse struct {
 type IPlatform_setArchitecture struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_setArchitecture"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Architecture *PlatformArchitecture `xml:"architecture,omitempty" json:"architecture,omitempty"`
 }
@@ -8296,7 +8297,7 @@ type IPlatform_setArchitectureResponse struct {
 type IPlatform_getProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getPropertiesResponse struct {
@@ -8308,7 +8309,7 @@ type IPlatform_getPropertiesResponse struct {
 type IPlatform_getX86 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getX86"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getX86Response struct {
@@ -8320,7 +8321,7 @@ type IPlatform_getX86Response struct {
 type IPlatform_getARM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getARM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getARMResponse struct {
@@ -8332,7 +8333,7 @@ type IPlatform_getARMResponse struct {
 type IPlatform_getChipsetType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getChipsetType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getChipsetTypeResponse struct {
@@ -8344,7 +8345,7 @@ type IPlatform_getChipsetTypeResponse struct {
 type IPlatform_setChipsetType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_setChipsetType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ChipsetType *ChipsetType `xml:"chipsetType,omitempty" json:"chipsetType,omitempty"`
 }
@@ -8356,7 +8357,7 @@ type IPlatform_setChipsetTypeResponse struct {
 type IPlatform_getIommuType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getIommuType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getIommuTypeResponse struct {
@@ -8368,7 +8369,7 @@ type IPlatform_getIommuTypeResponse struct {
 type IPlatform_setIommuType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_setIommuType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IommuType *IommuType `xml:"iommuType,omitempty" json:"iommuType,omitempty"`
 }
@@ -8380,7 +8381,7 @@ type IPlatform_setIommuTypeResponse struct {
 type IPlatform_getRTCUseUTC struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_getRTCUseUTC"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatform_getRTCUseUTCResponse struct {
@@ -8392,7 +8393,7 @@ type IPlatform_getRTCUseUTCResponse struct {
 type IPlatform_setRTCUseUTC struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatform_setRTCUseUTC"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	RTCUseUTC bool `xml:"RTCUseUTC,omitempty" json:"RTCUseUTC,omitempty"`
 }
@@ -8404,7 +8405,7 @@ type IPlatform_setRTCUseUTCResponse struct {
 type IPlatformX86_getHPETEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_getHPETEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformX86_getHPETEnabledResponse struct {
@@ -8416,7 +8417,7 @@ type IPlatformX86_getHPETEnabledResponse struct {
 type IPlatformX86_setHPETEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_setHPETEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HPETEnabled bool `xml:"HPETEnabled,omitempty" json:"HPETEnabled,omitempty"`
 }
@@ -8428,7 +8429,7 @@ type IPlatformX86_setHPETEnabledResponse struct {
 type IPlatformX86_getCPUProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_getCPUProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *CPUPropertyTypeX86 `xml:"property,omitempty" json:"property,omitempty"`
 }
@@ -8442,7 +8443,7 @@ type IPlatformX86_getCPUPropertyResponse struct {
 type IPlatformX86_setCPUProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_setCPUProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *CPUPropertyTypeX86 `xml:"property,omitempty" json:"property,omitempty"`
 
@@ -8456,7 +8457,7 @@ type IPlatformX86_setCPUPropertyResponse struct {
 type IPlatformX86_getCPUIDLeafByOrdinal struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_getCPUIDLeafByOrdinal"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Ordinal uint32 `xml:"ordinal,omitempty" json:"ordinal,omitempty"`
 }
@@ -8480,7 +8481,7 @@ type IPlatformX86_getCPUIDLeafByOrdinalResponse struct {
 type IPlatformX86_getCPUIDLeaf struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_getCPUIDLeaf"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Idx uint32 `xml:"idx,omitempty" json:"idx,omitempty"`
 
@@ -8502,7 +8503,7 @@ type IPlatformX86_getCPUIDLeafResponse struct {
 type IPlatformX86_setCPUIDLeaf struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_setCPUIDLeaf"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Idx uint32 `xml:"idx,omitempty" json:"idx,omitempty"`
 
@@ -8524,7 +8525,7 @@ type IPlatformX86_setCPUIDLeafResponse struct {
 type IPlatformX86_removeCPUIDLeaf struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_removeCPUIDLeaf"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Idx uint32 `xml:"idx,omitempty" json:"idx,omitempty"`
 
@@ -8538,7 +8539,7 @@ type IPlatformX86_removeCPUIDLeafResponse struct {
 type IPlatformX86_removeAllCPUIDLeaves struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_removeAllCPUIDLeaves"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformX86_removeAllCPUIDLeavesResponse struct {
@@ -8548,7 +8549,7 @@ type IPlatformX86_removeAllCPUIDLeavesResponse struct {
 type IPlatformX86_getHWVirtExProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_getHWVirtExProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *HWVirtExPropertyType `xml:"property,omitempty" json:"property,omitempty"`
 }
@@ -8562,7 +8563,7 @@ type IPlatformX86_getHWVirtExPropertyResponse struct {
 type IPlatformX86_setHWVirtExProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformX86_setHWVirtExProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *HWVirtExPropertyType `xml:"property,omitempty" json:"property,omitempty"`
 
@@ -8576,7 +8577,7 @@ type IPlatformX86_setHWVirtExPropertyResponse struct {
 type IPlatformARM_getCPUProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformARM_getCPUProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *CPUPropertyTypeARM `xml:"property,omitempty" json:"property,omitempty"`
 }
@@ -8590,7 +8591,7 @@ type IPlatformARM_getCPUPropertyResponse struct {
 type IPlatformARM_setCPUProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformARM_setCPUProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property *CPUPropertyTypeARM `xml:"property,omitempty" json:"property,omitempty"`
 
@@ -8604,7 +8605,7 @@ type IPlatformARM_setCPUPropertyResponse struct {
 type IMachine_getParent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getParent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getParentResponse struct {
@@ -8616,7 +8617,7 @@ type IMachine_getParentResponse struct {
 type IMachine_getIcon struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getIcon"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getIconResponse struct {
@@ -8628,7 +8629,7 @@ type IMachine_getIconResponse struct {
 type IMachine_setIcon struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setIcon"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Icon string `xml:"icon,omitempty" json:"icon,omitempty"`
 }
@@ -8640,7 +8641,7 @@ type IMachine_setIconResponse struct {
 type IMachine_getAccessible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAccessible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAccessibleResponse struct {
@@ -8652,7 +8653,7 @@ type IMachine_getAccessibleResponse struct {
 type IMachine_getAccessError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAccessError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAccessErrorResponse struct {
@@ -8664,7 +8665,7 @@ type IMachine_getAccessErrorResponse struct {
 type IMachine_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getNameResponse struct {
@@ -8676,7 +8677,7 @@ type IMachine_getNameResponse struct {
 type IMachine_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -8688,7 +8689,7 @@ type IMachine_setNameResponse struct {
 type IMachine_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getDescriptionResponse struct {
@@ -8700,7 +8701,7 @@ type IMachine_getDescriptionResponse struct {
 type IMachine_setDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -8712,7 +8713,7 @@ type IMachine_setDescriptionResponse struct {
 type IMachine_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getIdResponse struct {
@@ -8724,7 +8725,7 @@ type IMachine_getIdResponse struct {
 type IMachine_getGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getGroupsResponse struct {
@@ -8736,7 +8737,7 @@ type IMachine_getGroupsResponse struct {
 type IMachine_setGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Groups []string `xml:"groups,omitempty" json:"groups,omitempty"`
 }
@@ -8748,7 +8749,7 @@ type IMachine_setGroupsResponse struct {
 type IMachine_getOSTypeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getOSTypeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getOSTypeIdResponse struct {
@@ -8760,7 +8761,7 @@ type IMachine_getOSTypeIdResponse struct {
 type IMachine_setOSTypeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setOSTypeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	OSTypeId string `xml:"OSTypeId,omitempty" json:"OSTypeId,omitempty"`
 }
@@ -8772,7 +8773,7 @@ type IMachine_setOSTypeIdResponse struct {
 type IMachine_getHardwareVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getHardwareVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getHardwareVersionResponse struct {
@@ -8784,7 +8785,7 @@ type IMachine_getHardwareVersionResponse struct {
 type IMachine_setHardwareVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setHardwareVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HardwareVersion string `xml:"hardwareVersion,omitempty" json:"hardwareVersion,omitempty"`
 }
@@ -8796,7 +8797,7 @@ type IMachine_setHardwareVersionResponse struct {
 type IMachine_getHardwareUUID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getHardwareUUID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getHardwareUUIDResponse struct {
@@ -8808,7 +8809,7 @@ type IMachine_getHardwareUUIDResponse struct {
 type IMachine_setHardwareUUID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setHardwareUUID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HardwareUUID string `xml:"hardwareUUID,omitempty" json:"hardwareUUID,omitempty"`
 }
@@ -8820,7 +8821,7 @@ type IMachine_setHardwareUUIDResponse struct {
 type IMachine_getCPUCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCPUCountResponse struct {
@@ -8832,7 +8833,7 @@ type IMachine_getCPUCountResponse struct {
 type IMachine_setCPUCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setCPUCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CPUCount uint32 `xml:"CPUCount,omitempty" json:"CPUCount,omitempty"`
 }
@@ -8844,7 +8845,7 @@ type IMachine_setCPUCountResponse struct {
 type IMachine_getCPUHotPlugEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUHotPlugEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCPUHotPlugEnabledResponse struct {
@@ -8856,7 +8857,7 @@ type IMachine_getCPUHotPlugEnabledResponse struct {
 type IMachine_setCPUHotPlugEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setCPUHotPlugEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CPUHotPlugEnabled bool `xml:"CPUHotPlugEnabled,omitempty" json:"CPUHotPlugEnabled,omitempty"`
 }
@@ -8868,7 +8869,7 @@ type IMachine_setCPUHotPlugEnabledResponse struct {
 type IMachine_getCPUExecutionCap struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUExecutionCap"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCPUExecutionCapResponse struct {
@@ -8880,7 +8881,7 @@ type IMachine_getCPUExecutionCapResponse struct {
 type IMachine_setCPUExecutionCap struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setCPUExecutionCap"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CPUExecutionCap uint32 `xml:"CPUExecutionCap,omitempty" json:"CPUExecutionCap,omitempty"`
 }
@@ -8892,7 +8893,7 @@ type IMachine_setCPUExecutionCapResponse struct {
 type IMachine_getCPUIDPortabilityLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUIDPortabilityLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCPUIDPortabilityLevelResponse struct {
@@ -8904,7 +8905,7 @@ type IMachine_getCPUIDPortabilityLevelResponse struct {
 type IMachine_setCPUIDPortabilityLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setCPUIDPortabilityLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CPUIDPortabilityLevel uint32 `xml:"CPUIDPortabilityLevel,omitempty" json:"CPUIDPortabilityLevel,omitempty"`
 }
@@ -8916,7 +8917,7 @@ type IMachine_setCPUIDPortabilityLevelResponse struct {
 type IMachine_getMemorySize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMemorySize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getMemorySizeResponse struct {
@@ -8928,7 +8929,7 @@ type IMachine_getMemorySizeResponse struct {
 type IMachine_setMemorySize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setMemorySize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MemorySize uint32 `xml:"memorySize,omitempty" json:"memorySize,omitempty"`
 }
@@ -8940,7 +8941,7 @@ type IMachine_setMemorySizeResponse struct {
 type IMachine_getMemoryBalloonSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMemoryBalloonSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getMemoryBalloonSizeResponse struct {
@@ -8952,7 +8953,7 @@ type IMachine_getMemoryBalloonSizeResponse struct {
 type IMachine_setMemoryBalloonSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setMemoryBalloonSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MemoryBalloonSize uint32 `xml:"memoryBalloonSize,omitempty" json:"memoryBalloonSize,omitempty"`
 }
@@ -8964,7 +8965,7 @@ type IMachine_setMemoryBalloonSizeResponse struct {
 type IMachine_getPageFusionEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getPageFusionEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getPageFusionEnabledResponse struct {
@@ -8976,7 +8977,7 @@ type IMachine_getPageFusionEnabledResponse struct {
 type IMachine_setPageFusionEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setPageFusionEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PageFusionEnabled bool `xml:"pageFusionEnabled,omitempty" json:"pageFusionEnabled,omitempty"`
 }
@@ -8988,7 +8989,7 @@ type IMachine_setPageFusionEnabledResponse struct {
 type IMachine_getGraphicsAdapter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGraphicsAdapter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getGraphicsAdapterResponse struct {
@@ -9000,7 +9001,7 @@ type IMachine_getGraphicsAdapterResponse struct {
 type IMachine_getPlatform struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getPlatform"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getPlatformResponse struct {
@@ -9012,7 +9013,7 @@ type IMachine_getPlatformResponse struct {
 type IMachine_getFirmwareSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getFirmwareSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getFirmwareSettingsResponse struct {
@@ -9024,7 +9025,7 @@ type IMachine_getFirmwareSettingsResponse struct {
 type IMachine_getTrustedPlatformModule struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTrustedPlatformModule"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTrustedPlatformModuleResponse struct {
@@ -9036,7 +9037,7 @@ type IMachine_getTrustedPlatformModuleResponse struct {
 type IMachine_getNonVolatileStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getNonVolatileStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getNonVolatileStoreResponse struct {
@@ -9048,7 +9049,7 @@ type IMachine_getNonVolatileStoreResponse struct {
 type IMachine_getRecordingSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getRecordingSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getRecordingSettingsResponse struct {
@@ -9060,7 +9061,7 @@ type IMachine_getRecordingSettingsResponse struct {
 type IMachine_getPointingHIDType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getPointingHIDType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getPointingHIDTypeResponse struct {
@@ -9072,7 +9073,7 @@ type IMachine_getPointingHIDTypeResponse struct {
 type IMachine_setPointingHIDType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setPointingHIDType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PointingHIDType *PointingHIDType `xml:"pointingHIDType,omitempty" json:"pointingHIDType,omitempty"`
 }
@@ -9084,7 +9085,7 @@ type IMachine_setPointingHIDTypeResponse struct {
 type IMachine_getKeyboardHIDType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getKeyboardHIDType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getKeyboardHIDTypeResponse struct {
@@ -9096,7 +9097,7 @@ type IMachine_getKeyboardHIDTypeResponse struct {
 type IMachine_setKeyboardHIDType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setKeyboardHIDType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	KeyboardHIDType *KeyboardHIDType `xml:"keyboardHIDType,omitempty" json:"keyboardHIDType,omitempty"`
 }
@@ -9108,7 +9109,7 @@ type IMachine_setKeyboardHIDTypeResponse struct {
 type IMachine_getSnapshotFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSnapshotFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSnapshotFolderResponse struct {
@@ -9120,7 +9121,7 @@ type IMachine_getSnapshotFolderResponse struct {
 type IMachine_setSnapshotFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setSnapshotFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SnapshotFolder string `xml:"snapshotFolder,omitempty" json:"snapshotFolder,omitempty"`
 }
@@ -9132,7 +9133,7 @@ type IMachine_setSnapshotFolderResponse struct {
 type IMachine_getVRDEServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getVRDEServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getVRDEServerResponse struct {
@@ -9144,7 +9145,7 @@ type IMachine_getVRDEServerResponse struct {
 type IMachine_getEmulatedUSBCardReaderEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getEmulatedUSBCardReaderEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getEmulatedUSBCardReaderEnabledResponse struct {
@@ -9156,7 +9157,7 @@ type IMachine_getEmulatedUSBCardReaderEnabledResponse struct {
 type IMachine_setEmulatedUSBCardReaderEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setEmulatedUSBCardReaderEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	EmulatedUSBCardReaderEnabled bool `xml:"emulatedUSBCardReaderEnabled,omitempty" json:"emulatedUSBCardReaderEnabled,omitempty"`
 }
@@ -9168,7 +9169,7 @@ type IMachine_setEmulatedUSBCardReaderEnabledResponse struct {
 type IMachine_getMediumAttachments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMediumAttachments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getMediumAttachmentsResponse struct {
@@ -9180,7 +9181,7 @@ type IMachine_getMediumAttachmentsResponse struct {
 type IMachine_getUSBControllers struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getUSBControllers"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getUSBControllersResponse struct {
@@ -9192,7 +9193,7 @@ type IMachine_getUSBControllersResponse struct {
 type IMachine_getUSBDeviceFilters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getUSBDeviceFilters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getUSBDeviceFiltersResponse struct {
@@ -9204,7 +9205,7 @@ type IMachine_getUSBDeviceFiltersResponse struct {
 type IMachine_getAudioSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAudioSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAudioSettingsResponse struct {
@@ -9216,7 +9217,7 @@ type IMachine_getAudioSettingsResponse struct {
 type IMachine_getStorageControllers struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStorageControllers"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getStorageControllersResponse struct {
@@ -9228,7 +9229,7 @@ type IMachine_getStorageControllersResponse struct {
 type IMachine_getSettingsFilePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSettingsFilePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSettingsFilePathResponse struct {
@@ -9240,7 +9241,7 @@ type IMachine_getSettingsFilePathResponse struct {
 type IMachine_getSettingsAuxFilePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSettingsAuxFilePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSettingsAuxFilePathResponse struct {
@@ -9252,7 +9253,7 @@ type IMachine_getSettingsAuxFilePathResponse struct {
 type IMachine_getSettingsModified struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSettingsModified"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSettingsModifiedResponse struct {
@@ -9264,7 +9265,7 @@ type IMachine_getSettingsModifiedResponse struct {
 type IMachine_getSessionState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSessionState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSessionStateResponse struct {
@@ -9276,7 +9277,7 @@ type IMachine_getSessionStateResponse struct {
 type IMachine_getSessionName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSessionName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSessionNameResponse struct {
@@ -9288,7 +9289,7 @@ type IMachine_getSessionNameResponse struct {
 type IMachine_getSessionPID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSessionPID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSessionPIDResponse struct {
@@ -9300,7 +9301,7 @@ type IMachine_getSessionPIDResponse struct {
 type IMachine_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getStateResponse struct {
@@ -9312,7 +9313,7 @@ type IMachine_getStateResponse struct {
 type IMachine_getLastStateChange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getLastStateChange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getLastStateChangeResponse struct {
@@ -9324,7 +9325,7 @@ type IMachine_getLastStateChangeResponse struct {
 type IMachine_getStateFilePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStateFilePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getStateFilePathResponse struct {
@@ -9336,7 +9337,7 @@ type IMachine_getStateFilePathResponse struct {
 type IMachine_getLogFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getLogFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getLogFolderResponse struct {
@@ -9348,7 +9349,7 @@ type IMachine_getLogFolderResponse struct {
 type IMachine_getCurrentSnapshot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCurrentSnapshot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCurrentSnapshotResponse struct {
@@ -9360,7 +9361,7 @@ type IMachine_getCurrentSnapshotResponse struct {
 type IMachine_getSnapshotCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSnapshotCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSnapshotCountResponse struct {
@@ -9372,7 +9373,7 @@ type IMachine_getSnapshotCountResponse struct {
 type IMachine_getCurrentStateModified struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCurrentStateModified"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCurrentStateModifiedResponse struct {
@@ -9384,7 +9385,7 @@ type IMachine_getCurrentStateModifiedResponse struct {
 type IMachine_getSharedFolders struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSharedFolders"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getSharedFoldersResponse struct {
@@ -9396,7 +9397,7 @@ type IMachine_getSharedFoldersResponse struct {
 type IMachine_getClipboardMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getClipboardMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getClipboardModeResponse struct {
@@ -9408,7 +9409,7 @@ type IMachine_getClipboardModeResponse struct {
 type IMachine_setClipboardMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setClipboardMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ClipboardMode *ClipboardMode `xml:"clipboardMode,omitempty" json:"clipboardMode,omitempty"`
 }
@@ -9420,7 +9421,7 @@ type IMachine_setClipboardModeResponse struct {
 type IMachine_getClipboardFileTransfersEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getClipboardFileTransfersEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getClipboardFileTransfersEnabledResponse struct {
@@ -9432,7 +9433,7 @@ type IMachine_getClipboardFileTransfersEnabledResponse struct {
 type IMachine_setClipboardFileTransfersEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setClipboardFileTransfersEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ClipboardFileTransfersEnabled bool `xml:"clipboardFileTransfersEnabled,omitempty" json:"clipboardFileTransfersEnabled,omitempty"`
 }
@@ -9444,7 +9445,7 @@ type IMachine_setClipboardFileTransfersEnabledResponse struct {
 type IMachine_getDnDMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getDnDMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getDnDModeResponse struct {
@@ -9456,7 +9457,7 @@ type IMachine_getDnDModeResponse struct {
 type IMachine_setDnDMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setDnDMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DnDMode *DnDMode `xml:"dnDMode,omitempty" json:"dnDMode,omitempty"`
 }
@@ -9468,7 +9469,7 @@ type IMachine_setDnDModeResponse struct {
 type IMachine_getTeleporterEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTeleporterEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTeleporterEnabledResponse struct {
@@ -9480,7 +9481,7 @@ type IMachine_getTeleporterEnabledResponse struct {
 type IMachine_setTeleporterEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTeleporterEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TeleporterEnabled bool `xml:"teleporterEnabled,omitempty" json:"teleporterEnabled,omitempty"`
 }
@@ -9492,7 +9493,7 @@ type IMachine_setTeleporterEnabledResponse struct {
 type IMachine_getTeleporterPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTeleporterPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTeleporterPortResponse struct {
@@ -9504,7 +9505,7 @@ type IMachine_getTeleporterPortResponse struct {
 type IMachine_setTeleporterPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTeleporterPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TeleporterPort uint32 `xml:"teleporterPort,omitempty" json:"teleporterPort,omitempty"`
 }
@@ -9516,7 +9517,7 @@ type IMachine_setTeleporterPortResponse struct {
 type IMachine_getTeleporterAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTeleporterAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTeleporterAddressResponse struct {
@@ -9528,7 +9529,7 @@ type IMachine_getTeleporterAddressResponse struct {
 type IMachine_setTeleporterAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTeleporterAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TeleporterAddress string `xml:"teleporterAddress,omitempty" json:"teleporterAddress,omitempty"`
 }
@@ -9540,7 +9541,7 @@ type IMachine_setTeleporterAddressResponse struct {
 type IMachine_getTeleporterPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTeleporterPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTeleporterPasswordResponse struct {
@@ -9552,7 +9553,7 @@ type IMachine_getTeleporterPasswordResponse struct {
 type IMachine_setTeleporterPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTeleporterPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TeleporterPassword string `xml:"teleporterPassword,omitempty" json:"teleporterPassword,omitempty"`
 }
@@ -9564,7 +9565,7 @@ type IMachine_setTeleporterPasswordResponse struct {
 type IMachine_getParavirtProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getParavirtProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getParavirtProviderResponse struct {
@@ -9576,7 +9577,7 @@ type IMachine_getParavirtProviderResponse struct {
 type IMachine_setParavirtProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setParavirtProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ParavirtProvider *ParavirtProvider `xml:"paravirtProvider,omitempty" json:"paravirtProvider,omitempty"`
 }
@@ -9588,7 +9589,7 @@ type IMachine_setParavirtProviderResponse struct {
 type IMachine_getIOCacheEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getIOCacheEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getIOCacheEnabledResponse struct {
@@ -9600,7 +9601,7 @@ type IMachine_getIOCacheEnabledResponse struct {
 type IMachine_setIOCacheEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setIOCacheEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IOCacheEnabled bool `xml:"IOCacheEnabled,omitempty" json:"IOCacheEnabled,omitempty"`
 }
@@ -9612,7 +9613,7 @@ type IMachine_setIOCacheEnabledResponse struct {
 type IMachine_getIOCacheSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getIOCacheSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getIOCacheSizeResponse struct {
@@ -9624,7 +9625,7 @@ type IMachine_getIOCacheSizeResponse struct {
 type IMachine_setIOCacheSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setIOCacheSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IOCacheSize uint32 `xml:"IOCacheSize,omitempty" json:"IOCacheSize,omitempty"`
 }
@@ -9636,7 +9637,7 @@ type IMachine_setIOCacheSizeResponse struct {
 type IMachine_getPCIDeviceAssignments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getPCIDeviceAssignments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getPCIDeviceAssignmentsResponse struct {
@@ -9648,7 +9649,7 @@ type IMachine_getPCIDeviceAssignmentsResponse struct {
 type IMachine_getBandwidthControl struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getBandwidthControl"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getBandwidthControlResponse struct {
@@ -9660,7 +9661,7 @@ type IMachine_getBandwidthControlResponse struct {
 type IMachine_getTracingEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTracingEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTracingEnabledResponse struct {
@@ -9672,7 +9673,7 @@ type IMachine_getTracingEnabledResponse struct {
 type IMachine_setTracingEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTracingEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TracingEnabled bool `xml:"tracingEnabled,omitempty" json:"tracingEnabled,omitempty"`
 }
@@ -9684,7 +9685,7 @@ type IMachine_setTracingEnabledResponse struct {
 type IMachine_getTracingConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getTracingConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getTracingConfigResponse struct {
@@ -9696,7 +9697,7 @@ type IMachine_getTracingConfigResponse struct {
 type IMachine_setTracingConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setTracingConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TracingConfig string `xml:"tracingConfig,omitempty" json:"tracingConfig,omitempty"`
 }
@@ -9708,7 +9709,7 @@ type IMachine_setTracingConfigResponse struct {
 type IMachine_getAllowTracingToAccessVM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAllowTracingToAccessVM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAllowTracingToAccessVMResponse struct {
@@ -9720,7 +9721,7 @@ type IMachine_getAllowTracingToAccessVMResponse struct {
 type IMachine_setAllowTracingToAccessVM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setAllowTracingToAccessVM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AllowTracingToAccessVM bool `xml:"allowTracingToAccessVM,omitempty" json:"allowTracingToAccessVM,omitempty"`
 }
@@ -9732,7 +9733,7 @@ type IMachine_setAllowTracingToAccessVMResponse struct {
 type IMachine_getAutostartEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAutostartEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAutostartEnabledResponse struct {
@@ -9744,7 +9745,7 @@ type IMachine_getAutostartEnabledResponse struct {
 type IMachine_setAutostartEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setAutostartEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutostartEnabled bool `xml:"autostartEnabled,omitempty" json:"autostartEnabled,omitempty"`
 }
@@ -9756,7 +9757,7 @@ type IMachine_setAutostartEnabledResponse struct {
 type IMachine_getAutostartDelay struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAutostartDelay"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAutostartDelayResponse struct {
@@ -9768,7 +9769,7 @@ type IMachine_getAutostartDelayResponse struct {
 type IMachine_setAutostartDelay struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setAutostartDelay"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutostartDelay uint32 `xml:"autostartDelay,omitempty" json:"autostartDelay,omitempty"`
 }
@@ -9780,7 +9781,7 @@ type IMachine_setAutostartDelayResponse struct {
 type IMachine_getAutostopType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getAutostopType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getAutostopTypeResponse struct {
@@ -9792,7 +9793,7 @@ type IMachine_getAutostopTypeResponse struct {
 type IMachine_setAutostopType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setAutostopType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutostopType *AutostopType `xml:"autostopType,omitempty" json:"autostopType,omitempty"`
 }
@@ -9804,7 +9805,7 @@ type IMachine_setAutostopTypeResponse struct {
 type IMachine_getDefaultFrontend struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getDefaultFrontend"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getDefaultFrontendResponse struct {
@@ -9816,7 +9817,7 @@ type IMachine_getDefaultFrontendResponse struct {
 type IMachine_setDefaultFrontend struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setDefaultFrontend"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultFrontend string `xml:"defaultFrontend,omitempty" json:"defaultFrontend,omitempty"`
 }
@@ -9828,7 +9829,7 @@ type IMachine_setDefaultFrontendResponse struct {
 type IMachine_getUSBProxyAvailable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getUSBProxyAvailable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getUSBProxyAvailableResponse struct {
@@ -9840,7 +9841,7 @@ type IMachine_getUSBProxyAvailableResponse struct {
 type IMachine_getVMProcessPriority struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getVMProcessPriority"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getVMProcessPriorityResponse struct {
@@ -9852,7 +9853,7 @@ type IMachine_getVMProcessPriorityResponse struct {
 type IMachine_setVMProcessPriority struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setVMProcessPriority"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VMProcessPriority *VMProcPriority `xml:"VMProcessPriority,omitempty" json:"VMProcessPriority,omitempty"`
 }
@@ -9864,7 +9865,7 @@ type IMachine_setVMProcessPriorityResponse struct {
 type IMachine_getVMExecutionEngine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getVMExecutionEngine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getVMExecutionEngineResponse struct {
@@ -9876,7 +9877,7 @@ type IMachine_getVMExecutionEngineResponse struct {
 type IMachine_setVMExecutionEngine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setVMExecutionEngine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VMExecutionEngine *VMExecutionEngine `xml:"VMExecutionEngine,omitempty" json:"VMExecutionEngine,omitempty"`
 }
@@ -9888,7 +9889,7 @@ type IMachine_setVMExecutionEngineResponse struct {
 type IMachine_getParavirtDebug struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getParavirtDebug"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getParavirtDebugResponse struct {
@@ -9900,7 +9901,7 @@ type IMachine_getParavirtDebugResponse struct {
 type IMachine_setParavirtDebug struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setParavirtDebug"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ParavirtDebug string `xml:"paravirtDebug,omitempty" json:"paravirtDebug,omitempty"`
 }
@@ -9912,7 +9913,7 @@ type IMachine_setParavirtDebugResponse struct {
 type IMachine_getCPUProfile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUProfile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getCPUProfileResponse struct {
@@ -9924,7 +9925,7 @@ type IMachine_getCPUProfileResponse struct {
 type IMachine_setCPUProfile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setCPUProfile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CPUProfile string `xml:"CPUProfile,omitempty" json:"CPUProfile,omitempty"`
 }
@@ -9936,7 +9937,7 @@ type IMachine_setCPUProfileResponse struct {
 type IMachine_getStateKeyId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStateKeyId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getStateKeyIdResponse struct {
@@ -9948,7 +9949,7 @@ type IMachine_getStateKeyIdResponse struct {
 type IMachine_getStateKeyStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStateKeyStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getStateKeyStoreResponse struct {
@@ -9960,7 +9961,7 @@ type IMachine_getStateKeyStoreResponse struct {
 type IMachine_getLogKeyId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getLogKeyId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getLogKeyIdResponse struct {
@@ -9972,7 +9973,7 @@ type IMachine_getLogKeyIdResponse struct {
 type IMachine_getLogKeyStore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getLogKeyStore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getLogKeyStoreResponse struct {
@@ -9984,7 +9985,7 @@ type IMachine_getLogKeyStoreResponse struct {
 type IMachine_getGuestDebugControl struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGuestDebugControl"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getGuestDebugControlResponse struct {
@@ -9996,7 +9997,7 @@ type IMachine_getGuestDebugControlResponse struct {
 type IMachine_lockMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_lockMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Session string `xml:"session,omitempty" json:"session,omitempty"`
 
@@ -10010,7 +10011,7 @@ type IMachine_lockMachineResponse struct {
 type IMachine_launchVMProcess struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_launchVMProcess"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Session string `xml:"session,omitempty" json:"session,omitempty"`
 
@@ -10028,7 +10029,7 @@ type IMachine_launchVMProcessResponse struct {
 type IMachine_setBootOrder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setBootOrder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 
@@ -10042,7 +10043,7 @@ type IMachine_setBootOrderResponse struct {
 type IMachine_getBootOrder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getBootOrder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 }
@@ -10056,7 +10057,7 @@ type IMachine_getBootOrderResponse struct {
 type IMachine_attachDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_attachDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10076,7 +10077,7 @@ type IMachine_attachDeviceResponse struct {
 type IMachine_attachDeviceWithoutMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_attachDeviceWithoutMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10094,7 +10095,7 @@ type IMachine_attachDeviceWithoutMediumResponse struct {
 type IMachine_detachDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_detachDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10110,7 +10111,7 @@ type IMachine_detachDeviceResponse struct {
 type IMachine_passthroughDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_passthroughDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10128,7 +10129,7 @@ type IMachine_passthroughDeviceResponse struct {
 type IMachine_temporaryEjectDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_temporaryEjectDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10146,7 +10147,7 @@ type IMachine_temporaryEjectDeviceResponse struct {
 type IMachine_nonRotationalDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_nonRotationalDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10164,7 +10165,7 @@ type IMachine_nonRotationalDeviceResponse struct {
 type IMachine_setAutoDiscardForDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setAutoDiscardForDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10182,7 +10183,7 @@ type IMachine_setAutoDiscardForDeviceResponse struct {
 type IMachine_setHotPluggableForDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setHotPluggableForDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10200,7 +10201,7 @@ type IMachine_setHotPluggableForDeviceResponse struct {
 type IMachine_setBandwidthGroupForDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setBandwidthGroupForDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10218,7 +10219,7 @@ type IMachine_setBandwidthGroupForDeviceResponse struct {
 type IMachine_setNoBandwidthGroupForDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setNoBandwidthGroupForDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10234,7 +10235,7 @@ type IMachine_setNoBandwidthGroupForDeviceResponse struct {
 type IMachine_unmountMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_unmountMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10252,7 +10253,7 @@ type IMachine_unmountMediumResponse struct {
 type IMachine_mountMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_mountMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10272,7 +10273,7 @@ type IMachine_mountMediumResponse struct {
 type IMachine_getMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10290,7 +10291,7 @@ type IMachine_getMediumResponse struct {
 type IMachine_getMediumAttachmentsOfController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMediumAttachmentsOfController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10304,7 +10305,7 @@ type IMachine_getMediumAttachmentsOfControllerResponse struct {
 type IMachine_getMediumAttachment struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getMediumAttachment"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10322,7 +10323,7 @@ type IMachine_getMediumAttachmentResponse struct {
 type IMachine_attachHostPCIDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_attachHostPCIDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostAddress int32 `xml:"hostAddress,omitempty" json:"hostAddress,omitempty"`
 
@@ -10338,7 +10339,7 @@ type IMachine_attachHostPCIDeviceResponse struct {
 type IMachine_detachHostPCIDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_detachHostPCIDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostAddress int32 `xml:"hostAddress,omitempty" json:"hostAddress,omitempty"`
 }
@@ -10350,7 +10351,7 @@ type IMachine_detachHostPCIDeviceResponse struct {
 type IMachine_getNetworkAdapter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getNetworkAdapter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Slot uint32 `xml:"slot,omitempty" json:"slot,omitempty"`
 }
@@ -10364,7 +10365,7 @@ type IMachine_getNetworkAdapterResponse struct {
 type IMachine_addStorageController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_addStorageController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10380,7 +10381,7 @@ type IMachine_addStorageControllerResponse struct {
 type IMachine_getStorageControllerByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStorageControllerByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10394,7 +10395,7 @@ type IMachine_getStorageControllerByNameResponse struct {
 type IMachine_getStorageControllerByInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getStorageControllerByInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ConnectionType *StorageBus `xml:"connectionType,omitempty" json:"connectionType,omitempty"`
 
@@ -10410,7 +10411,7 @@ type IMachine_getStorageControllerByInstanceResponse struct {
 type IMachine_removeStorageController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_removeStorageController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10422,7 +10423,7 @@ type IMachine_removeStorageControllerResponse struct {
 type IMachine_setStorageControllerBootable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setStorageControllerBootable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10436,7 +10437,7 @@ type IMachine_setStorageControllerBootableResponse struct {
 type IMachine_addUSBController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_addUSBController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10452,7 +10453,7 @@ type IMachine_addUSBControllerResponse struct {
 type IMachine_removeUSBController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_removeUSBController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10464,7 +10465,7 @@ type IMachine_removeUSBControllerResponse struct {
 type IMachine_getUSBControllerByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getUSBControllerByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10478,7 +10479,7 @@ type IMachine_getUSBControllerByNameResponse struct {
 type IMachine_getUSBControllerCountByType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getUSBControllerCountByType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *USBControllerType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -10492,7 +10493,7 @@ type IMachine_getUSBControllerCountByTypeResponse struct {
 type IMachine_getSerialPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getSerialPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Slot uint32 `xml:"slot,omitempty" json:"slot,omitempty"`
 }
@@ -10506,7 +10507,7 @@ type IMachine_getSerialPortResponse struct {
 type IMachine_getParallelPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getParallelPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Slot uint32 `xml:"slot,omitempty" json:"slot,omitempty"`
 }
@@ -10520,7 +10521,7 @@ type IMachine_getParallelPortResponse struct {
 type IMachine_getExtraDataKeys struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getExtraDataKeys"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getExtraDataKeysResponse struct {
@@ -10532,7 +10533,7 @@ type IMachine_getExtraDataKeysResponse struct {
 type IMachine_getExtraData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getExtraData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -10546,7 +10547,7 @@ type IMachine_getExtraDataResponse struct {
 type IMachine_setExtraData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setExtraData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 
@@ -10560,7 +10561,7 @@ type IMachine_setExtraDataResponse struct {
 type IMachine_setSettingsFilePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setSettingsFilePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SettingsFilePath string `xml:"settingsFilePath,omitempty" json:"settingsFilePath,omitempty"`
 }
@@ -10574,7 +10575,7 @@ type IMachine_setSettingsFilePathResponse struct {
 type IMachine_saveSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_saveSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_saveSettingsResponse struct {
@@ -10584,7 +10585,7 @@ type IMachine_saveSettingsResponse struct {
 type IMachine_discardSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_discardSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_discardSettingsResponse struct {
@@ -10594,7 +10595,7 @@ type IMachine_discardSettingsResponse struct {
 type IMachine_unregister struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_unregister"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CleanupMode *CleanupMode `xml:"cleanupMode,omitempty" json:"cleanupMode,omitempty"`
 }
@@ -10608,7 +10609,7 @@ type IMachine_unregisterResponse struct {
 type IMachine_deleteConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_deleteConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Media []string `xml:"media,omitempty" json:"media,omitempty"`
 }
@@ -10622,7 +10623,7 @@ type IMachine_deleteConfigResponse struct {
 type IMachine_exportTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_exportTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Appliance string `xml:"appliance,omitempty" json:"appliance,omitempty"`
 
@@ -10638,7 +10639,7 @@ type IMachine_exportToResponse struct {
 type IMachine_findSnapshot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_findSnapshot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NameOrId string `xml:"nameOrId,omitempty" json:"nameOrId,omitempty"`
 }
@@ -10652,7 +10653,7 @@ type IMachine_findSnapshotResponse struct {
 type IMachine_createSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_createSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -10672,7 +10673,7 @@ type IMachine_createSharedFolderResponse struct {
 type IMachine_removeSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_removeSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10684,7 +10685,7 @@ type IMachine_removeSharedFolderResponse struct {
 type IMachine_canShowConsoleWindow struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_canShowConsoleWindow"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_canShowConsoleWindowResponse struct {
@@ -10696,7 +10697,7 @@ type IMachine_canShowConsoleWindowResponse struct {
 type IMachine_showConsoleWindow struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_showConsoleWindow"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_showConsoleWindowResponse struct {
@@ -10708,7 +10709,7 @@ type IMachine_showConsoleWindowResponse struct {
 type IMachine_getGuestProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGuestProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10726,7 +10727,7 @@ type IMachine_getGuestPropertyResponse struct {
 type IMachine_getGuestPropertyValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGuestPropertyValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property string `xml:"property,omitempty" json:"property,omitempty"`
 }
@@ -10740,7 +10741,7 @@ type IMachine_getGuestPropertyValueResponse struct {
 type IMachine_getGuestPropertyTimestamp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getGuestPropertyTimestamp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property string `xml:"property,omitempty" json:"property,omitempty"`
 }
@@ -10754,7 +10755,7 @@ type IMachine_getGuestPropertyTimestampResponse struct {
 type IMachine_setGuestProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setGuestProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property string `xml:"property,omitempty" json:"property,omitempty"`
 
@@ -10770,7 +10771,7 @@ type IMachine_setGuestPropertyResponse struct {
 type IMachine_setGuestPropertyValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_setGuestPropertyValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Property string `xml:"property,omitempty" json:"property,omitempty"`
 
@@ -10784,7 +10785,7 @@ type IMachine_setGuestPropertyValueResponse struct {
 type IMachine_deleteGuestProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_deleteGuestProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -10796,7 +10797,7 @@ type IMachine_deleteGuestPropertyResponse struct {
 type IMachine_enumerateGuestProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_enumerateGuestProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Patterns string `xml:"patterns,omitempty" json:"patterns,omitempty"`
 }
@@ -10816,7 +10817,7 @@ type IMachine_enumerateGuestPropertiesResponse struct {
 type IMachine_querySavedGuestScreenInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_querySavedGuestScreenInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -10838,7 +10839,7 @@ type IMachine_querySavedGuestScreenInfoResponse struct {
 type IMachine_readSavedThumbnailToArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_readSavedThumbnailToArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -10858,7 +10859,7 @@ type IMachine_readSavedThumbnailToArrayResponse struct {
 type IMachine_querySavedScreenshotInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_querySavedScreenshotInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -10876,7 +10877,7 @@ type IMachine_querySavedScreenshotInfoResponse struct {
 type IMachine_readSavedScreenshotToArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_readSavedScreenshotToArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -10896,7 +10897,7 @@ type IMachine_readSavedScreenshotToArrayResponse struct {
 type IMachine_hotPlugCPU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_hotPlugCPU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Cpu uint32 `xml:"cpu,omitempty" json:"cpu,omitempty"`
 }
@@ -10908,7 +10909,7 @@ type IMachine_hotPlugCPUResponse struct {
 type IMachine_hotUnplugCPU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_hotUnplugCPU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Cpu uint32 `xml:"cpu,omitempty" json:"cpu,omitempty"`
 }
@@ -10920,7 +10921,7 @@ type IMachine_hotUnplugCPUResponse struct {
 type IMachine_getCPUStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getCPUStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Cpu uint32 `xml:"cpu,omitempty" json:"cpu,omitempty"`
 }
@@ -10934,7 +10935,7 @@ type IMachine_getCPUStatusResponse struct {
 type IMachine_getEffectiveParavirtProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getEffectiveParavirtProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getEffectiveParavirtProviderResponse struct {
@@ -10946,7 +10947,7 @@ type IMachine_getEffectiveParavirtProviderResponse struct {
 type IMachine_queryLogFilename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_queryLogFilename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Idx uint32 `xml:"idx,omitempty" json:"idx,omitempty"`
 }
@@ -10960,7 +10961,7 @@ type IMachine_queryLogFilenameResponse struct {
 type IMachine_readLog struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_readLog"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Idx uint32 `xml:"idx,omitempty" json:"idx,omitempty"`
 
@@ -10978,7 +10979,7 @@ type IMachine_readLogResponse struct {
 type IMachine_cloneTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_cloneTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 
@@ -10996,7 +10997,7 @@ type IMachine_cloneToResponse struct {
 type IMachine_moveTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_moveTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Folder string `xml:"folder,omitempty" json:"folder,omitempty"`
 
@@ -11012,7 +11013,7 @@ type IMachine_moveToResponse struct {
 type IMachine_saveState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_saveState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_saveStateResponse struct {
@@ -11024,7 +11025,7 @@ type IMachine_saveStateResponse struct {
 type IMachine_adoptSavedState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_adoptSavedState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SavedStateFile string `xml:"savedStateFile,omitempty" json:"savedStateFile,omitempty"`
 }
@@ -11036,7 +11037,7 @@ type IMachine_adoptSavedStateResponse struct {
 type IMachine_discardSavedState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_discardSavedState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FRemoveFile bool `xml:"fRemoveFile,omitempty" json:"fRemoveFile,omitempty"`
 }
@@ -11048,7 +11049,7 @@ type IMachine_discardSavedStateResponse struct {
 type IMachine_takeSnapshot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_takeSnapshot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -11068,7 +11069,7 @@ type IMachine_takeSnapshotResponse struct {
 type IMachine_deleteSnapshot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_deleteSnapshot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11082,7 +11083,7 @@ type IMachine_deleteSnapshotResponse struct {
 type IMachine_deleteSnapshotAndAllChildren struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_deleteSnapshotAndAllChildren"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11096,7 +11097,7 @@ type IMachine_deleteSnapshotAndAllChildrenResponse struct {
 type IMachine_deleteSnapshotRange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_deleteSnapshotRange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	StartId string `xml:"startId,omitempty" json:"startId,omitempty"`
 
@@ -11112,7 +11113,7 @@ type IMachine_deleteSnapshotRangeResponse struct {
 type IMachine_restoreSnapshot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_restoreSnapshot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Snapshot string `xml:"snapshot,omitempty" json:"snapshot,omitempty"`
 }
@@ -11126,7 +11127,7 @@ type IMachine_restoreSnapshotResponse struct {
 type IMachine_applyDefaults struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_applyDefaults"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Flags string `xml:"flags,omitempty" json:"flags,omitempty"`
 }
@@ -11138,7 +11139,7 @@ type IMachine_applyDefaultsResponse struct {
 type IMachine_changeEncryption struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_changeEncryption"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CurrentPassword string `xml:"currentPassword,omitempty" json:"currentPassword,omitempty"`
 
@@ -11160,7 +11161,7 @@ type IMachine_changeEncryptionResponse struct {
 type IMachine_getEncryptionSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_getEncryptionSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_getEncryptionSettingsResponse struct {
@@ -11174,7 +11175,7 @@ type IMachine_getEncryptionSettingsResponse struct {
 type IMachine_checkEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_checkEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Password string `xml:"password,omitempty" json:"password,omitempty"`
 }
@@ -11186,7 +11187,7 @@ type IMachine_checkEncryptionPasswordResponse struct {
 type IMachine_addEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_addEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 
@@ -11200,7 +11201,7 @@ type IMachine_addEncryptionPasswordResponse struct {
 type IMachine_addEncryptionPasswords struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_addEncryptionPasswords"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Ids []string `xml:"ids,omitempty" json:"ids,omitempty"`
 
@@ -11214,7 +11215,7 @@ type IMachine_addEncryptionPasswordsResponse struct {
 type IMachine_removeEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_removeEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11226,7 +11227,7 @@ type IMachine_removeEncryptionPasswordResponse struct {
 type IMachine_clearAllEncryptionPasswords struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachine_clearAllEncryptionPasswords"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachine_clearAllEncryptionPasswordsResponse struct {
@@ -11236,7 +11237,7 @@ type IMachine_clearAllEncryptionPasswordsResponse struct {
 type IEmulatedUSB_getWebcams struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEmulatedUSB_getWebcams"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEmulatedUSB_getWebcamsResponse struct {
@@ -11248,7 +11249,7 @@ type IEmulatedUSB_getWebcamsResponse struct {
 type IEmulatedUSB_webcamAttach struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEmulatedUSB_webcamAttach"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -11262,7 +11263,7 @@ type IEmulatedUSB_webcamAttachResponse struct {
 type IEmulatedUSB_webcamDetach struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEmulatedUSB_webcamDetach"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -11274,7 +11275,7 @@ type IEmulatedUSB_webcamDetachResponse struct {
 type IConsole_getMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getMachineResponse struct {
@@ -11286,7 +11287,7 @@ type IConsole_getMachineResponse struct {
 type IConsole_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getStateResponse struct {
@@ -11298,7 +11299,7 @@ type IConsole_getStateResponse struct {
 type IConsole_getGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getGuestResponse struct {
@@ -11310,7 +11311,7 @@ type IConsole_getGuestResponse struct {
 type IConsole_getKeyboard struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getKeyboard"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getKeyboardResponse struct {
@@ -11322,7 +11323,7 @@ type IConsole_getKeyboardResponse struct {
 type IConsole_getMouse struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getMouse"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getMouseResponse struct {
@@ -11334,7 +11335,7 @@ type IConsole_getMouseResponse struct {
 type IConsole_getDisplay struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getDisplay"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getDisplayResponse struct {
@@ -11346,7 +11347,7 @@ type IConsole_getDisplayResponse struct {
 type IConsole_getDebugger struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getDebugger"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getDebuggerResponse struct {
@@ -11358,7 +11359,7 @@ type IConsole_getDebuggerResponse struct {
 type IConsole_getUSBDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getUSBDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getUSBDevicesResponse struct {
@@ -11370,7 +11371,7 @@ type IConsole_getUSBDevicesResponse struct {
 type IConsole_getRemoteUSBDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getRemoteUSBDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getRemoteUSBDevicesResponse struct {
@@ -11382,7 +11383,7 @@ type IConsole_getRemoteUSBDevicesResponse struct {
 type IConsole_getSharedFolders struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getSharedFolders"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getSharedFoldersResponse struct {
@@ -11394,7 +11395,7 @@ type IConsole_getSharedFoldersResponse struct {
 type IConsole_getVRDEServerInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getVRDEServerInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getVRDEServerInfoResponse struct {
@@ -11406,7 +11407,7 @@ type IConsole_getVRDEServerInfoResponse struct {
 type IConsole_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getEventSourceResponse struct {
@@ -11418,7 +11419,7 @@ type IConsole_getEventSourceResponse struct {
 type IConsole_getAttachedPCIDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getAttachedPCIDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getAttachedPCIDevicesResponse struct {
@@ -11430,7 +11431,7 @@ type IConsole_getAttachedPCIDevicesResponse struct {
 type IConsole_getUseHostClipboard struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getUseHostClipboard"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getUseHostClipboardResponse struct {
@@ -11442,7 +11443,7 @@ type IConsole_getUseHostClipboardResponse struct {
 type IConsole_setUseHostClipboard struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_setUseHostClipboard"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UseHostClipboard bool `xml:"useHostClipboard,omitempty" json:"useHostClipboard,omitempty"`
 }
@@ -11454,7 +11455,7 @@ type IConsole_setUseHostClipboardResponse struct {
 type IConsole_getEmulatedUSB struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getEmulatedUSB"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getEmulatedUSBResponse struct {
@@ -11466,7 +11467,7 @@ type IConsole_getEmulatedUSBResponse struct {
 type IConsole_powerUp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_powerUp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_powerUpResponse struct {
@@ -11478,7 +11479,7 @@ type IConsole_powerUpResponse struct {
 type IConsole_powerUpPaused struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_powerUpPaused"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_powerUpPausedResponse struct {
@@ -11490,7 +11491,7 @@ type IConsole_powerUpPausedResponse struct {
 type IConsole_powerDown struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_powerDown"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_powerDownResponse struct {
@@ -11502,7 +11503,7 @@ type IConsole_powerDownResponse struct {
 type IConsole_reset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_reset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_resetResponse struct {
@@ -11512,7 +11513,7 @@ type IConsole_resetResponse struct {
 type IConsole_pause struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_pause"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_pauseResponse struct {
@@ -11522,7 +11523,7 @@ type IConsole_pauseResponse struct {
 type IConsole_resume struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_resume"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_resumeResponse struct {
@@ -11532,7 +11533,7 @@ type IConsole_resumeResponse struct {
 type IConsole_powerButton struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_powerButton"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_powerButtonResponse struct {
@@ -11542,7 +11543,7 @@ type IConsole_powerButtonResponse struct {
 type IConsole_sleepButton struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_sleepButton"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_sleepButtonResponse struct {
@@ -11552,7 +11553,7 @@ type IConsole_sleepButtonResponse struct {
 type IConsole_getPowerButtonHandled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getPowerButtonHandled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getPowerButtonHandledResponse struct {
@@ -11564,7 +11565,7 @@ type IConsole_getPowerButtonHandledResponse struct {
 type IConsole_getGuestEnteredACPIMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getGuestEnteredACPIMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_getGuestEnteredACPIModeResponse struct {
@@ -11576,7 +11577,7 @@ type IConsole_getGuestEnteredACPIModeResponse struct {
 type IConsole_getDeviceActivity struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_getDeviceActivity"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ []*DeviceType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -11590,7 +11591,7 @@ type IConsole_getDeviceActivityResponse struct {
 type IConsole_attachUSBDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_attachUSBDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 
@@ -11604,7 +11605,7 @@ type IConsole_attachUSBDeviceResponse struct {
 type IConsole_detachUSBDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_detachUSBDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11618,7 +11619,7 @@ type IConsole_detachUSBDeviceResponse struct {
 type IConsole_findUSBDeviceByAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_findUSBDeviceByAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -11632,7 +11633,7 @@ type IConsole_findUSBDeviceByAddressResponse struct {
 type IConsole_findUSBDeviceById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_findUSBDeviceById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11646,7 +11647,7 @@ type IConsole_findUSBDeviceByIdResponse struct {
 type IConsole_createSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_createSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -11666,7 +11667,7 @@ type IConsole_createSharedFolderResponse struct {
 type IConsole_removeSharedFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_removeSharedFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -11678,7 +11679,7 @@ type IConsole_removeSharedFolderResponse struct {
 type IConsole_teleport struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_teleport"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Hostname string `xml:"hostname,omitempty" json:"hostname,omitempty"`
 
@@ -11698,7 +11699,7 @@ type IConsole_teleportResponse struct {
 type IConsole_addEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_addEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 
@@ -11714,7 +11715,7 @@ type IConsole_addEncryptionPasswordResponse struct {
 type IConsole_addEncryptionPasswords struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_addEncryptionPasswords"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Ids []string `xml:"ids,omitempty" json:"ids,omitempty"`
 
@@ -11730,7 +11731,7 @@ type IConsole_addEncryptionPasswordsResponse struct {
 type IConsole_removeEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_removeEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -11742,7 +11743,7 @@ type IConsole_removeEncryptionPasswordResponse struct {
 type IConsole_clearAllEncryptionPasswords struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IConsole_clearAllEncryptionPasswords"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IConsole_clearAllEncryptionPasswordsResponse struct {
@@ -11752,7 +11753,7 @@ type IConsole_clearAllEncryptionPasswordsResponse struct {
 type IHostNetworkInterface_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getNameResponse struct {
@@ -11764,7 +11765,7 @@ type IHostNetworkInterface_getNameResponse struct {
 type IHostNetworkInterface_getShortName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getShortName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getShortNameResponse struct {
@@ -11776,7 +11777,7 @@ type IHostNetworkInterface_getShortNameResponse struct {
 type IHostNetworkInterface_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getIdResponse struct {
@@ -11788,7 +11789,7 @@ type IHostNetworkInterface_getIdResponse struct {
 type IHostNetworkInterface_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getNetworkNameResponse struct {
@@ -11800,7 +11801,7 @@ type IHostNetworkInterface_getNetworkNameResponse struct {
 type IHostNetworkInterface_getDHCPEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getDHCPEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getDHCPEnabledResponse struct {
@@ -11812,7 +11813,7 @@ type IHostNetworkInterface_getDHCPEnabledResponse struct {
 type IHostNetworkInterface_getIPAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getIPAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getIPAddressResponse struct {
@@ -11824,7 +11825,7 @@ type IHostNetworkInterface_getIPAddressResponse struct {
 type IHostNetworkInterface_getNetworkMask struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getNetworkMask"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getNetworkMaskResponse struct {
@@ -11836,7 +11837,7 @@ type IHostNetworkInterface_getNetworkMaskResponse struct {
 type IHostNetworkInterface_getIPV6Supported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getIPV6Supported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getIPV6SupportedResponse struct {
@@ -11848,7 +11849,7 @@ type IHostNetworkInterface_getIPV6SupportedResponse struct {
 type IHostNetworkInterface_getIPV6Address struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getIPV6Address"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getIPV6AddressResponse struct {
@@ -11860,7 +11861,7 @@ type IHostNetworkInterface_getIPV6AddressResponse struct {
 type IHostNetworkInterface_getIPV6NetworkMaskPrefixLength struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getIPV6NetworkMaskPrefixLength"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getIPV6NetworkMaskPrefixLengthResponse struct {
@@ -11872,7 +11873,7 @@ type IHostNetworkInterface_getIPV6NetworkMaskPrefixLengthResponse struct {
 type IHostNetworkInterface_getHardwareAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getHardwareAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getHardwareAddressResponse struct {
@@ -11884,7 +11885,7 @@ type IHostNetworkInterface_getHardwareAddressResponse struct {
 type IHostNetworkInterface_getMediumType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getMediumType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getMediumTypeResponse struct {
@@ -11896,7 +11897,7 @@ type IHostNetworkInterface_getMediumTypeResponse struct {
 type IHostNetworkInterface_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getStatusResponse struct {
@@ -11908,7 +11909,7 @@ type IHostNetworkInterface_getStatusResponse struct {
 type IHostNetworkInterface_getInterfaceType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getInterfaceType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getInterfaceTypeResponse struct {
@@ -11920,7 +11921,7 @@ type IHostNetworkInterface_getInterfaceTypeResponse struct {
 type IHostNetworkInterface_getWireless struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_getWireless"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_getWirelessResponse struct {
@@ -11932,7 +11933,7 @@ type IHostNetworkInterface_getWirelessResponse struct {
 type IHostNetworkInterface_enableStaticIPConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_enableStaticIPConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPAddress string `xml:"IPAddress,omitempty" json:"IPAddress,omitempty"`
 
@@ -11946,7 +11947,7 @@ type IHostNetworkInterface_enableStaticIPConfigResponse struct {
 type IHostNetworkInterface_enableStaticIPConfigV6 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_enableStaticIPConfigV6"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPV6Address string `xml:"IPV6Address,omitempty" json:"IPV6Address,omitempty"`
 
@@ -11960,7 +11961,7 @@ type IHostNetworkInterface_enableStaticIPConfigV6Response struct {
 type IHostNetworkInterface_enableDynamicIPConfig struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_enableDynamicIPConfig"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_enableDynamicIPConfigResponse struct {
@@ -11970,7 +11971,7 @@ type IHostNetworkInterface_enableDynamicIPConfigResponse struct {
 type IHostNetworkInterface_DHCPRediscover struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNetworkInterface_DHCPRediscover"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNetworkInterface_DHCPRediscoverResponse struct {
@@ -11980,7 +11981,7 @@ type IHostNetworkInterface_DHCPRediscoverResponse struct {
 type IHostVideoInputDevice_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostVideoInputDevice_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostVideoInputDevice_getNameResponse struct {
@@ -11992,7 +11993,7 @@ type IHostVideoInputDevice_getNameResponse struct {
 type IHostVideoInputDevice_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostVideoInputDevice_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostVideoInputDevice_getPathResponse struct {
@@ -12004,7 +12005,7 @@ type IHostVideoInputDevice_getPathResponse struct {
 type IHostVideoInputDevice_getAlias struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostVideoInputDevice_getAlias"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostVideoInputDevice_getAliasResponse struct {
@@ -12016,7 +12017,7 @@ type IHostVideoInputDevice_getAliasResponse struct {
 type IUpdateAgent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getNameResponse struct {
@@ -12028,7 +12029,7 @@ type IUpdateAgent_getNameResponse struct {
 type IUpdateAgent_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getEventSourceResponse struct {
@@ -12040,7 +12041,7 @@ type IUpdateAgent_getEventSourceResponse struct {
 type IUpdateAgent_getOrder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getOrder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getOrderResponse struct {
@@ -12052,7 +12053,7 @@ type IUpdateAgent_getOrderResponse struct {
 type IUpdateAgent_getDependsOn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getDependsOn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getDependsOnResponse struct {
@@ -12064,7 +12065,7 @@ type IUpdateAgent_getDependsOnResponse struct {
 type IUpdateAgent_getVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getVersionResponse struct {
@@ -12076,7 +12077,7 @@ type IUpdateAgent_getVersionResponse struct {
 type IUpdateAgent_getDownloadUrl struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getDownloadUrl"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getDownloadUrlResponse struct {
@@ -12088,7 +12089,7 @@ type IUpdateAgent_getDownloadUrlResponse struct {
 type IUpdateAgent_getWebUrl struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getWebUrl"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getWebUrlResponse struct {
@@ -12100,7 +12101,7 @@ type IUpdateAgent_getWebUrlResponse struct {
 type IUpdateAgent_getReleaseNotes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getReleaseNotes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getReleaseNotesResponse struct {
@@ -12112,7 +12113,7 @@ type IUpdateAgent_getReleaseNotesResponse struct {
 type IUpdateAgent_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getEnabledResponse struct {
@@ -12124,7 +12125,7 @@ type IUpdateAgent_getEnabledResponse struct {
 type IUpdateAgent_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -12136,7 +12137,7 @@ type IUpdateAgent_setEnabledResponse struct {
 type IUpdateAgent_getHidden struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getHidden"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getHiddenResponse struct {
@@ -12148,7 +12149,7 @@ type IUpdateAgent_getHiddenResponse struct {
 type IUpdateAgent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getStateResponse struct {
@@ -12160,7 +12161,7 @@ type IUpdateAgent_getStateResponse struct {
 type IUpdateAgent_getCheckFrequency struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getCheckFrequency"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getCheckFrequencyResponse struct {
@@ -12172,7 +12173,7 @@ type IUpdateAgent_getCheckFrequencyResponse struct {
 type IUpdateAgent_setCheckFrequency struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_setCheckFrequency"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CheckFrequency uint32 `xml:"checkFrequency,omitempty" json:"checkFrequency,omitempty"`
 }
@@ -12184,7 +12185,7 @@ type IUpdateAgent_setCheckFrequencyResponse struct {
 type IUpdateAgent_getChannel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getChannel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getChannelResponse struct {
@@ -12196,7 +12197,7 @@ type IUpdateAgent_getChannelResponse struct {
 type IUpdateAgent_setChannel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_setChannel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Channel *UpdateChannel `xml:"channel,omitempty" json:"channel,omitempty"`
 }
@@ -12208,7 +12209,7 @@ type IUpdateAgent_setChannelResponse struct {
 type IUpdateAgent_getRepositoryURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getRepositoryURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getRepositoryURLResponse struct {
@@ -12220,7 +12221,7 @@ type IUpdateAgent_getRepositoryURLResponse struct {
 type IUpdateAgent_setRepositoryURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_setRepositoryURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	RepositoryURL string `xml:"repositoryURL,omitempty" json:"repositoryURL,omitempty"`
 }
@@ -12232,7 +12233,7 @@ type IUpdateAgent_setRepositoryURLResponse struct {
 type IUpdateAgent_getLastCheckDate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getLastCheckDate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getLastCheckDateResponse struct {
@@ -12244,7 +12245,7 @@ type IUpdateAgent_getLastCheckDateResponse struct {
 type IUpdateAgent_getCheckCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getCheckCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getCheckCountResponse struct {
@@ -12256,7 +12257,7 @@ type IUpdateAgent_getCheckCountResponse struct {
 type IUpdateAgent_getIsCheckNeeded struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getIsCheckNeeded"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getIsCheckNeededResponse struct {
@@ -12268,7 +12269,7 @@ type IUpdateAgent_getIsCheckNeededResponse struct {
 type IUpdateAgent_getSupportedChannels struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_getSupportedChannels"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_getSupportedChannelsResponse struct {
@@ -12280,7 +12281,7 @@ type IUpdateAgent_getSupportedChannelsResponse struct {
 type IUpdateAgent_checkFor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_checkFor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_checkForResponse struct {
@@ -12292,7 +12293,7 @@ type IUpdateAgent_checkForResponse struct {
 type IUpdateAgent_download struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_download"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_downloadResponse struct {
@@ -12304,7 +12305,7 @@ type IUpdateAgent_downloadResponse struct {
 type IUpdateAgent_install struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_install"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_installResponse struct {
@@ -12316,7 +12317,7 @@ type IUpdateAgent_installResponse struct {
 type IUpdateAgent_rollback struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgent_rollback"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgent_rollbackResponse struct {
@@ -12326,7 +12327,7 @@ type IUpdateAgent_rollbackResponse struct {
 type IHostUpdateAgent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostUpdateAgent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostUpdateAgent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -12338,7 +12339,7 @@ type IHostUpdateAgent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IHostDrive_getDrivePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getDrivePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getDrivePathResponse struct {
@@ -12350,7 +12351,7 @@ type IHostDrive_getDrivePathResponse struct {
 type IHostDrive_getPartitioningType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getPartitioningType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getPartitioningTypeResponse struct {
@@ -12362,7 +12363,7 @@ type IHostDrive_getPartitioningTypeResponse struct {
 type IHostDrive_getUuid struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getUuid"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getUuidResponse struct {
@@ -12374,7 +12375,7 @@ type IHostDrive_getUuidResponse struct {
 type IHostDrive_getSectorSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getSectorSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getSectorSizeResponse struct {
@@ -12386,7 +12387,7 @@ type IHostDrive_getSectorSizeResponse struct {
 type IHostDrive_getSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getSizeResponse struct {
@@ -12398,7 +12399,7 @@ type IHostDrive_getSizeResponse struct {
 type IHostDrive_getModel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getModel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getModelResponse struct {
@@ -12410,7 +12411,7 @@ type IHostDrive_getModelResponse struct {
 type IHostDrive_getPartitions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostDrive_getPartitions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostDrive_getPartitionsResponse struct {
@@ -12422,7 +12423,7 @@ type IHostDrive_getPartitionsResponse struct {
 type IHostX86_getProcessorCPUIDLeaf struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostX86_getProcessorCPUIDLeaf"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -12446,7 +12447,7 @@ type IHostX86_getProcessorCPUIDLeafResponse struct {
 type IHost_getArchitecture struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getArchitecture"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getArchitectureResponse struct {
@@ -12458,7 +12459,7 @@ type IHost_getArchitectureResponse struct {
 type IHost_getX86 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getX86"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getX86Response struct {
@@ -12470,7 +12471,7 @@ type IHost_getX86Response struct {
 type IHost_getDVDDrives struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getDVDDrives"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getDVDDrivesResponse struct {
@@ -12482,7 +12483,7 @@ type IHost_getDVDDrivesResponse struct {
 type IHost_getFloppyDrives struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getFloppyDrives"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getFloppyDrivesResponse struct {
@@ -12494,7 +12495,7 @@ type IHost_getFloppyDrivesResponse struct {
 type IHost_getAudioDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getAudioDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getAudioDevicesResponse struct {
@@ -12506,7 +12507,7 @@ type IHost_getAudioDevicesResponse struct {
 type IHost_getUSBDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUSBDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUSBDevicesResponse struct {
@@ -12518,7 +12519,7 @@ type IHost_getUSBDevicesResponse struct {
 type IHost_getUSBDeviceFilters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUSBDeviceFilters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUSBDeviceFiltersResponse struct {
@@ -12530,7 +12531,7 @@ type IHost_getUSBDeviceFiltersResponse struct {
 type IHost_getNetworkInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getNetworkInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getNetworkInterfacesResponse struct {
@@ -12542,7 +12543,7 @@ type IHost_getNetworkInterfacesResponse struct {
 type IHost_getNameServers struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getNameServers"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getNameServersResponse struct {
@@ -12554,7 +12555,7 @@ type IHost_getNameServersResponse struct {
 type IHost_getDomainName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getDomainName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getDomainNameResponse struct {
@@ -12566,7 +12567,7 @@ type IHost_getDomainNameResponse struct {
 type IHost_getSearchStrings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getSearchStrings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getSearchStringsResponse struct {
@@ -12578,7 +12579,7 @@ type IHost_getSearchStringsResponse struct {
 type IHost_getProcessorCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getProcessorCountResponse struct {
@@ -12590,7 +12591,7 @@ type IHost_getProcessorCountResponse struct {
 type IHost_getProcessorOnlineCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorOnlineCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getProcessorOnlineCountResponse struct {
@@ -12602,7 +12603,7 @@ type IHost_getProcessorOnlineCountResponse struct {
 type IHost_getProcessorCoreCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorCoreCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getProcessorCoreCountResponse struct {
@@ -12614,7 +12615,7 @@ type IHost_getProcessorCoreCountResponse struct {
 type IHost_getProcessorOnlineCoreCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorOnlineCoreCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getProcessorOnlineCoreCountResponse struct {
@@ -12626,7 +12627,7 @@ type IHost_getProcessorOnlineCoreCountResponse struct {
 type IHost_getHostDrives struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getHostDrives"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getHostDrivesResponse struct {
@@ -12638,7 +12639,7 @@ type IHost_getHostDrivesResponse struct {
 type IHost_getMemorySize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getMemorySize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getMemorySizeResponse struct {
@@ -12650,7 +12651,7 @@ type IHost_getMemorySizeResponse struct {
 type IHost_getMemoryAvailable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getMemoryAvailable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getMemoryAvailableResponse struct {
@@ -12662,7 +12663,7 @@ type IHost_getMemoryAvailableResponse struct {
 type IHost_getOperatingSystem struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getOperatingSystem"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getOperatingSystemResponse struct {
@@ -12674,7 +12675,7 @@ type IHost_getOperatingSystemResponse struct {
 type IHost_getOSVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getOSVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getOSVersionResponse struct {
@@ -12686,7 +12687,7 @@ type IHost_getOSVersionResponse struct {
 type IHost_getUTCTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUTCTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUTCTimeResponse struct {
@@ -12698,7 +12699,7 @@ type IHost_getUTCTimeResponse struct {
 type IHost_getVideoInputDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getVideoInputDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getVideoInputDevicesResponse struct {
@@ -12710,7 +12711,7 @@ type IHost_getVideoInputDevicesResponse struct {
 type IHost_getUpdateHost struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUpdateHost"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUpdateHostResponse struct {
@@ -12722,7 +12723,7 @@ type IHost_getUpdateHostResponse struct {
 type IHost_getUpdateExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUpdateExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUpdateExtPackResponse struct {
@@ -12734,7 +12735,7 @@ type IHost_getUpdateExtPackResponse struct {
 type IHost_getUpdateGuestAdditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getUpdateGuestAdditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_getUpdateGuestAdditionsResponse struct {
@@ -12746,7 +12747,7 @@ type IHost_getUpdateGuestAdditionsResponse struct {
 type IHost_getProcessorSpeed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorSpeed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 }
@@ -12760,7 +12761,7 @@ type IHost_getProcessorSpeedResponse struct {
 type IHost_getProcessorFeature struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorFeature"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Feature *ProcessorFeature `xml:"feature,omitempty" json:"feature,omitempty"`
 }
@@ -12774,7 +12775,7 @@ type IHost_getProcessorFeatureResponse struct {
 type IHost_getProcessorDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_getProcessorDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 }
@@ -12788,7 +12789,7 @@ type IHost_getProcessorDescriptionResponse struct {
 type IHost_createHostOnlyNetworkInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_createHostOnlyNetworkInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_createHostOnlyNetworkInterfaceResponse struct {
@@ -12802,7 +12803,7 @@ type IHost_createHostOnlyNetworkInterfaceResponse struct {
 type IHost_removeHostOnlyNetworkInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_removeHostOnlyNetworkInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -12816,7 +12817,7 @@ type IHost_removeHostOnlyNetworkInterfaceResponse struct {
 type IHost_createUSBDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_createUSBDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -12830,7 +12831,7 @@ type IHost_createUSBDeviceFilterResponse struct {
 type IHost_insertUSBDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_insertUSBDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 
@@ -12844,7 +12845,7 @@ type IHost_insertUSBDeviceFilterResponse struct {
 type IHost_removeUSBDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_removeUSBDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 }
@@ -12856,7 +12857,7 @@ type IHost_removeUSBDeviceFilterResponse struct {
 type IHost_findHostDVDDrive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findHostDVDDrive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -12870,7 +12871,7 @@ type IHost_findHostDVDDriveResponse struct {
 type IHost_findHostFloppyDrive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findHostFloppyDrive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -12884,7 +12885,7 @@ type IHost_findHostFloppyDriveResponse struct {
 type IHost_findHostNetworkInterfaceByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findHostNetworkInterfaceByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -12898,7 +12899,7 @@ type IHost_findHostNetworkInterfaceByNameResponse struct {
 type IHost_findHostNetworkInterfaceById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findHostNetworkInterfaceById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -12912,7 +12913,7 @@ type IHost_findHostNetworkInterfaceByIdResponse struct {
 type IHost_findHostNetworkInterfacesOfType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findHostNetworkInterfacesOfType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *HostNetworkInterfaceType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -12926,7 +12927,7 @@ type IHost_findHostNetworkInterfacesOfTypeResponse struct {
 type IHost_findUSBDeviceById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findUSBDeviceById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -12940,7 +12941,7 @@ type IHost_findUSBDeviceByIdResponse struct {
 type IHost_findUSBDeviceByAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_findUSBDeviceByAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -12954,7 +12955,7 @@ type IHost_findUSBDeviceByAddressResponse struct {
 type IHost_generateMACAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_generateMACAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHost_generateMACAddressResponse struct {
@@ -12966,7 +12967,7 @@ type IHost_generateMACAddressResponse struct {
 type IHost_addUSBDeviceSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_addUSBDeviceSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Backend string `xml:"backend,omitempty" json:"backend,omitempty"`
 
@@ -12986,7 +12987,7 @@ type IHost_addUSBDeviceSourceResponse struct {
 type IHost_removeUSBDeviceSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_removeUSBDeviceSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -12998,7 +12999,7 @@ type IHost_removeUSBDeviceSourceResponse struct {
 type IHost_isExecutionEngineSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHost_isExecutionEngineSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuArchitecture *CPUArchitecture `xml:"cpuArchitecture,omitempty" json:"cpuArchitecture,omitempty"`
 
@@ -13014,7 +13015,7 @@ type IHost_isExecutionEngineSupportedResponse struct {
 type ICPUProfile_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUProfile_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUProfile_getNameResponse struct {
@@ -13026,7 +13027,7 @@ type ICPUProfile_getNameResponse struct {
 type ICPUProfile_getFullName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUProfile_getFullName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUProfile_getFullNameResponse struct {
@@ -13038,7 +13039,7 @@ type ICPUProfile_getFullNameResponse struct {
 type ICPUProfile_getArchitecture struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUProfile_getArchitecture"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUProfile_getArchitectureResponse struct {
@@ -13050,7 +13051,7 @@ type ICPUProfile_getArchitectureResponse struct {
 type IPlatformProperties_getRawModeSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getRawModeSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getRawModeSupportedResponse struct {
@@ -13062,7 +13063,7 @@ type IPlatformProperties_getRawModeSupportedResponse struct {
 type IPlatformProperties_getExclusiveHwVirt struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getExclusiveHwVirt"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getExclusiveHwVirtResponse struct {
@@ -13074,7 +13075,7 @@ type IPlatformProperties_getExclusiveHwVirtResponse struct {
 type IPlatformProperties_setExclusiveHwVirt struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_setExclusiveHwVirt"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ExclusiveHwVirt bool `xml:"exclusiveHwVirt,omitempty" json:"exclusiveHwVirt,omitempty"`
 }
@@ -13086,7 +13087,7 @@ type IPlatformProperties_setExclusiveHwVirtResponse struct {
 type IPlatformProperties_getSerialPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSerialPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSerialPortCountResponse struct {
@@ -13098,7 +13099,7 @@ type IPlatformProperties_getSerialPortCountResponse struct {
 type IPlatformProperties_getParallelPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getParallelPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getParallelPortCountResponse struct {
@@ -13110,7 +13111,7 @@ type IPlatformProperties_getParallelPortCountResponse struct {
 type IPlatformProperties_getMaxBootPosition struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxBootPosition"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getMaxBootPositionResponse struct {
@@ -13122,7 +13123,7 @@ type IPlatformProperties_getMaxBootPositionResponse struct {
 type IPlatformProperties_getSupportedParavirtProviders struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedParavirtProviders"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedParavirtProvidersResponse struct {
@@ -13134,7 +13135,7 @@ type IPlatformProperties_getSupportedParavirtProvidersResponse struct {
 type IPlatformProperties_getSupportedFirmwareTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedFirmwareTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedFirmwareTypesResponse struct {
@@ -13146,7 +13147,7 @@ type IPlatformProperties_getSupportedFirmwareTypesResponse struct {
 type IPlatformProperties_getSupportedGuestOSTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedGuestOSTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedGuestOSTypesResponse struct {
@@ -13158,7 +13159,7 @@ type IPlatformProperties_getSupportedGuestOSTypesResponse struct {
 type IPlatformProperties_getSupportedGfxControllerTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedGfxControllerTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedGfxControllerTypesResponse struct {
@@ -13170,7 +13171,7 @@ type IPlatformProperties_getSupportedGfxControllerTypesResponse struct {
 type IPlatformProperties_getSupportedNetAdpPromiscModePols struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedNetAdpPromiscModePols"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedNetAdpPromiscModePolsResponse struct {
@@ -13182,7 +13183,7 @@ type IPlatformProperties_getSupportedNetAdpPromiscModePolsResponse struct {
 type IPlatformProperties_getSupportedNetworkAdapterTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedNetworkAdapterTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedNetworkAdapterTypesResponse struct {
@@ -13194,7 +13195,7 @@ type IPlatformProperties_getSupportedNetworkAdapterTypesResponse struct {
 type IPlatformProperties_getSupportedUartTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedUartTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedUartTypesResponse struct {
@@ -13206,7 +13207,7 @@ type IPlatformProperties_getSupportedUartTypesResponse struct {
 type IPlatformProperties_getSupportedUSBControllerTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedUSBControllerTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedUSBControllerTypesResponse struct {
@@ -13218,7 +13219,7 @@ type IPlatformProperties_getSupportedUSBControllerTypesResponse struct {
 type IPlatformProperties_getSupportedAudioControllerTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedAudioControllerTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedAudioControllerTypesResponse struct {
@@ -13230,7 +13231,7 @@ type IPlatformProperties_getSupportedAudioControllerTypesResponse struct {
 type IPlatformProperties_getSupportedBootDevices struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedBootDevices"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedBootDevicesResponse struct {
@@ -13242,7 +13243,7 @@ type IPlatformProperties_getSupportedBootDevicesResponse struct {
 type IPlatformProperties_getSupportedStorageBuses struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedStorageBuses"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedStorageBusesResponse struct {
@@ -13254,7 +13255,7 @@ type IPlatformProperties_getSupportedStorageBusesResponse struct {
 type IPlatformProperties_getSupportedStorageControllerTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedStorageControllerTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedStorageControllerTypesResponse struct {
@@ -13266,7 +13267,7 @@ type IPlatformProperties_getSupportedStorageControllerTypesResponse struct {
 type IPlatformProperties_getSupportedChipsetTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedChipsetTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedChipsetTypesResponse struct {
@@ -13278,7 +13279,7 @@ type IPlatformProperties_getSupportedChipsetTypesResponse struct {
 type IPlatformProperties_getSupportedIommuTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedIommuTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedIommuTypesResponse struct {
@@ -13290,7 +13291,7 @@ type IPlatformProperties_getSupportedIommuTypesResponse struct {
 type IPlatformProperties_getSupportedTpmTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedTpmTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPlatformProperties_getSupportedTpmTypesResponse struct {
@@ -13302,7 +13303,7 @@ type IPlatformProperties_getSupportedTpmTypesResponse struct {
 type IPlatformProperties_getMaxNetworkAdapters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxNetworkAdapters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Chipset *ChipsetType `xml:"chipset,omitempty" json:"chipset,omitempty"`
 }
@@ -13316,7 +13317,7 @@ type IPlatformProperties_getMaxNetworkAdaptersResponse struct {
 type IPlatformProperties_getMaxNetworkAdaptersOfType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxNetworkAdaptersOfType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Chipset *ChipsetType `xml:"chipset,omitempty" json:"chipset,omitempty"`
 
@@ -13332,7 +13333,7 @@ type IPlatformProperties_getMaxNetworkAdaptersOfTypeResponse struct {
 type IPlatformProperties_getMaxDevicesPerPortForStorageBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxDevicesPerPortForStorageBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Bus *StorageBus `xml:"bus,omitempty" json:"bus,omitempty"`
 }
@@ -13346,7 +13347,7 @@ type IPlatformProperties_getMaxDevicesPerPortForStorageBusResponse struct {
 type IPlatformProperties_getMinPortCountForStorageBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMinPortCountForStorageBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Bus *StorageBus `xml:"bus,omitempty" json:"bus,omitempty"`
 }
@@ -13360,7 +13361,7 @@ type IPlatformProperties_getMinPortCountForStorageBusResponse struct {
 type IPlatformProperties_getMaxPortCountForStorageBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxPortCountForStorageBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Bus *StorageBus `xml:"bus,omitempty" json:"bus,omitempty"`
 }
@@ -13374,7 +13375,7 @@ type IPlatformProperties_getMaxPortCountForStorageBusResponse struct {
 type IPlatformProperties_getMaxInstancesOfStorageBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxInstancesOfStorageBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Chipset *ChipsetType `xml:"chipset,omitempty" json:"chipset,omitempty"`
 
@@ -13390,7 +13391,7 @@ type IPlatformProperties_getMaxInstancesOfStorageBusResponse struct {
 type IPlatformProperties_getSupportedVRAMRange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedVRAMRange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	GraphicsControllerType *GraphicsControllerType `xml:"graphicsControllerType,omitempty" json:"graphicsControllerType,omitempty"`
 
@@ -13410,7 +13411,7 @@ type IPlatformProperties_getSupportedVRAMRangeResponse struct {
 type IPlatformProperties_getSupportedGfxFeaturesForType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getSupportedGfxFeaturesForType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	GraphicsControllerType *GraphicsControllerType `xml:"graphicsControllerType,omitempty" json:"graphicsControllerType,omitempty"`
 }
@@ -13424,7 +13425,7 @@ type IPlatformProperties_getSupportedGfxFeaturesForTypeResponse struct {
 type IPlatformProperties_getDeviceTypesForStorageBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getDeviceTypesForStorageBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Bus *StorageBus `xml:"bus,omitempty" json:"bus,omitempty"`
 }
@@ -13438,7 +13439,7 @@ type IPlatformProperties_getDeviceTypesForStorageBusResponse struct {
 type IPlatformProperties_getStorageBusForControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getStorageBusForControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	StorageControllerType *StorageControllerType `xml:"storageControllerType,omitempty" json:"storageControllerType,omitempty"`
 }
@@ -13452,7 +13453,7 @@ type IPlatformProperties_getStorageBusForControllerTypeResponse struct {
 type IPlatformProperties_getStorageControllerTypesForBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getStorageControllerTypesForBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	StorageBus *StorageBus `xml:"storageBus,omitempty" json:"storageBus,omitempty"`
 }
@@ -13466,7 +13467,7 @@ type IPlatformProperties_getStorageControllerTypesForBusResponse struct {
 type IPlatformProperties_getStorageControllerHotplugCapable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getStorageControllerHotplugCapable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ControllerType *StorageControllerType `xml:"controllerType,omitempty" json:"controllerType,omitempty"`
 }
@@ -13480,7 +13481,7 @@ type IPlatformProperties_getStorageControllerHotplugCapableResponse struct {
 type IPlatformProperties_getMaxInstancesOfUSBControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPlatformProperties_getMaxInstancesOfUSBControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Chipset *ChipsetType `xml:"chipset,omitempty" json:"chipset,omitempty"`
 
@@ -13496,7 +13497,7 @@ type IPlatformProperties_getMaxInstancesOfUSBControllerTypeResponse struct {
 type ISystemProperties_getPlatform struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getPlatform"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getPlatformResponse struct {
@@ -13508,7 +13509,7 @@ type ISystemProperties_getPlatformResponse struct {
 type ISystemProperties_getMinGuestRAM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMinGuestRAM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMinGuestRAMResponse struct {
@@ -13520,7 +13521,7 @@ type ISystemProperties_getMinGuestRAMResponse struct {
 type ISystemProperties_getMaxGuestRAM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMaxGuestRAM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMaxGuestRAMResponse struct {
@@ -13532,7 +13533,7 @@ type ISystemProperties_getMaxGuestRAMResponse struct {
 type ISystemProperties_getMinGuestVRAM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMinGuestVRAM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMinGuestVRAMResponse struct {
@@ -13544,7 +13545,7 @@ type ISystemProperties_getMinGuestVRAMResponse struct {
 type ISystemProperties_getMaxGuestVRAM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMaxGuestVRAM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMaxGuestVRAMResponse struct {
@@ -13556,7 +13557,7 @@ type ISystemProperties_getMaxGuestVRAMResponse struct {
 type ISystemProperties_getMinGuestCPUCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMinGuestCPUCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMinGuestCPUCountResponse struct {
@@ -13568,7 +13569,7 @@ type ISystemProperties_getMinGuestCPUCountResponse struct {
 type ISystemProperties_getMaxGuestCPUCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMaxGuestCPUCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMaxGuestCPUCountResponse struct {
@@ -13580,7 +13581,7 @@ type ISystemProperties_getMaxGuestCPUCountResponse struct {
 type ISystemProperties_getMaxGuestMonitors struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMaxGuestMonitors"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMaxGuestMonitorsResponse struct {
@@ -13592,7 +13593,7 @@ type ISystemProperties_getMaxGuestMonitorsResponse struct {
 type ISystemProperties_getInfoVDSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getInfoVDSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getInfoVDSizeResponse struct {
@@ -13604,7 +13605,7 @@ type ISystemProperties_getInfoVDSizeResponse struct {
 type ISystemProperties_getDefaultMachineFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultMachineFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultMachineFolderResponse struct {
@@ -13616,7 +13617,7 @@ type ISystemProperties_getDefaultMachineFolderResponse struct {
 type ISystemProperties_setDefaultMachineFolder struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultMachineFolder"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultMachineFolder string `xml:"defaultMachineFolder,omitempty" json:"defaultMachineFolder,omitempty"`
 }
@@ -13628,7 +13629,7 @@ type ISystemProperties_setDefaultMachineFolderResponse struct {
 type ISystemProperties_getLoggingLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getLoggingLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getLoggingLevelResponse struct {
@@ -13640,7 +13641,7 @@ type ISystemProperties_getLoggingLevelResponse struct {
 type ISystemProperties_setLoggingLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setLoggingLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LoggingLevel string `xml:"loggingLevel,omitempty" json:"loggingLevel,omitempty"`
 }
@@ -13652,7 +13653,7 @@ type ISystemProperties_setLoggingLevelResponse struct {
 type ISystemProperties_getMediumFormats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getMediumFormats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getMediumFormatsResponse struct {
@@ -13664,7 +13665,7 @@ type ISystemProperties_getMediumFormatsResponse struct {
 type ISystemProperties_getDefaultHardDiskFormat struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultHardDiskFormat"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultHardDiskFormatResponse struct {
@@ -13676,7 +13677,7 @@ type ISystemProperties_getDefaultHardDiskFormatResponse struct {
 type ISystemProperties_setDefaultHardDiskFormat struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultHardDiskFormat"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultHardDiskFormat string `xml:"defaultHardDiskFormat,omitempty" json:"defaultHardDiskFormat,omitempty"`
 }
@@ -13688,7 +13689,7 @@ type ISystemProperties_setDefaultHardDiskFormatResponse struct {
 type ISystemProperties_getFreeDiskSpaceWarning struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getFreeDiskSpaceWarning"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getFreeDiskSpaceWarningResponse struct {
@@ -13700,7 +13701,7 @@ type ISystemProperties_getFreeDiskSpaceWarningResponse struct {
 type ISystemProperties_setFreeDiskSpaceWarning struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setFreeDiskSpaceWarning"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FreeDiskSpaceWarning int64 `xml:"freeDiskSpaceWarning,omitempty" json:"freeDiskSpaceWarning,omitempty"`
 }
@@ -13712,7 +13713,7 @@ type ISystemProperties_setFreeDiskSpaceWarningResponse struct {
 type ISystemProperties_getFreeDiskSpacePercentWarning struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getFreeDiskSpacePercentWarning"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getFreeDiskSpacePercentWarningResponse struct {
@@ -13724,7 +13725,7 @@ type ISystemProperties_getFreeDiskSpacePercentWarningResponse struct {
 type ISystemProperties_setFreeDiskSpacePercentWarning struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setFreeDiskSpacePercentWarning"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FreeDiskSpacePercentWarning uint32 `xml:"freeDiskSpacePercentWarning,omitempty" json:"freeDiskSpacePercentWarning,omitempty"`
 }
@@ -13736,7 +13737,7 @@ type ISystemProperties_setFreeDiskSpacePercentWarningResponse struct {
 type ISystemProperties_getFreeDiskSpaceError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getFreeDiskSpaceError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getFreeDiskSpaceErrorResponse struct {
@@ -13748,7 +13749,7 @@ type ISystemProperties_getFreeDiskSpaceErrorResponse struct {
 type ISystemProperties_setFreeDiskSpaceError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setFreeDiskSpaceError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FreeDiskSpaceError int64 `xml:"freeDiskSpaceError,omitempty" json:"freeDiskSpaceError,omitempty"`
 }
@@ -13760,7 +13761,7 @@ type ISystemProperties_setFreeDiskSpaceErrorResponse struct {
 type ISystemProperties_getFreeDiskSpacePercentError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getFreeDiskSpacePercentError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getFreeDiskSpacePercentErrorResponse struct {
@@ -13772,7 +13773,7 @@ type ISystemProperties_getFreeDiskSpacePercentErrorResponse struct {
 type ISystemProperties_setFreeDiskSpacePercentError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setFreeDiskSpacePercentError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FreeDiskSpacePercentError uint32 `xml:"freeDiskSpacePercentError,omitempty" json:"freeDiskSpacePercentError,omitempty"`
 }
@@ -13784,7 +13785,7 @@ type ISystemProperties_setFreeDiskSpacePercentErrorResponse struct {
 type ISystemProperties_getVRDEAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getVRDEAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getVRDEAuthLibraryResponse struct {
@@ -13796,7 +13797,7 @@ type ISystemProperties_getVRDEAuthLibraryResponse struct {
 type ISystemProperties_setVRDEAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setVRDEAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VRDEAuthLibrary string `xml:"VRDEAuthLibrary,omitempty" json:"VRDEAuthLibrary,omitempty"`
 }
@@ -13808,7 +13809,7 @@ type ISystemProperties_setVRDEAuthLibraryResponse struct {
 type ISystemProperties_getWebServiceAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getWebServiceAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getWebServiceAuthLibraryResponse struct {
@@ -13820,7 +13821,7 @@ type ISystemProperties_getWebServiceAuthLibraryResponse struct {
 type ISystemProperties_setWebServiceAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setWebServiceAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WebServiceAuthLibrary string `xml:"webServiceAuthLibrary,omitempty" json:"webServiceAuthLibrary,omitempty"`
 }
@@ -13832,7 +13833,7 @@ type ISystemProperties_setWebServiceAuthLibraryResponse struct {
 type ISystemProperties_getDefaultVRDEExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultVRDEExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultVRDEExtPackResponse struct {
@@ -13844,7 +13845,7 @@ type ISystemProperties_getDefaultVRDEExtPackResponse struct {
 type ISystemProperties_setDefaultVRDEExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultVRDEExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultVRDEExtPack string `xml:"defaultVRDEExtPack,omitempty" json:"defaultVRDEExtPack,omitempty"`
 }
@@ -13856,7 +13857,7 @@ type ISystemProperties_setDefaultVRDEExtPackResponse struct {
 type ISystemProperties_getDefaultCryptoExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultCryptoExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultCryptoExtPackResponse struct {
@@ -13868,7 +13869,7 @@ type ISystemProperties_getDefaultCryptoExtPackResponse struct {
 type ISystemProperties_setDefaultCryptoExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultCryptoExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultCryptoExtPack string `xml:"defaultCryptoExtPack,omitempty" json:"defaultCryptoExtPack,omitempty"`
 }
@@ -13880,7 +13881,7 @@ type ISystemProperties_setDefaultCryptoExtPackResponse struct {
 type ISystemProperties_getLogHistoryCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getLogHistoryCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getLogHistoryCountResponse struct {
@@ -13892,7 +13893,7 @@ type ISystemProperties_getLogHistoryCountResponse struct {
 type ISystemProperties_setLogHistoryCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setLogHistoryCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogHistoryCount uint32 `xml:"logHistoryCount,omitempty" json:"logHistoryCount,omitempty"`
 }
@@ -13904,7 +13905,7 @@ type ISystemProperties_setLogHistoryCountResponse struct {
 type ISystemProperties_getDefaultAudioDriver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultAudioDriver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultAudioDriverResponse struct {
@@ -13916,7 +13917,7 @@ type ISystemProperties_getDefaultAudioDriverResponse struct {
 type ISystemProperties_getAutostartDatabasePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getAutostartDatabasePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getAutostartDatabasePathResponse struct {
@@ -13928,7 +13929,7 @@ type ISystemProperties_getAutostartDatabasePathResponse struct {
 type ISystemProperties_setAutostartDatabasePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setAutostartDatabasePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutostartDatabasePath string `xml:"autostartDatabasePath,omitempty" json:"autostartDatabasePath,omitempty"`
 }
@@ -13940,7 +13941,7 @@ type ISystemProperties_setAutostartDatabasePathResponse struct {
 type ISystemProperties_getDefaultAdditionsISO struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultAdditionsISO"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultAdditionsISOResponse struct {
@@ -13952,7 +13953,7 @@ type ISystemProperties_getDefaultAdditionsISOResponse struct {
 type ISystemProperties_setDefaultAdditionsISO struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultAdditionsISO"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultAdditionsISO string `xml:"defaultAdditionsISO,omitempty" json:"defaultAdditionsISO,omitempty"`
 }
@@ -13964,7 +13965,7 @@ type ISystemProperties_setDefaultAdditionsISOResponse struct {
 type ISystemProperties_getDefaultFrontend struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultFrontend"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getDefaultFrontendResponse struct {
@@ -13976,7 +13977,7 @@ type ISystemProperties_getDefaultFrontendResponse struct {
 type ISystemProperties_setDefaultFrontend struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setDefaultFrontend"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultFrontend string `xml:"defaultFrontend,omitempty" json:"defaultFrontend,omitempty"`
 }
@@ -13988,7 +13989,7 @@ type ISystemProperties_setDefaultFrontendResponse struct {
 type ISystemProperties_getScreenShotFormats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getScreenShotFormats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getScreenShotFormatsResponse struct {
@@ -14000,7 +14001,7 @@ type ISystemProperties_getScreenShotFormatsResponse struct {
 type ISystemProperties_getProxyMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getProxyMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getProxyModeResponse struct {
@@ -14012,7 +14013,7 @@ type ISystemProperties_getProxyModeResponse struct {
 type ISystemProperties_setProxyMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setProxyMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProxyMode *ProxyMode `xml:"proxyMode,omitempty" json:"proxyMode,omitempty"`
 }
@@ -14024,7 +14025,7 @@ type ISystemProperties_setProxyModeResponse struct {
 type ISystemProperties_getProxyURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getProxyURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getProxyURLResponse struct {
@@ -14036,7 +14037,7 @@ type ISystemProperties_getProxyURLResponse struct {
 type ISystemProperties_setProxyURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setProxyURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProxyURL string `xml:"proxyURL,omitempty" json:"proxyURL,omitempty"`
 }
@@ -14048,7 +14049,7 @@ type ISystemProperties_setProxyURLResponse struct {
 type ISystemProperties_getSupportedPlatformArchitectures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedPlatformArchitectures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedPlatformArchitecturesResponse struct {
@@ -14060,7 +14061,7 @@ type ISystemProperties_getSupportedPlatformArchitecturesResponse struct {
 type ISystemProperties_getSupportedClipboardModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedClipboardModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedClipboardModesResponse struct {
@@ -14072,7 +14073,7 @@ type ISystemProperties_getSupportedClipboardModesResponse struct {
 type ISystemProperties_getSupportedDnDModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedDnDModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedDnDModesResponse struct {
@@ -14084,7 +14085,7 @@ type ISystemProperties_getSupportedDnDModesResponse struct {
 type ISystemProperties_getSupportedPointingHIDTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedPointingHIDTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedPointingHIDTypesResponse struct {
@@ -14096,7 +14097,7 @@ type ISystemProperties_getSupportedPointingHIDTypesResponse struct {
 type ISystemProperties_getSupportedKeyboardHIDTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedKeyboardHIDTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedKeyboardHIDTypesResponse struct {
@@ -14108,7 +14109,7 @@ type ISystemProperties_getSupportedKeyboardHIDTypesResponse struct {
 type ISystemProperties_getSupportedVFSTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedVFSTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedVFSTypesResponse struct {
@@ -14120,7 +14121,7 @@ type ISystemProperties_getSupportedVFSTypesResponse struct {
 type ISystemProperties_getSupportedImportOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedImportOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedImportOptionsResponse struct {
@@ -14132,7 +14133,7 @@ type ISystemProperties_getSupportedImportOptionsResponse struct {
 type ISystemProperties_getSupportedExportOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedExportOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedExportOptionsResponse struct {
@@ -14144,7 +14145,7 @@ type ISystemProperties_getSupportedExportOptionsResponse struct {
 type ISystemProperties_getSupportedGraphicsFeatures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedGraphicsFeatures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedGraphicsFeaturesResponse struct {
@@ -14156,7 +14157,7 @@ type ISystemProperties_getSupportedGraphicsFeaturesResponse struct {
 type ISystemProperties_getSupportedRecordingFeatures struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingFeatures"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingFeaturesResponse struct {
@@ -14168,7 +14169,7 @@ type ISystemProperties_getSupportedRecordingFeaturesResponse struct {
 type ISystemProperties_getSupportedRecordingAudioCodecs struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingAudioCodecs"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingAudioCodecsResponse struct {
@@ -14180,7 +14181,7 @@ type ISystemProperties_getSupportedRecordingAudioCodecsResponse struct {
 type ISystemProperties_getSupportedRecordingVideoCodecs struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingVideoCodecs"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingVideoCodecsResponse struct {
@@ -14192,7 +14193,7 @@ type ISystemProperties_getSupportedRecordingVideoCodecsResponse struct {
 type ISystemProperties_getSupportedRecordingVSModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingVSModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingVSModesResponse struct {
@@ -14204,7 +14205,7 @@ type ISystemProperties_getSupportedRecordingVSModesResponse struct {
 type ISystemProperties_getSupportedRecordingARCModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingARCModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingARCModesResponse struct {
@@ -14216,7 +14217,7 @@ type ISystemProperties_getSupportedRecordingARCModesResponse struct {
 type ISystemProperties_getSupportedRecordingVRCModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedRecordingVRCModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedRecordingVRCModesResponse struct {
@@ -14228,7 +14229,7 @@ type ISystemProperties_getSupportedRecordingVRCModesResponse struct {
 type ISystemProperties_getSupportedCloneOptions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedCloneOptions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedCloneOptionsResponse struct {
@@ -14240,7 +14241,7 @@ type ISystemProperties_getSupportedCloneOptionsResponse struct {
 type ISystemProperties_getSupportedAutostopTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedAutostopTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedAutostopTypesResponse struct {
@@ -14252,7 +14253,7 @@ type ISystemProperties_getSupportedAutostopTypesResponse struct {
 type ISystemProperties_getSupportedVMProcPriorities struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedVMProcPriorities"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedVMProcPrioritiesResponse struct {
@@ -14264,7 +14265,7 @@ type ISystemProperties_getSupportedVMProcPrioritiesResponse struct {
 type ISystemProperties_getSupportedNetworkAttachmentTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedNetworkAttachmentTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedNetworkAttachmentTypesResponse struct {
@@ -14276,7 +14277,7 @@ type ISystemProperties_getSupportedNetworkAttachmentTypesResponse struct {
 type ISystemProperties_getSupportedPortModes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedPortModes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedPortModesResponse struct {
@@ -14288,7 +14289,7 @@ type ISystemProperties_getSupportedPortModesResponse struct {
 type ISystemProperties_getSupportedAudioDriverTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getSupportedAudioDriverTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getSupportedAudioDriverTypesResponse struct {
@@ -14300,7 +14301,7 @@ type ISystemProperties_getSupportedAudioDriverTypesResponse struct {
 type ISystemProperties_getLanguageId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getLanguageId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISystemProperties_getLanguageIdResponse struct {
@@ -14312,7 +14313,7 @@ type ISystemProperties_getLanguageIdResponse struct {
 type ISystemProperties_setLanguageId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_setLanguageId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LanguageId string `xml:"languageId,omitempty" json:"languageId,omitempty"`
 }
@@ -14324,7 +14325,7 @@ type ISystemProperties_setLanguageIdResponse struct {
 type ISystemProperties_getDefaultIoCacheSettingForStorageController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getDefaultIoCacheSettingForStorageController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ControllerType *StorageControllerType `xml:"controllerType,omitempty" json:"controllerType,omitempty"`
 }
@@ -14338,7 +14339,7 @@ type ISystemProperties_getDefaultIoCacheSettingForStorageControllerResponse stru
 type ISystemProperties_getCPUProfiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getCPUProfiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Architecture *CPUArchitecture `xml:"architecture,omitempty" json:"architecture,omitempty"`
 
@@ -14354,7 +14355,7 @@ type ISystemProperties_getCPUProfilesResponse struct {
 type ISystemProperties_getExecutionEnginesForVmCpuArchitecture struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISystemProperties_getExecutionEnginesForVmCpuArchitecture"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuArchitecture *CPUArchitecture `xml:"cpuArchitecture,omitempty" json:"cpuArchitecture,omitempty"`
 }
@@ -14368,7 +14369,7 @@ type ISystemProperties_getExecutionEnginesForVmCpuArchitectureResponse struct {
 type IDnDBase_getFormats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDBase_getFormats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDnDBase_getFormatsResponse struct {
@@ -14380,7 +14381,7 @@ type IDnDBase_getFormatsResponse struct {
 type IDnDBase_isFormatSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDBase_isFormatSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format string `xml:"format,omitempty" json:"format,omitempty"`
 }
@@ -14394,7 +14395,7 @@ type IDnDBase_isFormatSupportedResponse struct {
 type IDnDBase_addFormats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDBase_addFormats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Formats []string `xml:"formats,omitempty" json:"formats,omitempty"`
 }
@@ -14406,7 +14407,7 @@ type IDnDBase_addFormatsResponse struct {
 type IDnDBase_removeFormats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDBase_removeFormats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Formats []string `xml:"formats,omitempty" json:"formats,omitempty"`
 }
@@ -14418,7 +14419,7 @@ type IDnDBase_removeFormatsResponse struct {
 type IDnDSource_dragIsPending struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDSource_dragIsPending"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -14436,7 +14437,7 @@ type IDnDSource_dragIsPendingResponse struct {
 type IDnDSource_drop struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDSource_drop"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format string `xml:"format,omitempty" json:"format,omitempty"`
 
@@ -14452,7 +14453,7 @@ type IDnDSource_dropResponse struct {
 type IDnDSource_receiveData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDSource_receiveData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDnDSource_receiveDataResponse struct {
@@ -14464,7 +14465,7 @@ type IDnDSource_receiveDataResponse struct {
 type IGuestDnDSource_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDnDSource_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDnDSource_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -14476,7 +14477,7 @@ type IGuestDnDSource_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IDnDTarget_enter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_enter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -14500,7 +14501,7 @@ type IDnDTarget_enterResponse struct {
 type IDnDTarget_move struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_move"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -14524,7 +14525,7 @@ type IDnDTarget_moveResponse struct {
 type IDnDTarget_leave struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_leave"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -14536,7 +14537,7 @@ type IDnDTarget_leaveResponse struct {
 type IDnDTarget_drop struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_drop"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -14562,7 +14563,7 @@ type IDnDTarget_dropResponse struct {
 type IDnDTarget_sendData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_sendData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -14580,7 +14581,7 @@ type IDnDTarget_sendDataResponse struct {
 type IDnDTarget_cancel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDTarget_cancel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDnDTarget_cancelResponse struct {
@@ -14592,7 +14593,7 @@ type IDnDTarget_cancelResponse struct {
 type IGuestDnDTarget_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDnDTarget_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDnDTarget_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -14604,7 +14605,7 @@ type IGuestDnDTarget_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IGuestSession_getUser struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getUser"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getUserResponse struct {
@@ -14616,7 +14617,7 @@ type IGuestSession_getUserResponse struct {
 type IGuestSession_getDomain struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getDomain"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getDomainResponse struct {
@@ -14628,7 +14629,7 @@ type IGuestSession_getDomainResponse struct {
 type IGuestSession_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getNameResponse struct {
@@ -14640,7 +14641,7 @@ type IGuestSession_getNameResponse struct {
 type IGuestSession_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getIdResponse struct {
@@ -14652,7 +14653,7 @@ type IGuestSession_getIdResponse struct {
 type IGuestSession_getTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getTimeoutResponse struct {
@@ -14664,7 +14665,7 @@ type IGuestSession_getTimeoutResponse struct {
 type IGuestSession_setTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_setTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Timeout uint32 `xml:"timeout,omitempty" json:"timeout,omitempty"`
 }
@@ -14676,7 +14677,7 @@ type IGuestSession_setTimeoutResponse struct {
 type IGuestSession_getProtocolVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getProtocolVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getProtocolVersionResponse struct {
@@ -14688,7 +14689,7 @@ type IGuestSession_getProtocolVersionResponse struct {
 type IGuestSession_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getStatusResponse struct {
@@ -14700,7 +14701,7 @@ type IGuestSession_getStatusResponse struct {
 type IGuestSession_getEnvironmentChanges struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getEnvironmentChanges"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getEnvironmentChangesResponse struct {
@@ -14712,7 +14713,7 @@ type IGuestSession_getEnvironmentChangesResponse struct {
 type IGuestSession_setEnvironmentChanges struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_setEnvironmentChanges"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	EnvironmentChanges []string `xml:"environmentChanges,omitempty" json:"environmentChanges,omitempty"`
 }
@@ -14724,7 +14725,7 @@ type IGuestSession_setEnvironmentChangesResponse struct {
 type IGuestSession_getEnvironmentBase struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getEnvironmentBase"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getEnvironmentBaseResponse struct {
@@ -14736,7 +14737,7 @@ type IGuestSession_getEnvironmentBaseResponse struct {
 type IGuestSession_getProcesses struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getProcesses"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getProcessesResponse struct {
@@ -14748,7 +14749,7 @@ type IGuestSession_getProcessesResponse struct {
 type IGuestSession_getPathStyle struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getPathStyle"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getPathStyleResponse struct {
@@ -14760,7 +14761,7 @@ type IGuestSession_getPathStyleResponse struct {
 type IGuestSession_getCurrentDirectory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getCurrentDirectory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getCurrentDirectoryResponse struct {
@@ -14772,7 +14773,7 @@ type IGuestSession_getCurrentDirectoryResponse struct {
 type IGuestSession_setCurrentDirectory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_setCurrentDirectory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CurrentDirectory string `xml:"currentDirectory,omitempty" json:"currentDirectory,omitempty"`
 }
@@ -14784,7 +14785,7 @@ type IGuestSession_setCurrentDirectoryResponse struct {
 type IGuestSession_getUserHome struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getUserHome"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getUserHomeResponse struct {
@@ -14796,7 +14797,7 @@ type IGuestSession_getUserHomeResponse struct {
 type IGuestSession_getUserDocuments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getUserDocuments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getUserDocumentsResponse struct {
@@ -14808,7 +14809,7 @@ type IGuestSession_getUserDocumentsResponse struct {
 type IGuestSession_getMountPoints struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getMountPoints"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getMountPointsResponse struct {
@@ -14820,7 +14821,7 @@ type IGuestSession_getMountPointsResponse struct {
 type IGuestSession_getDirectories struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getDirectories"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getDirectoriesResponse struct {
@@ -14832,7 +14833,7 @@ type IGuestSession_getDirectoriesResponse struct {
 type IGuestSession_getFiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getFiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getFilesResponse struct {
@@ -14844,7 +14845,7 @@ type IGuestSession_getFilesResponse struct {
 type IGuestSession_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_getEventSourceResponse struct {
@@ -14856,7 +14857,7 @@ type IGuestSession_getEventSourceResponse struct {
 type IGuestSession_close struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_close"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSession_closeResponse struct {
@@ -14866,7 +14867,7 @@ type IGuestSession_closeResponse struct {
 type IGuestSession_copyFromGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_copyFromGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Sources []string `xml:"sources,omitempty" json:"sources,omitempty"`
 
@@ -14886,7 +14887,7 @@ type IGuestSession_copyFromGuestResponse struct {
 type IGuestSession_copyToGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_copyToGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Sources []string `xml:"sources,omitempty" json:"sources,omitempty"`
 
@@ -14906,7 +14907,7 @@ type IGuestSession_copyToGuestResponse struct {
 type IGuestSession_directoryCopy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryCopy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -14924,7 +14925,7 @@ type IGuestSession_directoryCopyResponse struct {
 type IGuestSession_directoryCopyFromGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryCopyFromGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -14942,7 +14943,7 @@ type IGuestSession_directoryCopyFromGuestResponse struct {
 type IGuestSession_directoryCopyToGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryCopyToGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -14960,7 +14961,7 @@ type IGuestSession_directoryCopyToGuestResponse struct {
 type IGuestSession_directoryCreate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryCreate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -14976,7 +14977,7 @@ type IGuestSession_directoryCreateResponse struct {
 type IGuestSession_directoryCreateTemp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryCreateTemp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TemplateName string `xml:"templateName,omitempty" json:"templateName,omitempty"`
 
@@ -14996,7 +14997,7 @@ type IGuestSession_directoryCreateTempResponse struct {
 type IGuestSession_directoryExists struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryExists"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15012,7 +15013,7 @@ type IGuestSession_directoryExistsResponse struct {
 type IGuestSession_directoryOpen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryOpen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15030,7 +15031,7 @@ type IGuestSession_directoryOpenResponse struct {
 type IGuestSession_directoryRemove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryRemove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -15042,7 +15043,7 @@ type IGuestSession_directoryRemoveResponse struct {
 type IGuestSession_directoryRemoveRecursive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_directoryRemoveRecursive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15058,7 +15059,7 @@ type IGuestSession_directoryRemoveRecursiveResponse struct {
 type IGuestSession_environmentScheduleSet struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_environmentScheduleSet"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -15072,7 +15073,7 @@ type IGuestSession_environmentScheduleSetResponse struct {
 type IGuestSession_environmentScheduleUnset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_environmentScheduleUnset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -15084,7 +15085,7 @@ type IGuestSession_environmentScheduleUnsetResponse struct {
 type IGuestSession_environmentGetBaseVariable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_environmentGetBaseVariable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -15098,7 +15099,7 @@ type IGuestSession_environmentGetBaseVariableResponse struct {
 type IGuestSession_environmentDoesBaseVariableExist struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_environmentDoesBaseVariableExist"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -15112,7 +15113,7 @@ type IGuestSession_environmentDoesBaseVariableExistResponse struct {
 type IGuestSession_fileCopy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileCopy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15130,7 +15131,7 @@ type IGuestSession_fileCopyResponse struct {
 type IGuestSession_fileCopyFromGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileCopyFromGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15148,7 +15149,7 @@ type IGuestSession_fileCopyFromGuestResponse struct {
 type IGuestSession_fileCopyToGuest struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileCopyToGuest"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15166,7 +15167,7 @@ type IGuestSession_fileCopyToGuestResponse struct {
 type IGuestSession_fileCreateTemp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileCreateTemp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TemplateName string `xml:"templateName,omitempty" json:"templateName,omitempty"`
 
@@ -15186,7 +15187,7 @@ type IGuestSession_fileCreateTempResponse struct {
 type IGuestSession_fileExists struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileExists"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15202,7 +15203,7 @@ type IGuestSession_fileExistsResponse struct {
 type IGuestSession_fileOpen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileOpen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15222,7 +15223,7 @@ type IGuestSession_fileOpenResponse struct {
 type IGuestSession_fileOpenEx struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileOpenEx"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15246,7 +15247,7 @@ type IGuestSession_fileOpenExResponse struct {
 type IGuestSession_fileQuerySize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fileQuerySize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15262,7 +15263,7 @@ type IGuestSession_fileQuerySizeResponse struct {
 type IGuestSession_fsObjExists struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjExists"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15278,7 +15279,7 @@ type IGuestSession_fsObjExistsResponse struct {
 type IGuestSession_fsObjQueryInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjQueryInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15294,7 +15295,7 @@ type IGuestSession_fsObjQueryInfoResponse struct {
 type IGuestSession_fsObjRemove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjRemove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -15306,7 +15307,7 @@ type IGuestSession_fsObjRemoveResponse struct {
 type IGuestSession_fsObjRemoveArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjRemoveArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path []string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -15320,7 +15321,7 @@ type IGuestSession_fsObjRemoveArrayResponse struct {
 type IGuestSession_fsObjRename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjRename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	OldPath string `xml:"oldPath,omitempty" json:"oldPath,omitempty"`
 
@@ -15336,7 +15337,7 @@ type IGuestSession_fsObjRenameResponse struct {
 type IGuestSession_fsObjMove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjMove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15354,7 +15355,7 @@ type IGuestSession_fsObjMoveResponse struct {
 type IGuestSession_fsObjMoveArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjMoveArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source []string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15372,7 +15373,7 @@ type IGuestSession_fsObjMoveArrayResponse struct {
 type IGuestSession_fsObjCopyArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjCopyArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source []string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -15390,7 +15391,7 @@ type IGuestSession_fsObjCopyArrayResponse struct {
 type IGuestSession_fsObjSetACL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsObjSetACL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 
@@ -15408,7 +15409,7 @@ type IGuestSession_fsObjSetACLResponse struct {
 type IGuestSession_fsQueryFreeSpace struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsQueryFreeSpace"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -15422,7 +15423,7 @@ type IGuestSession_fsQueryFreeSpaceResponse struct {
 type IGuestSession_fsQueryInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_fsQueryInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -15436,7 +15437,7 @@ type IGuestSession_fsQueryInfoResponse struct {
 type IGuestSession_processCreate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_processCreate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Executable string `xml:"executable,omitempty" json:"executable,omitempty"`
 
@@ -15460,7 +15461,7 @@ type IGuestSession_processCreateResponse struct {
 type IGuestSession_processCreateEx struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_processCreateEx"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Executable string `xml:"executable,omitempty" json:"executable,omitempty"`
 
@@ -15488,7 +15489,7 @@ type IGuestSession_processCreateExResponse struct {
 type IGuestSession_processGet struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_processGet"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Pid uint32 `xml:"pid,omitempty" json:"pid,omitempty"`
 }
@@ -15502,7 +15503,7 @@ type IGuestSession_processGetResponse struct {
 type IGuestSession_symlinkCreate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_symlinkCreate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Symlink string `xml:"symlink,omitempty" json:"symlink,omitempty"`
 
@@ -15518,7 +15519,7 @@ type IGuestSession_symlinkCreateResponse struct {
 type IGuestSession_symlinkExists struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_symlinkExists"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Symlink string `xml:"symlink,omitempty" json:"symlink,omitempty"`
 }
@@ -15532,7 +15533,7 @@ type IGuestSession_symlinkExistsResponse struct {
 type IGuestSession_symlinkRead struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_symlinkRead"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Symlink string `xml:"symlink,omitempty" json:"symlink,omitempty"`
 
@@ -15548,7 +15549,7 @@ type IGuestSession_symlinkReadResponse struct {
 type IGuestSession_waitFor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_waitFor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WaitFor uint32 `xml:"waitFor,omitempty" json:"waitFor,omitempty"`
 
@@ -15564,7 +15565,7 @@ type IGuestSession_waitForResponse struct {
 type IGuestSession_waitForArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSession_waitForArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WaitFor []*GuestSessionWaitForFlag `xml:"waitFor,omitempty" json:"waitFor,omitempty"`
 
@@ -15580,7 +15581,7 @@ type IGuestSession_waitForArrayResponse struct {
 type IProcess_getArguments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getArguments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getArgumentsResponse struct {
@@ -15592,7 +15593,7 @@ type IProcess_getArgumentsResponse struct {
 type IProcess_getEnvironment struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getEnvironment"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getEnvironmentResponse struct {
@@ -15604,7 +15605,7 @@ type IProcess_getEnvironmentResponse struct {
 type IProcess_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getEventSourceResponse struct {
@@ -15616,7 +15617,7 @@ type IProcess_getEventSourceResponse struct {
 type IProcess_getExecutablePath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getExecutablePath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getExecutablePathResponse struct {
@@ -15628,7 +15629,7 @@ type IProcess_getExecutablePathResponse struct {
 type IProcess_getExitCode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getExitCode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getExitCodeResponse struct {
@@ -15640,7 +15641,7 @@ type IProcess_getExitCodeResponse struct {
 type IProcess_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getNameResponse struct {
@@ -15652,7 +15653,7 @@ type IProcess_getNameResponse struct {
 type IProcess_getPID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getPID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getPIDResponse struct {
@@ -15664,7 +15665,7 @@ type IProcess_getPIDResponse struct {
 type IProcess_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_getStatusResponse struct {
@@ -15676,7 +15677,7 @@ type IProcess_getStatusResponse struct {
 type IProcess_waitFor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_waitFor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WaitFor uint32 `xml:"waitFor,omitempty" json:"waitFor,omitempty"`
 
@@ -15692,7 +15693,7 @@ type IProcess_waitForResponse struct {
 type IProcess_waitForArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_waitForArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WaitFor []*ProcessWaitForFlag `xml:"waitFor,omitempty" json:"waitFor,omitempty"`
 
@@ -15708,7 +15709,7 @@ type IProcess_waitForArrayResponse struct {
 type IProcess_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Handle uint32 `xml:"handle,omitempty" json:"handle,omitempty"`
 
@@ -15726,7 +15727,7 @@ type IProcess_readResponse struct {
 type IProcess_write struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_write"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Handle uint32 `xml:"handle,omitempty" json:"handle,omitempty"`
 
@@ -15746,7 +15747,7 @@ type IProcess_writeResponse struct {
 type IProcess_writeArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_writeArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Handle uint32 `xml:"handle,omitempty" json:"handle,omitempty"`
 
@@ -15766,7 +15767,7 @@ type IProcess_writeArrayResponse struct {
 type IProcess_terminate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProcess_terminate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProcess_terminateResponse struct {
@@ -15776,7 +15777,7 @@ type IProcess_terminateResponse struct {
 type IGuestProcess_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcess_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcess_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -15788,7 +15789,7 @@ type IGuestProcess_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IDirectory_getDirectoryName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_getDirectoryName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_getDirectoryNameResponse struct {
@@ -15800,7 +15801,7 @@ type IDirectory_getDirectoryNameResponse struct {
 type IDirectory_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_getEventSourceResponse struct {
@@ -15812,7 +15813,7 @@ type IDirectory_getEventSourceResponse struct {
 type IDirectory_getFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_getFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_getFilterResponse struct {
@@ -15824,7 +15825,7 @@ type IDirectory_getFilterResponse struct {
 type IDirectory_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_getIdResponse struct {
@@ -15836,7 +15837,7 @@ type IDirectory_getIdResponse struct {
 type IDirectory_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_getStatusResponse struct {
@@ -15848,7 +15849,7 @@ type IDirectory_getStatusResponse struct {
 type IDirectory_close struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_close"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_closeResponse struct {
@@ -15858,7 +15859,7 @@ type IDirectory_closeResponse struct {
 type IDirectory_list struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_list"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxEntries uint32 `xml:"maxEntries,omitempty" json:"maxEntries,omitempty"`
 }
@@ -15872,7 +15873,7 @@ type IDirectory_listResponse struct {
 type IDirectory_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_readResponse struct {
@@ -15884,7 +15885,7 @@ type IDirectory_readResponse struct {
 type IDirectory_rewind struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDirectory_rewind"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDirectory_rewindResponse struct {
@@ -15894,7 +15895,7 @@ type IDirectory_rewindResponse struct {
 type IGuestDirectory_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectory_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectory_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -15906,7 +15907,7 @@ type IGuestDirectory_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IFile_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getEventSourceResponse struct {
@@ -15918,7 +15919,7 @@ type IFile_getEventSourceResponse struct {
 type IFile_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getIdResponse struct {
@@ -15930,7 +15931,7 @@ type IFile_getIdResponse struct {
 type IFile_getInitialSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getInitialSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getInitialSizeResponse struct {
@@ -15942,7 +15943,7 @@ type IFile_getInitialSizeResponse struct {
 type IFile_getOffset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getOffset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getOffsetResponse struct {
@@ -15954,7 +15955,7 @@ type IFile_getOffsetResponse struct {
 type IFile_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getStatusResponse struct {
@@ -15966,7 +15967,7 @@ type IFile_getStatusResponse struct {
 type IFile_getFilename struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getFilename"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getFilenameResponse struct {
@@ -15978,7 +15979,7 @@ type IFile_getFilenameResponse struct {
 type IFile_getCreationMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getCreationMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getCreationModeResponse struct {
@@ -15990,7 +15991,7 @@ type IFile_getCreationModeResponse struct {
 type IFile_getOpenAction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getOpenAction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getOpenActionResponse struct {
@@ -16002,7 +16003,7 @@ type IFile_getOpenActionResponse struct {
 type IFile_getAccessMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_getAccessMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_getAccessModeResponse struct {
@@ -16014,7 +16015,7 @@ type IFile_getAccessModeResponse struct {
 type IFile_close struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_close"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_closeResponse struct {
@@ -16024,7 +16025,7 @@ type IFile_closeResponse struct {
 type IFile_queryInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_queryInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_queryInfoResponse struct {
@@ -16036,7 +16037,7 @@ type IFile_queryInfoResponse struct {
 type IFile_querySize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_querySize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFile_querySizeResponse struct {
@@ -16048,7 +16049,7 @@ type IFile_querySizeResponse struct {
 type IFile_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ToRead uint32 `xml:"toRead,omitempty" json:"toRead,omitempty"`
 
@@ -16064,7 +16065,7 @@ type IFile_readResponse struct {
 type IFile_readAt struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_readAt"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Offset int64 `xml:"offset,omitempty" json:"offset,omitempty"`
 
@@ -16082,7 +16083,7 @@ type IFile_readAtResponse struct {
 type IFile_seek struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_seek"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Offset int64 `xml:"offset,omitempty" json:"offset,omitempty"`
 
@@ -16098,7 +16099,7 @@ type IFile_seekResponse struct {
 type IFile_setACL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_setACL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Acl string `xml:"acl,omitempty" json:"acl,omitempty"`
 
@@ -16112,7 +16113,7 @@ type IFile_setACLResponse struct {
 type IFile_setSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_setSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Size int64 `xml:"size,omitempty" json:"size,omitempty"`
 }
@@ -16124,7 +16125,7 @@ type IFile_setSizeResponse struct {
 type IFile_write struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_write"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Data string `xml:"data,omitempty" json:"data,omitempty"`
 
@@ -16140,7 +16141,7 @@ type IFile_writeResponse struct {
 type IFile_writeAt struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFile_writeAt"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Offset int64 `xml:"offset,omitempty" json:"offset,omitempty"`
 
@@ -16158,7 +16159,7 @@ type IFile_writeAtResponse struct {
 type IGuestFile_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFile_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFile_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -16170,7 +16171,7 @@ type IGuestFile_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IFsInfo_getFreeSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getFreeSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getFreeSizeResponse struct {
@@ -16182,7 +16183,7 @@ type IFsInfo_getFreeSizeResponse struct {
 type IFsInfo_getTotalSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getTotalSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getTotalSizeResponse struct {
@@ -16194,7 +16195,7 @@ type IFsInfo_getTotalSizeResponse struct {
 type IFsInfo_getBlockSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getBlockSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getBlockSizeResponse struct {
@@ -16206,7 +16207,7 @@ type IFsInfo_getBlockSizeResponse struct {
 type IFsInfo_getSectorSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getSectorSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getSectorSizeResponse struct {
@@ -16218,7 +16219,7 @@ type IFsInfo_getSectorSizeResponse struct {
 type IFsInfo_getSerialNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getSerialNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getSerialNumberResponse struct {
@@ -16230,7 +16231,7 @@ type IFsInfo_getSerialNumberResponse struct {
 type IFsInfo_getIsRemote struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getIsRemote"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getIsRemoteResponse struct {
@@ -16242,7 +16243,7 @@ type IFsInfo_getIsRemoteResponse struct {
 type IFsInfo_getIsCaseSensitive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getIsCaseSensitive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getIsCaseSensitiveResponse struct {
@@ -16254,7 +16255,7 @@ type IFsInfo_getIsCaseSensitiveResponse struct {
 type IFsInfo_getIsReadOnly struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getIsReadOnly"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getIsReadOnlyResponse struct {
@@ -16266,7 +16267,7 @@ type IFsInfo_getIsReadOnlyResponse struct {
 type IFsInfo_getIsCompressed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getIsCompressed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getIsCompressedResponse struct {
@@ -16278,7 +16279,7 @@ type IFsInfo_getIsCompressedResponse struct {
 type IFsInfo_getSupportsFileCompression struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getSupportsFileCompression"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getSupportsFileCompressionResponse struct {
@@ -16290,7 +16291,7 @@ type IFsInfo_getSupportsFileCompressionResponse struct {
 type IFsInfo_getMaxComponent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getMaxComponent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getMaxComponentResponse struct {
@@ -16302,7 +16303,7 @@ type IFsInfo_getMaxComponentResponse struct {
 type IFsInfo_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getTypeResponse struct {
@@ -16314,7 +16315,7 @@ type IFsInfo_getTypeResponse struct {
 type IFsInfo_getLabel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getLabel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getLabelResponse struct {
@@ -16326,7 +16327,7 @@ type IFsInfo_getLabelResponse struct {
 type IFsInfo_getMountPoint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsInfo_getMountPoint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsInfo_getMountPointResponse struct {
@@ -16338,7 +16339,7 @@ type IFsInfo_getMountPointResponse struct {
 type IFsObjInfo_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getNameResponse struct {
@@ -16350,7 +16351,7 @@ type IFsObjInfo_getNameResponse struct {
 type IFsObjInfo_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getTypeResponse struct {
@@ -16362,7 +16363,7 @@ type IFsObjInfo_getTypeResponse struct {
 type IFsObjInfo_getFileAttributes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getFileAttributes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getFileAttributesResponse struct {
@@ -16374,7 +16375,7 @@ type IFsObjInfo_getFileAttributesResponse struct {
 type IFsObjInfo_getObjectSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getObjectSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getObjectSizeResponse struct {
@@ -16386,7 +16387,7 @@ type IFsObjInfo_getObjectSizeResponse struct {
 type IFsObjInfo_getAllocatedSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getAllocatedSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getAllocatedSizeResponse struct {
@@ -16398,7 +16399,7 @@ type IFsObjInfo_getAllocatedSizeResponse struct {
 type IFsObjInfo_getAccessTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getAccessTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getAccessTimeResponse struct {
@@ -16410,7 +16411,7 @@ type IFsObjInfo_getAccessTimeResponse struct {
 type IFsObjInfo_getBirthTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getBirthTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getBirthTimeResponse struct {
@@ -16422,7 +16423,7 @@ type IFsObjInfo_getBirthTimeResponse struct {
 type IFsObjInfo_getChangeTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getChangeTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getChangeTimeResponse struct {
@@ -16434,7 +16435,7 @@ type IFsObjInfo_getChangeTimeResponse struct {
 type IFsObjInfo_getModificationTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getModificationTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getModificationTimeResponse struct {
@@ -16446,7 +16447,7 @@ type IFsObjInfo_getModificationTimeResponse struct {
 type IFsObjInfo_getUID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getUID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getUIDResponse struct {
@@ -16458,7 +16459,7 @@ type IFsObjInfo_getUIDResponse struct {
 type IFsObjInfo_getUserName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getUserName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getUserNameResponse struct {
@@ -16470,7 +16471,7 @@ type IFsObjInfo_getUserNameResponse struct {
 type IFsObjInfo_getGID struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getGID"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getGIDResponse struct {
@@ -16482,7 +16483,7 @@ type IFsObjInfo_getGIDResponse struct {
 type IFsObjInfo_getGroupName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getGroupName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getGroupNameResponse struct {
@@ -16494,7 +16495,7 @@ type IFsObjInfo_getGroupNameResponse struct {
 type IFsObjInfo_getNodeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getNodeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getNodeIdResponse struct {
@@ -16506,7 +16507,7 @@ type IFsObjInfo_getNodeIdResponse struct {
 type IFsObjInfo_getNodeIdDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getNodeIdDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getNodeIdDeviceResponse struct {
@@ -16518,7 +16519,7 @@ type IFsObjInfo_getNodeIdDeviceResponse struct {
 type IFsObjInfo_getHardLinks struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getHardLinks"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getHardLinksResponse struct {
@@ -16530,7 +16531,7 @@ type IFsObjInfo_getHardLinksResponse struct {
 type IFsObjInfo_getDeviceNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getDeviceNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getDeviceNumberResponse struct {
@@ -16542,7 +16543,7 @@ type IFsObjInfo_getDeviceNumberResponse struct {
 type IFsObjInfo_getGenerationId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getGenerationId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getGenerationIdResponse struct {
@@ -16554,7 +16555,7 @@ type IFsObjInfo_getGenerationIdResponse struct {
 type IFsObjInfo_getUserFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFsObjInfo_getUserFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFsObjInfo_getUserFlagsResponse struct {
@@ -16566,7 +16567,7 @@ type IFsObjInfo_getUserFlagsResponse struct {
 type IGuestFsInfo_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFsInfo_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFsInfo_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -16578,7 +16579,7 @@ type IGuestFsInfo_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IGuestFsObjInfo_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFsObjInfo_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFsObjInfo_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -16590,7 +16591,7 @@ type IGuestFsObjInfo_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IGuest_getOSTypeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getOSTypeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getOSTypeIdResponse struct {
@@ -16602,7 +16603,7 @@ type IGuest_getOSTypeIdResponse struct {
 type IGuest_getAdditionsRunLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getAdditionsRunLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getAdditionsRunLevelResponse struct {
@@ -16614,7 +16615,7 @@ type IGuest_getAdditionsRunLevelResponse struct {
 type IGuest_getAdditionsVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getAdditionsVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getAdditionsVersionResponse struct {
@@ -16626,7 +16627,7 @@ type IGuest_getAdditionsVersionResponse struct {
 type IGuest_getAdditionsRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getAdditionsRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getAdditionsRevisionResponse struct {
@@ -16638,7 +16639,7 @@ type IGuest_getAdditionsRevisionResponse struct {
 type IGuest_getDnDSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getDnDSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getDnDSourceResponse struct {
@@ -16650,7 +16651,7 @@ type IGuest_getDnDSourceResponse struct {
 type IGuest_getDnDTarget struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getDnDTarget"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getDnDTargetResponse struct {
@@ -16662,7 +16663,7 @@ type IGuest_getDnDTargetResponse struct {
 type IGuest_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getEventSourceResponse struct {
@@ -16674,7 +16675,7 @@ type IGuest_getEventSourceResponse struct {
 type IGuest_getFacilities struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getFacilities"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getFacilitiesResponse struct {
@@ -16686,7 +16687,7 @@ type IGuest_getFacilitiesResponse struct {
 type IGuest_getSessions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getSessions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getSessionsResponse struct {
@@ -16698,7 +16699,7 @@ type IGuest_getSessionsResponse struct {
 type IGuest_getMemoryBalloonSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getMemoryBalloonSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getMemoryBalloonSizeResponse struct {
@@ -16710,7 +16711,7 @@ type IGuest_getMemoryBalloonSizeResponse struct {
 type IGuest_setMemoryBalloonSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_setMemoryBalloonSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MemoryBalloonSize uint32 `xml:"memoryBalloonSize,omitempty" json:"memoryBalloonSize,omitempty"`
 }
@@ -16722,7 +16723,7 @@ type IGuest_setMemoryBalloonSizeResponse struct {
 type IGuest_getStatisticsUpdateInterval struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getStatisticsUpdateInterval"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_getStatisticsUpdateIntervalResponse struct {
@@ -16734,7 +16735,7 @@ type IGuest_getStatisticsUpdateIntervalResponse struct {
 type IGuest_setStatisticsUpdateInterval struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_setStatisticsUpdateInterval"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	StatisticsUpdateInterval uint32 `xml:"statisticsUpdateInterval,omitempty" json:"statisticsUpdateInterval,omitempty"`
 }
@@ -16746,7 +16747,7 @@ type IGuest_setStatisticsUpdateIntervalResponse struct {
 type IGuest_internalGetStatistics struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_internalGetStatistics"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuest_internalGetStatisticsResponse struct {
@@ -16782,7 +16783,7 @@ type IGuest_internalGetStatisticsResponse struct {
 type IGuest_getFacilityStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getFacilityStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Facility *AdditionsFacilityType `xml:"facility,omitempty" json:"facility,omitempty"`
 }
@@ -16798,7 +16799,7 @@ type IGuest_getFacilityStatusResponse struct {
 type IGuest_getAdditionsStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_getAdditionsStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Level *AdditionsRunLevelType `xml:"level,omitempty" json:"level,omitempty"`
 }
@@ -16812,7 +16813,7 @@ type IGuest_getAdditionsStatusResponse struct {
 type IGuest_setCredentials struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_setCredentials"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UserName string `xml:"userName,omitempty" json:"userName,omitempty"`
 
@@ -16830,7 +16831,7 @@ type IGuest_setCredentialsResponse struct {
 type IGuest_createSession struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_createSession"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	User string `xml:"user,omitempty" json:"user,omitempty"`
 
@@ -16850,7 +16851,7 @@ type IGuest_createSessionResponse struct {
 type IGuest_findSession struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_findSession"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SessionName string `xml:"sessionName,omitempty" json:"sessionName,omitempty"`
 }
@@ -16864,7 +16865,7 @@ type IGuest_findSessionResponse struct {
 type IGuest_shutdown struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_shutdown"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Flags []*GuestShutdownFlag `xml:"flags,omitempty" json:"flags,omitempty"`
 }
@@ -16876,7 +16877,7 @@ type IGuest_shutdownResponse struct {
 type IGuest_updateGuestAdditions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuest_updateGuestAdditions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Source string `xml:"source,omitempty" json:"source,omitempty"`
 
@@ -16894,7 +16895,7 @@ type IGuest_updateGuestAdditionsResponse struct {
 type IProgress_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getIdResponse struct {
@@ -16906,7 +16907,7 @@ type IProgress_getIdResponse struct {
 type IProgress_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getDescriptionResponse struct {
@@ -16918,7 +16919,7 @@ type IProgress_getDescriptionResponse struct {
 type IProgress_getInitiator struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getInitiator"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getInitiatorResponse struct {
@@ -16930,7 +16931,7 @@ type IProgress_getInitiatorResponse struct {
 type IProgress_getCancelable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getCancelable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getCancelableResponse struct {
@@ -16942,7 +16943,7 @@ type IProgress_getCancelableResponse struct {
 type IProgress_getPercent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getPercent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getPercentResponse struct {
@@ -16954,7 +16955,7 @@ type IProgress_getPercentResponse struct {
 type IProgress_getTimeRemaining struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getTimeRemaining"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getTimeRemainingResponse struct {
@@ -16966,7 +16967,7 @@ type IProgress_getTimeRemainingResponse struct {
 type IProgress_getCompleted struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getCompleted"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getCompletedResponse struct {
@@ -16978,7 +16979,7 @@ type IProgress_getCompletedResponse struct {
 type IProgress_getCanceled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getCanceled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getCanceledResponse struct {
@@ -16990,7 +16991,7 @@ type IProgress_getCanceledResponse struct {
 type IProgress_getResultCode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getResultCode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getResultCodeResponse struct {
@@ -17002,7 +17003,7 @@ type IProgress_getResultCodeResponse struct {
 type IProgress_getErrorInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getErrorInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getErrorInfoResponse struct {
@@ -17014,7 +17015,7 @@ type IProgress_getErrorInfoResponse struct {
 type IProgress_getOperationCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getOperationCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getOperationCountResponse struct {
@@ -17026,7 +17027,7 @@ type IProgress_getOperationCountResponse struct {
 type IProgress_getOperation struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getOperation"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getOperationResponse struct {
@@ -17038,7 +17039,7 @@ type IProgress_getOperationResponse struct {
 type IProgress_getOperationDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getOperationDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getOperationDescriptionResponse struct {
@@ -17050,7 +17051,7 @@ type IProgress_getOperationDescriptionResponse struct {
 type IProgress_getOperationPercent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getOperationPercent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getOperationPercentResponse struct {
@@ -17062,7 +17063,7 @@ type IProgress_getOperationPercentResponse struct {
 type IProgress_getOperationWeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getOperationWeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getOperationWeightResponse struct {
@@ -17074,7 +17075,7 @@ type IProgress_getOperationWeightResponse struct {
 type IProgress_getTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getTimeoutResponse struct {
@@ -17086,7 +17087,7 @@ type IProgress_getTimeoutResponse struct {
 type IProgress_setTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_setTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Timeout uint32 `xml:"timeout,omitempty" json:"timeout,omitempty"`
 }
@@ -17098,7 +17099,7 @@ type IProgress_setTimeoutResponse struct {
 type IProgress_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_getEventSourceResponse struct {
@@ -17110,7 +17111,7 @@ type IProgress_getEventSourceResponse struct {
 type IProgress_waitForCompletion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_waitForCompletion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Timeout int32 `xml:"timeout,omitempty" json:"timeout,omitempty"`
 }
@@ -17122,7 +17123,7 @@ type IProgress_waitForCompletionResponse struct {
 type IProgress_waitForOperationCompletion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_waitForOperationCompletion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Operation uint32 `xml:"operation,omitempty" json:"operation,omitempty"`
 
@@ -17136,7 +17137,7 @@ type IProgress_waitForOperationCompletionResponse struct {
 type IProgress_cancel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgress_cancel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgress_cancelResponse struct {
@@ -17146,7 +17147,7 @@ type IProgress_cancelResponse struct {
 type ISnapshot_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getIdResponse struct {
@@ -17158,7 +17159,7 @@ type ISnapshot_getIdResponse struct {
 type ISnapshot_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getNameResponse struct {
@@ -17170,7 +17171,7 @@ type ISnapshot_getNameResponse struct {
 type ISnapshot_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -17182,7 +17183,7 @@ type ISnapshot_setNameResponse struct {
 type ISnapshot_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getDescriptionResponse struct {
@@ -17194,7 +17195,7 @@ type ISnapshot_getDescriptionResponse struct {
 type ISnapshot_setDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_setDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -17206,7 +17207,7 @@ type ISnapshot_setDescriptionResponse struct {
 type ISnapshot_getTimeStamp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getTimeStamp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getTimeStampResponse struct {
@@ -17218,7 +17219,7 @@ type ISnapshot_getTimeStampResponse struct {
 type ISnapshot_getOnline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getOnline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getOnlineResponse struct {
@@ -17230,7 +17231,7 @@ type ISnapshot_getOnlineResponse struct {
 type ISnapshot_getMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getMachineResponse struct {
@@ -17242,7 +17243,7 @@ type ISnapshot_getMachineResponse struct {
 type ISnapshot_getParent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getParent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getParentResponse struct {
@@ -17254,7 +17255,7 @@ type ISnapshot_getParentResponse struct {
 type ISnapshot_getChildren struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getChildren"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getChildrenResponse struct {
@@ -17266,7 +17267,7 @@ type ISnapshot_getChildrenResponse struct {
 type ISnapshot_getChildrenCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshot_getChildrenCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshot_getChildrenCountResponse struct {
@@ -17278,7 +17279,7 @@ type ISnapshot_getChildrenCountResponse struct {
 type IMedium_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getIdResponse struct {
@@ -17290,7 +17291,7 @@ type IMedium_getIdResponse struct {
 type IMedium_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getDescriptionResponse struct {
@@ -17302,7 +17303,7 @@ type IMedium_getDescriptionResponse struct {
 type IMedium_setDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -17314,7 +17315,7 @@ type IMedium_setDescriptionResponse struct {
 type IMedium_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getStateResponse struct {
@@ -17326,7 +17327,7 @@ type IMedium_getStateResponse struct {
 type IMedium_getVariant struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getVariant"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getVariantResponse struct {
@@ -17338,7 +17339,7 @@ type IMedium_getVariantResponse struct {
 type IMedium_getLocation struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getLocation"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getLocationResponse struct {
@@ -17350,7 +17351,7 @@ type IMedium_getLocationResponse struct {
 type IMedium_setLocation struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setLocation"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Location string `xml:"location,omitempty" json:"location,omitempty"`
 }
@@ -17362,7 +17363,7 @@ type IMedium_setLocationResponse struct {
 type IMedium_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getNameResponse struct {
@@ -17374,7 +17375,7 @@ type IMedium_getNameResponse struct {
 type IMedium_getDeviceType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getDeviceType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getDeviceTypeResponse struct {
@@ -17386,7 +17387,7 @@ type IMedium_getDeviceTypeResponse struct {
 type IMedium_getHostDrive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getHostDrive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getHostDriveResponse struct {
@@ -17398,7 +17399,7 @@ type IMedium_getHostDriveResponse struct {
 type IMedium_getSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getSizeResponse struct {
@@ -17410,7 +17411,7 @@ type IMedium_getSizeResponse struct {
 type IMedium_getFormat struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getFormat"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getFormatResponse struct {
@@ -17422,7 +17423,7 @@ type IMedium_getFormatResponse struct {
 type IMedium_getMediumFormat struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getMediumFormat"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getMediumFormatResponse struct {
@@ -17434,7 +17435,7 @@ type IMedium_getMediumFormatResponse struct {
 type IMedium_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getTypeResponse struct {
@@ -17446,7 +17447,7 @@ type IMedium_getTypeResponse struct {
 type IMedium_setType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *MediumType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -17458,7 +17459,7 @@ type IMedium_setTypeResponse struct {
 type IMedium_getAllowedTypes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getAllowedTypes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getAllowedTypesResponse struct {
@@ -17470,7 +17471,7 @@ type IMedium_getAllowedTypesResponse struct {
 type IMedium_getParent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getParent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getParentResponse struct {
@@ -17482,7 +17483,7 @@ type IMedium_getParentResponse struct {
 type IMedium_getChildren struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getChildren"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getChildrenResponse struct {
@@ -17494,7 +17495,7 @@ type IMedium_getChildrenResponse struct {
 type IMedium_getBase struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getBase"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getBaseResponse struct {
@@ -17506,7 +17507,7 @@ type IMedium_getBaseResponse struct {
 type IMedium_getReadOnly struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getReadOnly"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getReadOnlyResponse struct {
@@ -17518,7 +17519,7 @@ type IMedium_getReadOnlyResponse struct {
 type IMedium_getLogicalSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getLogicalSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getLogicalSizeResponse struct {
@@ -17530,7 +17531,7 @@ type IMedium_getLogicalSizeResponse struct {
 type IMedium_getAutoReset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getAutoReset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getAutoResetResponse struct {
@@ -17542,7 +17543,7 @@ type IMedium_getAutoResetResponse struct {
 type IMedium_setAutoReset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setAutoReset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutoReset bool `xml:"autoReset,omitempty" json:"autoReset,omitempty"`
 }
@@ -17554,7 +17555,7 @@ type IMedium_setAutoResetResponse struct {
 type IMedium_getLastAccessError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getLastAccessError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getLastAccessErrorResponse struct {
@@ -17566,7 +17567,7 @@ type IMedium_getLastAccessErrorResponse struct {
 type IMedium_getMachineIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getMachineIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getMachineIdsResponse struct {
@@ -17578,7 +17579,7 @@ type IMedium_getMachineIdsResponse struct {
 type IMedium_setIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SetImageId bool `xml:"setImageId,omitempty" json:"setImageId,omitempty"`
 
@@ -17596,7 +17597,7 @@ type IMedium_setIdsResponse struct {
 type IMedium_refreshState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_refreshState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_refreshStateResponse struct {
@@ -17608,7 +17609,7 @@ type IMedium_refreshStateResponse struct {
 type IMedium_getSnapshotIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getSnapshotIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MachineId string `xml:"machineId,omitempty" json:"machineId,omitempty"`
 }
@@ -17622,7 +17623,7 @@ type IMedium_getSnapshotIdsResponse struct {
 type IMedium_lockRead struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_lockRead"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_lockReadResponse struct {
@@ -17634,7 +17635,7 @@ type IMedium_lockReadResponse struct {
 type IMedium_lockWrite struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_lockWrite"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_lockWriteResponse struct {
@@ -17646,7 +17647,7 @@ type IMedium_lockWriteResponse struct {
 type IMedium_close struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_close"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_closeResponse struct {
@@ -17656,7 +17657,7 @@ type IMedium_closeResponse struct {
 type IMedium_getProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -17670,7 +17671,7 @@ type IMedium_getPropertyResponse struct {
 type IMedium_setProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -17684,7 +17685,7 @@ type IMedium_setPropertyResponse struct {
 type IMedium_getProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names string `xml:"names,omitempty" json:"names,omitempty"`
 }
@@ -17700,7 +17701,7 @@ type IMedium_getPropertiesResponse struct {
 type IMedium_setProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_setProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names []string `xml:"names,omitempty" json:"names,omitempty"`
 
@@ -17714,7 +17715,7 @@ type IMedium_setPropertiesResponse struct {
 type IMedium_createBaseStorage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_createBaseStorage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogicalSize int64 `xml:"logicalSize,omitempty" json:"logicalSize,omitempty"`
 
@@ -17730,7 +17731,7 @@ type IMedium_createBaseStorageResponse struct {
 type IMedium_deleteStorage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_deleteStorage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_deleteStorageResponse struct {
@@ -17742,7 +17743,7 @@ type IMedium_deleteStorageResponse struct {
 type IMedium_createDiffStorage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_createDiffStorage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 
@@ -17758,7 +17759,7 @@ type IMedium_createDiffStorageResponse struct {
 type IMedium_mergeTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_mergeTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 }
@@ -17772,7 +17773,7 @@ type IMedium_mergeToResponse struct {
 type IMedium_cloneTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_cloneTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 
@@ -17790,7 +17791,7 @@ type IMedium_cloneToResponse struct {
 type IMedium_cloneToBase struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_cloneToBase"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 
@@ -17806,7 +17807,7 @@ type IMedium_cloneToBaseResponse struct {
 type IMedium_moveTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_moveTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Location string `xml:"location,omitempty" json:"location,omitempty"`
 }
@@ -17820,7 +17821,7 @@ type IMedium_moveToResponse struct {
 type IMedium_compact struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_compact"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_compactResponse struct {
@@ -17832,7 +17833,7 @@ type IMedium_compactResponse struct {
 type IMedium_resize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_resize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogicalSize int64 `xml:"logicalSize,omitempty" json:"logicalSize,omitempty"`
 }
@@ -17846,7 +17847,7 @@ type IMedium_resizeResponse struct {
 type IMedium_reset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_reset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_resetResponse struct {
@@ -17858,7 +17859,7 @@ type IMedium_resetResponse struct {
 type IMedium_changeEncryption struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_changeEncryption"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CurrentPassword string `xml:"currentPassword,omitempty" json:"currentPassword,omitempty"`
 
@@ -17878,7 +17879,7 @@ type IMedium_changeEncryptionResponse struct {
 type IMedium_getEncryptionSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_getEncryptionSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMedium_getEncryptionSettingsResponse struct {
@@ -17892,7 +17893,7 @@ type IMedium_getEncryptionSettingsResponse struct {
 type IMedium_checkEncryptionPassword struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_checkEncryptionPassword"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Password string `xml:"password,omitempty" json:"password,omitempty"`
 }
@@ -17904,7 +17905,7 @@ type IMedium_checkEncryptionPasswordResponse struct {
 type IMedium_openForIO struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_openForIO"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Writable bool `xml:"writable,omitempty" json:"writable,omitempty"`
 
@@ -17920,7 +17921,7 @@ type IMedium_openForIOResponse struct {
 type IMedium_resizeAndCloneTo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMedium_resizeAndCloneTo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Target string `xml:"target,omitempty" json:"target,omitempty"`
 
@@ -17940,7 +17941,7 @@ type IMedium_resizeAndCloneToResponse struct {
 type IMediumFormat_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumFormat_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumFormat_getIdResponse struct {
@@ -17952,7 +17953,7 @@ type IMediumFormat_getIdResponse struct {
 type IMediumFormat_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumFormat_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumFormat_getNameResponse struct {
@@ -17964,7 +17965,7 @@ type IMediumFormat_getNameResponse struct {
 type IMediumFormat_getCapabilities struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumFormat_getCapabilities"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumFormat_getCapabilitiesResponse struct {
@@ -17976,7 +17977,7 @@ type IMediumFormat_getCapabilitiesResponse struct {
 type IMediumFormat_describeFileExtensions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumFormat_describeFileExtensions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumFormat_describeFileExtensionsResponse struct {
@@ -17990,7 +17991,7 @@ type IMediumFormat_describeFileExtensionsResponse struct {
 type IMediumFormat_describeProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumFormat_describeProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumFormat_describePropertiesResponse struct {
@@ -18010,7 +18011,7 @@ type IMediumFormat_describePropertiesResponse struct {
 type IDataStream_getReadSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDataStream_getReadSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDataStream_getReadSizeResponse struct {
@@ -18022,7 +18023,7 @@ type IDataStream_getReadSizeResponse struct {
 type IDataStream_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDataStream_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Size uint32 `xml:"size,omitempty" json:"size,omitempty"`
 
@@ -18038,7 +18039,7 @@ type IDataStream_readResponse struct {
 type IMediumIO_getMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_getMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumIO_getMediumResponse struct {
@@ -18050,7 +18051,7 @@ type IMediumIO_getMediumResponse struct {
 type IMediumIO_getWritable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_getWritable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumIO_getWritableResponse struct {
@@ -18062,7 +18063,7 @@ type IMediumIO_getWritableResponse struct {
 type IMediumIO_getExplorer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_getExplorer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumIO_getExplorerResponse struct {
@@ -18074,7 +18075,7 @@ type IMediumIO_getExplorerResponse struct {
 type IMediumIO_read struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_read"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Offset int64 `xml:"offset,omitempty" json:"offset,omitempty"`
 
@@ -18090,7 +18091,7 @@ type IMediumIO_readResponse struct {
 type IMediumIO_write struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_write"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Offset int64 `xml:"offset,omitempty" json:"offset,omitempty"`
 
@@ -18106,7 +18107,7 @@ type IMediumIO_writeResponse struct {
 type IMediumIO_formatFAT struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_formatFAT"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Quick bool `xml:"quick,omitempty" json:"quick,omitempty"`
 }
@@ -18118,7 +18119,7 @@ type IMediumIO_formatFATResponse struct {
 type IMediumIO_initializePartitionTable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_initializePartitionTable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format *PartitionTableType `xml:"format,omitempty" json:"format,omitempty"`
 
@@ -18132,7 +18133,7 @@ type IMediumIO_initializePartitionTableResponse struct {
 type IMediumIO_convertToStream struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_convertToStream"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Format string `xml:"format,omitempty" json:"format,omitempty"`
 
@@ -18152,7 +18153,7 @@ type IMediumIO_convertToStreamResponse struct {
 type IMediumIO_close struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumIO_close"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumIO_closeResponse struct {
@@ -18162,7 +18163,7 @@ type IMediumIO_closeResponse struct {
 type IToken_abandon struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IToken_abandon"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IToken_abandonResponse struct {
@@ -18172,7 +18173,7 @@ type IToken_abandonResponse struct {
 type IToken_dummy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IToken_dummy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IToken_dummyResponse struct {
@@ -18182,7 +18183,7 @@ type IToken_dummyResponse struct {
 type IKeyboard_getKeyboardLEDs struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_getKeyboardLEDs"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboard_getKeyboardLEDsResponse struct {
@@ -18194,7 +18195,7 @@ type IKeyboard_getKeyboardLEDsResponse struct {
 type IKeyboard_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboard_getEventSourceResponse struct {
@@ -18206,7 +18207,7 @@ type IKeyboard_getEventSourceResponse struct {
 type IKeyboard_putScancode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_putScancode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Scancode int32 `xml:"scancode,omitempty" json:"scancode,omitempty"`
 }
@@ -18218,7 +18219,7 @@ type IKeyboard_putScancodeResponse struct {
 type IKeyboard_putScancodes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_putScancodes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Scancodes []int32 `xml:"scancodes,omitempty" json:"scancodes,omitempty"`
 }
@@ -18232,7 +18233,7 @@ type IKeyboard_putScancodesResponse struct {
 type IKeyboard_putCAD struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_putCAD"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboard_putCADResponse struct {
@@ -18242,7 +18243,7 @@ type IKeyboard_putCADResponse struct {
 type IKeyboard_releaseKeys struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_releaseKeys"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboard_releaseKeysResponse struct {
@@ -18252,7 +18253,7 @@ type IKeyboard_releaseKeysResponse struct {
 type IKeyboard_putUsageCode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboard_putUsageCode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UsageCode int32 `xml:"usageCode,omitempty" json:"usageCode,omitempty"`
 
@@ -18268,7 +18269,7 @@ type IKeyboard_putUsageCodeResponse struct {
 type IMousePointerShape_getVisible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getVisible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getVisibleResponse struct {
@@ -18280,7 +18281,7 @@ type IMousePointerShape_getVisibleResponse struct {
 type IMousePointerShape_getAlpha struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getAlpha"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getAlphaResponse struct {
@@ -18292,7 +18293,7 @@ type IMousePointerShape_getAlphaResponse struct {
 type IMousePointerShape_getHotX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getHotX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getHotXResponse struct {
@@ -18304,7 +18305,7 @@ type IMousePointerShape_getHotXResponse struct {
 type IMousePointerShape_getHotY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getHotY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getHotYResponse struct {
@@ -18316,7 +18317,7 @@ type IMousePointerShape_getHotYResponse struct {
 type IMousePointerShape_getWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getWidthResponse struct {
@@ -18328,7 +18329,7 @@ type IMousePointerShape_getWidthResponse struct {
 type IMousePointerShape_getHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getHeightResponse struct {
@@ -18340,7 +18341,7 @@ type IMousePointerShape_getHeightResponse struct {
 type IMousePointerShape_getShape struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShape_getShape"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShape_getShapeResponse struct {
@@ -18352,7 +18353,7 @@ type IMousePointerShape_getShapeResponse struct {
 type IMouse_getAbsoluteSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getAbsoluteSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getAbsoluteSupportedResponse struct {
@@ -18364,7 +18365,7 @@ type IMouse_getAbsoluteSupportedResponse struct {
 type IMouse_getRelativeSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getRelativeSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getRelativeSupportedResponse struct {
@@ -18376,7 +18377,7 @@ type IMouse_getRelativeSupportedResponse struct {
 type IMouse_getTouchScreenSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getTouchScreenSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getTouchScreenSupportedResponse struct {
@@ -18388,7 +18389,7 @@ type IMouse_getTouchScreenSupportedResponse struct {
 type IMouse_getTouchPadSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getTouchPadSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getTouchPadSupportedResponse struct {
@@ -18400,7 +18401,7 @@ type IMouse_getTouchPadSupportedResponse struct {
 type IMouse_getNeedsHostCursor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getNeedsHostCursor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getNeedsHostCursorResponse struct {
@@ -18412,7 +18413,7 @@ type IMouse_getNeedsHostCursorResponse struct {
 type IMouse_getPointerShape struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getPointerShape"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getPointerShapeResponse struct {
@@ -18424,7 +18425,7 @@ type IMouse_getPointerShapeResponse struct {
 type IMouse_getEventSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_getEventSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouse_getEventSourceResponse struct {
@@ -18436,7 +18437,7 @@ type IMouse_getEventSourceResponse struct {
 type IMouse_putMouseEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_putMouseEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Dx int32 `xml:"dx,omitempty" json:"dx,omitempty"`
 
@@ -18456,7 +18457,7 @@ type IMouse_putMouseEventResponse struct {
 type IMouse_putMouseEventAbsolute struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_putMouseEventAbsolute"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	X int32 `xml:"x,omitempty" json:"x,omitempty"`
 
@@ -18476,7 +18477,7 @@ type IMouse_putMouseEventAbsoluteResponse struct {
 type IMouse_putEventMultiTouch struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_putEventMultiTouch"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Count int32 `xml:"count,omitempty" json:"count,omitempty"`
 
@@ -18494,7 +18495,7 @@ type IMouse_putEventMultiTouchResponse struct {
 type IMouse_putEventMultiTouchString struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouse_putEventMultiTouchString"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Count int32 `xml:"count,omitempty" json:"count,omitempty"`
 
@@ -18512,7 +18513,7 @@ type IMouse_putEventMultiTouchStringResponse struct {
 type IFramebuffer_getWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getWidthResponse struct {
@@ -18524,7 +18525,7 @@ type IFramebuffer_getWidthResponse struct {
 type IFramebuffer_getHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getHeightResponse struct {
@@ -18536,7 +18537,7 @@ type IFramebuffer_getHeightResponse struct {
 type IFramebuffer_getBitsPerPixel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getBitsPerPixel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getBitsPerPixelResponse struct {
@@ -18548,7 +18549,7 @@ type IFramebuffer_getBitsPerPixelResponse struct {
 type IFramebuffer_getBytesPerLine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getBytesPerLine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getBytesPerLineResponse struct {
@@ -18560,7 +18561,7 @@ type IFramebuffer_getBytesPerLineResponse struct {
 type IFramebuffer_getPixelFormat struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getPixelFormat"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getPixelFormatResponse struct {
@@ -18572,7 +18573,7 @@ type IFramebuffer_getPixelFormatResponse struct {
 type IFramebuffer_getHeightReduction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getHeightReduction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getHeightReductionResponse struct {
@@ -18584,7 +18585,7 @@ type IFramebuffer_getHeightReductionResponse struct {
 type IFramebuffer_getOverlay struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getOverlay"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getOverlayResponse struct {
@@ -18596,7 +18597,7 @@ type IFramebuffer_getOverlayResponse struct {
 type IFramebuffer_getCapabilities struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_getCapabilities"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebuffer_getCapabilitiesResponse struct {
@@ -18608,7 +18609,7 @@ type IFramebuffer_getCapabilitiesResponse struct {
 type IFramebuffer_notifyUpdate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_notifyUpdate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	X uint32 `xml:"x,omitempty" json:"x,omitempty"`
 
@@ -18626,7 +18627,7 @@ type IFramebuffer_notifyUpdateResponse struct {
 type IFramebuffer_notifyUpdateImage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_notifyUpdateImage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	X uint32 `xml:"x,omitempty" json:"x,omitempty"`
 
@@ -18646,7 +18647,7 @@ type IFramebuffer_notifyUpdateImageResponse struct {
 type IFramebuffer_notifyChange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_notifyChange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -18666,7 +18667,7 @@ type IFramebuffer_notifyChangeResponse struct {
 type IFramebuffer_videoModeSupported struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_videoModeSupported"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Width uint32 `xml:"width,omitempty" json:"width,omitempty"`
 
@@ -18684,7 +18685,7 @@ type IFramebuffer_videoModeSupportedResponse struct {
 type IFramebuffer_notify3DEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebuffer_notify3DEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ uint32 `xml:"type,omitempty" json:"type,omitempty"`
 
@@ -18698,7 +18699,7 @@ type IFramebuffer_notify3DEventResponse struct {
 type IFramebufferOverlay_getX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_getX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebufferOverlay_getXResponse struct {
@@ -18710,7 +18711,7 @@ type IFramebufferOverlay_getXResponse struct {
 type IFramebufferOverlay_getY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_getY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebufferOverlay_getYResponse struct {
@@ -18722,7 +18723,7 @@ type IFramebufferOverlay_getYResponse struct {
 type IFramebufferOverlay_getVisible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_getVisible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebufferOverlay_getVisibleResponse struct {
@@ -18734,7 +18735,7 @@ type IFramebufferOverlay_getVisibleResponse struct {
 type IFramebufferOverlay_setVisible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_setVisible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Visible bool `xml:"visible,omitempty" json:"visible,omitempty"`
 }
@@ -18746,7 +18747,7 @@ type IFramebufferOverlay_setVisibleResponse struct {
 type IFramebufferOverlay_getAlpha struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_getAlpha"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFramebufferOverlay_getAlphaResponse struct {
@@ -18758,7 +18759,7 @@ type IFramebufferOverlay_getAlphaResponse struct {
 type IFramebufferOverlay_setAlpha struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_setAlpha"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Alpha uint32 `xml:"alpha,omitempty" json:"alpha,omitempty"`
 }
@@ -18770,7 +18771,7 @@ type IFramebufferOverlay_setAlphaResponse struct {
 type IFramebufferOverlay_move struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFramebufferOverlay_move"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	X uint32 `xml:"x,omitempty" json:"x,omitempty"`
 
@@ -18784,7 +18785,7 @@ type IFramebufferOverlay_moveResponse struct {
 type IGuestScreenInfo_getScreenId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getScreenId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getScreenIdResponse struct {
@@ -18796,7 +18797,7 @@ type IGuestScreenInfo_getScreenIdResponse struct {
 type IGuestScreenInfo_getGuestMonitorStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getGuestMonitorStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getGuestMonitorStatusResponse struct {
@@ -18808,7 +18809,7 @@ type IGuestScreenInfo_getGuestMonitorStatusResponse struct {
 type IGuestScreenInfo_getPrimary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getPrimary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getPrimaryResponse struct {
@@ -18820,7 +18821,7 @@ type IGuestScreenInfo_getPrimaryResponse struct {
 type IGuestScreenInfo_getOrigin struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getOrigin"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getOriginResponse struct {
@@ -18832,7 +18833,7 @@ type IGuestScreenInfo_getOriginResponse struct {
 type IGuestScreenInfo_getOriginX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getOriginX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getOriginXResponse struct {
@@ -18844,7 +18845,7 @@ type IGuestScreenInfo_getOriginXResponse struct {
 type IGuestScreenInfo_getOriginY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getOriginY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getOriginYResponse struct {
@@ -18856,7 +18857,7 @@ type IGuestScreenInfo_getOriginYResponse struct {
 type IGuestScreenInfo_getWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getWidthResponse struct {
@@ -18868,7 +18869,7 @@ type IGuestScreenInfo_getWidthResponse struct {
 type IGuestScreenInfo_getHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getHeightResponse struct {
@@ -18880,7 +18881,7 @@ type IGuestScreenInfo_getHeightResponse struct {
 type IGuestScreenInfo_getBitsPerPixel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getBitsPerPixel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getBitsPerPixelResponse struct {
@@ -18892,7 +18893,7 @@ type IGuestScreenInfo_getBitsPerPixelResponse struct {
 type IGuestScreenInfo_getExtendedInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestScreenInfo_getExtendedInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestScreenInfo_getExtendedInfoResponse struct {
@@ -18904,7 +18905,7 @@ type IGuestScreenInfo_getExtendedInfoResponse struct {
 type IDisplay_getGuestScreenLayout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_getGuestScreenLayout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDisplay_getGuestScreenLayoutResponse struct {
@@ -18916,7 +18917,7 @@ type IDisplay_getGuestScreenLayoutResponse struct {
 type IDisplay_getScreenResolution struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_getScreenResolution"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -18940,7 +18941,7 @@ type IDisplay_getScreenResolutionResponse struct {
 type IDisplay_attachFramebuffer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_attachFramebuffer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -18956,7 +18957,7 @@ type IDisplay_attachFramebufferResponse struct {
 type IDisplay_detachFramebuffer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_detachFramebuffer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -18970,7 +18971,7 @@ type IDisplay_detachFramebufferResponse struct {
 type IDisplay_queryFramebuffer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_queryFramebuffer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -18984,7 +18985,7 @@ type IDisplay_queryFramebufferResponse struct {
 type IDisplay_setVideoModeHint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_setVideoModeHint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Display uint32 `xml:"display,omitempty" json:"display,omitempty"`
 
@@ -19012,7 +19013,7 @@ type IDisplay_setVideoModeHintResponse struct {
 type IDisplay_getVideoModeHint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_getVideoModeHint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Display uint32 `xml:"display,omitempty" json:"display,omitempty"`
 }
@@ -19038,7 +19039,7 @@ type IDisplay_getVideoModeHintResponse struct {
 type IDisplay_setSeamlessMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_setSeamlessMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -19050,7 +19051,7 @@ type IDisplay_setSeamlessModeResponse struct {
 type IDisplay_takeScreenShotToArray struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_takeScreenShotToArray"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -19070,7 +19071,7 @@ type IDisplay_takeScreenShotToArrayResponse struct {
 type IDisplay_invalidateAndUpdate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_invalidateAndUpdate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDisplay_invalidateAndUpdateResponse struct {
@@ -19080,7 +19081,7 @@ type IDisplay_invalidateAndUpdateResponse struct {
 type IDisplay_invalidateAndUpdateScreen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_invalidateAndUpdateScreen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 }
@@ -19092,7 +19093,7 @@ type IDisplay_invalidateAndUpdateScreenResponse struct {
 type IDisplay_viewportChanged struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_viewportChanged"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -19112,7 +19113,7 @@ type IDisplay_viewportChangedResponse struct {
 type IDisplay_notifyScaleFactorChange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_notifyScaleFactorChange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenId uint32 `xml:"screenId,omitempty" json:"screenId,omitempty"`
 
@@ -19128,7 +19129,7 @@ type IDisplay_notifyScaleFactorChangeResponse struct {
 type IDisplay_notifyHiDPIOutputPolicyChange struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_notifyHiDPIOutputPolicyChange"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	FUnscaledHiDPI bool `xml:"fUnscaledHiDPI,omitempty" json:"fUnscaledHiDPI,omitempty"`
 }
@@ -19140,7 +19141,7 @@ type IDisplay_notifyHiDPIOutputPolicyChangeResponse struct {
 type IDisplay_setScreenLayout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_setScreenLayout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenLayoutMode *ScreenLayoutMode `xml:"screenLayoutMode,omitempty" json:"screenLayoutMode,omitempty"`
 
@@ -19154,7 +19155,7 @@ type IDisplay_setScreenLayoutResponse struct {
 type IDisplay_detachScreens struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_detachScreens"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ScreenIds []int32 `xml:"screenIds,omitempty" json:"screenIds,omitempty"`
 }
@@ -19166,7 +19167,7 @@ type IDisplay_detachScreensResponse struct {
 type IDisplay_createGuestScreenInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDisplay_createGuestScreenInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Display uint32 `xml:"display,omitempty" json:"display,omitempty"`
 
@@ -19196,7 +19197,7 @@ type IDisplay_createGuestScreenInfoResponse struct {
 type INetworkAdapter_getAdapterType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getAdapterType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getAdapterTypeResponse struct {
@@ -19208,7 +19209,7 @@ type INetworkAdapter_getAdapterTypeResponse struct {
 type INetworkAdapter_setAdapterType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setAdapterType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AdapterType *NetworkAdapterType `xml:"adapterType,omitempty" json:"adapterType,omitempty"`
 }
@@ -19220,7 +19221,7 @@ type INetworkAdapter_setAdapterTypeResponse struct {
 type INetworkAdapter_getSlot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getSlot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getSlotResponse struct {
@@ -19232,7 +19233,7 @@ type INetworkAdapter_getSlotResponse struct {
 type INetworkAdapter_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getEnabledResponse struct {
@@ -19244,7 +19245,7 @@ type INetworkAdapter_getEnabledResponse struct {
 type INetworkAdapter_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -19256,7 +19257,7 @@ type INetworkAdapter_setEnabledResponse struct {
 type INetworkAdapter_getMACAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getMACAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getMACAddressResponse struct {
@@ -19268,7 +19269,7 @@ type INetworkAdapter_getMACAddressResponse struct {
 type INetworkAdapter_setMACAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setMACAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MACAddress string `xml:"MACAddress,omitempty" json:"MACAddress,omitempty"`
 }
@@ -19280,7 +19281,7 @@ type INetworkAdapter_setMACAddressResponse struct {
 type INetworkAdapter_getAttachmentType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getAttachmentType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getAttachmentTypeResponse struct {
@@ -19292,7 +19293,7 @@ type INetworkAdapter_getAttachmentTypeResponse struct {
 type INetworkAdapter_setAttachmentType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setAttachmentType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AttachmentType *NetworkAttachmentType `xml:"attachmentType,omitempty" json:"attachmentType,omitempty"`
 }
@@ -19304,7 +19305,7 @@ type INetworkAdapter_setAttachmentTypeResponse struct {
 type INetworkAdapter_getBridgedInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getBridgedInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getBridgedInterfaceResponse struct {
@@ -19316,7 +19317,7 @@ type INetworkAdapter_getBridgedInterfaceResponse struct {
 type INetworkAdapter_setBridgedInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setBridgedInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	BridgedInterface string `xml:"bridgedInterface,omitempty" json:"bridgedInterface,omitempty"`
 }
@@ -19328,7 +19329,7 @@ type INetworkAdapter_setBridgedInterfaceResponse struct {
 type INetworkAdapter_getHostOnlyInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getHostOnlyInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getHostOnlyInterfaceResponse struct {
@@ -19340,7 +19341,7 @@ type INetworkAdapter_getHostOnlyInterfaceResponse struct {
 type INetworkAdapter_setHostOnlyInterface struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setHostOnlyInterface"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostOnlyInterface string `xml:"hostOnlyInterface,omitempty" json:"hostOnlyInterface,omitempty"`
 }
@@ -19352,7 +19353,7 @@ type INetworkAdapter_setHostOnlyInterfaceResponse struct {
 type INetworkAdapter_getHostOnlyNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getHostOnlyNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getHostOnlyNetworkResponse struct {
@@ -19364,7 +19365,7 @@ type INetworkAdapter_getHostOnlyNetworkResponse struct {
 type INetworkAdapter_setHostOnlyNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setHostOnlyNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostOnlyNetwork string `xml:"hostOnlyNetwork,omitempty" json:"hostOnlyNetwork,omitempty"`
 }
@@ -19376,7 +19377,7 @@ type INetworkAdapter_setHostOnlyNetworkResponse struct {
 type INetworkAdapter_getInternalNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getInternalNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getInternalNetworkResponse struct {
@@ -19388,7 +19389,7 @@ type INetworkAdapter_getInternalNetworkResponse struct {
 type INetworkAdapter_setInternalNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setInternalNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	InternalNetwork string `xml:"internalNetwork,omitempty" json:"internalNetwork,omitempty"`
 }
@@ -19400,7 +19401,7 @@ type INetworkAdapter_setInternalNetworkResponse struct {
 type INetworkAdapter_getNATNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getNATNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getNATNetworkResponse struct {
@@ -19412,7 +19413,7 @@ type INetworkAdapter_getNATNetworkResponse struct {
 type INetworkAdapter_setNATNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setNATNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NATNetwork string `xml:"NATNetwork,omitempty" json:"NATNetwork,omitempty"`
 }
@@ -19424,7 +19425,7 @@ type INetworkAdapter_setNATNetworkResponse struct {
 type INetworkAdapter_getGenericDriver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getGenericDriver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getGenericDriverResponse struct {
@@ -19436,7 +19437,7 @@ type INetworkAdapter_getGenericDriverResponse struct {
 type INetworkAdapter_setGenericDriver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setGenericDriver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	GenericDriver string `xml:"genericDriver,omitempty" json:"genericDriver,omitempty"`
 }
@@ -19448,7 +19449,7 @@ type INetworkAdapter_setGenericDriverResponse struct {
 type INetworkAdapter_getCloudNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getCloudNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getCloudNetworkResponse struct {
@@ -19460,7 +19461,7 @@ type INetworkAdapter_getCloudNetworkResponse struct {
 type INetworkAdapter_setCloudNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setCloudNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CloudNetwork string `xml:"cloudNetwork,omitempty" json:"cloudNetwork,omitempty"`
 }
@@ -19472,7 +19473,7 @@ type INetworkAdapter_setCloudNetworkResponse struct {
 type INetworkAdapter_getCableConnected struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getCableConnected"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getCableConnectedResponse struct {
@@ -19484,7 +19485,7 @@ type INetworkAdapter_getCableConnectedResponse struct {
 type INetworkAdapter_setCableConnected struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setCableConnected"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CableConnected bool `xml:"cableConnected,omitempty" json:"cableConnected,omitempty"`
 }
@@ -19496,7 +19497,7 @@ type INetworkAdapter_setCableConnectedResponse struct {
 type INetworkAdapter_getLineSpeed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getLineSpeed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getLineSpeedResponse struct {
@@ -19508,7 +19509,7 @@ type INetworkAdapter_getLineSpeedResponse struct {
 type INetworkAdapter_setLineSpeed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setLineSpeed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LineSpeed uint32 `xml:"lineSpeed,omitempty" json:"lineSpeed,omitempty"`
 }
@@ -19520,7 +19521,7 @@ type INetworkAdapter_setLineSpeedResponse struct {
 type INetworkAdapter_getPromiscModePolicy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getPromiscModePolicy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getPromiscModePolicyResponse struct {
@@ -19532,7 +19533,7 @@ type INetworkAdapter_getPromiscModePolicyResponse struct {
 type INetworkAdapter_setPromiscModePolicy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setPromiscModePolicy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PromiscModePolicy *NetworkAdapterPromiscModePolicy `xml:"promiscModePolicy,omitempty" json:"promiscModePolicy,omitempty"`
 }
@@ -19544,7 +19545,7 @@ type INetworkAdapter_setPromiscModePolicyResponse struct {
 type INetworkAdapter_getTraceEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getTraceEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getTraceEnabledResponse struct {
@@ -19556,7 +19557,7 @@ type INetworkAdapter_getTraceEnabledResponse struct {
 type INetworkAdapter_setTraceEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setTraceEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TraceEnabled bool `xml:"traceEnabled,omitempty" json:"traceEnabled,omitempty"`
 }
@@ -19568,7 +19569,7 @@ type INetworkAdapter_setTraceEnabledResponse struct {
 type INetworkAdapter_getTraceFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getTraceFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getTraceFileResponse struct {
@@ -19580,7 +19581,7 @@ type INetworkAdapter_getTraceFileResponse struct {
 type INetworkAdapter_setTraceFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setTraceFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TraceFile string `xml:"traceFile,omitempty" json:"traceFile,omitempty"`
 }
@@ -19592,7 +19593,7 @@ type INetworkAdapter_setTraceFileResponse struct {
 type INetworkAdapter_getNATEngine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getNATEngine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getNATEngineResponse struct {
@@ -19604,7 +19605,7 @@ type INetworkAdapter_getNATEngineResponse struct {
 type INetworkAdapter_getBootPriority struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getBootPriority"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getBootPriorityResponse struct {
@@ -19616,7 +19617,7 @@ type INetworkAdapter_getBootPriorityResponse struct {
 type INetworkAdapter_setBootPriority struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setBootPriority"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	BootPriority uint32 `xml:"bootPriority,omitempty" json:"bootPriority,omitempty"`
 }
@@ -19628,7 +19629,7 @@ type INetworkAdapter_setBootPriorityResponse struct {
 type INetworkAdapter_getBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapter_getBandwidthGroupResponse struct {
@@ -19640,7 +19641,7 @@ type INetworkAdapter_getBandwidthGroupResponse struct {
 type INetworkAdapter_setBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	BandwidthGroup string `xml:"bandwidthGroup,omitempty" json:"bandwidthGroup,omitempty"`
 }
@@ -19652,7 +19653,7 @@ type INetworkAdapter_setBandwidthGroupResponse struct {
 type INetworkAdapter_getProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -19666,7 +19667,7 @@ type INetworkAdapter_getPropertyResponse struct {
 type INetworkAdapter_setProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_setProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 
@@ -19680,7 +19681,7 @@ type INetworkAdapter_setPropertyResponse struct {
 type INetworkAdapter_getProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapter_getProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names string `xml:"names,omitempty" json:"names,omitempty"`
 }
@@ -19696,7 +19697,7 @@ type INetworkAdapter_getPropertiesResponse struct {
 type ISerialPort_getSlot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getSlot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getSlotResponse struct {
@@ -19708,7 +19709,7 @@ type ISerialPort_getSlotResponse struct {
 type ISerialPort_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getEnabledResponse struct {
@@ -19720,7 +19721,7 @@ type ISerialPort_getEnabledResponse struct {
 type ISerialPort_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -19732,7 +19733,7 @@ type ISerialPort_setEnabledResponse struct {
 type ISerialPort_getIOAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getIOAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getIOAddressResponse struct {
@@ -19744,7 +19745,7 @@ type ISerialPort_getIOAddressResponse struct {
 type ISerialPort_setIOAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setIOAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IOAddress uint32 `xml:"IOAddress,omitempty" json:"IOAddress,omitempty"`
 }
@@ -19756,7 +19757,7 @@ type ISerialPort_setIOAddressResponse struct {
 type ISerialPort_getIRQ struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getIRQ"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getIRQResponse struct {
@@ -19768,7 +19769,7 @@ type ISerialPort_getIRQResponse struct {
 type ISerialPort_setIRQ struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setIRQ"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IRQ uint32 `xml:"IRQ,omitempty" json:"IRQ,omitempty"`
 }
@@ -19780,7 +19781,7 @@ type ISerialPort_setIRQResponse struct {
 type ISerialPort_getHostMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getHostMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getHostModeResponse struct {
@@ -19792,7 +19793,7 @@ type ISerialPort_getHostModeResponse struct {
 type ISerialPort_setHostMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setHostMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostMode *PortMode `xml:"hostMode,omitempty" json:"hostMode,omitempty"`
 }
@@ -19804,7 +19805,7 @@ type ISerialPort_setHostModeResponse struct {
 type ISerialPort_getServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getServerResponse struct {
@@ -19816,7 +19817,7 @@ type ISerialPort_getServerResponse struct {
 type ISerialPort_setServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Server bool `xml:"server,omitempty" json:"server,omitempty"`
 }
@@ -19828,7 +19829,7 @@ type ISerialPort_setServerResponse struct {
 type ISerialPort_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getPathResponse struct {
@@ -19840,7 +19841,7 @@ type ISerialPort_getPathResponse struct {
 type ISerialPort_setPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -19852,7 +19853,7 @@ type ISerialPort_setPathResponse struct {
 type ISerialPort_getUartType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_getUartType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPort_getUartTypeResponse struct {
@@ -19864,7 +19865,7 @@ type ISerialPort_getUartTypeResponse struct {
 type ISerialPort_setUartType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPort_setUartType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UartType *UartType `xml:"uartType,omitempty" json:"uartType,omitempty"`
 }
@@ -19876,7 +19877,7 @@ type ISerialPort_setUartTypeResponse struct {
 type IParallelPort_getSlot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_getSlot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPort_getSlotResponse struct {
@@ -19888,7 +19889,7 @@ type IParallelPort_getSlotResponse struct {
 type IParallelPort_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPort_getEnabledResponse struct {
@@ -19900,7 +19901,7 @@ type IParallelPort_getEnabledResponse struct {
 type IParallelPort_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -19912,7 +19913,7 @@ type IParallelPort_setEnabledResponse struct {
 type IParallelPort_getIOBase struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_getIOBase"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPort_getIOBaseResponse struct {
@@ -19924,7 +19925,7 @@ type IParallelPort_getIOBaseResponse struct {
 type IParallelPort_setIOBase struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_setIOBase"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IOBase uint32 `xml:"IOBase,omitempty" json:"IOBase,omitempty"`
 }
@@ -19936,7 +19937,7 @@ type IParallelPort_setIOBaseResponse struct {
 type IParallelPort_getIRQ struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_getIRQ"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPort_getIRQResponse struct {
@@ -19948,7 +19949,7 @@ type IParallelPort_getIRQResponse struct {
 type IParallelPort_setIRQ struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_setIRQ"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IRQ uint32 `xml:"IRQ,omitempty" json:"IRQ,omitempty"`
 }
@@ -19960,7 +19961,7 @@ type IParallelPort_setIRQResponse struct {
 type IParallelPort_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPort_getPathResponse struct {
@@ -19972,7 +19973,7 @@ type IParallelPort_getPathResponse struct {
 type IParallelPort_setPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPort_setPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Path string `xml:"path,omitempty" json:"path,omitempty"`
 }
@@ -19984,7 +19985,7 @@ type IParallelPort_setPathResponse struct {
 type IMachineDebugger_getSingleStep struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getSingleStep"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getSingleStepResponse struct {
@@ -19996,7 +19997,7 @@ type IMachineDebugger_getSingleStepResponse struct {
 type IMachineDebugger_setSingleStep struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setSingleStep"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SingleStep bool `xml:"singleStep,omitempty" json:"singleStep,omitempty"`
 }
@@ -20008,7 +20009,7 @@ type IMachineDebugger_setSingleStepResponse struct {
 type IMachineDebugger_getExecuteAllInIEM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getExecuteAllInIEM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getExecuteAllInIEMResponse struct {
@@ -20020,7 +20021,7 @@ type IMachineDebugger_getExecuteAllInIEMResponse struct {
 type IMachineDebugger_setExecuteAllInIEM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setExecuteAllInIEM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ExecuteAllInIEM bool `xml:"executeAllInIEM,omitempty" json:"executeAllInIEM,omitempty"`
 }
@@ -20032,7 +20033,7 @@ type IMachineDebugger_setExecuteAllInIEMResponse struct {
 type IMachineDebugger_getLogEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogEnabledResponse struct {
@@ -20044,7 +20045,7 @@ type IMachineDebugger_getLogEnabledResponse struct {
 type IMachineDebugger_setLogEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setLogEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LogEnabled bool `xml:"logEnabled,omitempty" json:"logEnabled,omitempty"`
 }
@@ -20056,7 +20057,7 @@ type IMachineDebugger_setLogEnabledResponse struct {
 type IMachineDebugger_getLogDbgFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogDbgFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogDbgFlagsResponse struct {
@@ -20068,7 +20069,7 @@ type IMachineDebugger_getLogDbgFlagsResponse struct {
 type IMachineDebugger_getLogDbgGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogDbgGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogDbgGroupsResponse struct {
@@ -20080,7 +20081,7 @@ type IMachineDebugger_getLogDbgGroupsResponse struct {
 type IMachineDebugger_getLogDbgDestinations struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogDbgDestinations"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogDbgDestinationsResponse struct {
@@ -20092,7 +20093,7 @@ type IMachineDebugger_getLogDbgDestinationsResponse struct {
 type IMachineDebugger_getLogRelFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogRelFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogRelFlagsResponse struct {
@@ -20104,7 +20105,7 @@ type IMachineDebugger_getLogRelFlagsResponse struct {
 type IMachineDebugger_getLogRelGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogRelGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogRelGroupsResponse struct {
@@ -20116,7 +20117,7 @@ type IMachineDebugger_getLogRelGroupsResponse struct {
 type IMachineDebugger_getLogRelDestinations struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getLogRelDestinations"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getLogRelDestinationsResponse struct {
@@ -20128,7 +20129,7 @@ type IMachineDebugger_getLogRelDestinationsResponse struct {
 type IMachineDebugger_getExecutionEngine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getExecutionEngine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getExecutionEngineResponse struct {
@@ -20140,7 +20141,7 @@ type IMachineDebugger_getExecutionEngineResponse struct {
 type IMachineDebugger_getHWVirtExNestedPagingEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getHWVirtExNestedPagingEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getHWVirtExNestedPagingEnabledResponse struct {
@@ -20152,7 +20153,7 @@ type IMachineDebugger_getHWVirtExNestedPagingEnabledResponse struct {
 type IMachineDebugger_getHWVirtExVPIDEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getHWVirtExVPIDEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getHWVirtExVPIDEnabledResponse struct {
@@ -20164,7 +20165,7 @@ type IMachineDebugger_getHWVirtExVPIDEnabledResponse struct {
 type IMachineDebugger_getHWVirtExUXEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getHWVirtExUXEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getHWVirtExUXEnabledResponse struct {
@@ -20176,7 +20177,7 @@ type IMachineDebugger_getHWVirtExUXEnabledResponse struct {
 type IMachineDebugger_getOSName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getOSName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getOSNameResponse struct {
@@ -20188,7 +20189,7 @@ type IMachineDebugger_getOSNameResponse struct {
 type IMachineDebugger_getOSVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getOSVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getOSVersionResponse struct {
@@ -20200,7 +20201,7 @@ type IMachineDebugger_getOSVersionResponse struct {
 type IMachineDebugger_getPAEEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getPAEEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getPAEEnabledResponse struct {
@@ -20212,7 +20213,7 @@ type IMachineDebugger_getPAEEnabledResponse struct {
 type IMachineDebugger_getVirtualTimeRate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getVirtualTimeRate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getVirtualTimeRateResponse struct {
@@ -20224,7 +20225,7 @@ type IMachineDebugger_getVirtualTimeRateResponse struct {
 type IMachineDebugger_setVirtualTimeRate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setVirtualTimeRate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VirtualTimeRate uint32 `xml:"virtualTimeRate,omitempty" json:"virtualTimeRate,omitempty"`
 }
@@ -20236,7 +20237,7 @@ type IMachineDebugger_setVirtualTimeRateResponse struct {
 type IMachineDebugger_getUptime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getUptime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_getUptimeResponse struct {
@@ -20248,7 +20249,7 @@ type IMachineDebugger_getUptimeResponse struct {
 type IMachineDebugger_dumpGuestCore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_dumpGuestCore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Filename string `xml:"filename,omitempty" json:"filename,omitempty"`
 
@@ -20262,7 +20263,7 @@ type IMachineDebugger_dumpGuestCoreResponse struct {
 type IMachineDebugger_dumpHostProcessCore struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_dumpHostProcessCore"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Filename string `xml:"filename,omitempty" json:"filename,omitempty"`
 
@@ -20276,7 +20277,7 @@ type IMachineDebugger_dumpHostProcessCoreResponse struct {
 type IMachineDebugger_info struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_info"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -20292,7 +20293,7 @@ type IMachineDebugger_infoResponse struct {
 type IMachineDebugger_injectNMI struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_injectNMI"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_injectNMIResponse struct {
@@ -20302,7 +20303,7 @@ type IMachineDebugger_injectNMIResponse struct {
 type IMachineDebugger_modifyLogGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_modifyLogGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Settings string `xml:"settings,omitempty" json:"settings,omitempty"`
 }
@@ -20314,7 +20315,7 @@ type IMachineDebugger_modifyLogGroupsResponse struct {
 type IMachineDebugger_modifyLogFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_modifyLogFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Settings string `xml:"settings,omitempty" json:"settings,omitempty"`
 }
@@ -20326,7 +20327,7 @@ type IMachineDebugger_modifyLogFlagsResponse struct {
 type IMachineDebugger_modifyLogDestinations struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_modifyLogDestinations"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Settings string `xml:"settings,omitempty" json:"settings,omitempty"`
 }
@@ -20338,7 +20339,7 @@ type IMachineDebugger_modifyLogDestinationsResponse struct {
 type IMachineDebugger_readPhysicalMemory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_readPhysicalMemory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Address int64 `xml:"address,omitempty" json:"address,omitempty"`
 
@@ -20354,7 +20355,7 @@ type IMachineDebugger_readPhysicalMemoryResponse struct {
 type IMachineDebugger_writePhysicalMemory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_writePhysicalMemory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Address int64 `xml:"address,omitempty" json:"address,omitempty"`
 
@@ -20370,7 +20371,7 @@ type IMachineDebugger_writePhysicalMemoryResponse struct {
 type IMachineDebugger_readVirtualMemory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_readVirtualMemory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -20388,7 +20389,7 @@ type IMachineDebugger_readVirtualMemoryResponse struct {
 type IMachineDebugger_writeVirtualMemory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_writeVirtualMemory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -20406,7 +20407,7 @@ type IMachineDebugger_writeVirtualMemoryResponse struct {
 type IMachineDebugger_loadPlugIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_loadPlugIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -20420,7 +20421,7 @@ type IMachineDebugger_loadPlugInResponse struct {
 type IMachineDebugger_unloadPlugIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_unloadPlugIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -20432,7 +20433,7 @@ type IMachineDebugger_unloadPlugInResponse struct {
 type IMachineDebugger_detectOS struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_detectOS"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDebugger_detectOSResponse struct {
@@ -20444,7 +20445,7 @@ type IMachineDebugger_detectOSResponse struct {
 type IMachineDebugger_queryOSKernelLog struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_queryOSKernelLog"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxMessages uint32 `xml:"maxMessages,omitempty" json:"maxMessages,omitempty"`
 }
@@ -20458,7 +20459,7 @@ type IMachineDebugger_queryOSKernelLogResponse struct {
 type IMachineDebugger_getRegister struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getRegister"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -20474,7 +20475,7 @@ type IMachineDebugger_getRegisterResponse struct {
 type IMachineDebugger_getRegisters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getRegisters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 }
@@ -20490,7 +20491,7 @@ type IMachineDebugger_getRegistersResponse struct {
 type IMachineDebugger_setRegister struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setRegister"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -20506,7 +20507,7 @@ type IMachineDebugger_setRegisterResponse struct {
 type IMachineDebugger_setRegisters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_setRegisters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 
@@ -20522,7 +20523,7 @@ type IMachineDebugger_setRegistersResponse struct {
 type IMachineDebugger_dumpGuestStack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_dumpGuestStack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 }
@@ -20536,7 +20537,7 @@ type IMachineDebugger_dumpGuestStackResponse struct {
 type IMachineDebugger_resetStats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_resetStats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Pattern string `xml:"pattern,omitempty" json:"pattern,omitempty"`
 }
@@ -20548,7 +20549,7 @@ type IMachineDebugger_resetStatsResponse struct {
 type IMachineDebugger_dumpStats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_dumpStats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Pattern string `xml:"pattern,omitempty" json:"pattern,omitempty"`
 }
@@ -20560,7 +20561,7 @@ type IMachineDebugger_dumpStatsResponse struct {
 type IMachineDebugger_getStats struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getStats"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Pattern string `xml:"pattern,omitempty" json:"pattern,omitempty"`
 
@@ -20576,7 +20577,7 @@ type IMachineDebugger_getStatsResponse struct {
 type IMachineDebugger_getCPULoad struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_getCPULoad"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	CpuId uint32 `xml:"cpuId,omitempty" json:"cpuId,omitempty"`
 }
@@ -20596,7 +20597,7 @@ type IMachineDebugger_getCPULoadResponse struct {
 type IMachineDebugger_takeGuestSample struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDebugger_takeGuestSample"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Filename string `xml:"filename,omitempty" json:"filename,omitempty"`
 
@@ -20614,7 +20615,7 @@ type IMachineDebugger_takeGuestSampleResponse struct {
 type IUSBDeviceFilters_getDeviceFilters struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilters_getDeviceFilters"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilters_getDeviceFiltersResponse struct {
@@ -20626,7 +20627,7 @@ type IUSBDeviceFilters_getDeviceFiltersResponse struct {
 type IUSBDeviceFilters_createDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilters_createDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -20640,7 +20641,7 @@ type IUSBDeviceFilters_createDeviceFilterResponse struct {
 type IUSBDeviceFilters_insertDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilters_insertDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 
@@ -20654,7 +20655,7 @@ type IUSBDeviceFilters_insertDeviceFilterResponse struct {
 type IUSBDeviceFilters_removeDeviceFilter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilters_removeDeviceFilter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Position uint32 `xml:"position,omitempty" json:"position,omitempty"`
 }
@@ -20668,7 +20669,7 @@ type IUSBDeviceFilters_removeDeviceFilterResponse struct {
 type IUSBController_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBController_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBController_getNameResponse struct {
@@ -20680,7 +20681,7 @@ type IUSBController_getNameResponse struct {
 type IUSBController_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBController_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -20692,7 +20693,7 @@ type IUSBController_setNameResponse struct {
 type IUSBController_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBController_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBController_getTypeResponse struct {
@@ -20704,7 +20705,7 @@ type IUSBController_getTypeResponse struct {
 type IUSBController_setType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBController_setType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *USBControllerType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -20716,7 +20717,7 @@ type IUSBController_setTypeResponse struct {
 type IUSBController_getUSBStandard struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBController_getUSBStandard"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBController_getUSBStandardResponse struct {
@@ -20728,7 +20729,7 @@ type IUSBController_getUSBStandardResponse struct {
 type IUSBDevice_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getIdResponse struct {
@@ -20740,7 +20741,7 @@ type IUSBDevice_getIdResponse struct {
 type IUSBDevice_getVendorId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getVendorId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getVendorIdResponse struct {
@@ -20752,7 +20753,7 @@ type IUSBDevice_getVendorIdResponse struct {
 type IUSBDevice_getProductId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getProductId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getProductIdResponse struct {
@@ -20764,7 +20765,7 @@ type IUSBDevice_getProductIdResponse struct {
 type IUSBDevice_getRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getRevisionResponse struct {
@@ -20776,7 +20777,7 @@ type IUSBDevice_getRevisionResponse struct {
 type IUSBDevice_getManufacturer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getManufacturer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getManufacturerResponse struct {
@@ -20788,7 +20789,7 @@ type IUSBDevice_getManufacturerResponse struct {
 type IUSBDevice_getProduct struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getProduct"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getProductResponse struct {
@@ -20800,7 +20801,7 @@ type IUSBDevice_getProductResponse struct {
 type IUSBDevice_getSerialNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getSerialNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getSerialNumberResponse struct {
@@ -20812,7 +20813,7 @@ type IUSBDevice_getSerialNumberResponse struct {
 type IUSBDevice_getAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getAddressResponse struct {
@@ -20824,7 +20825,7 @@ type IUSBDevice_getAddressResponse struct {
 type IUSBDevice_getPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getPortResponse struct {
@@ -20836,7 +20837,7 @@ type IUSBDevice_getPortResponse struct {
 type IUSBDevice_getPortPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getPortPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getPortPathResponse struct {
@@ -20848,7 +20849,7 @@ type IUSBDevice_getPortPathResponse struct {
 type IUSBDevice_getVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getVersionResponse struct {
@@ -20860,7 +20861,7 @@ type IUSBDevice_getVersionResponse struct {
 type IUSBDevice_getSpeed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getSpeed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getSpeedResponse struct {
@@ -20872,7 +20873,7 @@ type IUSBDevice_getSpeedResponse struct {
 type IUSBDevice_getRemote struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getRemote"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getRemoteResponse struct {
@@ -20884,7 +20885,7 @@ type IUSBDevice_getRemoteResponse struct {
 type IUSBDevice_getDeviceInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getDeviceInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getDeviceInfoResponse struct {
@@ -20896,7 +20897,7 @@ type IUSBDevice_getDeviceInfoResponse struct {
 type IUSBDevice_getBackend struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDevice_getBackend"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDevice_getBackendResponse struct {
@@ -20908,7 +20909,7 @@ type IUSBDevice_getBackendResponse struct {
 type IUSBDeviceFilter_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getNameResponse struct {
@@ -20920,7 +20921,7 @@ type IUSBDeviceFilter_getNameResponse struct {
 type IUSBDeviceFilter_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -20932,7 +20933,7 @@ type IUSBDeviceFilter_setNameResponse struct {
 type IUSBDeviceFilter_getActive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getActive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getActiveResponse struct {
@@ -20944,7 +20945,7 @@ type IUSBDeviceFilter_getActiveResponse struct {
 type IUSBDeviceFilter_setActive struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setActive"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Active bool `xml:"active,omitempty" json:"active,omitempty"`
 }
@@ -20956,7 +20957,7 @@ type IUSBDeviceFilter_setActiveResponse struct {
 type IUSBDeviceFilter_getVendorId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getVendorId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getVendorIdResponse struct {
@@ -20968,7 +20969,7 @@ type IUSBDeviceFilter_getVendorIdResponse struct {
 type IUSBDeviceFilter_setVendorId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setVendorId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VendorId string `xml:"vendorId,omitempty" json:"vendorId,omitempty"`
 }
@@ -20980,7 +20981,7 @@ type IUSBDeviceFilter_setVendorIdResponse struct {
 type IUSBDeviceFilter_getProductId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getProductId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getProductIdResponse struct {
@@ -20992,7 +20993,7 @@ type IUSBDeviceFilter_getProductIdResponse struct {
 type IUSBDeviceFilter_setProductId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setProductId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProductId string `xml:"productId,omitempty" json:"productId,omitempty"`
 }
@@ -21004,7 +21005,7 @@ type IUSBDeviceFilter_setProductIdResponse struct {
 type IUSBDeviceFilter_getRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getRevisionResponse struct {
@@ -21016,7 +21017,7 @@ type IUSBDeviceFilter_getRevisionResponse struct {
 type IUSBDeviceFilter_setRevision struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setRevision"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Revision string `xml:"revision,omitempty" json:"revision,omitempty"`
 }
@@ -21028,7 +21029,7 @@ type IUSBDeviceFilter_setRevisionResponse struct {
 type IUSBDeviceFilter_getManufacturer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getManufacturer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getManufacturerResponse struct {
@@ -21040,7 +21041,7 @@ type IUSBDeviceFilter_getManufacturerResponse struct {
 type IUSBDeviceFilter_setManufacturer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setManufacturer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Manufacturer string `xml:"manufacturer,omitempty" json:"manufacturer,omitempty"`
 }
@@ -21052,7 +21053,7 @@ type IUSBDeviceFilter_setManufacturerResponse struct {
 type IUSBDeviceFilter_getProduct struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getProduct"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getProductResponse struct {
@@ -21064,7 +21065,7 @@ type IUSBDeviceFilter_getProductResponse struct {
 type IUSBDeviceFilter_setProduct struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setProduct"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Product string `xml:"product,omitempty" json:"product,omitempty"`
 }
@@ -21076,7 +21077,7 @@ type IUSBDeviceFilter_setProductResponse struct {
 type IUSBDeviceFilter_getSerialNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getSerialNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getSerialNumberResponse struct {
@@ -21088,7 +21089,7 @@ type IUSBDeviceFilter_getSerialNumberResponse struct {
 type IUSBDeviceFilter_setSerialNumber struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setSerialNumber"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SerialNumber string `xml:"serialNumber,omitempty" json:"serialNumber,omitempty"`
 }
@@ -21100,7 +21101,7 @@ type IUSBDeviceFilter_setSerialNumberResponse struct {
 type IUSBDeviceFilter_getPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getPortResponse struct {
@@ -21112,7 +21113,7 @@ type IUSBDeviceFilter_getPortResponse struct {
 type IUSBDeviceFilter_setPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Port string `xml:"port,omitempty" json:"port,omitempty"`
 }
@@ -21124,7 +21125,7 @@ type IUSBDeviceFilter_setPortResponse struct {
 type IUSBDeviceFilter_getRemote struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getRemote"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getRemoteResponse struct {
@@ -21136,7 +21137,7 @@ type IUSBDeviceFilter_getRemoteResponse struct {
 type IUSBDeviceFilter_setRemote struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setRemote"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Remote string `xml:"remote,omitempty" json:"remote,omitempty"`
 }
@@ -21148,7 +21149,7 @@ type IUSBDeviceFilter_setRemoteResponse struct {
 type IUSBDeviceFilter_getMaskedInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_getMaskedInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceFilter_getMaskedInterfacesResponse struct {
@@ -21160,7 +21161,7 @@ type IUSBDeviceFilter_getMaskedInterfacesResponse struct {
 type IUSBDeviceFilter_setMaskedInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceFilter_setMaskedInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaskedInterfaces uint32 `xml:"maskedInterfaces,omitempty" json:"maskedInterfaces,omitempty"`
 }
@@ -21172,7 +21173,7 @@ type IUSBDeviceFilter_setMaskedInterfacesResponse struct {
 type IHostUSBDevice_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostUSBDevice_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostUSBDevice_getStateResponse struct {
@@ -21184,7 +21185,7 @@ type IHostUSBDevice_getStateResponse struct {
 type IHostUSBDeviceFilter_getAction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostUSBDeviceFilter_getAction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostUSBDeviceFilter_getActionResponse struct {
@@ -21196,7 +21197,7 @@ type IHostUSBDeviceFilter_getActionResponse struct {
 type IHostUSBDeviceFilter_setAction struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostUSBDeviceFilter_setAction"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Action *USBDeviceFilterAction `xml:"action,omitempty" json:"action,omitempty"`
 }
@@ -21208,7 +21209,7 @@ type IHostUSBDeviceFilter_setActionResponse struct {
 type IUSBProxyBackend_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBProxyBackend_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBProxyBackend_getNameResponse struct {
@@ -21220,7 +21221,7 @@ type IUSBProxyBackend_getNameResponse struct {
 type IUSBProxyBackend_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBProxyBackend_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBProxyBackend_getTypeResponse struct {
@@ -21232,7 +21233,7 @@ type IUSBProxyBackend_getTypeResponse struct {
 type IAudioAdapter_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getEnabledResponse struct {
@@ -21244,7 +21245,7 @@ type IAudioAdapter_getEnabledResponse struct {
 type IAudioAdapter_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -21256,7 +21257,7 @@ type IAudioAdapter_setEnabledResponse struct {
 type IAudioAdapter_getEnabledIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getEnabledIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getEnabledInResponse struct {
@@ -21268,7 +21269,7 @@ type IAudioAdapter_getEnabledInResponse struct {
 type IAudioAdapter_setEnabledIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setEnabledIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	EnabledIn bool `xml:"enabledIn,omitempty" json:"enabledIn,omitempty"`
 }
@@ -21280,7 +21281,7 @@ type IAudioAdapter_setEnabledInResponse struct {
 type IAudioAdapter_getEnabledOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getEnabledOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getEnabledOutResponse struct {
@@ -21292,7 +21293,7 @@ type IAudioAdapter_getEnabledOutResponse struct {
 type IAudioAdapter_setEnabledOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setEnabledOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	EnabledOut bool `xml:"enabledOut,omitempty" json:"enabledOut,omitempty"`
 }
@@ -21304,7 +21305,7 @@ type IAudioAdapter_setEnabledOutResponse struct {
 type IAudioAdapter_getAudioController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getAudioController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getAudioControllerResponse struct {
@@ -21316,7 +21317,7 @@ type IAudioAdapter_getAudioControllerResponse struct {
 type IAudioAdapter_setAudioController struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setAudioController"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioController *AudioControllerType `xml:"audioController,omitempty" json:"audioController,omitempty"`
 }
@@ -21328,7 +21329,7 @@ type IAudioAdapter_setAudioControllerResponse struct {
 type IAudioAdapter_getAudioCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getAudioCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getAudioCodecResponse struct {
@@ -21340,7 +21341,7 @@ type IAudioAdapter_getAudioCodecResponse struct {
 type IAudioAdapter_setAudioCodec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setAudioCodec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioCodec *AudioCodecType `xml:"audioCodec,omitempty" json:"audioCodec,omitempty"`
 }
@@ -21352,7 +21353,7 @@ type IAudioAdapter_setAudioCodecResponse struct {
 type IAudioAdapter_getAudioDriver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getAudioDriver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getAudioDriverResponse struct {
@@ -21364,7 +21365,7 @@ type IAudioAdapter_getAudioDriverResponse struct {
 type IAudioAdapter_setAudioDriver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setAudioDriver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AudioDriver *AudioDriverType `xml:"audioDriver,omitempty" json:"audioDriver,omitempty"`
 }
@@ -21376,7 +21377,7 @@ type IAudioAdapter_setAudioDriverResponse struct {
 type IAudioAdapter_getPropertiesList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getPropertiesList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapter_getPropertiesListResponse struct {
@@ -21388,7 +21389,7 @@ type IAudioAdapter_getPropertiesListResponse struct {
 type IAudioAdapter_setProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_setProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 
@@ -21402,7 +21403,7 @@ type IAudioAdapter_setPropertyResponse struct {
 type IAudioAdapter_getProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapter_getProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -21416,7 +21417,7 @@ type IAudioAdapter_getPropertyResponse struct {
 type IHostAudioDevice_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getIdResponse struct {
@@ -21428,7 +21429,7 @@ type IHostAudioDevice_getIdResponse struct {
 type IHostAudioDevice_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getNameResponse struct {
@@ -21440,7 +21441,7 @@ type IHostAudioDevice_getNameResponse struct {
 type IHostAudioDevice_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -21452,7 +21453,7 @@ type IHostAudioDevice_setNameResponse struct {
 type IHostAudioDevice_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getTypeResponse struct {
@@ -21464,7 +21465,7 @@ type IHostAudioDevice_getTypeResponse struct {
 type IHostAudioDevice_setType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Type_ *AudioDeviceType `xml:"type,omitempty" json:"type,omitempty"`
 }
@@ -21476,7 +21477,7 @@ type IHostAudioDevice_setTypeResponse struct {
 type IHostAudioDevice_getUsage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getUsage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getUsageResponse struct {
@@ -21488,7 +21489,7 @@ type IHostAudioDevice_getUsageResponse struct {
 type IHostAudioDevice_setUsage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setUsage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Usage *AudioDirection `xml:"usage,omitempty" json:"usage,omitempty"`
 }
@@ -21500,7 +21501,7 @@ type IHostAudioDevice_setUsageResponse struct {
 type IHostAudioDevice_getDefaultIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getDefaultIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getDefaultInResponse struct {
@@ -21512,7 +21513,7 @@ type IHostAudioDevice_getDefaultInResponse struct {
 type IHostAudioDevice_setDefaultIn struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setDefaultIn"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultIn bool `xml:"defaultIn,omitempty" json:"defaultIn,omitempty"`
 }
@@ -21524,7 +21525,7 @@ type IHostAudioDevice_setDefaultInResponse struct {
 type IHostAudioDevice_getDefaultOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getDefaultOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getDefaultOutResponse struct {
@@ -21536,7 +21537,7 @@ type IHostAudioDevice_getDefaultOutResponse struct {
 type IHostAudioDevice_setDefaultOut struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setDefaultOut"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DefaultOut bool `xml:"defaultOut,omitempty" json:"defaultOut,omitempty"`
 }
@@ -21548,7 +21549,7 @@ type IHostAudioDevice_setDefaultOutResponse struct {
 type IHostAudioDevice_getIsHotPlug struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getIsHotPlug"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getIsHotPlugResponse struct {
@@ -21560,7 +21561,7 @@ type IHostAudioDevice_getIsHotPlugResponse struct {
 type IHostAudioDevice_setIsHotPlug struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setIsHotPlug"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IsHotPlug bool `xml:"isHotPlug,omitempty" json:"isHotPlug,omitempty"`
 }
@@ -21572,7 +21573,7 @@ type IHostAudioDevice_setIsHotPlugResponse struct {
 type IHostAudioDevice_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDevice_getStateResponse struct {
@@ -21584,7 +21585,7 @@ type IHostAudioDevice_getStateResponse struct {
 type IHostAudioDevice_setState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_setState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	State *AudioDeviceState `xml:"state,omitempty" json:"state,omitempty"`
 }
@@ -21596,7 +21597,7 @@ type IHostAudioDevice_setStateResponse struct {
 type IHostAudioDevice_getProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDevice_getProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -21610,7 +21611,7 @@ type IHostAudioDevice_getPropertyResponse struct {
 type IAudioSettings_getAdapter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioSettings_getAdapter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioSettings_getAdapterResponse struct {
@@ -21622,7 +21623,7 @@ type IAudioSettings_getAdapterResponse struct {
 type IAudioSettings_getHostAudioDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioSettings_getHostAudioDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Usage *AudioDirection `xml:"usage,omitempty" json:"usage,omitempty"`
 }
@@ -21636,7 +21637,7 @@ type IAudioSettings_getHostAudioDeviceResponse struct {
 type IAudioSettings_setHostAudioDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioSettings_setHostAudioDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Device string `xml:"device,omitempty" json:"device,omitempty"`
 
@@ -21650,7 +21651,7 @@ type IAudioSettings_setHostAudioDeviceResponse struct {
 type IVRDEServer_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getEnabledResponse struct {
@@ -21662,7 +21663,7 @@ type IVRDEServer_getEnabledResponse struct {
 type IVRDEServer_setEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Enabled bool `xml:"enabled,omitempty" json:"enabled,omitempty"`
 }
@@ -21674,7 +21675,7 @@ type IVRDEServer_setEnabledResponse struct {
 type IVRDEServer_getAuthType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getAuthType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getAuthTypeResponse struct {
@@ -21686,7 +21687,7 @@ type IVRDEServer_getAuthTypeResponse struct {
 type IVRDEServer_setAuthType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setAuthType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AuthType *AuthType `xml:"authType,omitempty" json:"authType,omitempty"`
 }
@@ -21698,7 +21699,7 @@ type IVRDEServer_setAuthTypeResponse struct {
 type IVRDEServer_getAuthTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getAuthTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getAuthTimeoutResponse struct {
@@ -21710,7 +21711,7 @@ type IVRDEServer_getAuthTimeoutResponse struct {
 type IVRDEServer_setAuthTimeout struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setAuthTimeout"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AuthTimeout uint32 `xml:"authTimeout,omitempty" json:"authTimeout,omitempty"`
 }
@@ -21722,7 +21723,7 @@ type IVRDEServer_setAuthTimeoutResponse struct {
 type IVRDEServer_getAllowMultiConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getAllowMultiConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getAllowMultiConnectionResponse struct {
@@ -21734,7 +21735,7 @@ type IVRDEServer_getAllowMultiConnectionResponse struct {
 type IVRDEServer_setAllowMultiConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setAllowMultiConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AllowMultiConnection bool `xml:"allowMultiConnection,omitempty" json:"allowMultiConnection,omitempty"`
 }
@@ -21746,7 +21747,7 @@ type IVRDEServer_setAllowMultiConnectionResponse struct {
 type IVRDEServer_getReuseSingleConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getReuseSingleConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getReuseSingleConnectionResponse struct {
@@ -21758,7 +21759,7 @@ type IVRDEServer_getReuseSingleConnectionResponse struct {
 type IVRDEServer_setReuseSingleConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setReuseSingleConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ReuseSingleConnection bool `xml:"reuseSingleConnection,omitempty" json:"reuseSingleConnection,omitempty"`
 }
@@ -21770,7 +21771,7 @@ type IVRDEServer_setReuseSingleConnectionResponse struct {
 type IVRDEServer_getVRDEExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getVRDEExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getVRDEExtPackResponse struct {
@@ -21782,7 +21783,7 @@ type IVRDEServer_getVRDEExtPackResponse struct {
 type IVRDEServer_setVRDEExtPack struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setVRDEExtPack"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	VRDEExtPack string `xml:"VRDEExtPack,omitempty" json:"VRDEExtPack,omitempty"`
 }
@@ -21794,7 +21795,7 @@ type IVRDEServer_setVRDEExtPackResponse struct {
 type IVRDEServer_getAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getAuthLibraryResponse struct {
@@ -21806,7 +21807,7 @@ type IVRDEServer_getAuthLibraryResponse struct {
 type IVRDEServer_setAuthLibrary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setAuthLibrary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AuthLibrary string `xml:"authLibrary,omitempty" json:"authLibrary,omitempty"`
 }
@@ -21818,7 +21819,7 @@ type IVRDEServer_setAuthLibraryResponse struct {
 type IVRDEServer_getVRDEProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getVRDEProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServer_getVRDEPropertiesResponse struct {
@@ -21830,7 +21831,7 @@ type IVRDEServer_getVRDEPropertiesResponse struct {
 type IVRDEServer_setVRDEProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_setVRDEProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 
@@ -21844,7 +21845,7 @@ type IVRDEServer_setVRDEPropertyResponse struct {
 type IVRDEServer_getVRDEProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServer_getVRDEProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Key string `xml:"key,omitempty" json:"key,omitempty"`
 }
@@ -21858,7 +21859,7 @@ type IVRDEServer_getVRDEPropertyResponse struct {
 type ISharedFolder_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getNameResponse struct {
@@ -21870,7 +21871,7 @@ type ISharedFolder_getNameResponse struct {
 type ISharedFolder_getHostPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getHostPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getHostPathResponse struct {
@@ -21882,7 +21883,7 @@ type ISharedFolder_getHostPathResponse struct {
 type ISharedFolder_getAccessible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getAccessible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getAccessibleResponse struct {
@@ -21894,7 +21895,7 @@ type ISharedFolder_getAccessibleResponse struct {
 type ISharedFolder_getWritable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getWritable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getWritableResponse struct {
@@ -21906,7 +21907,7 @@ type ISharedFolder_getWritableResponse struct {
 type ISharedFolder_setWritable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_setWritable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Writable bool `xml:"writable,omitempty" json:"writable,omitempty"`
 }
@@ -21918,7 +21919,7 @@ type ISharedFolder_setWritableResponse struct {
 type ISharedFolder_getAutoMount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getAutoMount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getAutoMountResponse struct {
@@ -21930,7 +21931,7 @@ type ISharedFolder_getAutoMountResponse struct {
 type ISharedFolder_setAutoMount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_setAutoMount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutoMount bool `xml:"autoMount,omitempty" json:"autoMount,omitempty"`
 }
@@ -21942,7 +21943,7 @@ type ISharedFolder_setAutoMountResponse struct {
 type ISharedFolder_getAutoMountPoint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getAutoMountPoint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getAutoMountPointResponse struct {
@@ -21954,7 +21955,7 @@ type ISharedFolder_getAutoMountPointResponse struct {
 type ISharedFolder_setAutoMountPoint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_setAutoMountPoint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AutoMountPoint string `xml:"autoMountPoint,omitempty" json:"autoMountPoint,omitempty"`
 }
@@ -21966,7 +21967,7 @@ type ISharedFolder_setAutoMountPointResponse struct {
 type ISharedFolder_getLastAccessError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getLastAccessError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getLastAccessErrorResponse struct {
@@ -21978,7 +21979,7 @@ type ISharedFolder_getLastAccessErrorResponse struct {
 type ISharedFolder_getSymlinkPolicy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_getSymlinkPolicy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolder_getSymlinkPolicyResponse struct {
@@ -21990,7 +21991,7 @@ type ISharedFolder_getSymlinkPolicyResponse struct {
 type ISharedFolder_setSymlinkPolicy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolder_setSymlinkPolicy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SymlinkPolicy *SymlinkPolicy `xml:"symlinkPolicy,omitempty" json:"symlinkPolicy,omitempty"`
 }
@@ -22002,7 +22003,7 @@ type ISharedFolder_setSymlinkPolicyResponse struct {
 type ISession_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_getStateResponse struct {
@@ -22014,7 +22015,7 @@ type ISession_getStateResponse struct {
 type ISession_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_getTypeResponse struct {
@@ -22026,7 +22027,7 @@ type ISession_getTypeResponse struct {
 type ISession_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_getNameResponse struct {
@@ -22038,7 +22039,7 @@ type ISession_getNameResponse struct {
 type ISession_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -22050,7 +22051,7 @@ type ISession_setNameResponse struct {
 type ISession_getMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_getMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_getMachineResponse struct {
@@ -22062,7 +22063,7 @@ type ISession_getMachineResponse struct {
 type ISession_getConsole struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_getConsole"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_getConsoleResponse struct {
@@ -22074,7 +22075,7 @@ type ISession_getConsoleResponse struct {
 type ISession_unlockMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISession_unlockMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISession_unlockMachineResponse struct {
@@ -22084,7 +22085,7 @@ type ISession_unlockMachineResponse struct {
 type IStorageController_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getNameResponse struct {
@@ -22096,7 +22097,7 @@ type IStorageController_getNameResponse struct {
 type IStorageController_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -22108,7 +22109,7 @@ type IStorageController_setNameResponse struct {
 type IStorageController_getMaxDevicesPerPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getMaxDevicesPerPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getMaxDevicesPerPortCountResponse struct {
@@ -22120,7 +22121,7 @@ type IStorageController_getMaxDevicesPerPortCountResponse struct {
 type IStorageController_getMinPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getMinPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getMinPortCountResponse struct {
@@ -22132,7 +22133,7 @@ type IStorageController_getMinPortCountResponse struct {
 type IStorageController_getMaxPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getMaxPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getMaxPortCountResponse struct {
@@ -22144,7 +22145,7 @@ type IStorageController_getMaxPortCountResponse struct {
 type IStorageController_getInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getInstanceResponse struct {
@@ -22156,7 +22157,7 @@ type IStorageController_getInstanceResponse struct {
 type IStorageController_setInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_setInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Instance uint32 `xml:"instance,omitempty" json:"instance,omitempty"`
 }
@@ -22168,7 +22169,7 @@ type IStorageController_setInstanceResponse struct {
 type IStorageController_getPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getPortCountResponse struct {
@@ -22180,7 +22181,7 @@ type IStorageController_getPortCountResponse struct {
 type IStorageController_setPortCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_setPortCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	PortCount uint32 `xml:"portCount,omitempty" json:"portCount,omitempty"`
 }
@@ -22192,7 +22193,7 @@ type IStorageController_setPortCountResponse struct {
 type IStorageController_getBus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getBus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getBusResponse struct {
@@ -22204,7 +22205,7 @@ type IStorageController_getBusResponse struct {
 type IStorageController_getControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getControllerTypeResponse struct {
@@ -22216,7 +22217,7 @@ type IStorageController_getControllerTypeResponse struct {
 type IStorageController_setControllerType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_setControllerType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ControllerType *StorageControllerType `xml:"controllerType,omitempty" json:"controllerType,omitempty"`
 }
@@ -22228,7 +22229,7 @@ type IStorageController_setControllerTypeResponse struct {
 type IStorageController_getUseHostIOCache struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getUseHostIOCache"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getUseHostIOCacheResponse struct {
@@ -22240,7 +22241,7 @@ type IStorageController_getUseHostIOCacheResponse struct {
 type IStorageController_setUseHostIOCache struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_setUseHostIOCache"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	UseHostIOCache bool `xml:"useHostIOCache,omitempty" json:"useHostIOCache,omitempty"`
 }
@@ -22252,7 +22253,7 @@ type IStorageController_setUseHostIOCacheResponse struct {
 type IStorageController_getBootable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageController_getBootable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageController_getBootableResponse struct {
@@ -22264,7 +22265,7 @@ type IStorageController_getBootableResponse struct {
 type IManagedObjectRef_getInterfaceName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IManagedObjectRef_getInterfaceName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IManagedObjectRef_getInterfaceNameResponse struct {
@@ -22276,7 +22277,7 @@ type IManagedObjectRef_getInterfaceNameResponse struct {
 type IManagedObjectRef_release struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IManagedObjectRef_release"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IManagedObjectRef_releaseResponse struct {
@@ -22322,7 +22323,7 @@ type IWebsessionManager_logoffResponse struct {
 type IPerformanceMetric_getMetricName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getMetricName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getMetricNameResponse struct {
@@ -22334,7 +22335,7 @@ type IPerformanceMetric_getMetricNameResponse struct {
 type IPerformanceMetric_getObject struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getObject"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getObjectResponse struct {
@@ -22346,7 +22347,7 @@ type IPerformanceMetric_getObjectResponse struct {
 type IPerformanceMetric_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getDescriptionResponse struct {
@@ -22358,7 +22359,7 @@ type IPerformanceMetric_getDescriptionResponse struct {
 type IPerformanceMetric_getPeriod struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getPeriod"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getPeriodResponse struct {
@@ -22370,7 +22371,7 @@ type IPerformanceMetric_getPeriodResponse struct {
 type IPerformanceMetric_getCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getCountResponse struct {
@@ -22382,7 +22383,7 @@ type IPerformanceMetric_getCountResponse struct {
 type IPerformanceMetric_getUnit struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getUnit"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getUnitResponse struct {
@@ -22394,7 +22395,7 @@ type IPerformanceMetric_getUnitResponse struct {
 type IPerformanceMetric_getMinimumValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getMinimumValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getMinimumValueResponse struct {
@@ -22406,7 +22407,7 @@ type IPerformanceMetric_getMinimumValueResponse struct {
 type IPerformanceMetric_getMaximumValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceMetric_getMaximumValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceMetric_getMaximumValueResponse struct {
@@ -22418,7 +22419,7 @@ type IPerformanceMetric_getMaximumValueResponse struct {
 type IPerformanceCollector_getMetricNames struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_getMetricNames"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IPerformanceCollector_getMetricNamesResponse struct {
@@ -22430,7 +22431,7 @@ type IPerformanceCollector_getMetricNamesResponse struct {
 type IPerformanceCollector_getMetrics struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_getMetrics"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricNames []string `xml:"metricNames,omitempty" json:"metricNames,omitempty"`
 
@@ -22446,7 +22447,7 @@ type IPerformanceCollector_getMetricsResponse struct {
 type IPerformanceCollector_setupMetrics struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_setupMetrics"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricNames []string `xml:"metricNames,omitempty" json:"metricNames,omitempty"`
 
@@ -22466,7 +22467,7 @@ type IPerformanceCollector_setupMetricsResponse struct {
 type IPerformanceCollector_enableMetrics struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_enableMetrics"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricNames []string `xml:"metricNames,omitempty" json:"metricNames,omitempty"`
 
@@ -22482,7 +22483,7 @@ type IPerformanceCollector_enableMetricsResponse struct {
 type IPerformanceCollector_disableMetrics struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_disableMetrics"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricNames []string `xml:"metricNames,omitempty" json:"metricNames,omitempty"`
 
@@ -22498,7 +22499,7 @@ type IPerformanceCollector_disableMetricsResponse struct {
 type IPerformanceCollector_queryMetricsData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IPerformanceCollector_queryMetricsData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricNames []string `xml:"metricNames,omitempty" json:"metricNames,omitempty"`
 
@@ -22528,7 +22529,7 @@ type IPerformanceCollector_queryMetricsDataResponse struct {
 type INATEngine_getNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getNetworkResponse struct {
@@ -22540,7 +22541,7 @@ type INATEngine_getNetworkResponse struct {
 type INATEngine_setNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 }
@@ -22552,7 +22553,7 @@ type INATEngine_setNetworkResponse struct {
 type INATEngine_getHostIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getHostIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getHostIPResponse struct {
@@ -22564,7 +22565,7 @@ type INATEngine_getHostIPResponse struct {
 type INATEngine_setHostIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setHostIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	HostIP string `xml:"hostIP,omitempty" json:"hostIP,omitempty"`
 }
@@ -22576,7 +22577,7 @@ type INATEngine_setHostIPResponse struct {
 type INATEngine_getTFTPPrefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getTFTPPrefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getTFTPPrefixResponse struct {
@@ -22588,7 +22589,7 @@ type INATEngine_getTFTPPrefixResponse struct {
 type INATEngine_setTFTPPrefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setTFTPPrefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TFTPPrefix string `xml:"TFTPPrefix,omitempty" json:"TFTPPrefix,omitempty"`
 }
@@ -22600,7 +22601,7 @@ type INATEngine_setTFTPPrefixResponse struct {
 type INATEngine_getTFTPBootFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getTFTPBootFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getTFTPBootFileResponse struct {
@@ -22612,7 +22613,7 @@ type INATEngine_getTFTPBootFileResponse struct {
 type INATEngine_setTFTPBootFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setTFTPBootFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TFTPBootFile string `xml:"TFTPBootFile,omitempty" json:"TFTPBootFile,omitempty"`
 }
@@ -22624,7 +22625,7 @@ type INATEngine_setTFTPBootFileResponse struct {
 type INATEngine_getTFTPNextServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getTFTPNextServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getTFTPNextServerResponse struct {
@@ -22636,7 +22637,7 @@ type INATEngine_getTFTPNextServerResponse struct {
 type INATEngine_setTFTPNextServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setTFTPNextServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TFTPNextServer string `xml:"TFTPNextServer,omitempty" json:"TFTPNextServer,omitempty"`
 }
@@ -22648,7 +22649,7 @@ type INATEngine_setTFTPNextServerResponse struct {
 type INATEngine_getAliasMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getAliasMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getAliasModeResponse struct {
@@ -22660,7 +22661,7 @@ type INATEngine_getAliasModeResponse struct {
 type INATEngine_setAliasMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setAliasMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	AliasMode uint32 `xml:"aliasMode,omitempty" json:"aliasMode,omitempty"`
 }
@@ -22672,7 +22673,7 @@ type INATEngine_setAliasModeResponse struct {
 type INATEngine_getDNSPassDomain struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getDNSPassDomain"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getDNSPassDomainResponse struct {
@@ -22684,7 +22685,7 @@ type INATEngine_getDNSPassDomainResponse struct {
 type INATEngine_setDNSPassDomain struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setDNSPassDomain"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DNSPassDomain bool `xml:"DNSPassDomain,omitempty" json:"DNSPassDomain,omitempty"`
 }
@@ -22696,7 +22697,7 @@ type INATEngine_setDNSPassDomainResponse struct {
 type INATEngine_getDNSProxy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getDNSProxy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getDNSProxyResponse struct {
@@ -22708,7 +22709,7 @@ type INATEngine_getDNSProxyResponse struct {
 type INATEngine_setDNSProxy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setDNSProxy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DNSProxy bool `xml:"DNSProxy,omitempty" json:"DNSProxy,omitempty"`
 }
@@ -22720,7 +22721,7 @@ type INATEngine_setDNSProxyResponse struct {
 type INATEngine_getDNSUseHostResolver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getDNSUseHostResolver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getDNSUseHostResolverResponse struct {
@@ -22732,7 +22733,7 @@ type INATEngine_getDNSUseHostResolverResponse struct {
 type INATEngine_setDNSUseHostResolver struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setDNSUseHostResolver"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DNSUseHostResolver bool `xml:"DNSUseHostResolver,omitempty" json:"DNSUseHostResolver,omitempty"`
 }
@@ -22744,7 +22745,7 @@ type INATEngine_setDNSUseHostResolverResponse struct {
 type INATEngine_getRedirects struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getRedirects"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getRedirectsResponse struct {
@@ -22756,7 +22757,7 @@ type INATEngine_getRedirectsResponse struct {
 type INATEngine_getLocalhostReachable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getLocalhostReachable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getLocalhostReachableResponse struct {
@@ -22768,7 +22769,7 @@ type INATEngine_getLocalhostReachableResponse struct {
 type INATEngine_setLocalhostReachable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setLocalhostReachable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	LocalhostReachable bool `xml:"localhostReachable,omitempty" json:"localhostReachable,omitempty"`
 }
@@ -22780,7 +22781,7 @@ type INATEngine_setLocalhostReachableResponse struct {
 type INATEngine_getForwardBroadcast struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getForwardBroadcast"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getForwardBroadcastResponse struct {
@@ -22792,7 +22793,7 @@ type INATEngine_getForwardBroadcastResponse struct {
 type INATEngine_setForwardBroadcast struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setForwardBroadcast"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ForwardBroadcast bool `xml:"forwardBroadcast,omitempty" json:"forwardBroadcast,omitempty"`
 }
@@ -22804,7 +22805,7 @@ type INATEngine_setForwardBroadcastResponse struct {
 type INATEngine_getEnableTFTP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getEnableTFTP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getEnableTFTPResponse struct {
@@ -22816,7 +22817,7 @@ type INATEngine_getEnableTFTPResponse struct {
 type INATEngine_setEnableTFTP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setEnableTFTP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	EnableTFTP bool `xml:"enableTFTP,omitempty" json:"enableTFTP,omitempty"`
 }
@@ -22828,7 +22829,7 @@ type INATEngine_setEnableTFTPResponse struct {
 type INATEngine_getNatMRU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getNatMRU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getNatMRUResponse struct {
@@ -22840,7 +22841,7 @@ type INATEngine_getNatMRUResponse struct {
 type INATEngine_setNatMRU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setNatMRU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	NatMRU uint32 `xml:"natMRU,omitempty" json:"natMRU,omitempty"`
 }
@@ -22852,7 +22853,7 @@ type INATEngine_setNatMRUResponse struct {
 type INATEngine_getIPv6Enabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getIPv6Enabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getIPv6EnabledResponse struct {
@@ -22864,7 +22865,7 @@ type INATEngine_getIPv6EnabledResponse struct {
 type INATEngine_setIPv6Enabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setIPv6Enabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPv6Enabled bool `xml:"IPv6Enabled,omitempty" json:"IPv6Enabled,omitempty"`
 }
@@ -22876,7 +22877,7 @@ type INATEngine_setIPv6EnabledResponse struct {
 type INATEngine_getIPv6Prefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getIPv6Prefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getIPv6PrefixResponse struct {
@@ -22888,7 +22889,7 @@ type INATEngine_getIPv6PrefixResponse struct {
 type INATEngine_setIPv6Prefix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setIPv6Prefix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	IPv6Prefix string `xml:"IPv6Prefix,omitempty" json:"IPv6Prefix,omitempty"`
 }
@@ -22900,7 +22901,7 @@ type INATEngine_setIPv6PrefixResponse struct {
 type INATEngine_setNetworkSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_setNetworkSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Mtu uint32 `xml:"mtu,omitempty" json:"mtu,omitempty"`
 
@@ -22920,7 +22921,7 @@ type INATEngine_setNetworkSettingsResponse struct {
 type INATEngine_getNetworkSettings struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_getNetworkSettings"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATEngine_getNetworkSettingsResponse struct {
@@ -22940,7 +22941,7 @@ type INATEngine_getNetworkSettingsResponse struct {
 type INATEngine_addRedirect struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_addRedirect"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -22962,7 +22963,7 @@ type INATEngine_addRedirectResponse struct {
 type INATEngine_removeRedirect struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATEngine_removeRedirect"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -22974,7 +22975,7 @@ type INATEngine_removeRedirectResponse struct {
 type IBandwidthGroup_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroup_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthGroup_getNameResponse struct {
@@ -22986,7 +22987,7 @@ type IBandwidthGroup_getNameResponse struct {
 type IBandwidthGroup_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroup_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthGroup_getTypeResponse struct {
@@ -22998,7 +22999,7 @@ type IBandwidthGroup_getTypeResponse struct {
 type IBandwidthGroup_getReference struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroup_getReference"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthGroup_getReferenceResponse struct {
@@ -23010,7 +23011,7 @@ type IBandwidthGroup_getReferenceResponse struct {
 type IBandwidthGroup_getMaxBytesPerSec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroup_getMaxBytesPerSec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthGroup_getMaxBytesPerSecResponse struct {
@@ -23022,7 +23023,7 @@ type IBandwidthGroup_getMaxBytesPerSecResponse struct {
 type IBandwidthGroup_setMaxBytesPerSec struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroup_setMaxBytesPerSec"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MaxBytesPerSec int64 `xml:"maxBytesPerSec,omitempty" json:"maxBytesPerSec,omitempty"`
 }
@@ -23034,7 +23035,7 @@ type IBandwidthGroup_setMaxBytesPerSecResponse struct {
 type IBandwidthControl_getNumGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthControl_getNumGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthControl_getNumGroupsResponse struct {
@@ -23046,7 +23047,7 @@ type IBandwidthControl_getNumGroupsResponse struct {
 type IBandwidthControl_createBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthControl_createBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -23062,7 +23063,7 @@ type IBandwidthControl_createBandwidthGroupResponse struct {
 type IBandwidthControl_deleteBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthControl_deleteBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -23074,7 +23075,7 @@ type IBandwidthControl_deleteBandwidthGroupResponse struct {
 type IBandwidthControl_getBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthControl_getBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -23088,7 +23089,7 @@ type IBandwidthControl_getBandwidthGroupResponse struct {
 type IBandwidthControl_getAllBandwidthGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthControl_getAllBandwidthGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthControl_getAllBandwidthGroupsResponse struct {
@@ -23100,7 +23101,7 @@ type IBandwidthControl_getAllBandwidthGroupsResponse struct {
 type IGuestDebugControl_getDebugProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_getDebugProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDebugControl_getDebugProviderResponse struct {
@@ -23112,7 +23113,7 @@ type IGuestDebugControl_getDebugProviderResponse struct {
 type IGuestDebugControl_setDebugProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_setDebugProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DebugProvider *GuestDebugProvider `xml:"debugProvider,omitempty" json:"debugProvider,omitempty"`
 }
@@ -23124,7 +23125,7 @@ type IGuestDebugControl_setDebugProviderResponse struct {
 type IGuestDebugControl_getDebugIoProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_getDebugIoProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDebugControl_getDebugIoProviderResponse struct {
@@ -23136,7 +23137,7 @@ type IGuestDebugControl_getDebugIoProviderResponse struct {
 type IGuestDebugControl_setDebugIoProvider struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_setDebugIoProvider"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DebugIoProvider *GuestDebugIoProvider `xml:"debugIoProvider,omitempty" json:"debugIoProvider,omitempty"`
 }
@@ -23148,7 +23149,7 @@ type IGuestDebugControl_setDebugIoProviderResponse struct {
 type IGuestDebugControl_getDebugAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_getDebugAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDebugControl_getDebugAddressResponse struct {
@@ -23160,7 +23161,7 @@ type IGuestDebugControl_getDebugAddressResponse struct {
 type IGuestDebugControl_setDebugAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_setDebugAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DebugAddress string `xml:"debugAddress,omitempty" json:"debugAddress,omitempty"`
 }
@@ -23172,7 +23173,7 @@ type IGuestDebugControl_setDebugAddressResponse struct {
 type IGuestDebugControl_getDebugPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_getDebugPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDebugControl_getDebugPortResponse struct {
@@ -23184,7 +23185,7 @@ type IGuestDebugControl_getDebugPortResponse struct {
 type IGuestDebugControl_setDebugPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControl_setDebugPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	DebugPort uint32 `xml:"debugPort,omitempty" json:"debugPort,omitempty"`
 }
@@ -23196,7 +23197,7 @@ type IGuestDebugControl_setDebugPortResponse struct {
 type IEventSource_createListener struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_createListener"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEventSource_createListenerResponse struct {
@@ -23208,7 +23209,7 @@ type IEventSource_createListenerResponse struct {
 type IEventSource_createAggregator struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_createAggregator"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Subordinates []string `xml:"subordinates,omitempty" json:"subordinates,omitempty"`
 }
@@ -23222,7 +23223,7 @@ type IEventSource_createAggregatorResponse struct {
 type IEventSource_registerListener struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_registerListener"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Listener string `xml:"listener,omitempty" json:"listener,omitempty"`
 
@@ -23238,7 +23239,7 @@ type IEventSource_registerListenerResponse struct {
 type IEventSource_unregisterListener struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_unregisterListener"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Listener string `xml:"listener,omitempty" json:"listener,omitempty"`
 }
@@ -23250,7 +23251,7 @@ type IEventSource_unregisterListenerResponse struct {
 type IEventSource_fireEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_fireEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Event string `xml:"event,omitempty" json:"event,omitempty"`
 
@@ -23266,7 +23267,7 @@ type IEventSource_fireEventResponse struct {
 type IEventSource_getEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_getEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Listener string `xml:"listener,omitempty" json:"listener,omitempty"`
 
@@ -23282,7 +23283,7 @@ type IEventSource_getEventResponse struct {
 type IEventSource_eventProcessed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSource_eventProcessed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Listener string `xml:"listener,omitempty" json:"listener,omitempty"`
 
@@ -23296,7 +23297,7 @@ type IEventSource_eventProcessedResponse struct {
 type IEventListener_handleEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventListener_handleEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Event string `xml:"event,omitempty" json:"event,omitempty"`
 }
@@ -23308,7 +23309,7 @@ type IEventListener_handleEventResponse struct {
 type IEvent_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEvent_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEvent_getTypeResponse struct {
@@ -23320,7 +23321,7 @@ type IEvent_getTypeResponse struct {
 type IEvent_getSource struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEvent_getSource"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEvent_getSourceResponse struct {
@@ -23332,7 +23333,7 @@ type IEvent_getSourceResponse struct {
 type IEvent_getWaitable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEvent_getWaitable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEvent_getWaitableResponse struct {
@@ -23344,7 +23345,7 @@ type IEvent_getWaitableResponse struct {
 type IEvent_setProcessed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEvent_setProcessed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEvent_setProcessedResponse struct {
@@ -23354,7 +23355,7 @@ type IEvent_setProcessedResponse struct {
 type IEvent_waitProcessed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEvent_waitProcessed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Timeout int32 `xml:"timeout,omitempty" json:"timeout,omitempty"`
 }
@@ -23368,7 +23369,7 @@ type IEvent_waitProcessedResponse struct {
 type IReusableEvent_getGeneration struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IReusableEvent_getGeneration"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IReusableEvent_getGenerationResponse struct {
@@ -23380,7 +23381,7 @@ type IReusableEvent_getGenerationResponse struct {
 type IReusableEvent_reuse struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IReusableEvent_reuse"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IReusableEvent_reuseResponse struct {
@@ -23390,7 +23391,7 @@ type IReusableEvent_reuseResponse struct {
 type IMachineEvent_getMachineId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineEvent_getMachineId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineEvent_getMachineIdResponse struct {
@@ -23402,7 +23403,7 @@ type IMachineEvent_getMachineIdResponse struct {
 type IMachineStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineStateChangedEvent_getStateResponse struct {
@@ -23414,7 +23415,7 @@ type IMachineStateChangedEvent_getStateResponse struct {
 type IExtPackInstalledEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtPackInstalledEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtPackInstalledEvent_getNameResponse struct {
@@ -23426,7 +23427,7 @@ type IExtPackInstalledEvent_getNameResponse struct {
 type IExtPackUninstalledEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtPackUninstalledEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtPackUninstalledEvent_getNameResponse struct {
@@ -23438,7 +23439,7 @@ type IExtPackUninstalledEvent_getNameResponse struct {
 type IMachineDataChangedEvent_getTemporary struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineDataChangedEvent_getTemporary"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineDataChangedEvent_getTemporaryResponse struct {
@@ -23450,7 +23451,7 @@ type IMachineDataChangedEvent_getTemporaryResponse struct {
 type IMediumRegisteredEvent_getMediumId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumRegisteredEvent_getMediumId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumRegisteredEvent_getMediumIdResponse struct {
@@ -23462,7 +23463,7 @@ type IMediumRegisteredEvent_getMediumIdResponse struct {
 type IMediumRegisteredEvent_getMediumType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumRegisteredEvent_getMediumType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumRegisteredEvent_getMediumTypeResponse struct {
@@ -23474,7 +23475,7 @@ type IMediumRegisteredEvent_getMediumTypeResponse struct {
 type IMediumRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumRegisteredEvent_getRegisteredResponse struct {
@@ -23486,7 +23487,7 @@ type IMediumRegisteredEvent_getRegisteredResponse struct {
 type IMediumConfigChangedEvent_getMedium struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumConfigChangedEvent_getMedium"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumConfigChangedEvent_getMediumResponse struct {
@@ -23498,7 +23499,7 @@ type IMediumConfigChangedEvent_getMediumResponse struct {
 type IMachineRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineRegisteredEvent_getRegisteredResponse struct {
@@ -23510,7 +23511,7 @@ type IMachineRegisteredEvent_getRegisteredResponse struct {
 type ISessionStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISessionStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISessionStateChangedEvent_getStateResponse struct {
@@ -23522,7 +23523,7 @@ type ISessionStateChangedEvent_getStateResponse struct {
 type IGuestPropertyChangedEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestPropertyChangedEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestPropertyChangedEvent_getNameResponse struct {
@@ -23534,7 +23535,7 @@ type IGuestPropertyChangedEvent_getNameResponse struct {
 type IGuestPropertyChangedEvent_getValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestPropertyChangedEvent_getValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestPropertyChangedEvent_getValueResponse struct {
@@ -23546,7 +23547,7 @@ type IGuestPropertyChangedEvent_getValueResponse struct {
 type IGuestPropertyChangedEvent_getFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestPropertyChangedEvent_getFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestPropertyChangedEvent_getFlagsResponse struct {
@@ -23558,7 +23559,7 @@ type IGuestPropertyChangedEvent_getFlagsResponse struct {
 type IGuestPropertyChangedEvent_getFWasDeleted struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestPropertyChangedEvent_getFWasDeleted"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestPropertyChangedEvent_getFWasDeletedResponse struct {
@@ -23570,7 +23571,7 @@ type IGuestPropertyChangedEvent_getFWasDeletedResponse struct {
 type ISnapshotEvent_getSnapshotId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshotEvent_getSnapshotId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshotEvent_getSnapshotIdResponse struct {
@@ -23582,7 +23583,7 @@ type ISnapshotEvent_getSnapshotIdResponse struct {
 type ISnapshotTakenEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshotTakenEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshotTakenEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -23594,7 +23595,7 @@ type ISnapshotTakenEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type ISnapshotDeletedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshotDeletedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshotDeletedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -23606,7 +23607,7 @@ type ISnapshotDeletedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type ISnapshotRestoredEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshotRestoredEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshotRestoredEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -23618,7 +23619,7 @@ type ISnapshotRestoredEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type ISnapshotChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISnapshotChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISnapshotChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -23630,7 +23631,7 @@ type ISnapshotChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IMousePointerShapeChangedEvent_getVisible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getVisible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getVisibleResponse struct {
@@ -23642,7 +23643,7 @@ type IMousePointerShapeChangedEvent_getVisibleResponse struct {
 type IMousePointerShapeChangedEvent_getAlpha struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getAlpha"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getAlphaResponse struct {
@@ -23654,7 +23655,7 @@ type IMousePointerShapeChangedEvent_getAlphaResponse struct {
 type IMousePointerShapeChangedEvent_getXhot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getXhot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getXhotResponse struct {
@@ -23666,7 +23667,7 @@ type IMousePointerShapeChangedEvent_getXhotResponse struct {
 type IMousePointerShapeChangedEvent_getYhot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getYhot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getYhotResponse struct {
@@ -23678,7 +23679,7 @@ type IMousePointerShapeChangedEvent_getYhotResponse struct {
 type IMousePointerShapeChangedEvent_getWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getWidthResponse struct {
@@ -23690,7 +23691,7 @@ type IMousePointerShapeChangedEvent_getWidthResponse struct {
 type IMousePointerShapeChangedEvent_getHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getHeightResponse struct {
@@ -23702,7 +23703,7 @@ type IMousePointerShapeChangedEvent_getHeightResponse struct {
 type IMousePointerShapeChangedEvent_getShape struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMousePointerShapeChangedEvent_getShape"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMousePointerShapeChangedEvent_getShapeResponse struct {
@@ -23714,7 +23715,7 @@ type IMousePointerShapeChangedEvent_getShapeResponse struct {
 type IMouseCapabilityChangedEvent_getSupportsAbsolute struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouseCapabilityChangedEvent_getSupportsAbsolute"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouseCapabilityChangedEvent_getSupportsAbsoluteResponse struct {
@@ -23726,7 +23727,7 @@ type IMouseCapabilityChangedEvent_getSupportsAbsoluteResponse struct {
 type IMouseCapabilityChangedEvent_getSupportsRelative struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouseCapabilityChangedEvent_getSupportsRelative"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouseCapabilityChangedEvent_getSupportsRelativeResponse struct {
@@ -23738,7 +23739,7 @@ type IMouseCapabilityChangedEvent_getSupportsRelativeResponse struct {
 type IMouseCapabilityChangedEvent_getSupportsTouchScreen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouseCapabilityChangedEvent_getSupportsTouchScreen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouseCapabilityChangedEvent_getSupportsTouchScreenResponse struct {
@@ -23750,7 +23751,7 @@ type IMouseCapabilityChangedEvent_getSupportsTouchScreenResponse struct {
 type IMouseCapabilityChangedEvent_getSupportsTouchPad struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouseCapabilityChangedEvent_getSupportsTouchPad"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouseCapabilityChangedEvent_getSupportsTouchPadResponse struct {
@@ -23762,7 +23763,7 @@ type IMouseCapabilityChangedEvent_getSupportsTouchPadResponse struct {
 type IMouseCapabilityChangedEvent_getNeedsHostCursor struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMouseCapabilityChangedEvent_getNeedsHostCursor"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMouseCapabilityChangedEvent_getNeedsHostCursorResponse struct {
@@ -23774,7 +23775,7 @@ type IMouseCapabilityChangedEvent_getNeedsHostCursorResponse struct {
 type IKeyboardLedsChangedEvent_getNumLock struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboardLedsChangedEvent_getNumLock"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboardLedsChangedEvent_getNumLockResponse struct {
@@ -23786,7 +23787,7 @@ type IKeyboardLedsChangedEvent_getNumLockResponse struct {
 type IKeyboardLedsChangedEvent_getCapsLock struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboardLedsChangedEvent_getCapsLock"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboardLedsChangedEvent_getCapsLockResponse struct {
@@ -23798,7 +23799,7 @@ type IKeyboardLedsChangedEvent_getCapsLockResponse struct {
 type IKeyboardLedsChangedEvent_getScrollLock struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IKeyboardLedsChangedEvent_getScrollLock"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IKeyboardLedsChangedEvent_getScrollLockResponse struct {
@@ -23810,7 +23811,7 @@ type IKeyboardLedsChangedEvent_getScrollLockResponse struct {
 type IStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStateChangedEvent_getStateResponse struct {
@@ -23822,7 +23823,7 @@ type IStateChangedEvent_getStateResponse struct {
 type IAdditionsStateChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAdditionsStateChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAdditionsStateChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -23834,7 +23835,7 @@ type IAdditionsStateChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struc
 type INetworkAdapterChangedEvent_getNetworkAdapter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INetworkAdapterChangedEvent_getNetworkAdapter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INetworkAdapterChangedEvent_getNetworkAdapterResponse struct {
@@ -23846,7 +23847,7 @@ type INetworkAdapterChangedEvent_getNetworkAdapterResponse struct {
 type IAudioAdapterChangedEvent_getAudioAdapter struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IAudioAdapterChangedEvent_getAudioAdapter"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IAudioAdapterChangedEvent_getAudioAdapterResponse struct {
@@ -23858,7 +23859,7 @@ type IAudioAdapterChangedEvent_getAudioAdapterResponse struct {
 type ISerialPortChangedEvent_getSerialPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISerialPortChangedEvent_getSerialPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISerialPortChangedEvent_getSerialPortResponse struct {
@@ -23870,7 +23871,7 @@ type ISerialPortChangedEvent_getSerialPortResponse struct {
 type IParallelPortChangedEvent_getParallelPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IParallelPortChangedEvent_getParallelPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IParallelPortChangedEvent_getParallelPortResponse struct {
@@ -23882,7 +23883,7 @@ type IParallelPortChangedEvent_getParallelPortResponse struct {
 type IStorageControllerChangedEvent_getMachinId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageControllerChangedEvent_getMachinId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageControllerChangedEvent_getMachinIdResponse struct {
@@ -23894,7 +23895,7 @@ type IStorageControllerChangedEvent_getMachinIdResponse struct {
 type IStorageControllerChangedEvent_getControllerName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageControllerChangedEvent_getControllerName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageControllerChangedEvent_getControllerNameResponse struct {
@@ -23906,7 +23907,7 @@ type IStorageControllerChangedEvent_getControllerNameResponse struct {
 type IMediumChangedEvent_getMediumAttachment struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMediumChangedEvent_getMediumAttachment"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMediumChangedEvent_getMediumAttachmentResponse struct {
@@ -23918,7 +23919,7 @@ type IMediumChangedEvent_getMediumAttachmentResponse struct {
 type IClipboardModeChangedEvent_getClipboardMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IClipboardModeChangedEvent_getClipboardMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IClipboardModeChangedEvent_getClipboardModeResponse struct {
@@ -23930,7 +23931,7 @@ type IClipboardModeChangedEvent_getClipboardModeResponse struct {
 type IClipboardFileTransferModeChangedEvent_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IClipboardFileTransferModeChangedEvent_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IClipboardFileTransferModeChangedEvent_getEnabledResponse struct {
@@ -23942,7 +23943,7 @@ type IClipboardFileTransferModeChangedEvent_getEnabledResponse struct {
 type IClipboardEvent_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IClipboardEvent_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IClipboardEvent_getIdResponse struct {
@@ -23954,7 +23955,7 @@ type IClipboardEvent_getIdResponse struct {
 type IClipboardErrorEvent_getMsg struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IClipboardErrorEvent_getMsg"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IClipboardErrorEvent_getMsgResponse struct {
@@ -23966,7 +23967,7 @@ type IClipboardErrorEvent_getMsgResponse struct {
 type IClipboardErrorEvent_getRcError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IClipboardErrorEvent_getRcError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IClipboardErrorEvent_getRcErrorResponse struct {
@@ -23978,7 +23979,7 @@ type IClipboardErrorEvent_getRcErrorResponse struct {
 type IDnDModeChangedEvent_getDndMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IDnDModeChangedEvent_getDndMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IDnDModeChangedEvent_getDndModeResponse struct {
@@ -23990,7 +23991,7 @@ type IDnDModeChangedEvent_getDndModeResponse struct {
 type ICPUChangedEvent_getCPU struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUChangedEvent_getCPU"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUChangedEvent_getCPUResponse struct {
@@ -24002,7 +24003,7 @@ type ICPUChangedEvent_getCPUResponse struct {
 type ICPUChangedEvent_getAdd struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUChangedEvent_getAdd"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUChangedEvent_getAddResponse struct {
@@ -24014,7 +24015,7 @@ type ICPUChangedEvent_getAddResponse struct {
 type ICPUExecutionCapChangedEvent_getExecutionCap struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICPUExecutionCapChangedEvent_getExecutionCap"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICPUExecutionCapChangedEvent_getExecutionCapResponse struct {
@@ -24026,7 +24027,7 @@ type ICPUExecutionCapChangedEvent_getExecutionCapResponse struct {
 type IGuestKeyboardEvent_getScancodes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestKeyboardEvent_getScancodes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestKeyboardEvent_getScancodesResponse struct {
@@ -24038,7 +24039,7 @@ type IGuestKeyboardEvent_getScancodesResponse struct {
 type IGuestMouseEvent_getMode struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getMode"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getModeResponse struct {
@@ -24050,7 +24051,7 @@ type IGuestMouseEvent_getModeResponse struct {
 type IGuestMouseEvent_getX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getXResponse struct {
@@ -24062,7 +24063,7 @@ type IGuestMouseEvent_getXResponse struct {
 type IGuestMouseEvent_getY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getYResponse struct {
@@ -24074,7 +24075,7 @@ type IGuestMouseEvent_getYResponse struct {
 type IGuestMouseEvent_getZ struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getZ"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getZResponse struct {
@@ -24086,7 +24087,7 @@ type IGuestMouseEvent_getZResponse struct {
 type IGuestMouseEvent_getW struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getW"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getWResponse struct {
@@ -24098,7 +24099,7 @@ type IGuestMouseEvent_getWResponse struct {
 type IGuestMouseEvent_getButtons struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMouseEvent_getButtons"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMouseEvent_getButtonsResponse struct {
@@ -24110,7 +24111,7 @@ type IGuestMouseEvent_getButtonsResponse struct {
 type IGuestMultiTouchEvent_getContactCount struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getContactCount"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getContactCountResponse struct {
@@ -24122,7 +24123,7 @@ type IGuestMultiTouchEvent_getContactCountResponse struct {
 type IGuestMultiTouchEvent_getXPositions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getXPositions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getXPositionsResponse struct {
@@ -24134,7 +24135,7 @@ type IGuestMultiTouchEvent_getXPositionsResponse struct {
 type IGuestMultiTouchEvent_getYPositions struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getYPositions"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getYPositionsResponse struct {
@@ -24146,7 +24147,7 @@ type IGuestMultiTouchEvent_getYPositionsResponse struct {
 type IGuestMultiTouchEvent_getContactIds struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getContactIds"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getContactIdsResponse struct {
@@ -24158,7 +24159,7 @@ type IGuestMultiTouchEvent_getContactIdsResponse struct {
 type IGuestMultiTouchEvent_getContactFlags struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getContactFlags"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getContactFlagsResponse struct {
@@ -24170,7 +24171,7 @@ type IGuestMultiTouchEvent_getContactFlagsResponse struct {
 type IGuestMultiTouchEvent_getIsTouchScreen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getIsTouchScreen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getIsTouchScreenResponse struct {
@@ -24182,7 +24183,7 @@ type IGuestMultiTouchEvent_getIsTouchScreenResponse struct {
 type IGuestMultiTouchEvent_getScanTime struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMultiTouchEvent_getScanTime"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMultiTouchEvent_getScanTimeResponse struct {
@@ -24194,7 +24195,7 @@ type IGuestMultiTouchEvent_getScanTimeResponse struct {
 type IGuestSessionEvent_getSession struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSessionEvent_getSession"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSessionEvent_getSessionResponse struct {
@@ -24206,7 +24207,7 @@ type IGuestSessionEvent_getSessionResponse struct {
 type IGuestSessionStateChangedEvent_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSessionStateChangedEvent_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSessionStateChangedEvent_getIdResponse struct {
@@ -24218,7 +24219,7 @@ type IGuestSessionStateChangedEvent_getIdResponse struct {
 type IGuestSessionStateChangedEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSessionStateChangedEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSessionStateChangedEvent_getStatusResponse struct {
@@ -24230,7 +24231,7 @@ type IGuestSessionStateChangedEvent_getStatusResponse struct {
 type IGuestSessionStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSessionStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSessionStateChangedEvent_getErrorResponse struct {
@@ -24242,7 +24243,7 @@ type IGuestSessionStateChangedEvent_getErrorResponse struct {
 type IGuestSessionRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestSessionRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestSessionRegisteredEvent_getRegisteredResponse struct {
@@ -24254,7 +24255,7 @@ type IGuestSessionRegisteredEvent_getRegisteredResponse struct {
 type IGuestProcessEvent_getProcess struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessEvent_getProcess"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessEvent_getProcessResponse struct {
@@ -24266,7 +24267,7 @@ type IGuestProcessEvent_getProcessResponse struct {
 type IGuestProcessEvent_getPid struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessEvent_getPid"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessEvent_getPidResponse struct {
@@ -24278,7 +24279,7 @@ type IGuestProcessEvent_getPidResponse struct {
 type IGuestProcessRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessRegisteredEvent_getRegisteredResponse struct {
@@ -24290,7 +24291,7 @@ type IGuestProcessRegisteredEvent_getRegisteredResponse struct {
 type IGuestProcessStateChangedEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessStateChangedEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessStateChangedEvent_getStatusResponse struct {
@@ -24302,7 +24303,7 @@ type IGuestProcessStateChangedEvent_getStatusResponse struct {
 type IGuestProcessStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessStateChangedEvent_getErrorResponse struct {
@@ -24314,7 +24315,7 @@ type IGuestProcessStateChangedEvent_getErrorResponse struct {
 type IGuestProcessIOEvent_getHandle struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessIOEvent_getHandle"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessIOEvent_getHandleResponse struct {
@@ -24326,7 +24327,7 @@ type IGuestProcessIOEvent_getHandleResponse struct {
 type IGuestProcessIOEvent_getProcessed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessIOEvent_getProcessed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessIOEvent_getProcessedResponse struct {
@@ -24338,7 +24339,7 @@ type IGuestProcessIOEvent_getProcessedResponse struct {
 type IGuestProcessInputNotifyEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessInputNotifyEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessInputNotifyEvent_getStatusResponse struct {
@@ -24350,7 +24351,7 @@ type IGuestProcessInputNotifyEvent_getStatusResponse struct {
 type IGuestProcessOutputEvent_getData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestProcessOutputEvent_getData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestProcessOutputEvent_getDataResponse struct {
@@ -24362,7 +24363,7 @@ type IGuestProcessOutputEvent_getDataResponse struct {
 type IGuestDirectoryEvent_getDirectory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryEvent_getDirectory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryEvent_getDirectoryResponse struct {
@@ -24374,7 +24375,7 @@ type IGuestDirectoryEvent_getDirectoryResponse struct {
 type IGuestDirectoryRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryRegisteredEvent_getRegisteredResponse struct {
@@ -24386,7 +24387,7 @@ type IGuestDirectoryRegisteredEvent_getRegisteredResponse struct {
 type IGuestDirectoryStateChangedEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryStateChangedEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryStateChangedEvent_getStatusResponse struct {
@@ -24398,7 +24399,7 @@ type IGuestDirectoryStateChangedEvent_getStatusResponse struct {
 type IGuestDirectoryStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryStateChangedEvent_getErrorResponse struct {
@@ -24410,7 +24411,7 @@ type IGuestDirectoryStateChangedEvent_getErrorResponse struct {
 type IGuestDirectoryReadEvent_getPath struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryReadEvent_getPath"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryReadEvent_getPathResponse struct {
@@ -24422,7 +24423,7 @@ type IGuestDirectoryReadEvent_getPathResponse struct {
 type IGuestDirectoryReadEvent_getObjInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryReadEvent_getObjInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryReadEvent_getObjInfoResponse struct {
@@ -24434,7 +24435,7 @@ type IGuestDirectoryReadEvent_getObjInfoResponse struct {
 type IGuestDirectoryReadEvent_getOwner struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryReadEvent_getOwner"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryReadEvent_getOwnerResponse struct {
@@ -24446,7 +24447,7 @@ type IGuestDirectoryReadEvent_getOwnerResponse struct {
 type IGuestDirectoryReadEvent_getGroups struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDirectoryReadEvent_getGroups"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDirectoryReadEvent_getGroupsResponse struct {
@@ -24458,7 +24459,7 @@ type IGuestDirectoryReadEvent_getGroupsResponse struct {
 type IGuestFileEvent_getFile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileEvent_getFile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileEvent_getFileResponse struct {
@@ -24470,7 +24471,7 @@ type IGuestFileEvent_getFileResponse struct {
 type IGuestFileRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileRegisteredEvent_getRegisteredResponse struct {
@@ -24482,7 +24483,7 @@ type IGuestFileRegisteredEvent_getRegisteredResponse struct {
 type IGuestFileStateChangedEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileStateChangedEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileStateChangedEvent_getStatusResponse struct {
@@ -24494,7 +24495,7 @@ type IGuestFileStateChangedEvent_getStatusResponse struct {
 type IGuestFileStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileStateChangedEvent_getErrorResponse struct {
@@ -24506,7 +24507,7 @@ type IGuestFileStateChangedEvent_getErrorResponse struct {
 type IGuestFileIOEvent_getOffset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileIOEvent_getOffset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileIOEvent_getOffsetResponse struct {
@@ -24518,7 +24519,7 @@ type IGuestFileIOEvent_getOffsetResponse struct {
 type IGuestFileIOEvent_getProcessed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileIOEvent_getProcessed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileIOEvent_getProcessedResponse struct {
@@ -24530,7 +24531,7 @@ type IGuestFileIOEvent_getProcessedResponse struct {
 type IGuestFileOffsetChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileOffsetChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileOffsetChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24542,7 +24543,7 @@ type IGuestFileOffsetChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse stru
 type IGuestFileSizeChangedEvent_getNewSize struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileSizeChangedEvent_getNewSize"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileSizeChangedEvent_getNewSizeResponse struct {
@@ -24554,7 +24555,7 @@ type IGuestFileSizeChangedEvent_getNewSizeResponse struct {
 type IGuestFileReadEvent_getData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileReadEvent_getData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileReadEvent_getDataResponse struct {
@@ -24566,7 +24567,7 @@ type IGuestFileReadEvent_getDataResponse struct {
 type IGuestFileWriteEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestFileWriteEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestFileWriteEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24578,7 +24579,7 @@ type IGuestFileWriteEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IVRDEServerChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServerChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServerChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24590,7 +24591,7 @@ type IVRDEServerChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IVRDEServerInfoChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVRDEServerInfoChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVRDEServerInfoChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24602,7 +24603,7 @@ type IVRDEServerInfoChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struc
 type IRecordingStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingStateChangedEvent_getStateResponse struct {
@@ -24614,7 +24615,7 @@ type IRecordingStateChangedEvent_getStateResponse struct {
 type IRecordingStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingStateChangedEvent_getErrorResponse struct {
@@ -24626,7 +24627,7 @@ type IRecordingStateChangedEvent_getErrorResponse struct {
 type IRecordingScreenStateChangedEvent_getScreen struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRecordingScreenStateChangedEvent_getScreen"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRecordingScreenStateChangedEvent_getScreenResponse struct {
@@ -24638,7 +24639,7 @@ type IRecordingScreenStateChangedEvent_getScreenResponse struct {
 type IUSBControllerChangedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBControllerChangedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBControllerChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24650,7 +24651,7 @@ type IUSBControllerChangedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct
 type IUSBDeviceStateChangedEvent_getDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceStateChangedEvent_getDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceStateChangedEvent_getDeviceResponse struct {
@@ -24662,7 +24663,7 @@ type IUSBDeviceStateChangedEvent_getDeviceResponse struct {
 type IUSBDeviceStateChangedEvent_getAttached struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceStateChangedEvent_getAttached"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceStateChangedEvent_getAttachedResponse struct {
@@ -24674,7 +24675,7 @@ type IUSBDeviceStateChangedEvent_getAttachedResponse struct {
 type IUSBDeviceStateChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUSBDeviceStateChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUSBDeviceStateChangedEvent_getErrorResponse struct {
@@ -24686,7 +24687,7 @@ type IUSBDeviceStateChangedEvent_getErrorResponse struct {
 type ISharedFolderChangedEvent_getScope struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ISharedFolderChangedEvent_getScope"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ISharedFolderChangedEvent_getScopeResponse struct {
@@ -24698,7 +24699,7 @@ type ISharedFolderChangedEvent_getScopeResponse struct {
 type IRuntimeErrorEvent_getFatal struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRuntimeErrorEvent_getFatal"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRuntimeErrorEvent_getFatalResponse struct {
@@ -24710,7 +24711,7 @@ type IRuntimeErrorEvent_getFatalResponse struct {
 type IRuntimeErrorEvent_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRuntimeErrorEvent_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRuntimeErrorEvent_getIdResponse struct {
@@ -24722,7 +24723,7 @@ type IRuntimeErrorEvent_getIdResponse struct {
 type IRuntimeErrorEvent_getMessage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRuntimeErrorEvent_getMessage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRuntimeErrorEvent_getMessageResponse struct {
@@ -24734,7 +24735,7 @@ type IRuntimeErrorEvent_getMessageResponse struct {
 type IEventSourceChangedEvent_getListener struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSourceChangedEvent_getListener"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEventSourceChangedEvent_getListenerResponse struct {
@@ -24746,7 +24747,7 @@ type IEventSourceChangedEvent_getListenerResponse struct {
 type IEventSourceChangedEvent_getAdd struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IEventSourceChangedEvent_getAdd"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IEventSourceChangedEvent_getAddResponse struct {
@@ -24758,7 +24759,7 @@ type IEventSourceChangedEvent_getAddResponse struct {
 type IExtraDataChangedEvent_getMachineId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataChangedEvent_getMachineId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataChangedEvent_getMachineIdResponse struct {
@@ -24770,7 +24771,7 @@ type IExtraDataChangedEvent_getMachineIdResponse struct {
 type IExtraDataChangedEvent_getKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataChangedEvent_getKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataChangedEvent_getKeyResponse struct {
@@ -24782,7 +24783,7 @@ type IExtraDataChangedEvent_getKeyResponse struct {
 type IExtraDataChangedEvent_getValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataChangedEvent_getValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataChangedEvent_getValueResponse struct {
@@ -24794,7 +24795,7 @@ type IExtraDataChangedEvent_getValueResponse struct {
 type IVetoEvent_addVeto struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_addVeto"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Reason string `xml:"reason,omitempty" json:"reason,omitempty"`
 }
@@ -24806,7 +24807,7 @@ type IVetoEvent_addVetoResponse struct {
 type IVetoEvent_isVetoed struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_isVetoed"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVetoEvent_isVetoedResponse struct {
@@ -24818,7 +24819,7 @@ type IVetoEvent_isVetoedResponse struct {
 type IVetoEvent_getVetos struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_getVetos"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVetoEvent_getVetosResponse struct {
@@ -24830,7 +24831,7 @@ type IVetoEvent_getVetosResponse struct {
 type IVetoEvent_addApproval struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_addApproval"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Reason string `xml:"reason,omitempty" json:"reason,omitempty"`
 }
@@ -24842,7 +24843,7 @@ type IVetoEvent_addApprovalResponse struct {
 type IVetoEvent_isApproved struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_isApproved"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVetoEvent_isApprovedResponse struct {
@@ -24854,7 +24855,7 @@ type IVetoEvent_isApprovedResponse struct {
 type IVetoEvent_getApprovals struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVetoEvent_getApprovals"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVetoEvent_getApprovalsResponse struct {
@@ -24866,7 +24867,7 @@ type IVetoEvent_getApprovalsResponse struct {
 type IExtraDataCanChangeEvent_getMachineId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataCanChangeEvent_getMachineId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataCanChangeEvent_getMachineIdResponse struct {
@@ -24878,7 +24879,7 @@ type IExtraDataCanChangeEvent_getMachineIdResponse struct {
 type IExtraDataCanChangeEvent_getKey struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataCanChangeEvent_getKey"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataCanChangeEvent_getKeyResponse struct {
@@ -24890,7 +24891,7 @@ type IExtraDataCanChangeEvent_getKeyResponse struct {
 type IExtraDataCanChangeEvent_getValue struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IExtraDataCanChangeEvent_getValue"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IExtraDataCanChangeEvent_getValueResponse struct {
@@ -24902,7 +24903,7 @@ type IExtraDataCanChangeEvent_getValueResponse struct {
 type ICanShowWindowEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICanShowWindowEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICanShowWindowEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -24914,7 +24915,7 @@ type ICanShowWindowEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type IShowWindowEvent_getWinId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IShowWindowEvent_getWinId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IShowWindowEvent_getWinIdResponse struct {
@@ -24926,7 +24927,7 @@ type IShowWindowEvent_getWinIdResponse struct {
 type IShowWindowEvent_setWinId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IShowWindowEvent_setWinId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	WinId int64 `xml:"winId,omitempty" json:"winId,omitempty"`
 }
@@ -24938,7 +24939,7 @@ type IShowWindowEvent_setWinIdResponse struct {
 type INATRedirectEvent_getSlot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getSlot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getSlotResponse struct {
@@ -24950,7 +24951,7 @@ type INATRedirectEvent_getSlotResponse struct {
 type INATRedirectEvent_getRemove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getRemove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getRemoveResponse struct {
@@ -24962,7 +24963,7 @@ type INATRedirectEvent_getRemoveResponse struct {
 type INATRedirectEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getNameResponse struct {
@@ -24974,7 +24975,7 @@ type INATRedirectEvent_getNameResponse struct {
 type INATRedirectEvent_getProto struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getProto"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getProtoResponse struct {
@@ -24986,7 +24987,7 @@ type INATRedirectEvent_getProtoResponse struct {
 type INATRedirectEvent_getHostIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getHostIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getHostIPResponse struct {
@@ -24998,7 +24999,7 @@ type INATRedirectEvent_getHostIPResponse struct {
 type INATRedirectEvent_getHostPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getHostPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getHostPortResponse struct {
@@ -25010,7 +25011,7 @@ type INATRedirectEvent_getHostPortResponse struct {
 type INATRedirectEvent_getGuestIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getGuestIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getGuestIPResponse struct {
@@ -25022,7 +25023,7 @@ type INATRedirectEvent_getGuestIPResponse struct {
 type INATRedirectEvent_getGuestPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATRedirectEvent_getGuestPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATRedirectEvent_getGuestPortResponse struct {
@@ -25034,7 +25035,7 @@ type INATRedirectEvent_getGuestPortResponse struct {
 type IHostAudioDeviceChangedEvent_getDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDeviceChangedEvent_getDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDeviceChangedEvent_getDeviceResponse struct {
@@ -25046,7 +25047,7 @@ type IHostAudioDeviceChangedEvent_getDeviceResponse struct {
 type IHostAudioDeviceChangedEvent_getNew struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDeviceChangedEvent_getNew"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDeviceChangedEvent_getNewResponse struct {
@@ -25058,7 +25059,7 @@ type IHostAudioDeviceChangedEvent_getNewResponse struct {
 type IHostAudioDeviceChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDeviceChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDeviceChangedEvent_getStateResponse struct {
@@ -25070,7 +25071,7 @@ type IHostAudioDeviceChangedEvent_getStateResponse struct {
 type IHostAudioDeviceChangedEvent_getError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostAudioDeviceChangedEvent_getError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostAudioDeviceChangedEvent_getErrorResponse struct {
@@ -25082,7 +25083,7 @@ type IHostAudioDeviceChangedEvent_getErrorResponse struct {
 type IHostPCIDevicePlugEvent_getPlugged struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostPCIDevicePlugEvent_getPlugged"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostPCIDevicePlugEvent_getPluggedResponse struct {
@@ -25094,7 +25095,7 @@ type IHostPCIDevicePlugEvent_getPluggedResponse struct {
 type IHostPCIDevicePlugEvent_getSuccess struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostPCIDevicePlugEvent_getSuccess"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostPCIDevicePlugEvent_getSuccessResponse struct {
@@ -25106,7 +25107,7 @@ type IHostPCIDevicePlugEvent_getSuccessResponse struct {
 type IHostPCIDevicePlugEvent_getAttachment struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostPCIDevicePlugEvent_getAttachment"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostPCIDevicePlugEvent_getAttachmentResponse struct {
@@ -25118,7 +25119,7 @@ type IHostPCIDevicePlugEvent_getAttachmentResponse struct {
 type IHostPCIDevicePlugEvent_getMessage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostPCIDevicePlugEvent_getMessage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostPCIDevicePlugEvent_getMessageResponse struct {
@@ -25130,7 +25131,7 @@ type IHostPCIDevicePlugEvent_getMessageResponse struct {
 type IVBoxSVCAvailabilityChangedEvent_getAvailable struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVBoxSVCAvailabilityChangedEvent_getAvailable"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVBoxSVCAvailabilityChangedEvent_getAvailableResponse struct {
@@ -25142,7 +25143,7 @@ type IVBoxSVCAvailabilityChangedEvent_getAvailableResponse struct {
 type IBandwidthGroupChangedEvent_getBandwidthGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBandwidthGroupChangedEvent_getBandwidthGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBandwidthGroupChangedEvent_getBandwidthGroupResponse struct {
@@ -25154,7 +25155,7 @@ type IBandwidthGroupChangedEvent_getBandwidthGroupResponse struct {
 type IGuestMonitorChangedEvent_getChangeType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getChangeType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getChangeTypeResponse struct {
@@ -25166,7 +25167,7 @@ type IGuestMonitorChangedEvent_getChangeTypeResponse struct {
 type IGuestMonitorChangedEvent_getScreenId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getScreenId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getScreenIdResponse struct {
@@ -25178,7 +25179,7 @@ type IGuestMonitorChangedEvent_getScreenIdResponse struct {
 type IGuestMonitorChangedEvent_getOriginX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getOriginX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getOriginXResponse struct {
@@ -25190,7 +25191,7 @@ type IGuestMonitorChangedEvent_getOriginXResponse struct {
 type IGuestMonitorChangedEvent_getOriginY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getOriginY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getOriginYResponse struct {
@@ -25202,7 +25203,7 @@ type IGuestMonitorChangedEvent_getOriginYResponse struct {
 type IGuestMonitorChangedEvent_getWidth struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getWidth"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getWidthResponse struct {
@@ -25214,7 +25215,7 @@ type IGuestMonitorChangedEvent_getWidthResponse struct {
 type IGuestMonitorChangedEvent_getHeight struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorChangedEvent_getHeight"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorChangedEvent_getHeightResponse struct {
@@ -25226,7 +25227,7 @@ type IGuestMonitorChangedEvent_getHeightResponse struct {
 type IGuestUserStateChangedEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestUserStateChangedEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestUserStateChangedEvent_getNameResponse struct {
@@ -25238,7 +25239,7 @@ type IGuestUserStateChangedEvent_getNameResponse struct {
 type IGuestUserStateChangedEvent_getDomain struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestUserStateChangedEvent_getDomain"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestUserStateChangedEvent_getDomainResponse struct {
@@ -25250,7 +25251,7 @@ type IGuestUserStateChangedEvent_getDomainResponse struct {
 type IGuestUserStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestUserStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestUserStateChangedEvent_getStateResponse struct {
@@ -25262,7 +25263,7 @@ type IGuestUserStateChangedEvent_getStateResponse struct {
 type IGuestUserStateChangedEvent_getStateDetails struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestUserStateChangedEvent_getStateDetails"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestUserStateChangedEvent_getStateDetailsResponse struct {
@@ -25274,7 +25275,7 @@ type IGuestUserStateChangedEvent_getStateDetailsResponse struct {
 type IStorageDeviceChangedEvent_getStorageDevice struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageDeviceChangedEvent_getStorageDevice"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageDeviceChangedEvent_getStorageDeviceResponse struct {
@@ -25286,7 +25287,7 @@ type IStorageDeviceChangedEvent_getStorageDeviceResponse struct {
 type IStorageDeviceChangedEvent_getRemoved struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageDeviceChangedEvent_getRemoved"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageDeviceChangedEvent_getRemovedResponse struct {
@@ -25298,7 +25299,7 @@ type IStorageDeviceChangedEvent_getRemovedResponse struct {
 type IStorageDeviceChangedEvent_getSilent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStorageDeviceChangedEvent_getSilent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStorageDeviceChangedEvent_getSilentResponse struct {
@@ -25310,7 +25311,7 @@ type IStorageDeviceChangedEvent_getSilentResponse struct {
 type INATNetworkChangedEvent_getNetworkName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkChangedEvent_getNetworkName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkChangedEvent_getNetworkNameResponse struct {
@@ -25322,7 +25323,7 @@ type INATNetworkChangedEvent_getNetworkNameResponse struct {
 type INATNetworkStartStopEvent_getStartEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkStartStopEvent_getStartEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkStartStopEvent_getStartEventResponse struct {
@@ -25334,7 +25335,7 @@ type INATNetworkStartStopEvent_getStartEventResponse struct {
 type INATNetworkAlterEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkAlterEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkAlterEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -25346,7 +25347,7 @@ type INATNetworkAlterEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
 type INATNetworkCreationDeletionEvent_getCreationEvent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkCreationDeletionEvent_getCreationEvent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkCreationDeletionEvent_getCreationEventResponse struct {
@@ -25358,7 +25359,7 @@ type INATNetworkCreationDeletionEvent_getCreationEventResponse struct {
 type INATNetworkSettingEvent_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkSettingEvent_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkSettingEvent_getEnabledResponse struct {
@@ -25370,7 +25371,7 @@ type INATNetworkSettingEvent_getEnabledResponse struct {
 type INATNetworkSettingEvent_getNetwork struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkSettingEvent_getNetwork"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkSettingEvent_getNetworkResponse struct {
@@ -25382,7 +25383,7 @@ type INATNetworkSettingEvent_getNetworkResponse struct {
 type INATNetworkSettingEvent_getGateway struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkSettingEvent_getGateway"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkSettingEvent_getGatewayResponse struct {
@@ -25394,7 +25395,7 @@ type INATNetworkSettingEvent_getGatewayResponse struct {
 type INATNetworkSettingEvent_getAdvertiseDefaultIPv6RouteEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkSettingEvent_getAdvertiseDefaultIPv6RouteEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkSettingEvent_getAdvertiseDefaultIPv6RouteEnabledResponse struct {
@@ -25406,7 +25407,7 @@ type INATNetworkSettingEvent_getAdvertiseDefaultIPv6RouteEnabledResponse struct 
 type INATNetworkSettingEvent_getNeedDhcpServer struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkSettingEvent_getNeedDhcpServer"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkSettingEvent_getNeedDhcpServerResponse struct {
@@ -25418,7 +25419,7 @@ type INATNetworkSettingEvent_getNeedDhcpServerResponse struct {
 type INATNetworkPortForwardEvent_getCreate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getCreate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getCreateResponse struct {
@@ -25430,7 +25431,7 @@ type INATNetworkPortForwardEvent_getCreateResponse struct {
 type INATNetworkPortForwardEvent_getIpv6 struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getIpv6"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getIpv6Response struct {
@@ -25442,7 +25443,7 @@ type INATNetworkPortForwardEvent_getIpv6Response struct {
 type INATNetworkPortForwardEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getNameResponse struct {
@@ -25454,7 +25455,7 @@ type INATNetworkPortForwardEvent_getNameResponse struct {
 type INATNetworkPortForwardEvent_getProto struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getProto"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getProtoResponse struct {
@@ -25466,7 +25467,7 @@ type INATNetworkPortForwardEvent_getProtoResponse struct {
 type INATNetworkPortForwardEvent_getHostIp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getHostIp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getHostIpResponse struct {
@@ -25478,7 +25479,7 @@ type INATNetworkPortForwardEvent_getHostIpResponse struct {
 type INATNetworkPortForwardEvent_getHostPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getHostPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getHostPortResponse struct {
@@ -25490,7 +25491,7 @@ type INATNetworkPortForwardEvent_getHostPortResponse struct {
 type INATNetworkPortForwardEvent_getGuestIp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getGuestIp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getGuestIpResponse struct {
@@ -25502,7 +25503,7 @@ type INATNetworkPortForwardEvent_getGuestIpResponse struct {
 type INATNetworkPortForwardEvent_getGuestPort struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ INATNetworkPortForwardEvent_getGuestPort"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type INATNetworkPortForwardEvent_getGuestPortResponse struct {
@@ -25514,7 +25515,7 @@ type INATNetworkPortForwardEvent_getGuestPortResponse struct {
 type IHostNameResolutionConfigurationChangeEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IHostNameResolutionConfigurationChangeEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IHostNameResolutionConfigurationChangeEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -25526,7 +25527,7 @@ type IHostNameResolutionConfigurationChangeEvent_getMidlDoesNotLikeEmptyInterfac
 type IProgressEvent_getProgressId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgressEvent_getProgressId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgressEvent_getProgressIdResponse struct {
@@ -25538,7 +25539,7 @@ type IProgressEvent_getProgressIdResponse struct {
 type IProgressCreatedEvent_getCreate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgressCreatedEvent_getCreate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgressCreatedEvent_getCreateResponse struct {
@@ -25550,7 +25551,7 @@ type IProgressCreatedEvent_getCreateResponse struct {
 type IProgressPercentageChangedEvent_getPercent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgressPercentageChangedEvent_getPercent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgressPercentageChangedEvent_getPercentResponse struct {
@@ -25562,7 +25563,7 @@ type IProgressPercentageChangedEvent_getPercentResponse struct {
 type IProgressTaskCompletedEvent_getMidlDoesNotLikeEmptyInterfaces struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IProgressTaskCompletedEvent_getMidlDoesNotLikeEmptyInterfaces"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IProgressTaskCompletedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struct {
@@ -25574,7 +25575,7 @@ type IProgressTaskCompletedEvent_getMidlDoesNotLikeEmptyInterfacesResponse struc
 type ICursorPositionChangedEvent_getHasData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICursorPositionChangedEvent_getHasData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICursorPositionChangedEvent_getHasDataResponse struct {
@@ -25586,7 +25587,7 @@ type ICursorPositionChangedEvent_getHasDataResponse struct {
 type ICursorPositionChangedEvent_getX struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICursorPositionChangedEvent_getX"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICursorPositionChangedEvent_getXResponse struct {
@@ -25598,7 +25599,7 @@ type ICursorPositionChangedEvent_getXResponse struct {
 type ICursorPositionChangedEvent_getY struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICursorPositionChangedEvent_getY"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICursorPositionChangedEvent_getYResponse struct {
@@ -25610,7 +25611,7 @@ type ICursorPositionChangedEvent_getYResponse struct {
 type IGuestAdditionsStatusChangedEvent_getFacility struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestAdditionsStatusChangedEvent_getFacility"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestAdditionsStatusChangedEvent_getFacilityResponse struct {
@@ -25622,7 +25623,7 @@ type IGuestAdditionsStatusChangedEvent_getFacilityResponse struct {
 type IGuestAdditionsStatusChangedEvent_getStatus struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestAdditionsStatusChangedEvent_getStatus"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestAdditionsStatusChangedEvent_getStatusResponse struct {
@@ -25634,7 +25635,7 @@ type IGuestAdditionsStatusChangedEvent_getStatusResponse struct {
 type IGuestAdditionsStatusChangedEvent_getRunLevel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestAdditionsStatusChangedEvent_getRunLevel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestAdditionsStatusChangedEvent_getRunLevelResponse struct {
@@ -25646,7 +25647,7 @@ type IGuestAdditionsStatusChangedEvent_getRunLevelResponse struct {
 type IGuestAdditionsStatusChangedEvent_getTimestamp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestAdditionsStatusChangedEvent_getTimestamp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestAdditionsStatusChangedEvent_getTimestampResponse struct {
@@ -25658,7 +25659,7 @@ type IGuestAdditionsStatusChangedEvent_getTimestampResponse struct {
 type IGuestMonitorInfoChangedEvent_getOutput struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestMonitorInfoChangedEvent_getOutput"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestMonitorInfoChangedEvent_getOutputResponse struct {
@@ -25670,7 +25671,7 @@ type IGuestMonitorInfoChangedEvent_getOutputResponse struct {
 type IUpdateAgentEvent_getAgent struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentEvent_getAgent"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentEvent_getAgentResponse struct {
@@ -25682,7 +25683,7 @@ type IUpdateAgentEvent_getAgentResponse struct {
 type IUpdateAgentSettingsChangedEvent_getAttributeHint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentSettingsChangedEvent_getAttributeHint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentSettingsChangedEvent_getAttributeHintResponse struct {
@@ -25694,7 +25695,7 @@ type IUpdateAgentSettingsChangedEvent_getAttributeHintResponse struct {
 type IUpdateAgentErrorEvent_getMsg struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentErrorEvent_getMsg"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentErrorEvent_getMsgResponse struct {
@@ -25706,7 +25707,7 @@ type IUpdateAgentErrorEvent_getMsgResponse struct {
 type IUpdateAgentErrorEvent_getRcError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentErrorEvent_getRcError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentErrorEvent_getRcErrorResponse struct {
@@ -25718,7 +25719,7 @@ type IUpdateAgentErrorEvent_getRcErrorResponse struct {
 type IUpdateAgentAvailableEvent_getVersion struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getVersion"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getVersionResponse struct {
@@ -25730,7 +25731,7 @@ type IUpdateAgentAvailableEvent_getVersionResponse struct {
 type IUpdateAgentAvailableEvent_getChannel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getChannel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getChannelResponse struct {
@@ -25742,7 +25743,7 @@ type IUpdateAgentAvailableEvent_getChannelResponse struct {
 type IUpdateAgentAvailableEvent_getSeverity struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getSeverity"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getSeverityResponse struct {
@@ -25754,7 +25755,7 @@ type IUpdateAgentAvailableEvent_getSeverityResponse struct {
 type IUpdateAgentAvailableEvent_getDownloadURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getDownloadURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getDownloadURLResponse struct {
@@ -25766,7 +25767,7 @@ type IUpdateAgentAvailableEvent_getDownloadURLResponse struct {
 type IUpdateAgentAvailableEvent_getWebURL struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getWebURL"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getWebURLResponse struct {
@@ -25778,7 +25779,7 @@ type IUpdateAgentAvailableEvent_getWebURLResponse struct {
 type IUpdateAgentAvailableEvent_getReleaseNotes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentAvailableEvent_getReleaseNotes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentAvailableEvent_getReleaseNotesResponse struct {
@@ -25790,7 +25791,7 @@ type IUpdateAgentAvailableEvent_getReleaseNotesResponse struct {
 type IUpdateAgentStateChangedEvent_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IUpdateAgentStateChangedEvent_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IUpdateAgentStateChangedEvent_getStateResponse struct {
@@ -25802,7 +25803,7 @@ type IUpdateAgentStateChangedEvent_getStateResponse struct {
 type IGuestDebugControlChangedEvent_getGuestDebugControl struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IGuestDebugControlChangedEvent_getGuestDebugControl"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IGuestDebugControlChangedEvent_getGuestDebugControlResponse struct {
@@ -25814,7 +25815,7 @@ type IGuestDebugControlChangedEvent_getGuestDebugControlResponse struct {
 type IMachineGroupsChangedEvent_getDummy struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IMachineGroupsChangedEvent_getDummy"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IMachineGroupsChangedEvent_getDummyResponse struct {
@@ -25826,7 +25827,7 @@ type IMachineGroupsChangedEvent_getDummyResponse struct {
 type IStringArray_getValues struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStringArray_getValues"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStringArray_getValuesResponse struct {
@@ -25838,7 +25839,7 @@ type IStringArray_getValuesResponse struct {
 type IFormValue_getType struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getType"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getTypeResponse struct {
@@ -25850,7 +25851,7 @@ type IFormValue_getTypeResponse struct {
 type IFormValue_getGeneration struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getGeneration"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getGenerationResponse struct {
@@ -25862,7 +25863,7 @@ type IFormValue_getGenerationResponse struct {
 type IFormValue_getEnabled struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getEnabled"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getEnabledResponse struct {
@@ -25874,7 +25875,7 @@ type IFormValue_getEnabledResponse struct {
 type IFormValue_getVisible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getVisible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getVisibleResponse struct {
@@ -25886,7 +25887,7 @@ type IFormValue_getVisibleResponse struct {
 type IFormValue_getLabel struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getLabel"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getLabelResponse struct {
@@ -25898,7 +25899,7 @@ type IFormValue_getLabelResponse struct {
 type IFormValue_getDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getDescriptionResponse struct {
@@ -25910,7 +25911,7 @@ type IFormValue_getDescriptionResponse struct {
 type IFormValue_getHelp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IFormValue_getHelp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IFormValue_getHelpResponse struct {
@@ -25922,7 +25923,7 @@ type IFormValue_getHelpResponse struct {
 type IBooleanFormValue_getSelected struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBooleanFormValue_getSelected"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IBooleanFormValue_getSelectedResponse struct {
@@ -25934,7 +25935,7 @@ type IBooleanFormValue_getSelectedResponse struct {
 type IBooleanFormValue_setSelected struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IBooleanFormValue_setSelected"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Selected bool `xml:"selected,omitempty" json:"selected,omitempty"`
 }
@@ -25948,7 +25949,7 @@ type IBooleanFormValue_setSelectedResponse struct {
 type IRangedIntegerFormValue_getSuffix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedIntegerFormValue_getSuffix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedIntegerFormValue_getSuffixResponse struct {
@@ -25960,7 +25961,7 @@ type IRangedIntegerFormValue_getSuffixResponse struct {
 type IRangedIntegerFormValue_getMinimum struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedIntegerFormValue_getMinimum"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedIntegerFormValue_getMinimumResponse struct {
@@ -25972,7 +25973,7 @@ type IRangedIntegerFormValue_getMinimumResponse struct {
 type IRangedIntegerFormValue_getMaximum struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedIntegerFormValue_getMaximum"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedIntegerFormValue_getMaximumResponse struct {
@@ -25984,7 +25985,7 @@ type IRangedIntegerFormValue_getMaximumResponse struct {
 type IRangedIntegerFormValue_getInteger struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedIntegerFormValue_getInteger"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedIntegerFormValue_getIntegerResponse struct {
@@ -25996,7 +25997,7 @@ type IRangedIntegerFormValue_getIntegerResponse struct {
 type IRangedIntegerFormValue_setInteger struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedIntegerFormValue_setInteger"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Value int32 `xml:"value,omitempty" json:"value,omitempty"`
 }
@@ -26010,7 +26011,7 @@ type IRangedIntegerFormValue_setIntegerResponse struct {
 type IRangedInteger64FormValue_getSuffix struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedInteger64FormValue_getSuffix"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedInteger64FormValue_getSuffixResponse struct {
@@ -26022,7 +26023,7 @@ type IRangedInteger64FormValue_getSuffixResponse struct {
 type IRangedInteger64FormValue_getMinimum struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedInteger64FormValue_getMinimum"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedInteger64FormValue_getMinimumResponse struct {
@@ -26034,7 +26035,7 @@ type IRangedInteger64FormValue_getMinimumResponse struct {
 type IRangedInteger64FormValue_getMaximum struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedInteger64FormValue_getMaximum"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedInteger64FormValue_getMaximumResponse struct {
@@ -26046,7 +26047,7 @@ type IRangedInteger64FormValue_getMaximumResponse struct {
 type IRangedInteger64FormValue_getInteger struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedInteger64FormValue_getInteger"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IRangedInteger64FormValue_getIntegerResponse struct {
@@ -26058,7 +26059,7 @@ type IRangedInteger64FormValue_getIntegerResponse struct {
 type IRangedInteger64FormValue_setInteger struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IRangedInteger64FormValue_setInteger"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Value int64 `xml:"value,omitempty" json:"value,omitempty"`
 }
@@ -26072,7 +26073,7 @@ type IRangedInteger64FormValue_setIntegerResponse struct {
 type IStringFormValue_getMultiline struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStringFormValue_getMultiline"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStringFormValue_getMultilineResponse struct {
@@ -26084,7 +26085,7 @@ type IStringFormValue_getMultilineResponse struct {
 type IStringFormValue_getClipboardString struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStringFormValue_getClipboardString"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStringFormValue_getClipboardStringResponse struct {
@@ -26096,7 +26097,7 @@ type IStringFormValue_getClipboardStringResponse struct {
 type IStringFormValue_getString struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStringFormValue_getString"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IStringFormValue_getStringResponse struct {
@@ -26108,7 +26109,7 @@ type IStringFormValue_getStringResponse struct {
 type IStringFormValue_setString struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IStringFormValue_setString"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Text string `xml:"text,omitempty" json:"text,omitempty"`
 }
@@ -26122,7 +26123,7 @@ type IStringFormValue_setStringResponse struct {
 type IChoiceFormValue_getValues struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IChoiceFormValue_getValues"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IChoiceFormValue_getValuesResponse struct {
@@ -26134,7 +26135,7 @@ type IChoiceFormValue_getValuesResponse struct {
 type IChoiceFormValue_getSelectedIndex struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IChoiceFormValue_getSelectedIndex"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IChoiceFormValue_getSelectedIndexResponse struct {
@@ -26146,7 +26147,7 @@ type IChoiceFormValue_getSelectedIndexResponse struct {
 type IChoiceFormValue_setSelectedIndex struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IChoiceFormValue_setSelectedIndex"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Index int32 `xml:"index,omitempty" json:"index,omitempty"`
 }
@@ -26160,7 +26161,7 @@ type IChoiceFormValue_setSelectedIndexResponse struct {
 type IForm_getValues struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IForm_getValues"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IForm_getValuesResponse struct {
@@ -26172,7 +26173,7 @@ type IForm_getValuesResponse struct {
 type IForm_getFieldGroup struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IForm_getFieldGroup"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Field string `xml:"field,omitempty" json:"field,omitempty"`
 }
@@ -26186,7 +26187,7 @@ type IForm_getFieldGroupResponse struct {
 type IForm_apply struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IForm_apply"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IForm_applyResponse struct {
@@ -26198,7 +26199,7 @@ type IForm_applyResponse struct {
 type IVirtualSystemDescriptionForm_getVirtualSystemDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ IVirtualSystemDescriptionForm_getVirtualSystemDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type IVirtualSystemDescriptionForm_getVirtualSystemDescriptionResponse struct {
@@ -26210,7 +26211,7 @@ type IVirtualSystemDescriptionForm_getVirtualSystemDescriptionResponse struct {
 type ICloudNetworkGatewayInfo_getPublicIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetworkGatewayInfo_getPublicIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetworkGatewayInfo_getPublicIPResponse struct {
@@ -26222,7 +26223,7 @@ type ICloudNetworkGatewayInfo_getPublicIPResponse struct {
 type ICloudNetworkGatewayInfo_getSecondaryPublicIP struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetworkGatewayInfo_getSecondaryPublicIP"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetworkGatewayInfo_getSecondaryPublicIPResponse struct {
@@ -26234,7 +26235,7 @@ type ICloudNetworkGatewayInfo_getSecondaryPublicIPResponse struct {
 type ICloudNetworkGatewayInfo_getMacAddress struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetworkGatewayInfo_getMacAddress"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetworkGatewayInfo_getMacAddressResponse struct {
@@ -26246,7 +26247,7 @@ type ICloudNetworkGatewayInfo_getMacAddressResponse struct {
 type ICloudNetworkGatewayInfo_getInstanceId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetworkGatewayInfo_getInstanceId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetworkGatewayInfo_getInstanceIdResponse struct {
@@ -26258,7 +26259,7 @@ type ICloudNetworkGatewayInfo_getInstanceIdResponse struct {
 type ICloudNetworkEnvironmentInfo_getTunnelNetworkId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudNetworkEnvironmentInfo_getTunnelNetworkId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudNetworkEnvironmentInfo_getTunnelNetworkIdResponse struct {
@@ -26270,7 +26271,7 @@ type ICloudNetworkEnvironmentInfo_getTunnelNetworkIdResponse struct {
 type ICloudMachine_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getIdResponse struct {
@@ -26282,7 +26283,7 @@ type ICloudMachine_getIdResponse struct {
 type ICloudMachine_getCloudId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getCloudId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getCloudIdResponse struct {
@@ -26294,7 +26295,7 @@ type ICloudMachine_getCloudIdResponse struct {
 type ICloudMachine_getAccessible struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getAccessible"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getAccessibleResponse struct {
@@ -26306,7 +26307,7 @@ type ICloudMachine_getAccessibleResponse struct {
 type ICloudMachine_getAccessError struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getAccessError"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getAccessErrorResponse struct {
@@ -26318,7 +26319,7 @@ type ICloudMachine_getAccessErrorResponse struct {
 type ICloudMachine_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getNameResponse struct {
@@ -26330,7 +26331,7 @@ type ICloudMachine_getNameResponse struct {
 type ICloudMachine_getOSTypeId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getOSTypeId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getOSTypeIdResponse struct {
@@ -26342,7 +26343,7 @@ type ICloudMachine_getOSTypeIdResponse struct {
 type ICloudMachine_getState struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getState"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getStateResponse struct {
@@ -26354,7 +26355,7 @@ type ICloudMachine_getStateResponse struct {
 type ICloudMachine_getConsoleConnectionFingerprint struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getConsoleConnectionFingerprint"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getConsoleConnectionFingerprintResponse struct {
@@ -26366,7 +26367,7 @@ type ICloudMachine_getConsoleConnectionFingerprintResponse struct {
 type ICloudMachine_getSerialConsoleCommand struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getSerialConsoleCommand"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getSerialConsoleCommandResponse struct {
@@ -26378,7 +26379,7 @@ type ICloudMachine_getSerialConsoleCommandResponse struct {
 type ICloudMachine_getSerialConsoleCommandWindows struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getSerialConsoleCommandWindows"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getSerialConsoleCommandWindowsResponse struct {
@@ -26390,7 +26391,7 @@ type ICloudMachine_getSerialConsoleCommandWindowsResponse struct {
 type ICloudMachine_getVNCConsoleCommand struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getVNCConsoleCommand"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getVNCConsoleCommandResponse struct {
@@ -26402,7 +26403,7 @@ type ICloudMachine_getVNCConsoleCommandResponse struct {
 type ICloudMachine_getVNCConsoleCommandWindows struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getVNCConsoleCommandWindows"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getVNCConsoleCommandWindowsResponse struct {
@@ -26414,7 +26415,7 @@ type ICloudMachine_getVNCConsoleCommandWindowsResponse struct {
 type ICloudMachine_refresh struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_refresh"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_refreshResponse struct {
@@ -26426,7 +26427,7 @@ type ICloudMachine_refreshResponse struct {
 type ICloudMachine_getDetailsForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getDetailsForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getDetailsFormResponse struct {
@@ -26438,7 +26439,7 @@ type ICloudMachine_getDetailsFormResponse struct {
 type ICloudMachine_getSettingsForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getSettingsForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getSettingsFormResponse struct {
@@ -26452,7 +26453,7 @@ type ICloudMachine_getSettingsFormResponse struct {
 type ICloudMachine_powerUp struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_powerUp"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_powerUpResponse struct {
@@ -26464,7 +26465,7 @@ type ICloudMachine_powerUpResponse struct {
 type ICloudMachine_reboot struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_reboot"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_rebootResponse struct {
@@ -26476,7 +26477,7 @@ type ICloudMachine_rebootResponse struct {
 type ICloudMachine_reset struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_reset"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_resetResponse struct {
@@ -26488,7 +26489,7 @@ type ICloudMachine_resetResponse struct {
 type ICloudMachine_shutdown struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_shutdown"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_shutdownResponse struct {
@@ -26500,7 +26501,7 @@ type ICloudMachine_shutdownResponse struct {
 type ICloudMachine_powerDown struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_powerDown"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_powerDownResponse struct {
@@ -26512,7 +26513,7 @@ type ICloudMachine_powerDownResponse struct {
 type ICloudMachine_terminate struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_terminate"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_terminateResponse struct {
@@ -26524,7 +26525,7 @@ type ICloudMachine_terminateResponse struct {
 type ICloudMachine_unregister struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_unregister"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_unregisterResponse struct {
@@ -26536,7 +26537,7 @@ type ICloudMachine_unregisterResponse struct {
 type ICloudMachine_remove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_remove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_removeResponse struct {
@@ -26548,7 +26549,7 @@ type ICloudMachine_removeResponse struct {
 type ICloudMachine_getConsoleHistory struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_getConsoleHistory"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_getConsoleHistoryResponse struct {
@@ -26562,7 +26563,7 @@ type ICloudMachine_getConsoleHistoryResponse struct {
 type ICloudMachine_createConsoleConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_createConsoleConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	SshPublicKey string `xml:"sshPublicKey,omitempty" json:"sshPublicKey,omitempty"`
 }
@@ -26576,7 +26577,7 @@ type ICloudMachine_createConsoleConnectionResponse struct {
 type ICloudMachine_deleteConsoleConnection struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_deleteConsoleConnection"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_deleteConsoleConnectionResponse struct {
@@ -26588,7 +26589,7 @@ type ICloudMachine_deleteConsoleConnectionResponse struct {
 type ICloudMachine_listMetricNames struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_listMetricNames"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudMachine_listMetricNamesResponse struct {
@@ -26602,7 +26603,7 @@ type ICloudMachine_listMetricNamesResponse struct {
 type ICloudMachine_enumerateMetricData struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudMachine_enumerateMetricData"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricType *MetricType `xml:"metricType,omitempty" json:"metricType,omitempty"`
 
@@ -26624,7 +26625,7 @@ type ICloudMachine_enumerateMetricDataResponse struct {
 type ICloudClient_getCloudMachineList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getCloudMachineList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_getCloudMachineListResponse struct {
@@ -26636,7 +26637,7 @@ type ICloudClient_getCloudMachineListResponse struct {
 type ICloudClient_getCloudMachineStubList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getCloudMachineStubList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_getCloudMachineStubListResponse struct {
@@ -26648,7 +26649,7 @@ type ICloudClient_getCloudMachineStubListResponse struct {
 type ICloudClient_getExportDescriptionForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getExportDescriptionForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -26664,7 +26665,7 @@ type ICloudClient_getExportDescriptionFormResponse struct {
 type ICloudClient_exportVM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_exportVM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 
@@ -26678,7 +26679,7 @@ type ICloudClient_exportVMResponse struct {
 type ICloudClient_getLaunchDescriptionForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getLaunchDescriptionForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -26694,7 +26695,7 @@ type ICloudClient_getLaunchDescriptionFormResponse struct {
 type ICloudClient_launchVM struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_launchVM"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -26708,7 +26709,7 @@ type ICloudClient_launchVMResponse struct {
 type ICloudClient_getImportDescriptionForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getImportDescriptionForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -26724,7 +26725,7 @@ type ICloudClient_getImportDescriptionFormResponse struct {
 type ICloudClient_importInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_importInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 
@@ -26738,7 +26739,7 @@ type ICloudClient_importInstanceResponse struct {
 type ICloudClient_getCloudMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getCloudMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Id string `xml:"id,omitempty" json:"id,omitempty"`
 }
@@ -26752,7 +26753,7 @@ type ICloudClient_getCloudMachineResponse struct {
 type ICloudClient_readCloudMachineList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_readCloudMachineList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_readCloudMachineListResponse struct {
@@ -26764,7 +26765,7 @@ type ICloudClient_readCloudMachineListResponse struct {
 type ICloudClient_readCloudMachineStubList struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_readCloudMachineStubList"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_readCloudMachineStubListResponse struct {
@@ -26776,7 +26777,7 @@ type ICloudClient_readCloudMachineStubListResponse struct {
 type ICloudClient_addCloudMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_addCloudMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	InstanceId string `xml:"instanceId,omitempty" json:"instanceId,omitempty"`
 }
@@ -26792,7 +26793,7 @@ type ICloudClient_addCloudMachineResponse struct {
 type ICloudClient_createCloudMachine struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_createCloudMachine"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -26808,7 +26809,7 @@ type ICloudClient_createCloudMachineResponse struct {
 type ICloudClient_listInstances struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listInstances"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MachineState []*CloudMachineState `xml:"machineState,omitempty" json:"machineState,omitempty"`
 }
@@ -26826,7 +26827,7 @@ type ICloudClient_listInstancesResponse struct {
 type ICloudClient_listSourceInstances struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listSourceInstances"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_listSourceInstancesResponse struct {
@@ -26842,7 +26843,7 @@ type ICloudClient_listSourceInstancesResponse struct {
 type ICloudClient_listImages struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listImages"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ImageState []*CloudImageState `xml:"imageState,omitempty" json:"imageState,omitempty"`
 }
@@ -26860,7 +26861,7 @@ type ICloudClient_listImagesResponse struct {
 type ICloudClient_listBootVolumes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listBootVolumes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_listBootVolumesResponse struct {
@@ -26876,7 +26877,7 @@ type ICloudClient_listBootVolumesResponse struct {
 type ICloudClient_listSourceBootVolumes struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listSourceBootVolumes"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudClient_listSourceBootVolumesResponse struct {
@@ -26892,7 +26893,7 @@ type ICloudClient_listSourceBootVolumesResponse struct {
 type ICloudClient_listVnicAttachments struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_listVnicAttachments"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Parameters []string `xml:"parameters,omitempty" json:"parameters,omitempty"`
 }
@@ -26910,7 +26911,7 @@ type ICloudClient_listVnicAttachmentsResponse struct {
 type ICloudClient_getInstanceInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getInstanceInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 
@@ -26926,7 +26927,7 @@ type ICloudClient_getInstanceInfoResponse struct {
 type ICloudClient_startInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_startInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -26940,7 +26941,7 @@ type ICloudClient_startInstanceResponse struct {
 type ICloudClient_pauseInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_pauseInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -26954,7 +26955,7 @@ type ICloudClient_pauseInstanceResponse struct {
 type ICloudClient_terminateInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_terminateInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -26968,7 +26969,7 @@ type ICloudClient_terminateInstanceResponse struct {
 type ICloudClient_resetInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_resetInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -26982,7 +26983,7 @@ type ICloudClient_resetInstanceResponse struct {
 type ICloudClient_cloneInstance struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_cloneInstance"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 
@@ -27000,7 +27001,7 @@ type ICloudClient_cloneInstanceResponse struct {
 type ICloudClient_createImage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_createImage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Parameters []string `xml:"parameters,omitempty" json:"parameters,omitempty"`
 }
@@ -27014,7 +27015,7 @@ type ICloudClient_createImageResponse struct {
 type ICloudClient_exportImage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_exportImage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Image string `xml:"image,omitempty" json:"image,omitempty"`
 
@@ -27030,7 +27031,7 @@ type ICloudClient_exportImageResponse struct {
 type ICloudClient_importImage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_importImage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 
@@ -27046,7 +27047,7 @@ type ICloudClient_importImageResponse struct {
 type ICloudClient_deleteImage struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_deleteImage"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -27060,7 +27061,7 @@ type ICloudClient_deleteImageResponse struct {
 type ICloudClient_getImageInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getImageInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -27076,7 +27077,7 @@ type ICloudClient_getImageInfoResponse struct {
 type ICloudClient_startCloudNetworkGateway struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_startCloudNetworkGateway"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Network string `xml:"network,omitempty" json:"network,omitempty"`
 
@@ -27094,7 +27095,7 @@ type ICloudClient_startCloudNetworkGatewayResponse struct {
 type ICloudClient_setupCloudNetworkEnvironment struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_setupCloudNetworkEnvironment"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	TunnelNetworkName string `xml:"tunnelNetworkName,omitempty" json:"tunnelNetworkName,omitempty"`
 
@@ -27118,7 +27119,7 @@ type ICloudClient_setupCloudNetworkEnvironmentResponse struct {
 type ICloudClient_getVnicInfo struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getVnicInfo"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Uid string `xml:"uid,omitempty" json:"uid,omitempty"`
 }
@@ -27134,7 +27135,7 @@ type ICloudClient_getVnicInfoResponse struct {
 type ICloudClient_getSubnetSelectionForm struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getSubnetSelectionForm"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Description string `xml:"description,omitempty" json:"description,omitempty"`
 }
@@ -27150,7 +27151,7 @@ type ICloudClient_getSubnetSelectionFormResponse struct {
 type ICloudClient_getMetricTypeByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudClient_getMetricTypeByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	MetricName string `xml:"metricName,omitempty" json:"metricName,omitempty"`
 }
@@ -27164,7 +27165,7 @@ type ICloudClient_getMetricTypeByNameResponse struct {
 type ICloudProfile_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfile_getNameResponse struct {
@@ -27176,7 +27177,7 @@ type ICloudProfile_getNameResponse struct {
 type ICloudProfile_setName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_setName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -27188,7 +27189,7 @@ type ICloudProfile_setNameResponse struct {
 type ICloudProfile_getProviderId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_getProviderId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfile_getProviderIdResponse struct {
@@ -27200,7 +27201,7 @@ type ICloudProfile_getProviderIdResponse struct {
 type ICloudProfile_getProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_getProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -27214,7 +27215,7 @@ type ICloudProfile_getPropertyResponse struct {
 type ICloudProfile_setProperty struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_setProperty"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 
@@ -27228,7 +27229,7 @@ type ICloudProfile_setPropertyResponse struct {
 type ICloudProfile_getProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_getProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names string `xml:"names,omitempty" json:"names,omitempty"`
 }
@@ -27244,7 +27245,7 @@ type ICloudProfile_getPropertiesResponse struct {
 type ICloudProfile_setProperties struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_setProperties"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Names []string `xml:"names,omitempty" json:"names,omitempty"`
 
@@ -27258,7 +27259,7 @@ type ICloudProfile_setPropertiesResponse struct {
 type ICloudProfile_remove struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_remove"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfile_removeResponse struct {
@@ -27268,7 +27269,7 @@ type ICloudProfile_removeResponse struct {
 type ICloudProfile_createCloudClient struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfile_createCloudClient"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfile_createCloudClientResponse struct {
@@ -27280,7 +27281,7 @@ type ICloudProfile_createCloudClientResponse struct {
 type ICloudProvider_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getNameResponse struct {
@@ -27292,7 +27293,7 @@ type ICloudProvider_getNameResponse struct {
 type ICloudProvider_getShortName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getShortName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getShortNameResponse struct {
@@ -27304,7 +27305,7 @@ type ICloudProvider_getShortNameResponse struct {
 type ICloudProvider_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getIdResponse struct {
@@ -27316,7 +27317,7 @@ type ICloudProvider_getIdResponse struct {
 type ICloudProvider_getProfiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getProfiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getProfilesResponse struct {
@@ -27328,7 +27329,7 @@ type ICloudProvider_getProfilesResponse struct {
 type ICloudProvider_getProfileNames struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getProfileNames"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getProfileNamesResponse struct {
@@ -27340,7 +27341,7 @@ type ICloudProvider_getProfileNamesResponse struct {
 type ICloudProvider_getSupportedPropertyNames struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getSupportedPropertyNames"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_getSupportedPropertyNamesResponse struct {
@@ -27352,7 +27353,7 @@ type ICloudProvider_getSupportedPropertyNamesResponse struct {
 type ICloudProvider_getPropertyDescription struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getPropertyDescription"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	Name string `xml:"name,omitempty" json:"name,omitempty"`
 }
@@ -27366,7 +27367,7 @@ type ICloudProvider_getPropertyDescriptionResponse struct {
 type ICloudProvider_createProfile struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_createProfile"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProfileName string `xml:"profileName,omitempty" json:"profileName,omitempty"`
 
@@ -27382,7 +27383,7 @@ type ICloudProvider_createProfileResponse struct {
 type ICloudProvider_importProfiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_importProfiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_importProfilesResponse struct {
@@ -27392,7 +27393,7 @@ type ICloudProvider_importProfilesResponse struct {
 type ICloudProvider_restoreProfiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_restoreProfiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_restoreProfilesResponse struct {
@@ -27402,7 +27403,7 @@ type ICloudProvider_restoreProfilesResponse struct {
 type ICloudProvider_saveProfiles struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_saveProfiles"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_saveProfilesResponse struct {
@@ -27412,7 +27413,7 @@ type ICloudProvider_saveProfilesResponse struct {
 type ICloudProvider_getProfileByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_getProfileByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProfileName string `xml:"profileName,omitempty" json:"profileName,omitempty"`
 }
@@ -27426,7 +27427,7 @@ type ICloudProvider_getProfileByNameResponse struct {
 type ICloudProvider_prepareUninstall struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProvider_prepareUninstall"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProvider_prepareUninstallResponse struct {
@@ -27436,7 +27437,7 @@ type ICloudProvider_prepareUninstallResponse struct {
 type ICloudProviderManager_getProviders struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderManager_getProviders"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProviderManager_getProvidersResponse struct {
@@ -27448,7 +27449,7 @@ type ICloudProviderManager_getProvidersResponse struct {
 type ICloudProviderManager_getProviderById struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderManager_getProviderById"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProviderId string `xml:"providerId,omitempty" json:"providerId,omitempty"`
 }
@@ -27462,7 +27463,7 @@ type ICloudProviderManager_getProviderByIdResponse struct {
 type ICloudProviderManager_getProviderByShortName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderManager_getProviderByShortName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProviderName string `xml:"providerName,omitempty" json:"providerName,omitempty"`
 }
@@ -27476,7 +27477,7 @@ type ICloudProviderManager_getProviderByShortNameResponse struct {
 type ICloudProviderManager_getProviderByName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderManager_getProviderByName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 
 	ProviderName string `xml:"providerName,omitempty" json:"providerName,omitempty"`
 }
@@ -27490,7 +27491,7 @@ type ICloudProviderManager_getProviderByNameResponse struct {
 type ICloudProviderListChangedEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderListChangedEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProviderListChangedEvent_getRegisteredResponse struct {
@@ -27502,7 +27503,7 @@ type ICloudProviderListChangedEvent_getRegisteredResponse struct {
 type ICloudProviderRegisteredEvent_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderRegisteredEvent_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProviderRegisteredEvent_getIdResponse struct {
@@ -27514,7 +27515,7 @@ type ICloudProviderRegisteredEvent_getIdResponse struct {
 type ICloudProviderRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProviderRegisteredEvent_getRegisteredResponse struct {
@@ -27526,7 +27527,7 @@ type ICloudProviderRegisteredEvent_getRegisteredResponse struct {
 type ICloudProviderUninstallEvent_getId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProviderUninstallEvent_getId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProviderUninstallEvent_getIdResponse struct {
@@ -27538,7 +27539,7 @@ type ICloudProviderUninstallEvent_getIdResponse struct {
 type ICloudProfileRegisteredEvent_getProviderId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfileRegisteredEvent_getProviderId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfileRegisteredEvent_getProviderIdResponse struct {
@@ -27550,7 +27551,7 @@ type ICloudProfileRegisteredEvent_getProviderIdResponse struct {
 type ICloudProfileRegisteredEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfileRegisteredEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfileRegisteredEvent_getNameResponse struct {
@@ -27562,7 +27563,7 @@ type ICloudProfileRegisteredEvent_getNameResponse struct {
 type ICloudProfileRegisteredEvent_getRegistered struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfileRegisteredEvent_getRegistered"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfileRegisteredEvent_getRegisteredResponse struct {
@@ -27574,7 +27575,7 @@ type ICloudProfileRegisteredEvent_getRegisteredResponse struct {
 type ICloudProfileChangedEvent_getProviderId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfileChangedEvent_getProviderId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfileChangedEvent_getProviderIdResponse struct {
@@ -27586,7 +27587,7 @@ type ICloudProfileChangedEvent_getProviderIdResponse struct {
 type ICloudProfileChangedEvent_getName struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ICloudProfileChangedEvent_getName"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ICloudProfileChangedEvent_getNameResponse struct {
@@ -27598,7 +27599,7 @@ type ICloudProfileChangedEvent_getNameResponse struct {
 type ILanguageChangedEvent_getLanguageId struct {
 	XMLName xml.Name `xml:"http://www.virtualbox.org/ ILanguageChangedEvent_getLanguageId"`
 
-	_this string `xml:"_this,omitempty" json:"_this,omitempty"`
+	This string `xml:"_this,omitempty" json:"_this,omitempty"`
 }
 
 type ILanguageChangedEvent_getLanguageIdResponse struct {
