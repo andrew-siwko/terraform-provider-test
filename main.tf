@@ -54,5 +54,5 @@ data "mirror_vms" "all" {
 }
 
 output "vm_list" {
-  value = data.mirror_vms.all.names
+  value = data.mirror_vms.all
 }
