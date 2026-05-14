@@ -21,6 +21,7 @@ type vmModel struct {
     CPUs   types.Int64  `tfsdk:"cpus"`
     State  types.String `tfsdk:"state"`
     Description types.String `tfsdk:"description"`
+    StorageControllers types.List `tfsdk:"storage_controllers"`
 }
 
 var vmObjectType = types.ObjectType{
@@ -31,6 +32,7 @@ var vmObjectType = types.ObjectType{
         "cpus":        types.Int64Type,
         "state":       types.StringType,
         "description": types.StringType,
+        "storage_controllers": types.ListType{ElemType: types.StringType},
     },
 }
 
@@ -42,6 +44,11 @@ func getVMSchemaAttributes() map[string]schema.Attribute {
         "cpus":        schema.Int64Attribute{Computed: true},
         "state":       schema.StringAttribute{Computed: true},
         "description": schema.StringAttribute{Computed: true},
+        "storage_controllers": schema.ListAttribute{
+            Computed: true,
+            ElementType: types.StringType,
+            Description: "List of storage controllers attached to the VM.",
+        },
     }
 }
 // The main Data Source model
@@ -103,7 +110,7 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
 func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, resp *datasource.ReadResponse) {
     var data vmsDataSourceModel
 
-    vms, err := d.client.GetDetailedVMs()
+    vms, err := d.client.GetDetailedVMs(ctx)
     if err != nil {
         resp.Diagnostics.AddError("Client Error", err.Error())
         return
