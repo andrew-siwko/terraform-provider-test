@@ -1,13 +1,23 @@
 package main
 
 import (
-    "context"
+	"context"
 
-    "github.com/hashicorp/terraform-plugin-framework/datasource"
-    "github.com/hashicorp/terraform-plugin-framework/datasource/schema"
-    "github.com/hashicorp/terraform-plugin-framework/types"
+	"github.com/hashicorp/terraform-plugin-framework/datasource"
+	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
+	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
+// vboxDataSource is the actual data source implementation
+type vboxDataSource struct {
+    client *VBoxClient // Your custom API client
+}
+
+// VBoxDataSourceModel maps the Terraform schema to Go types
+type VBoxDataSourceModel struct {
+    ID      types.String `tfsdk:"id"`
+    Names   types.List   `tfsdk:"names"` // List of VM names
+}
 // Ensure the implementation satisfies the expected interfaces.
 var _ datasource.DataSource = &vmsDataSource{}
 
@@ -74,4 +84,28 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
 
     // Save data into Terraform state
     resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
+}
+
+func (d *vboxDataSource) Read(ctx context.Context, req datasource.ReadRequest, resp *datasource.ReadResponse) {
+    var state VBoxDataSourceModel
+
+    // 1. Get the client from the provider
+    // 2. Call your GetVMNames()
+    names, err := d.client.GetVMNames()
+    if err != nil {
+        resp.Diagnostics.AddError("Client Error", err.Error())
+        return
+    }
+
+    // Convert []string to types.List
+    namesList, diags := types.ListValueFrom(ctx, types.StringType, names)
+    resp.Diagnostics.Append(diags...)
+    if resp.Diagnostics.HasError() {
+        return
+    }    // 3. Map to your Go struct model
+    
+    state.Names = namesList
+
+    // 4. Set the state
+    resp.Diagnostics.Append(resp.State.Set(ctx, &state)...)
 }
