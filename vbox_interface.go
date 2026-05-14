@@ -1232,13 +1232,9 @@ type CloneOptions string
 
 const (
 	CloneOptionsLink CloneOptions = "Link"
-
 	CloneOptionsKeepAllMACs CloneOptions = "KeepAllMACs"
-
 	CloneOptionsKeepNATMACs CloneOptions = "KeepNATMACs"
-
 	CloneOptionsKeepDiskNames CloneOptions = "KeepDiskNames"
-
 	CloneOptionsKeepHwUUIDs CloneOptions = "KeepHwUUIDs"
 )
 
@@ -1246,11 +1242,8 @@ type AutostopType string
 
 const (
 	AutostopTypeDisabled AutostopType = "Disabled"
-
 	AutostopTypeSaveState AutostopType = "SaveState"
-
 	AutostopTypePowerOff AutostopType = "PowerOff"
-
 	AutostopTypeAcpiShutdown AutostopType = "AcpiShutdown"
 )
 
@@ -1258,15 +1251,10 @@ type VMProcPriority string
 
 const (
 	VMProcPriorityInvalid VMProcPriority = "Invalid"
-
 	VMProcPriorityDefault VMProcPriority = "Default"
-
 	VMProcPriorityFlat VMProcPriority = "Flat"
-
 	VMProcPriorityLow VMProcPriority = "Low"
-
 	VMProcPriorityNormal VMProcPriority = "Normal"
-
 	VMProcPriorityHigh VMProcPriority = "High"
 )
 
@@ -1274,11 +1262,8 @@ type IommuType string
 
 const (
 	IommuTypeNone IommuType = "None"
-
 	IommuTypeAutomatic IommuType = "Automatic"
-
 	IommuTypeAMD IommuType = "AMD"
-
 	IommuTypeIntel IommuType = "Intel"
 )
 
@@ -1286,15 +1271,10 @@ type VMExecutionEngine string
 
 const (
 	VMExecutionEngineNotSet VMExecutionEngine = "NotSet"
-
 	VMExecutionEngineDefault VMExecutionEngine = "Default"
-
 	VMExecutionEngineHwVirt VMExecutionEngine = "HwVirt"
-
 	VMExecutionEngineNativeApi VMExecutionEngine = "NativeApi"
-
 	VMExecutionEngineInterpreter VMExecutionEngine = "Interpreter"
-
 	VMExecutionEngineRecompiler VMExecutionEngine = "Recompiler"
 )
 
@@ -1302,11 +1282,8 @@ type HostNetworkInterfaceMediumType string
 
 const (
 	HostNetworkInterfaceMediumTypeUnknown HostNetworkInterfaceMediumType = "Unknown"
-
 	HostNetworkInterfaceMediumTypeEthernet HostNetworkInterfaceMediumType = "Ethernet"
-
 	HostNetworkInterfaceMediumTypePPP HostNetworkInterfaceMediumType = "PPP"
-
 	HostNetworkInterfaceMediumTypeSLIP HostNetworkInterfaceMediumType = "SLIP"
 )
 
@@ -1314,9 +1291,7 @@ type HostNetworkInterfaceStatus string
 
 const (
 	HostNetworkInterfaceStatusUnknown HostNetworkInterfaceStatus = "Unknown"
-
 	HostNetworkInterfaceStatusUp HostNetworkInterfaceStatus = "Up"
-
 	HostNetworkInterfaceStatusDown HostNetworkInterfaceStatus = "Down"
 )
 
@@ -1324,9 +1299,7 @@ type HostNetworkInterfaceType string
 
 const (
 	HostNetworkInterfaceTypeInvalid HostNetworkInterfaceType = "Invalid"
-
 	HostNetworkInterfaceTypeBridged HostNetworkInterfaceType = "Bridged"
-
 	HostNetworkInterfaceTypeHostOnly HostNetworkInterfaceType = "HostOnly"
 )
 
@@ -1334,13 +1307,9 @@ type UpdateChannel string
 
 const (
 	UpdateChannelInvalid UpdateChannel = "Invalid"
-
 	UpdateChannelStable UpdateChannel = "Stable"
-
 	UpdateChannelAll UpdateChannel = "All"
-
 	UpdateChannelWithBetas UpdateChannel = "WithBetas"
-
 	UpdateChannelWithTesting UpdateChannel = "WithTesting"
 )
 
@@ -1348,13 +1317,9 @@ type UpdateSeverity string
 
 const (
 	UpdateSeverityInvalid UpdateSeverity = "Invalid"
-
 	UpdateSeverityCritical UpdateSeverity = "Critical"
-
 	UpdateSeverityMajor UpdateSeverity = "Major"
-
 	UpdateSeverityMinor UpdateSeverity = "Minor"
-
 	UpdateSeverityTesting UpdateSeverity = "Testing"
 )
 
@@ -1362,25 +1327,15 @@ type UpdateState string
 
 const (
 	UpdateStateInvalid UpdateState = "Invalid"
-
 	UpdateStateAvailable UpdateState = "Available"
-
 	UpdateStateNotAvailable UpdateState = "NotAvailable"
-
 	UpdateStateDownloading UpdateState = "Downloading"
-
 	UpdateStateDownloaded UpdateState = "Downloaded"
-
 	UpdateStateInstalling UpdateState = "Installing"
-
 	UpdateStateInstalled UpdateState = "Installed"
-
 	UpdateStateUserInteraction UpdateState = "UserInteraction"
-
 	UpdateStateCanceled UpdateState = "Canceled"
-
 	UpdateStateMaintenance UpdateState = "Maintenance"
-
 	UpdateStateError UpdateState = "Error"
 )
 
@@ -1388,9 +1343,7 @@ type ProxyMode string
 
 const (
 	ProxyModeSystem ProxyMode = "System"
-
 	ProxyModeNoProxy ProxyMode = "NoProxy"
-
 	ProxyModeManual ProxyMode = "Manual"
 )
 
@@ -1398,21 +1351,13 @@ type AdditionsFacilityType string
 
 const (
 	AdditionsFacilityTypeNone AdditionsFacilityType = "None"
-
 	AdditionsFacilityTypeVBoxGuestDriver AdditionsFacilityType = "VBoxGuestDriver"
-
 	AdditionsFacilityTypeAutoLogon AdditionsFacilityType = "AutoLogon"
-
 	AdditionsFacilityTypeVBoxService AdditionsFacilityType = "VBoxService"
-
 	AdditionsFacilityTypeVBoxTrayClient AdditionsFacilityType = "VBoxTrayClient"
-
 	AdditionsFacilityTypeSeamless AdditionsFacilityType = "Seamless"
-
 	AdditionsFacilityTypeGraphics AdditionsFacilityType = "Graphics"
-
 	AdditionsFacilityTypeMonitorAttach AdditionsFacilityType = "MonitorAttach"
-
 	AdditionsFacilityTypeAll AdditionsFacilityType = "All"
 )
 
@@ -1420,17 +1365,11 @@ type AdditionsFacilityClass string
 
 const (
 	AdditionsFacilityClassNone AdditionsFacilityClass = "None"
-
 	AdditionsFacilityClassDriver AdditionsFacilityClass = "Driver"
-
 	AdditionsFacilityClassService AdditionsFacilityClass = "Service"
-
 	AdditionsFacilityClassProgram AdditionsFacilityClass = "Program"
-
 	AdditionsFacilityClassFeature AdditionsFacilityClass = "Feature"
-
 	AdditionsFacilityClassThirdParty AdditionsFacilityClass = "ThirdParty"
-
 	AdditionsFacilityClassAll AdditionsFacilityClass = "All"
 )
 
@@ -1438,21 +1377,13 @@ type AdditionsFacilityStatus string
 
 const (
 	AdditionsFacilityStatusInactive AdditionsFacilityStatus = "Inactive"
-
 	AdditionsFacilityStatusPaused AdditionsFacilityStatus = "Paused"
-
 	AdditionsFacilityStatusPreInit AdditionsFacilityStatus = "PreInit"
-
 	AdditionsFacilityStatusInit AdditionsFacilityStatus = "Init"
-
 	AdditionsFacilityStatusActive AdditionsFacilityStatus = "Active"
-
 	AdditionsFacilityStatusTerminating AdditionsFacilityStatus = "Terminating"
-
 	AdditionsFacilityStatusTerminated AdditionsFacilityStatus = "Terminated"
-
 	AdditionsFacilityStatusFailed AdditionsFacilityStatus = "Failed"
-
 	AdditionsFacilityStatusUnknown AdditionsFacilityStatus = "Unknown"
 )
 
@@ -1460,11 +1391,8 @@ type AdditionsRunLevelType string
 
 const (
 	AdditionsRunLevelTypeNone AdditionsRunLevelType = "None"
-
 	AdditionsRunLevelTypeSystem AdditionsRunLevelType = "System"
-
 	AdditionsRunLevelTypeUserland AdditionsRunLevelType = "Userland"
-
 	AdditionsRunLevelTypeDesktop AdditionsRunLevelType = "Desktop"
 )
 
@@ -1472,7 +1400,6 @@ type AdditionsUpdateFlag string
 
 const (
 	AdditionsUpdateFlagNone AdditionsUpdateFlag = "None"
-
 	AdditionsUpdateFlagWaitForUpdateStartOnly AdditionsUpdateFlag = "WaitForUpdateStartOnly"
 )
 
@@ -1480,11 +1407,8 @@ type GuestShutdownFlag string
 
 const (
 	GuestShutdownFlagNone GuestShutdownFlag = "None"
-
 	GuestShutdownFlagPowerOff GuestShutdownFlag = "PowerOff"
-
 	GuestShutdownFlagReboot GuestShutdownFlag = "Reboot"
-
 	GuestShutdownFlagForce GuestShutdownFlag = "Force"
 )
 
@@ -1492,21 +1416,13 @@ type GuestSessionStatus string
 
 const (
 	GuestSessionStatusUndefined GuestSessionStatus = "Undefined"
-
 	GuestSessionStatusStarting GuestSessionStatus = "Starting"
-
 	GuestSessionStatusStarted GuestSessionStatus = "Started"
-
 	GuestSessionStatusTerminating GuestSessionStatus = "Terminating"
-
 	GuestSessionStatusTerminated GuestSessionStatus = "Terminated"
-
 	GuestSessionStatusTimedOutKilled GuestSessionStatus = "TimedOutKilled"
-
 	GuestSessionStatusTimedOutAbnormally GuestSessionStatus = "TimedOutAbnormally"
-
 	GuestSessionStatusDown GuestSessionStatus = "Down"
-
 	GuestSessionStatusError GuestSessionStatus = "Error"
 )
 
@@ -1514,11 +1430,8 @@ type GuestSessionWaitForFlag string
 
 const (
 	GuestSessionWaitForFlagNone GuestSessionWaitForFlag = "None"
-
 	GuestSessionWaitForFlagStart GuestSessionWaitForFlag = "Start"
-
 	GuestSessionWaitForFlagTerminate GuestSessionWaitForFlag = "Terminate"
-
 	GuestSessionWaitForFlagStatus GuestSessionWaitForFlag = "Status"
 )
 
@@ -1526,17 +1439,11 @@ type GuestSessionWaitResult string
 
 const (
 	GuestSessionWaitResultNone GuestSessionWaitResult = "None"
-
 	GuestSessionWaitResultStart GuestSessionWaitResult = "Start"
-
 	GuestSessionWaitResultTerminate GuestSessionWaitResult = "Terminate"
-
 	GuestSessionWaitResultStatus GuestSessionWaitResult = "Status"
-
 	GuestSessionWaitResultError GuestSessionWaitResult = "Error"
-
 	GuestSessionWaitResultTimeout GuestSessionWaitResult = "Timeout"
-
 	GuestSessionWaitResultWaitFlagNotSupported GuestSessionWaitResult = "WaitFlagNotSupported"
 )
 
@@ -1544,35 +1451,20 @@ type GuestUserState string
 
 const (
 	GuestUserStateUnknown GuestUserState = "Unknown"
-
 	GuestUserStateLoggedIn GuestUserState = "LoggedIn"
-
 	GuestUserStateLoggedOut GuestUserState = "LoggedOut"
-
 	GuestUserStateLocked GuestUserState = "Locked"
-
 	GuestUserStateUnlocked GuestUserState = "Unlocked"
-
 	GuestUserStateDisabled GuestUserState = "Disabled"
-
 	GuestUserStateIdle GuestUserState = "Idle"
-
 	GuestUserStateInUse GuestUserState = "InUse"
-
 	GuestUserStateCreated GuestUserState = "Created"
-
 	GuestUserStateDeleted GuestUserState = "Deleted"
-
 	GuestUserStateSessionChanged GuestUserState = "SessionChanged"
-
 	GuestUserStateCredentialsChanged GuestUserState = "CredentialsChanged"
-
 	GuestUserStateRoleChanged GuestUserState = "RoleChanged"
-
 	GuestUserStateGroupAdded GuestUserState = "GroupAdded"
-
 	GuestUserStateGroupRemoved GuestUserState = "GroupRemoved"
-
 	GuestUserStateElevated GuestUserState = "Elevated"
 )
 
@@ -1580,9 +1472,7 @@ type FileSeekOrigin string
 
 const (
 	FileSeekOriginBegin FileSeekOrigin = "Begin"
-
 	FileSeekOriginCurrent FileSeekOrigin = "Current"
-
 	FileSeekOriginEnd FileSeekOrigin = "End"
 )
 
@@ -1590,7 +1480,6 @@ type ProcessInputFlag string
 
 const (
 	ProcessInputFlagNone ProcessInputFlag = "None"
-
 	ProcessInputFlagEndOfFile ProcessInputFlag = "EndOfFile"
 )
 
@@ -1598,7 +1487,6 @@ type ProcessOutputFlag string
 
 const (
 	ProcessOutputFlagNone ProcessOutputFlag = "None"
-
 	ProcessOutputFlagStdErr ProcessOutputFlag = "StdErr"
 )
 
@@ -1606,15 +1494,10 @@ type ProcessWaitForFlag string
 
 const (
 	ProcessWaitForFlagNone ProcessWaitForFlag = "None"
-
 	ProcessWaitForFlagStart ProcessWaitForFlag = "Start"
-
 	ProcessWaitForFlagTerminate ProcessWaitForFlag = "Terminate"
-
 	ProcessWaitForFlagStdIn ProcessWaitForFlag = "StdIn"
-
 	ProcessWaitForFlagStdOut ProcessWaitForFlag = "StdOut"
-
 	ProcessWaitForFlagStdErr ProcessWaitForFlag = "StdErr"
 )
 
@@ -1622,23 +1505,14 @@ type ProcessWaitResult string
 
 const (
 	ProcessWaitResultNone ProcessWaitResult = "None"
-
 	ProcessWaitResultStart ProcessWaitResult = "Start"
-
 	ProcessWaitResultTerminate ProcessWaitResult = "Terminate"
-
 	ProcessWaitResultStatus ProcessWaitResult = "Status"
-
 	ProcessWaitResultError ProcessWaitResult = "Error"
-
 	ProcessWaitResultTimeout ProcessWaitResult = "Timeout"
-
 	ProcessWaitResultStdIn ProcessWaitResult = "StdIn"
-
 	ProcessWaitResultStdOut ProcessWaitResult = "StdOut"
-
 	ProcessWaitResultStdErr ProcessWaitResult = "StdErr"
-
 	ProcessWaitResultWaitFlagNotSupported ProcessWaitResult = "WaitFlagNotSupported"
 )
 
@@ -1646,11 +1520,8 @@ type FileCopyFlag string
 
 const (
 	FileCopyFlagNone FileCopyFlag = "None"
-
 	FileCopyFlagNoReplace FileCopyFlag = "NoReplace"
-
 	FileCopyFlagFollowLinks FileCopyFlag = "FollowLinks"
-
 	FileCopyFlagUpdate FileCopyFlag = "Update"
 )
 
@@ -1658,11 +1529,8 @@ type FsObjMoveFlag string
 
 const (
 	FsObjMoveFlagNone FsObjMoveFlag = "None"
-
 	FsObjMoveFlagReplace FsObjMoveFlag = "Replace"
-
 	FsObjMoveFlagFollowLinks FsObjMoveFlag = "FollowLinks"
-
 	FsObjMoveFlagAllowDirectoryMoves FsObjMoveFlag = "AllowDirectoryMoves"
 )
 
@@ -1670,7 +1538,6 @@ type DirectoryCreateFlag string
 
 const (
 	DirectoryCreateFlagNone DirectoryCreateFlag = "None"
-
 	DirectoryCreateFlagParents DirectoryCreateFlag = "Parents"
 )
 
@@ -1678,11 +1545,8 @@ type DirectoryCopyFlag string
 
 const (
 	DirectoryCopyFlagNone DirectoryCopyFlag = "None"
-
 	DirectoryCopyFlagCopyIntoExisting DirectoryCopyFlag = "CopyIntoExisting"
-
 	DirectoryCopyFlagRecursive DirectoryCopyFlag = "Recursive"
-
 	DirectoryCopyFlagFollowLinks DirectoryCopyFlag = "FollowLinks"
 )
 
@@ -1690,9 +1554,7 @@ type DirectoryRemoveRecFlag string
 
 const (
 	DirectoryRemoveRecFlagNone DirectoryRemoveRecFlag = "None"
-
 	DirectoryRemoveRecFlagContentAndDir DirectoryRemoveRecFlag = "ContentAndDir"
-
 	DirectoryRemoveRecFlagContentOnly DirectoryRemoveRecFlag = "ContentOnly"
 )
 
@@ -1700,7 +1562,6 @@ type FsObjRenameFlag string
 
 const (
 	FsObjRenameFlagNoReplace FsObjRenameFlag = "NoReplace"
-
 	FsObjRenameFlagReplace FsObjRenameFlag = "Replace"
 )
 
@@ -1708,21 +1569,13 @@ type ProcessCreateFlag string
 
 const (
 	ProcessCreateFlagNone ProcessCreateFlag = "None"
-
 	ProcessCreateFlagWaitForProcessStartOnly ProcessCreateFlag = "WaitForProcessStartOnly"
-
 	ProcessCreateFlagIgnoreOrphanedProcesses ProcessCreateFlag = "IgnoreOrphanedProcesses"
-
 	ProcessCreateFlagHidden ProcessCreateFlag = "Hidden"
-
 	ProcessCreateFlagProfile ProcessCreateFlag = "Profile"
-
 	ProcessCreateFlagWaitForStdOut ProcessCreateFlag = "WaitForStdOut"
-
 	ProcessCreateFlagWaitForStdErr ProcessCreateFlag = "WaitForStdErr"
-
 	ProcessCreateFlagExpandArguments ProcessCreateFlag = "ExpandArguments"
-
 	ProcessCreateFlagUnquotedArguments ProcessCreateFlag = "UnquotedArguments"
 )
 
@@ -1730,7 +1583,6 @@ type ProcessPriority string
 
 const (
 	ProcessPriorityInvalid ProcessPriority = "Invalid"
-
 	ProcessPriorityDefault ProcessPriority = "Default"
 )
 
@@ -1738,9 +1590,7 @@ type SymlinkType string
 
 const (
 	SymlinkTypeUnknown SymlinkType = "Unknown"
-
 	SymlinkTypeDirectory SymlinkType = "Directory"
-
 	SymlinkTypeFile SymlinkType = "File"
 )
 
@@ -1748,7 +1598,6 @@ type SymlinkReadFlag string
 
 const (
 	SymlinkReadFlagNone SymlinkReadFlag = "None"
-
 	SymlinkReadFlagNoSymlinks SymlinkReadFlag = "NoSymlinks"
 )
 
@@ -1756,27 +1605,16 @@ type ProcessStatus string
 
 const (
 	ProcessStatusUndefined ProcessStatus = "Undefined"
-
 	ProcessStatusStarting ProcessStatus = "Starting"
-
 	ProcessStatusStarted ProcessStatus = "Started"
-
 	ProcessStatusPaused ProcessStatus = "Paused"
-
 	ProcessStatusTerminating ProcessStatus = "Terminating"
-
 	ProcessStatusTerminatedNormally ProcessStatus = "TerminatedNormally"
-
 	ProcessStatusTerminatedSignal ProcessStatus = "TerminatedSignal"
-
 	ProcessStatusTerminatedAbnormally ProcessStatus = "TerminatedAbnormally"
-
 	ProcessStatusTimedOutKilled ProcessStatus = "TimedOutKilled"
-
 	ProcessStatusTimedOutAbnormally ProcessStatus = "TimedOutAbnormally"
-
 	ProcessStatusDown ProcessStatus = "Down"
-
 	ProcessStatusError ProcessStatus = "Error"
 )
 
@@ -1784,13 +1622,9 @@ type ProcessInputStatus string
 
 const (
 	ProcessInputStatusUndefined ProcessInputStatus = "Undefined"
-
 	ProcessInputStatusBroken ProcessInputStatus = "Broken"
-
 	ProcessInputStatusAvailable ProcessInputStatus = "Available"
-
 	ProcessInputStatusWritten ProcessInputStatus = "Written"
-
 	ProcessInputStatusOverflow ProcessInputStatus = "Overflow"
 )
 
@@ -1798,9 +1632,7 @@ type PathStyle string
 
 const (
 	PathStyleDOS PathStyle = "DOS"
-
 	PathStyleUNIX PathStyle = "UNIX"
-
 	PathStyleUnknown PathStyle = "Unknown"
 )
 
@@ -1808,15 +1640,10 @@ type DirectoryStatus string
 
 const (
 	DirectoryStatusUndefined DirectoryStatus = "Undefined"
-
 	DirectoryStatusOpen DirectoryStatus = "Open"
-
 	DirectoryStatusClose DirectoryStatus = "Close"
-
 	DirectoryStatusRewind DirectoryStatus = "Rewind"
-
 	DirectoryStatusDown DirectoryStatus = "Down"
-
 	DirectoryStatusError DirectoryStatus = "Error"
 )
 
@@ -1824,13 +1651,9 @@ type FileAccessMode string
 
 const (
 	FileAccessModeReadOnly FileAccessMode = "ReadOnly"
-
 	FileAccessModeWriteOnly FileAccessMode = "WriteOnly"
-
 	FileAccessModeReadWrite FileAccessMode = "ReadWrite"
-
 	FileAccessModeAppendOnly FileAccessMode = "AppendOnly"
-
 	FileAccessModeAppendRead FileAccessMode = "AppendRead"
 )
 
@@ -1838,15 +1661,10 @@ type FileOpenAction string
 
 const (
 	FileOpenActionOpenExisting FileOpenAction = "OpenExisting"
-
 	FileOpenActionOpenOrCreate FileOpenAction = "OpenOrCreate"
-
 	FileOpenActionCreateNew FileOpenAction = "CreateNew"
-
 	FileOpenActionCreateOrReplace FileOpenAction = "CreateOrReplace"
-
 	FileOpenActionOpenExistingTruncated FileOpenAction = "OpenExistingTruncated"
-
 	FileOpenActionAppendOrCreate FileOpenAction = "AppendOrCreate"
 )
 
@@ -1854,17 +1672,11 @@ type FileSharingMode string
 
 const (
 	FileSharingModeRead FileSharingMode = "Read"
-
 	FileSharingModeWrite FileSharingMode = "Write"
-
 	FileSharingModeReadWrite FileSharingMode = "ReadWrite"
-
 	FileSharingModeDelete FileSharingMode = "Delete"
-
 	FileSharingModeReadDelete FileSharingMode = "ReadDelete"
-
 	FileSharingModeWriteDelete FileSharingMode = "WriteDelete"
-
 	FileSharingModeAll FileSharingMode = "All"
 )
 
@@ -1878,17 +1690,11 @@ type FileStatus string
 
 const (
 	FileStatusUndefined FileStatus = "Undefined"
-
 	FileStatusOpening FileStatus = "Opening"
-
 	FileStatusOpen FileStatus = "Open"
-
 	FileStatusClosing FileStatus = "Closing"
-
 	FileStatusClosed FileStatus = "Closed"
-
 	FileStatusDown FileStatus = "Down"
-
 	FileStatusError FileStatus = "Error"
 )
 
@@ -1896,21 +1702,13 @@ type FsObjType string
 
 const (
 	FsObjTypeUnknown FsObjType = "Unknown"
-
 	FsObjTypeFifo FsObjType = "Fifo"
-
 	FsObjTypeDevChar FsObjType = "DevChar"
-
 	FsObjTypeDirectory FsObjType = "Directory"
-
 	FsObjTypeDevBlock FsObjType = "DevBlock"
-
 	FsObjTypeFile FsObjType = "File"
-
 	FsObjTypeSymlink FsObjType = "Symlink"
-
 	FsObjTypeSocket FsObjType = "Socket"
-
 	FsObjTypeWhiteOut FsObjType = "WhiteOut"
 )
 
@@ -1918,11 +1716,8 @@ type DnDAction string
 
 const (
 	DnDActionIgnore DnDAction = "Ignore"
-
 	DnDActionCopy DnDAction = "Copy"
-
 	DnDActionMove DnDAction = "Move"
-
 	DnDActionLink DnDAction = "Link"
 )
 
@@ -1930,11 +1725,8 @@ type DirectoryOpenFlag string
 
 const (
 	DirectoryOpenFlagNone DirectoryOpenFlag = "None"
-
 	DirectoryOpenFlagNoSymlinks DirectoryOpenFlag = "NoSymlinks"
-
 	DirectoryOpenFlagDenyAscent DirectoryOpenFlag = "DenyAscent"
-
 	DirectoryOpenFlagNoFollowSymlinks DirectoryOpenFlag = "NoFollowSymlinks"
 )
 
@@ -1942,17 +1734,11 @@ type MediumState string
 
 const (
 	MediumStateNotCreated MediumState = "NotCreated"
-
 	MediumStateCreated MediumState = "Created"
-
 	MediumStateLockedRead MediumState = "LockedRead"
-
 	MediumStateLockedWrite MediumState = "LockedWrite"
-
 	MediumStateInaccessible MediumState = "Inaccessible"
-
 	MediumStateCreating MediumState = "Creating"
-
 	MediumStateDeleting MediumState = "Deleting"
 )
 
@@ -1960,15 +1746,10 @@ type MediumType string
 
 const (
 	MediumTypeNormal MediumType = "Normal"
-
 	MediumTypeImmutable MediumType = "Immutable"
-
 	MediumTypeWritethrough MediumType = "Writethrough"
-
 	MediumTypeShareable MediumType = "Shareable"
-
 	MediumTypeReadonly MediumType = "Readonly"
-
 	MediumTypeMultiAttach MediumType = "MultiAttach"
 )
 
@@ -1976,23 +1757,14 @@ type MediumVariant string
 
 const (
 	MediumVariantStandard MediumVariant = "Standard"
-
 	MediumVariantVmdkSplit2G MediumVariant = "VmdkSplit2G"
-
 	MediumVariantVmdkRawDisk MediumVariant = "VmdkRawDisk"
-
 	MediumVariantVmdkStreamOptimized MediumVariant = "VmdkStreamOptimized"
-
 	MediumVariantVmdkESX MediumVariant = "VmdkESX"
-
 	MediumVariantVdiZeroExpand MediumVariant = "VdiZeroExpand"
-
 	MediumVariantFixed MediumVariant = "Fixed"
-
 	MediumVariantDiff MediumVariant = "Diff"
-
 	MediumVariantFormatted MediumVariant = "Formatted"
-
 	MediumVariantNoCreateDir MediumVariant = "NoCreateDir"
 )
 
@@ -2000,9 +1772,7 @@ type DataType string
 
 const (
 	DataTypeInt32 DataType = "Int32"
-
 	DataTypeInt8 DataType = "Int8"
-
 	DataTypeString DataType = "String"
 )
 
@@ -2010,13 +1780,9 @@ type DataFlags string
 
 const (
 	DataFlagsNone DataFlags = "None"
-
 	DataFlagsMandatory DataFlags = "Mandatory"
-
 	DataFlagsExpert DataFlags = "Expert"
-
 	DataFlagsArray DataFlags = "Array"
-
 	DataFlagsFlagMask DataFlags = "FlagMask"
 )
 
@@ -2024,29 +1790,17 @@ type MediumFormatCapabilities string
 
 const (
 	MediumFormatCapabilitiesUuid MediumFormatCapabilities = "Uuid"
-
 	MediumFormatCapabilitiesCreateFixed MediumFormatCapabilities = "CreateFixed"
-
 	MediumFormatCapabilitiesCreateDynamic MediumFormatCapabilities = "CreateDynamic"
-
 	MediumFormatCapabilitiesCreateSplit2G MediumFormatCapabilities = "CreateSplit2G"
-
 	MediumFormatCapabilitiesDifferencing MediumFormatCapabilities = "Differencing"
-
 	MediumFormatCapabilitiesAsynchronous MediumFormatCapabilities = "Asynchronous"
-
 	MediumFormatCapabilitiesFile MediumFormatCapabilities = "File"
-
 	MediumFormatCapabilitiesProperties MediumFormatCapabilities = "Properties"
-
 	MediumFormatCapabilitiesTcpNetworking MediumFormatCapabilities = "TcpNetworking"
-
 	MediumFormatCapabilitiesVFS MediumFormatCapabilities = "VFS"
-
 	MediumFormatCapabilitiesDiscard MediumFormatCapabilities = "Discard"
-
 	MediumFormatCapabilitiesPreferred MediumFormatCapabilities = "Preferred"
-
 	MediumFormatCapabilitiesCapabilityMask MediumFormatCapabilities = "CapabilityMask"
 )
 
@@ -2054,7 +1808,6 @@ type PartitionTableType string
 
 const (
 	PartitionTableTypeMBR PartitionTableType = "MBR"
-
 	PartitionTableTypeGPT PartitionTableType = "GPT"
 )
 
@@ -2062,9 +1815,7 @@ type KeyboardLED string
 
 const (
 	KeyboardLEDNumLock KeyboardLED = "NumLock"
-
 	KeyboardLEDCapsLock KeyboardLED = "CapsLock"
-
 	KeyboardLEDScrollLock KeyboardLED = "ScrollLock"
 )
 
@@ -2072,19 +1823,12 @@ type MouseButtonState string
 
 const (
 	MouseButtonStateLeftButton MouseButtonState = "LeftButton"
-
 	MouseButtonStateRightButton MouseButtonState = "RightButton"
-
 	MouseButtonStateMiddleButton MouseButtonState = "MiddleButton"
-
 	MouseButtonStateWheelUp MouseButtonState = "WheelUp"
-
 	MouseButtonStateWheelDown MouseButtonState = "WheelDown"
-
 	MouseButtonStateXButton1 MouseButtonState = "XButton1"
-
 	MouseButtonStateXButton2 MouseButtonState = "XButton2"
-
 	MouseButtonStateMouseStateMask MouseButtonState = "MouseStateMask"
 )
 
@@ -2092,11 +1836,8 @@ type TouchContactState string
 
 const (
 	TouchContactStateNone TouchContactState = "None"
-
 	TouchContactStateInContact TouchContactState = "InContact"
-
 	TouchContactStateInRange TouchContactState = "InRange"
-
 	TouchContactStateContactStateMask TouchContactState = "ContactStateMask"
 )
 
@@ -2104,13 +1845,9 @@ type FramebufferCapabilities string
 
 const (
 	FramebufferCapabilitiesUpdateImage FramebufferCapabilities = "UpdateImage"
-
 	FramebufferCapabilitiesVHWA FramebufferCapabilities = "VHWA"
-
 	FramebufferCapabilitiesVisibleRegion FramebufferCapabilities = "VisibleRegion"
-
 	FramebufferCapabilitiesRenderCursor FramebufferCapabilities = "RenderCursor"
-
 	FramebufferCapabilitiesMoveCursor FramebufferCapabilities = "MoveCursor"
 )
 
@@ -2118,9 +1855,7 @@ type GuestMonitorStatus string
 
 const (
 	GuestMonitorStatusDisabled GuestMonitorStatus = "Disabled"
-
 	GuestMonitorStatusEnabled GuestMonitorStatus = "Enabled"
-
 	GuestMonitorStatusBlank GuestMonitorStatus = "Blank"
 )
 
@@ -2128,11 +1863,8 @@ type ScreenLayoutMode string
 
 const (
 	ScreenLayoutModeApply ScreenLayoutMode = "Apply"
-
 	ScreenLayoutModeReset ScreenLayoutMode = "Reset"
-
 	ScreenLayoutModeAttach ScreenLayoutMode = "Attach"
-
 	ScreenLayoutModeSilent ScreenLayoutMode = "Silent"
 )
 
@@ -2140,21 +1872,13 @@ type NetworkAttachmentType string
 
 const (
 	NetworkAttachmentTypeNull NetworkAttachmentType = "Null"
-
 	NetworkAttachmentTypeNAT NetworkAttachmentType = "NAT"
-
 	NetworkAttachmentTypeBridged NetworkAttachmentType = "Bridged"
-
 	NetworkAttachmentTypeInternal NetworkAttachmentType = "Internal"
-
 	NetworkAttachmentTypeHostOnly NetworkAttachmentType = "HostOnly"
-
 	NetworkAttachmentTypeGeneric NetworkAttachmentType = "Generic"
-
 	NetworkAttachmentTypeNATNetwork NetworkAttachmentType = "NATNetwork"
-
 	NetworkAttachmentTypeCloud NetworkAttachmentType = "Cloud"
-
 	NetworkAttachmentTypeHostOnlyNetwork NetworkAttachmentType = "HostOnlyNetwork"
 )
 
@@ -2162,35 +1886,20 @@ type NetworkAdapterType string
 
 const (
 	NetworkAdapterTypeNull NetworkAdapterType = "Null"
-
 	NetworkAdapterTypeAm79C970A NetworkAdapterType = "Am79C970A"
-
 	NetworkAdapterTypeAm79C973 NetworkAdapterType = "Am79C973"
-
 	NetworkAdapterTypeI82540EM NetworkAdapterType = "I82540EM"
-
 	NetworkAdapterTypeI82543GC NetworkAdapterType = "I82543GC"
-
 	NetworkAdapterTypeI82545EM NetworkAdapterType = "I82545EM"
-
 	NetworkAdapterTypeVirtio NetworkAdapterType = "Virtio"
-
 	NetworkAdapterTypeAm79C960 NetworkAdapterType = "Am79C960"
-
 	NetworkAdapterTypeNE2000 NetworkAdapterType = "NE2000"
-
 	NetworkAdapterTypeNE1000 NetworkAdapterType = "NE1000"
-
 	NetworkAdapterTypeWD8013 NetworkAdapterType = "WD8013"
-
 	NetworkAdapterTypeWD8003 NetworkAdapterType = "WD8003"
-
 	NetworkAdapterTypeELNK2 NetworkAdapterType = "ELNK2"
-
 	NetworkAdapterTypeELNK1 NetworkAdapterType = "ELNK1"
-
 	NetworkAdapterTypeUsbNet NetworkAdapterType = "UsbNet"
-
 	NetworkAdapterTypeI82583V NetworkAdapterType = "I82583V"
 )
 
@@ -2198,9 +1907,7 @@ type NetworkAdapterPromiscModePolicy string
 
 const (
 	NetworkAdapterPromiscModePolicyDeny NetworkAdapterPromiscModePolicy = "Deny"
-
 	NetworkAdapterPromiscModePolicyAllowNetwork NetworkAdapterPromiscModePolicy = "AllowNetwork"
-
 	NetworkAdapterPromiscModePolicyAllowAll NetworkAdapterPromiscModePolicy = "AllowAll"
 )
 
@@ -2208,13 +1915,9 @@ type PortMode string
 
 const (
 	PortModeDisconnected PortMode = "Disconnected"
-
 	PortModeHostPipe PortMode = "HostPipe"
-
 	PortModeHostDevice PortMode = "HostDevice"
-
 	PortModeRawFile PortMode = "RawFile"
-
 	PortModeTCP PortMode = "TCP"
 )
 
@@ -2222,9 +1925,7 @@ type UartType string
 
 const (
 	UartTypeU16450 UartType = "U16450"
-
 	UartTypeU16550A UartType = "U16550A"
-
 	UartTypeU16750 UartType = "U16750"
 )
 
@@ -2232,13 +1933,9 @@ type USBControllerType string
 
 const (
 	USBControllerTypeNull USBControllerType = "Null"
-
 	USBControllerTypeOHCI USBControllerType = "OHCI"
-
 	USBControllerTypeEHCI USBControllerType = "EHCI"
-
 	USBControllerTypeXHCI USBControllerType = "XHCI"
-
 	USBControllerTypeLast USBControllerType = "Last"
 )
 
@@ -2246,15 +1943,10 @@ type USBConnectionSpeed string
 
 const (
 	USBConnectionSpeedNull USBConnectionSpeed = "Null"
-
 	USBConnectionSpeedLow USBConnectionSpeed = "Low"
-
 	USBConnectionSpeedFull USBConnectionSpeed = "Full"
-
 	USBConnectionSpeedHigh USBConnectionSpeed = "High"
-
 	USBConnectionSpeedSuper USBConnectionSpeed = "Super"
-
 	USBConnectionSpeedSuperPlus USBConnectionSpeed = "SuperPlus"
 )
 
@@ -2262,15 +1954,10 @@ type USBDeviceState string
 
 const (
 	USBDeviceStateNotSupported USBDeviceState = "NotSupported"
-
 	USBDeviceStateUnavailable USBDeviceState = "Unavailable"
-
 	USBDeviceStateBusy USBDeviceState = "Busy"
-
 	USBDeviceStateAvailable USBDeviceState = "Available"
-
 	USBDeviceStateHeld USBDeviceState = "Held"
-
 	USBDeviceStateCaptured USBDeviceState = "Captured"
 )
 
@@ -2278,9 +1965,7 @@ type USBDeviceFilterAction string
 
 const (
 	USBDeviceFilterActionNull USBDeviceFilterAction = "Null"
-
 	USBDeviceFilterActionIgnore USBDeviceFilterAction = "Ignore"
-
 	USBDeviceFilterActionHold USBDeviceFilterAction = "Hold"
 )
 
@@ -2288,25 +1973,15 @@ type AudioDriverType string
 
 const (
 	AudioDriverTypeDefault AudioDriverType = "Default"
-
 	AudioDriverTypeNull AudioDriverType = "Null"
-
 	AudioDriverTypeOSS AudioDriverType = "OSS"
-
 	AudioDriverTypeALSA AudioDriverType = "ALSA"
-
 	AudioDriverTypePulse AudioDriverType = "Pulse"
-
 	AudioDriverTypeWinMM AudioDriverType = "WinMM"
-
 	AudioDriverTypeDirectSound AudioDriverType = "DirectSound"
-
 	AudioDriverTypeWAS AudioDriverType = "WAS"
-
 	AudioDriverTypeCoreAudio AudioDriverType = "CoreAudio"
-
 	AudioDriverTypeMMPM AudioDriverType = "MMPM"
-
 	AudioDriverTypeSolAudio AudioDriverType = "SolAudio"
 )
 
@@ -2314,11 +1989,8 @@ type AudioControllerType string
 
 const (
 	AudioControllerTypeAC97 AudioControllerType = "AC97"
-
 	AudioControllerTypeSB16 AudioControllerType = "SB16"
-
 	AudioControllerTypeHDA AudioControllerType = "HDA"
-
 	AudioControllerTypeVirtioSound AudioControllerType = "VirtioSound"
 )
 
@@ -2326,13 +1998,9 @@ type AudioCodecType string
 
 const (
 	AudioCodecTypeNull AudioCodecType = "Null"
-
 	AudioCodecTypeSB16 AudioCodecType = "SB16"
-
 	AudioCodecTypeSTAC9700 AudioCodecType = "STAC9700"
-
 	AudioCodecTypeAD1980 AudioCodecType = "AD1980"
-
 	AudioCodecTypeSTAC9221 AudioCodecType = "STAC9221"
 )
 
@@ -2340,11 +2008,8 @@ type AudioDirection string
 
 const (
 	AudioDirectionUnknown AudioDirection = "Unknown"
-
 	AudioDirectionIn AudioDirection = "In"
-
 	AudioDirectionOut AudioDirection = "Out"
-
 	AudioDirectionDuplex AudioDirection = "Duplex"
 )
 
@@ -2352,11 +2017,8 @@ type AudioDeviceType string
 
 const (
 	AudioDeviceTypeUnknown AudioDeviceType = "Unknown"
-
 	AudioDeviceTypeBuiltLin AudioDeviceType = "BuiltLin"
-
 	AudioDeviceTypeExternalUSB AudioDeviceType = "ExternalUSB"
-
 	AudioDeviceTypeExternalOther AudioDeviceType = "ExternalOther"
 )
 
@@ -2364,13 +2026,9 @@ type AudioDeviceState string
 
 const (
 	AudioDeviceStateUnknown AudioDeviceState = "Unknown"
-
 	AudioDeviceStateActive AudioDeviceState = "Active"
-
 	AudioDeviceStateDisabled AudioDeviceState = "Disabled"
-
 	AudioDeviceStateNotPresent AudioDeviceState = "NotPresent"
-
 	AudioDeviceStateUnplugged AudioDeviceState = "Unplugged"
 )
 
@@ -2378,9 +2036,7 @@ type AuthType string
 
 const (
 	AuthTypeNull AuthType = "Null"
-
 	AuthTypeExternal AuthType = "External"
-
 	AuthTypeGuest AuthType = "Guest"
 )
 
@@ -2388,13 +2044,9 @@ type Reason string
 
 const (
 	ReasonUnspecified Reason = "Unspecified"
-
 	ReasonHostSuspend Reason = "HostSuspend"
-
 	ReasonHostResume Reason = "HostResume"
-
 	ReasonHostBatteryLow Reason = "HostBatteryLow"
-
 	ReasonSnapshot Reason = "Snapshot"
 )
 
@@ -2402,21 +2054,13 @@ type StorageBus string
 
 const (
 	StorageBusNull StorageBus = "Null"
-
 	StorageBusIDE StorageBus = "IDE"
-
 	StorageBusSATA StorageBus = "SATA"
-
 	StorageBusSCSI StorageBus = "SCSI"
-
 	StorageBusFloppy StorageBus = "Floppy"
-
 	StorageBusSAS StorageBus = "SAS"
-
 	StorageBusUSB StorageBus = "USB"
-
 	StorageBusPCIe StorageBus = "PCIe"
-
 	StorageBusVirtioSCSI StorageBus = "VirtioSCSI"
 )
 
@@ -2424,27 +2068,16 @@ type StorageControllerType string
 
 const (
 	StorageControllerTypeNull StorageControllerType = "Null"
-
 	StorageControllerTypeLsiLogic StorageControllerType = "LsiLogic"
-
 	StorageControllerTypeBusLogic StorageControllerType = "BusLogic"
-
 	StorageControllerTypeIntelAhci StorageControllerType = "IntelAhci"
-
 	StorageControllerTypePIIX3 StorageControllerType = "PIIX3"
-
 	StorageControllerTypePIIX4 StorageControllerType = "PIIX4"
-
 	StorageControllerTypeICH6 StorageControllerType = "ICH6"
-
 	StorageControllerTypeI82078 StorageControllerType = "I82078"
-
 	StorageControllerTypeLsiLogicSas StorageControllerType = "LsiLogicSas"
-
 	StorageControllerTypeUSB StorageControllerType = "USB"
-
 	StorageControllerTypeNVMe StorageControllerType = "NVMe"
-
 	StorageControllerTypeVirtioSCSI StorageControllerType = "VirtioSCSI"
 )
 
@@ -2452,11 +2085,8 @@ type ChipsetType string
 
 const (
 	ChipsetTypeNull ChipsetType = "Null"
-
 	ChipsetTypePIIX3 ChipsetType = "PIIX3"
-
 	ChipsetTypeICH9 ChipsetType = "ICH9"
-
 	ChipsetTypeARMv8Virtual ChipsetType = "ARMv8Virtual"
 )
 
@@ -2464,9 +2094,7 @@ type NATAliasMode string
 
 const (
 	NATAliasModeAliasLog NATAliasMode = "AliasLog"
-
 	NATAliasModeAliasProxyOnly NATAliasMode = "AliasProxyOnly"
-
 	NATAliasModeAliasUseSamePorts NATAliasMode = "AliasUseSamePorts"
 )
 
@@ -2474,7 +2102,6 @@ type NATProtocol string
 
 const (
 	NATProtocolUDP NATProtocol = "UDP"
-
 	NATProtocolTCP NATProtocol = "TCP"
 )
 
@@ -2482,9 +2109,7 @@ type BandwidthGroupType string
 
 const (
 	BandwidthGroupTypeNull BandwidthGroupType = "Null"
-
 	BandwidthGroupTypeDisk BandwidthGroupType = "Disk"
-
 	BandwidthGroupTypeNetwork BandwidthGroupType = "Network"
 )
 
@@ -2492,11 +2117,8 @@ type GuestDebugProvider string
 
 const (
 	GuestDebugProviderNone GuestDebugProvider = "None"
-
 	GuestDebugProviderNative GuestDebugProvider = "Native"
-
 	GuestDebugProviderGDB GuestDebugProvider = "GDB"
-
 	GuestDebugProviderKD GuestDebugProvider = "KD"
 )
 
@@ -2504,11 +2126,8 @@ type GuestDebugIoProvider string
 
 const (
 	GuestDebugIoProviderNone GuestDebugIoProvider = "None"
-
 	GuestDebugIoProviderTCP GuestDebugIoProvider = "TCP"
-
 	GuestDebugIoProviderUDP GuestDebugIoProvider = "UDP"
-
 	GuestDebugIoProviderIPC GuestDebugIoProvider = "IPC"
 )
 
@@ -2516,207 +2135,106 @@ type VBoxEventType string
 
 const (
 	VBoxEventTypeInvalid VBoxEventType = "Invalid"
-
 	VBoxEventTypeAny VBoxEventType = "Any"
-
 	VBoxEventTypeVetoable VBoxEventType = "Vetoable"
-
 	VBoxEventTypeMachineEvent VBoxEventType = "MachineEvent"
-
 	VBoxEventTypeSnapshotEvent VBoxEventType = "SnapshotEvent"
-
 	VBoxEventTypeInputEvent VBoxEventType = "InputEvent"
-
 	VBoxEventTypeLastWildcard VBoxEventType = "LastWildcard"
-
 	VBoxEventTypeOnMachineStateChanged VBoxEventType = "OnMachineStateChanged"
-
 	VBoxEventTypeOnMachineDataChanged VBoxEventType = "OnMachineDataChanged"
-
 	VBoxEventTypeOnExtraDataChanged VBoxEventType = "OnExtraDataChanged"
-
 	VBoxEventTypeOnExtraDataCanChange VBoxEventType = "OnExtraDataCanChange"
-
 	VBoxEventTypeOnMediumRegistered VBoxEventType = "OnMediumRegistered"
-
 	VBoxEventTypeOnMachineRegistered VBoxEventType = "OnMachineRegistered"
-
 	VBoxEventTypeOnSessionStateChanged VBoxEventType = "OnSessionStateChanged"
-
 	VBoxEventTypeOnSnapshotTaken VBoxEventType = "OnSnapshotTaken"
-
 	VBoxEventTypeOnSnapshotDeleted VBoxEventType = "OnSnapshotDeleted"
-
 	VBoxEventTypeOnSnapshotChanged VBoxEventType = "OnSnapshotChanged"
-
 	VBoxEventTypeOnGuestPropertyChanged VBoxEventType = "OnGuestPropertyChanged"
-
 	VBoxEventTypeOnMousePointerShapeChanged VBoxEventType = "OnMousePointerShapeChanged"
-
 	VBoxEventTypeOnMouseCapabilityChanged VBoxEventType = "OnMouseCapabilityChanged"
-
 	VBoxEventTypeOnKeyboardLedsChanged VBoxEventType = "OnKeyboardLedsChanged"
-
 	VBoxEventTypeOnStateChanged VBoxEventType = "OnStateChanged"
-
 	VBoxEventTypeOnAdditionsStateChanged VBoxEventType = "OnAdditionsStateChanged"
-
 	VBoxEventTypeOnNetworkAdapterChanged VBoxEventType = "OnNetworkAdapterChanged"
-
 	VBoxEventTypeOnSerialPortChanged VBoxEventType = "OnSerialPortChanged"
-
 	VBoxEventTypeOnParallelPortChanged VBoxEventType = "OnParallelPortChanged"
-
 	VBoxEventTypeOnStorageControllerChanged VBoxEventType = "OnStorageControllerChanged"
-
 	VBoxEventTypeOnMediumChanged VBoxEventType = "OnMediumChanged"
-
 	VBoxEventTypeOnVRDEServerChanged VBoxEventType = "OnVRDEServerChanged"
-
 	VBoxEventTypeOnUSBControllerChanged VBoxEventType = "OnUSBControllerChanged"
-
 	VBoxEventTypeOnUSBDeviceStateChanged VBoxEventType = "OnUSBDeviceStateChanged"
-
 	VBoxEventTypeOnSharedFolderChanged VBoxEventType = "OnSharedFolderChanged"
-
 	VBoxEventTypeOnRuntimeError VBoxEventType = "OnRuntimeError"
-
 	VBoxEventTypeOnCanShowWindow VBoxEventType = "OnCanShowWindow"
-
 	VBoxEventTypeOnShowWindow VBoxEventType = "OnShowWindow"
-
 	VBoxEventTypeOnCPUChanged VBoxEventType = "OnCPUChanged"
-
 	VBoxEventTypeOnVRDEServerInfoChanged VBoxEventType = "OnVRDEServerInfoChanged"
-
 	VBoxEventTypeOnEventSourceChanged VBoxEventType = "OnEventSourceChanged"
-
 	VBoxEventTypeOnCPUExecutionCapChanged VBoxEventType = "OnCPUExecutionCapChanged"
-
 	VBoxEventTypeOnGuestKeyboard VBoxEventType = "OnGuestKeyboard"
-
 	VBoxEventTypeOnGuestMouse VBoxEventType = "OnGuestMouse"
-
 	VBoxEventTypeOnNATRedirect VBoxEventType = "OnNATRedirect"
-
 	VBoxEventTypeOnHostPCIDevicePlug VBoxEventType = "OnHostPCIDevicePlug"
-
 	VBoxEventTypeOnVBoxSVCAvailabilityChanged VBoxEventType = "OnVBoxSVCAvailabilityChanged"
-
 	VBoxEventTypeOnBandwidthGroupChanged VBoxEventType = "OnBandwidthGroupChanged"
-
 	VBoxEventTypeOnGuestMonitorChanged VBoxEventType = "OnGuestMonitorChanged"
-
 	VBoxEventTypeOnStorageDeviceChanged VBoxEventType = "OnStorageDeviceChanged"
-
 	VBoxEventTypeOnClipboardModeChanged VBoxEventType = "OnClipboardModeChanged"
-
 	VBoxEventTypeOnDnDModeChanged VBoxEventType = "OnDnDModeChanged"
-
 	VBoxEventTypeOnNATNetworkChanged VBoxEventType = "OnNATNetworkChanged"
-
 	VBoxEventTypeOnNATNetworkStartStop VBoxEventType = "OnNATNetworkStartStop"
-
 	VBoxEventTypeOnNATNetworkAlter VBoxEventType = "OnNATNetworkAlter"
-
 	VBoxEventTypeOnNATNetworkCreationDeletion VBoxEventType = "OnNATNetworkCreationDeletion"
-
 	VBoxEventTypeOnNATNetworkSetting VBoxEventType = "OnNATNetworkSetting"
-
 	VBoxEventTypeOnNATNetworkPortForward VBoxEventType = "OnNATNetworkPortForward"
-
 	VBoxEventTypeOnGuestSessionStateChanged VBoxEventType = "OnGuestSessionStateChanged"
-
 	VBoxEventTypeOnGuestSessionRegistered VBoxEventType = "OnGuestSessionRegistered"
-
 	VBoxEventTypeOnGuestProcessRegistered VBoxEventType = "OnGuestProcessRegistered"
-
 	VBoxEventTypeOnGuestProcessStateChanged VBoxEventType = "OnGuestProcessStateChanged"
-
 	VBoxEventTypeOnGuestProcessInputNotify VBoxEventType = "OnGuestProcessInputNotify"
-
 	VBoxEventTypeOnGuestProcessOutput VBoxEventType = "OnGuestProcessOutput"
-
 	VBoxEventTypeOnGuestFileRegistered VBoxEventType = "OnGuestFileRegistered"
-
 	VBoxEventTypeOnGuestFileStateChanged VBoxEventType = "OnGuestFileStateChanged"
-
 	VBoxEventTypeOnGuestFileOffsetChanged VBoxEventType = "OnGuestFileOffsetChanged"
-
 	VBoxEventTypeOnGuestFileRead VBoxEventType = "OnGuestFileRead"
-
 	VBoxEventTypeOnGuestFileWrite VBoxEventType = "OnGuestFileWrite"
-
 	VBoxEventTypeOnRecordingStateChanged VBoxEventType = "OnRecordingStateChanged"
-
 	VBoxEventTypeOnGuestUserStateChanged VBoxEventType = "OnGuestUserStateChanged"
-
 	VBoxEventTypeOnGuestMultiTouch VBoxEventType = "OnGuestMultiTouch"
-
 	VBoxEventTypeOnHostNameResolutionConfigurationChange VBoxEventType = "OnHostNameResolutionConfigurationChange"
-
 	VBoxEventTypeOnSnapshotRestored VBoxEventType = "OnSnapshotRestored"
-
 	VBoxEventTypeOnMediumConfigChanged VBoxEventType = "OnMediumConfigChanged"
-
 	VBoxEventTypeOnAudioAdapterChanged VBoxEventType = "OnAudioAdapterChanged"
-
 	VBoxEventTypeOnProgressPercentageChanged VBoxEventType = "OnProgressPercentageChanged"
-
 	VBoxEventTypeOnProgressTaskCompleted VBoxEventType = "OnProgressTaskCompleted"
-
 	VBoxEventTypeOnCursorPositionChanged VBoxEventType = "OnCursorPositionChanged"
-
 	VBoxEventTypeOnGuestAdditionsStatusChanged VBoxEventType = "OnGuestAdditionsStatusChanged"
-
 	VBoxEventTypeOnGuestMonitorInfoChanged VBoxEventType = "OnGuestMonitorInfoChanged"
-
 	VBoxEventTypeOnGuestFileSizeChanged VBoxEventType = "OnGuestFileSizeChanged"
-
 	VBoxEventTypeOnClipboardFileTransferModeChanged VBoxEventType = "OnClipboardFileTransferModeChanged"
-
 	VBoxEventTypeOnCloudProviderListChanged VBoxEventType = "OnCloudProviderListChanged"
-
 	VBoxEventTypeOnCloudProviderRegistered VBoxEventType = "OnCloudProviderRegistered"
-
 	VBoxEventTypeOnCloudProviderUninstall VBoxEventType = "OnCloudProviderUninstall"
-
 	VBoxEventTypeOnCloudProfileRegistered VBoxEventType = "OnCloudProfileRegistered"
-
 	VBoxEventTypeOnCloudProfileChanged VBoxEventType = "OnCloudProfileChanged"
-
 	VBoxEventTypeOnProgressCreated VBoxEventType = "OnProgressCreated"
-
 	VBoxEventTypeOnLanguageChanged VBoxEventType = "OnLanguageChanged"
-
 	VBoxEventTypeOnUpdateAgentAvailable VBoxEventType = "OnUpdateAgentAvailable"
-
 	VBoxEventTypeOnUpdateAgentError VBoxEventType = "OnUpdateAgentError"
-
 	VBoxEventTypeOnUpdateAgentSettingsChanged VBoxEventType = "OnUpdateAgentSettingsChanged"
-
 	VBoxEventTypeOnUpdateAgentStateChanged VBoxEventType = "OnUpdateAgentStateChanged"
-
 	VBoxEventTypeOnHostAudioDeviceChanged VBoxEventType = "OnHostAudioDeviceChanged"
-
 	VBoxEventTypeOnGuestDebugControlChanged VBoxEventType = "OnGuestDebugControlChanged"
-
 	VBoxEventTypeOnMachineGroupsChanged VBoxEventType = "OnMachineGroupsChanged"
-
 	VBoxEventTypeOnGuestDirectoryRegistered VBoxEventType = "OnGuestDirectoryRegistered"
-
 	VBoxEventTypeOnGuestDirectoryStateChanged VBoxEventType = "OnGuestDirectoryStateChanged"
-
 	VBoxEventTypeOnGuestDirectoryRead VBoxEventType = "OnGuestDirectoryRead"
-
 	VBoxEventTypeOnClipboardError VBoxEventType = "OnClipboardError"
-
 	VBoxEventTypeOnExtPackInstalled VBoxEventType = "OnExtPackInstalled"
-
 	VBoxEventTypeOnExtPackUninstalled VBoxEventType = "OnExtPackUninstalled"
-
 	VBoxEventTypeOnRecordingScreenStateChanged VBoxEventType = "OnRecordingScreenStateChanged"
-
 	VBoxEventTypeEnd VBoxEventType = "End"
 )
 
@@ -2724,7 +2242,6 @@ type GuestMouseEventMode string
 
 const (
 	GuestMouseEventModeRelative GuestMouseEventMode = "Relative"
-
 	GuestMouseEventModeAbsolute GuestMouseEventMode = "Absolute"
 )
 
@@ -2732,9 +2249,7 @@ type GuestMonitorChangedEventType string
 
 const (
 	GuestMonitorChangedEventTypeEnabled GuestMonitorChangedEventType = "Enabled"
-
 	GuestMonitorChangedEventTypeDisabled GuestMonitorChangedEventType = "Disabled"
-
 	GuestMonitorChangedEventTypeNewOrigin GuestMonitorChangedEventType = "NewOrigin"
 )
 
@@ -2742,13 +2257,9 @@ type FormValueType string
 
 const (
 	FormValueTypeBoolean FormValueType = "Boolean"
-
 	FormValueTypeString FormValueType = "String"
-
 	FormValueTypeChoice FormValueType = "Choice"
-
 	FormValueTypeRangedInteger FormValueType = "RangedInteger"
-
 	FormValueTypeRangedInteger64 FormValueType = "RangedInteger64"
 )
 
@@ -2756,21 +2267,13 @@ type CloudMachineState string
 
 const (
 	CloudMachineStateInvalid CloudMachineState = "Invalid"
-
 	CloudMachineStateProvisioning CloudMachineState = "Provisioning"
-
 	CloudMachineStateRunning CloudMachineState = "Running"
-
 	CloudMachineStateStarting CloudMachineState = "Starting"
-
 	CloudMachineStateStopping CloudMachineState = "Stopping"
-
 	CloudMachineStateStopped CloudMachineState = "Stopped"
-
 	CloudMachineStateCreatingImage CloudMachineState = "CreatingImage"
-
 	CloudMachineStateTerminating CloudMachineState = "Terminating"
-
 	CloudMachineStateTerminated CloudMachineState = "Terminated"
 )
 
@@ -2778,17 +2281,11 @@ type CloudImageState string
 
 const (
 	CloudImageStateInvalid CloudImageState = "Invalid"
-
 	CloudImageStateProvisioning CloudImageState = "Provisioning"
-
 	CloudImageStateImporting CloudImageState = "Importing"
-
 	CloudImageStateAvailable CloudImageState = "Available"
-
 	CloudImageStateExporting CloudImageState = "Exporting"
-
 	CloudImageStateDisabled CloudImageState = "Disabled"
-
 	CloudImageStateDeleted CloudImageState = "Deleted"
 )
 
@@ -2796,17 +2293,11 @@ type MetricType string
 
 const (
 	MetricTypeInvalid MetricType = "Invalid"
-
 	MetricTypeCpuUtilization MetricType = "CpuUtilization"
-
 	MetricTypeMemoryUtilization MetricType = "MemoryUtilization"
-
 	MetricTypeDiskBytesRead MetricType = "DiskBytesRead"
-
 	MetricTypeDiskBytesWritten MetricType = "DiskBytesWritten"
-
 	MetricTypeNetworksBytesIn MetricType = "NetworksBytesIn"
-
 	MetricTypeNetworksBytesOut MetricType = "NetworksBytesOut"
 )
 
@@ -2814,13 +2305,9 @@ type SymlinkPolicy string
 
 const (
 	SymlinkPolicyNone SymlinkPolicy = "None"
-
 	SymlinkPolicyForbidden SymlinkPolicy = "Forbidden"
-
 	SymlinkPolicyAllowedInShareSubtree SymlinkPolicy = "AllowedInShareSubtree"
-
 	SymlinkPolicyAllowedToRelativeTargets SymlinkPolicy = "AllowedToRelativeTargets"
-
 	SymlinkPolicyAllowedToAnyTarget SymlinkPolicy = "AllowedToAnyTarget"
 )
 
