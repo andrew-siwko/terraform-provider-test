@@ -32,7 +32,7 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
 			"names": schema.ListAttribute{
-				Eleme`ntType: types.StringType,
+				ElementType: types.StringType,
 				Computed:    true,
 				Description: "List of all VirtualBox VM names.",
 			},
