@@ -53,6 +53,10 @@ func (d *vmsDataSource) Configure(_ context.Context, req datasource.ConfigureReq
 func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, resp *datasource.SchemaResponse) {
     resp.Schema = schema.Schema{
         Attributes: map[string]schema.Attribute{
+            "id": schema.StringAttribute{
+                Computed:            true,
+                Description:         "Identifier for the data source.",
+            },
             "names": schema.ListAttribute{
                 ElementType: types.StringType,
                 Computed:    true,
