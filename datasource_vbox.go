@@ -15,6 +15,7 @@ var _ datasource.DataSource = &vmsDataSource{}
 
 // The nested structure for a single VM
 type vmModel struct {
+    ID     types.String `tfsdk:"id"`
     Name   types.String `tfsdk:"name"`
     Memory types.Int64  `tfsdk:"memory"`
     CPUs   types.Int64  `tfsdk:"cpus"`
@@ -24,12 +25,24 @@ type vmModel struct {
 
 var vmObjectType = types.ObjectType{
     AttrTypes: map[string]attr.Type{
+        "id":          types.StringType,
         "name":        types.StringType,
         "memory":      types.Int64Type,
         "cpus":        types.Int64Type,
         "state":       types.StringType,
         "description": types.StringType,
     },
+}
+
+func getVMSchemaAttributes() map[string]schema.Attribute {
+    return map[string]schema.Attribute{
+        "id":          schema.StringAttribute{Computed: true},
+        "name":        schema.StringAttribute{Computed: true},
+        "memory":      schema.Int64Attribute{Computed: true},
+        "cpus":        schema.Int64Attribute{Computed: true},
+        "state":       schema.StringAttribute{Computed: true},
+        "description": schema.StringAttribute{Computed: true},
+    }
 }
 // The main Data Source model
 type vmsDataSourceModel struct {
@@ -79,17 +92,11 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
           "vms": schema.ListNestedAttribute{
                 Computed: true,
                 NestedObject: schema.NestedAttributeObject{
-                    Attributes: map[string]schema.Attribute{
-                        "name":   schema.StringAttribute{Computed: true},
-                        "memory": schema.Int64Attribute{Computed: true},
-                        "cpus":   schema.Int64Attribute{Computed: true},
-                        "state":  schema.StringAttribute{Computed: true},
-                        "description": schema.StringAttribute{Computed: true},
-                    },
+                    Attributes: getVMSchemaAttributes()
                 },
                 Description: "List of VMs with their details.",
             },
-    },
+        },
     }
 }
 

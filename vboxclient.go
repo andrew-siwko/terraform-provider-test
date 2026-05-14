@@ -85,9 +85,11 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 
 		d, _ := service.IMachine_getDescription(&IMachine_getDescription{This: handle})
 
-// func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
+		id, _ := service.IMachine_getId(&IMachine_getId{This: handle})
 
+// func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
 // func (service *vboxPortType) IMachine_getId(request *IMachine_getId) (*IMachine_getIdResponse, error) {
+
 // func (service *vboxPortType) IMachine_getOSTypeId(request *IMachine_getOSTypeId) (*IMachine_getOSTypeIdResponse, error) {
 // func (service *vboxPortType) IMachine_getHardwareVersion(request *IMachine_getHardwareVersion) (*IMachine_getHardwareVersionResponse, error) {
 // func (service *vboxPortType) IMachine_getHardwareUUID(request *IMachine_getHardwareUUID) (*IMachine_getHardwareUUIDResponse, error) {
@@ -120,6 +122,7 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 
 
 		results = append(results, vmModel{
+			ID:   types.StringValue(id.Returnval),
 			Name:   types.StringValue(n.Returnval),
 			Memory: types.Int64Value(int64(m.Returnval)),
 			CPUs:   types.Int64Value(int64(cp.Returnval)),
