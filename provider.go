@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-   	// "fmt"
+	// "fmt"
 
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
@@ -10,52 +10,39 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 )
 
-func New() provider.Provider {
-	return &hashivarProvider{}
+type VBoxClient struct {
+	Endpoint string
+	Username string
+	Password string
 }
 
-type hashivarProvider struct{}
+type mirrorProvider struct{}
 
-func (p *hashivarProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
+func New() provider.Provider {
+	return &mirrorProvider{}
+}
+
+func (p *mirrorProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
 	resp.TypeName = "mirror"
 }
 
-func (p *hashivarProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
+func (p *mirrorProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
 	resp.Schema = provschema.Schema{}
 }
 
 // Fixed: Added pointer (*) to ConfigureResponse
-func (p *hashivarProvider) Configure(_ context.Context, _ provider.ConfigureRequest, _ *provider.ConfigureResponse) {}
-
-func (p *hashivarProvider) DataSources(_ context.Context) []func() datasource.DataSource {
-    return []func() datasource.DataSource{
-        NewCoffeeDataSource, // This refers to the function in our other file
-    }
+func (p *mirrorProvider) Configure(_ context.Context, _ provider.ConfigureRequest, _ *provider.ConfigureResponse) {
 }
-func (p *hashivarProvider) Resources(_ context.Context) []func() resource.Resource {
+
+func (p *mirrorProvider) DataSources(_ context.Context) []func() datasource.DataSource {
+	return []func() datasource.DataSource{
+		NewCoffeeDataSource,
+		NewVmsDataSource,
+	}
+}
+
+func (p *mirrorProvider) Resources(_ context.Context) []func() resource.Resource {
 	return []func() resource.Resource{
 		NewVariableResource,
 	}
 }
-
-var _ datasource.DataSource = &vmsDataSource{}
-
-func (d *vmsDataSource) Metadata(_ context.Context, req datasource.MetadataRequest, resp *datasource.MetadataResponse) {
-	resp.TypeName = req.ProviderTypeName + "_vms"
-}
-
-// Configure allows the provider to pass the initialized client to the data source
-func (d *vmsDataSource) Configure(_ context.Context, req datasource.ConfigureRequest, resp *datasource.ConfigureResponse) {
-	if req.ProviderData == nil {
-		return
-	}
-
-	client, ok := req.ProviderData.(*VBoxClient)
-	if !ok {
-		resp.Diagnostics.AddError("Unexpected Data Source Configure Type", "Expected *VBoxClient")
-		return
-	}
-
-	d.client = client
-}
-
