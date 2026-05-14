@@ -19,6 +19,7 @@ type vmModel struct {
     Memory types.Int64  `tfsdk:"memory"`
     CPUs   types.Int64  `tfsdk:"cpus"`
     State  types.String `tfsdk:"state"`
+    Description types.String `tfsdk:"description"`
 }
 
 // The main Data Source model
@@ -74,6 +75,7 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
                         "memory": schema.Int64Attribute{Computed: true},
                         "cpus":   schema.Int64Attribute{Computed: true},
                         "state":  schema.StringAttribute{Computed: true},
+                        "description": schema.StringAttribute{Computed: true},
                     },
                 },
                 Description: "List of VMs with their details.",
