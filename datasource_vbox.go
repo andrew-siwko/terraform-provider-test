@@ -13,7 +13,13 @@ import (
 // Ensure the implementation satisfies the expected interfaces.
 var _ datasource.DataSource = &vmsDataSource{}
 
-// The nested structure for a single VM
+type diskModel struct {
+    Path string `tfsdk:"path"`
+    Size int64  `tfsdk:"size_bytes"`
+    Type string `tfsdk:"type"` // e.g., HardDisk or DVD
+}
+
+// In vmModel
 type vmModel struct {
     ID     types.String `tfsdk:"id"`
     Name   types.String `tfsdk:"name"`
@@ -22,6 +28,7 @@ type vmModel struct {
     State  types.String `tfsdk:"state"`
     Description types.String `tfsdk:"description"`
     StorageControllers types.List `tfsdk:"storage_controllers"`
+    Disks types.List `tfsdk:"disks"`
 }
 
 var vmObjectType = types.ObjectType{
@@ -33,6 +40,15 @@ var vmObjectType = types.ObjectType{
         "state":       types.StringType,
         "description": types.StringType,
         "storage_controllers": types.ListType{ElemType: types.StringType},
+        "disks": types.ListType{ElemType: diskObjectType},
+    },
+}
+
+var diskObjectType = types.ObjectType{
+    AttrTypes: map[string]attr.Type{
+        "path":     types.StringType,
+        "size_bytes": types.Int64Type,
+        "type":     types.StringType,
     },
 }
 

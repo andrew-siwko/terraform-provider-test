@@ -92,6 +92,35 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 		storageControllersList, _ := types.ListValueFrom(ctx, types.StringType, storage.Returnval)
 
 
+		var disks []diskModel
+		// 1. Get all Medium Attachments for this VM
+		attachmentsResp, _ := service.IMachine_getMediumAttachments(&IMachine_getMediumAttachments{This: handle})
+
+		for _, attachment := range attachmentsResp.Returnval {
+			// 'attachment' contains the Slot, Port, and a handle to the Medium itself
+			mediumHandle := attachment.Medium
+			
+			if mediumHandle != "" {
+				locationResp, _ := service.IMedium_getLocation(&IMedium_getLocation{This: mediumHandle,})
+				sizeResp, _ := service.IMedium_getSize(&IMedium_getSize{This: mediumHandle,})
+				typeResp, _ := service.IMedium_getType(&IMedium_getType{This: mediumHandle,})
+
+				mediumType := "Unknown"
+                if typeResp != nil && typeResp.Returnval != nil {
+                    mediumType = string(*typeResp.Returnval)
+                }
+				// Here you can create a diskModel and append it to a list of disks for the VM
+				disk := diskModel{
+					Path:     locationResp.Returnval,
+					Size:     sizeResp.Returnval,
+					Type:     mediumType,
+				}
+				disks = append(disks, disk)
+			}
+		}
+		disksList, _ := types.ListValueFrom(ctx, diskObjectType, disks)
+
+
 // func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
 // func (service *vboxPortType) IMachine_getId(request *IMachine_getId) (*IMachine_getIdResponse, error) {
 // func (service *vboxPortType) IMachine_getStorageControllers(request *IMachine_getStorageControllers) (*IMachine_getStorageControllersResponse, error) {
@@ -134,6 +163,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 			State:  types.StringValue(string(stateString)),
 			Description: types.StringValue(d.Returnval),
 			StorageControllers: storageControllersList,
+			Disks: disksList,
 		})
 	}
 
