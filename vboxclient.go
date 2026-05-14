@@ -4,6 +4,8 @@ package main
 // gowsdl -p vboxapi http://daddy.siwko.org:18083/?wsdl > /vbox_interface.go
 
 import (
+	"context"
+
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hooklift/gowsdl/soap"
 )
@@ -46,7 +48,7 @@ func (c *VBoxClient) GetVMNames() ([]string, error) {
 	return names, nil
 }
 
-func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
+func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 	soapClient := soap.NewClient(c.Endpoint)
 	service := NewVboxPortType(soapClient)
 
@@ -86,9 +88,13 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 		d, _ := service.IMachine_getDescription(&IMachine_getDescription{This: handle})
 
 		id, _ := service.IMachine_getId(&IMachine_getId{This: handle})
+		storage, _ := service.IMachine_getStorageControllers(&IMachine_getStorageControllers{This: handle})
+		storageControllersList, _ := types.ListValueFrom(ctx, types.StringType, storage.Returnval)
+
 
 // func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
 // func (service *vboxPortType) IMachine_getId(request *IMachine_getId) (*IMachine_getIdResponse, error) {
+// func (service *vboxPortType) IMachine_getStorageControllers(request *IMachine_getStorageControllers) (*IMachine_getStorageControllersResponse, error) {
 
 // func (service *vboxPortType) IMachine_getOSTypeId(request *IMachine_getOSTypeId) (*IMachine_getOSTypeIdResponse, error) {
 // func (service *vboxPortType) IMachine_getHardwareVersion(request *IMachine_getHardwareVersion) (*IMachine_getHardwareVersionResponse, error) {
@@ -99,7 +105,6 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 // func (service *vboxPortType) IMachine_getKeyboardHIDType(request *IMachine_getKeyboardHIDType) (*IMachine_getKeyboardHIDTypeResponse, error) {
 // func (service *vboxPortType) IMachine_getMediumAttachments(request *IMachine_getMediumAttachments) (*IMachine_getMediumAttachmentsResponse, error) {
 // func (service *vboxPortType) IMachine_getUSBControllers(request *IMachine_getUSBControllers) (*IMachine_getUSBControllersResponse, error) {
-// func (service *vboxPortType) IMachine_getStorageControllers(request *IMachine_getStorageControllers) (*IMachine_getStorageControllersResponse, error) {
 // func (service *vboxPortType) IMachine_getSettingsFilePath(request *IMachine_getSettingsFilePath) (*IMachine_getSettingsFilePathResponse, error) {
 // func (service *vboxPortType) IMachine_getSettingsAuxFilePath(request *IMachine_getSettingsAuxFilePath) (*IMachine_getSettingsAuxFilePathResponse, error) {
 // func (service *vboxPortType) IMachine_getSettingsModified(request *IMachine_getSettingsModified) (*IMachine_getSettingsModifiedResponse, error) {
@@ -128,6 +133,7 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 			CPUs:   types.Int64Value(int64(cp.Returnval)),
 			State:  types.StringValue(string(stateString)),
 			Description: types.StringValue(d.Returnval),
+			StorageControllers: storageControllersList,
 		})
 	}
 
