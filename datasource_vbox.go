@@ -8,22 +8,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
-// vboxDataSource is the actual data source implementation
-type vboxDataSource struct {
-    client *VBoxClient // Your custom API client
-}
-
 // VBoxDataSourceModel maps the Terraform schema to Go types
-type VBoxDataSourceModel struct {
-    ID      types.String `tfsdk:"id"`
-    Names   types.List   `tfsdk:"names"` // List of VM names
-}
 // Ensure the implementation satisfies the expected interfaces.
 var _ datasource.DataSource = &vmsDataSource{}
 
 // vmsDataSourceModel maps the data source schema data.
 type vmsDataSourceModel struct {
-    Names []types.String `tfsdk:"names"`
+    ID      types.String `tfsdk:"id"`
+    Names   types.List   `tfsdk:"names"` // List of VM names
 }
 
 // NewVmsDataSource is a helper function to simplify the provider implementation.
@@ -74,21 +66,6 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
 func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, resp *datasource.ReadResponse) {
     var data vmsDataSourceModel
 
-    // Mocking the data logic. In your RHEL 9 lab, this is where 
-    // you'd use d.client to talk to vboxwebsrv.
-    vmNames := []string{"rhel9-prod", "ubuntu-test", "ansible-node-01"}
-    
-    for _, name := range vmNames {
-        data.Names = append(data.Names, types.StringValue(name))
-    }
-
-    // Save data into Terraform state
-    resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
-}
-
-func (d *vboxDataSource) Read(ctx context.Context, req datasource.ReadRequest, resp *datasource.ReadResponse) {
-    var state VBoxDataSourceModel
-
     // 1. Get the client from the provider
     // 2. Call your GetVMNames()
     names, err := d.client.GetVMNames()
@@ -104,8 +81,8 @@ func (d *vboxDataSource) Read(ctx context.Context, req datasource.ReadRequest, r
         return
     }    // 3. Map to your Go struct model
     
-    state.Names = namesList
+    data.Names = namesList
 
     // 4. Set the state
-    resp.Diagnostics.Append(resp.State.Set(ctx, &state)...)
+    resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
