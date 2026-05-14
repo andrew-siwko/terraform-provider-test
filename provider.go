@@ -8,6 +8,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	provschema "github.com/hashicorp/terraform-plugin-framework/provider/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
+	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
 type VBoxClient struct {
@@ -27,11 +28,48 @@ func (p *mirrorProvider) Metadata(_ context.Context, _ provider.MetadataRequest,
 }
 
 func (p *mirrorProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
-	resp.Schema = provschema.Schema{}
+	resp.Schema = provschema.Schema{
+		Attributes: map[string]provschema.Attribute{
+			"endpoint": provschema.StringAttribute{
+				Required:    true,
+				Description: "The VirtualBox Web Service URL (e.g., http://127.0.0.1:18083).",
+			},
+			"user": provschema.StringAttribute{
+				Optional:  true,
+				Sensitive: true,
+			},
+			"password": provschema.StringAttribute{
+				Optional:  true,
+				Sensitive: true,
+			},
+		},
+	}
 }
 
-// Fixed: Added pointer (*) to ConfigureResponse
-func (p *mirrorProvider) Configure(_ context.Context, _ provider.ConfigureRequest, _ *provider.ConfigureResponse) {
+func (p *mirrorProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {
+	// Define a local model to match the schema
+	var data struct {
+		Endpoint types.String `tfsdk:"endpoint"`
+		User     types.String `tfsdk:"user"`
+		Password types.String `tfsdk:"password"`
+	}
+
+	// Read configuration data into the model
+	resp.Diagnostics.Append(req.Config.Get(ctx, &data)...)
+	if resp.Diagnostics.HasError() {
+		return
+	}
+
+	// Initialize your shared client
+	client := &VBoxClient{
+		Endpoint: data.Endpoint.ValueString(),
+		Username: data.User.ValueString(),
+		Password: data.Password.ValueString(),
+	}
+
+	// Pass the client to all Data Sources and Resources
+	resp.DataSourceData = client
+	resp.ResourceData = client
 }
 
 func (p *mirrorProvider) DataSources(_ context.Context) []func() datasource.DataSource {
