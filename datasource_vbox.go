@@ -101,6 +101,7 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
             "memory": types.Int64Type,
             "cpus":   types.Int64Type,
             "state":  types.StringType,
+            "description": types.StringType,
         },
     }
 
