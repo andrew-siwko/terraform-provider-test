@@ -42,10 +42,10 @@ output "coffee_price" {
   value = data.mirror_coffee.my_espresso.price
 }
 
-data "vboxdata_vms" "all" {
-  
+data "mirror_vms" "all" {
+
 }
 
 output "vm_list" {
-  value = data.vboxdata_vms.all.names
+  value = data.mirror_vms.all.names
 }
