@@ -24,7 +24,7 @@ type vmModel struct {
 // The main Data Source model
 type vmsDataSourceModel struct {
     ID  types.String `tfsdk:"id"`
-    VMs types.List   `tfsdk:"vms"` // Changed from "Names" to "VMs"
+    VMs types.List   `tfsdk:"vms"` 
 }
 
 // NewVmsDataSource is a helper function to simplify the provider implementation.
