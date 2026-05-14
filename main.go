@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	log.Print('Starting terraform-provider-test')
+	log.Print("Starting terraform-provider-test")
 	err := providerserver.Serve(context.Background(), New, providerserver.ServeOpts{
 		Address: "registry.terraform.io/andrew/property-mirror",
 	})
@@ -16,6 +16,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	log.Print('Ending terraform-provider-test')
+	log.Print("Ending terraform-provider-test")
 }
 
