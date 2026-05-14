@@ -34,7 +34,7 @@ func (p *mirrorProvider) Schema(_ context.Context, _ provider.SchemaRequest, res
 				Required:    true,
 				Description: "The VirtualBox Web Service URL (e.g., http://127.0.0.1:18083).",
 			},
-			"user": provschema.StringAttribute{
+			"username": provschema.StringAttribute{
 				Optional:  true,
 				Sensitive: true,
 			},
@@ -50,7 +50,7 @@ func (p *mirrorProvider) Configure(ctx context.Context, req provider.ConfigureRe
 	// Define a local model to match the schema
 	var data struct {
 		Endpoint types.String `tfsdk:"endpoint"`
-		User     types.String `tfsdk:"user"`
+		Username types.String `tfsdk:"username"`
 		Password types.String `tfsdk:"password"`
 	}
 
@@ -63,7 +63,7 @@ func (p *mirrorProvider) Configure(ctx context.Context, req provider.ConfigureRe
 	// Initialize your shared client
 	client := &VBoxClient{
 		Endpoint: data.Endpoint.ValueString(),
-		Username: data.User.ValueString(),
+		Username: data.Username.ValueString(),
 		Password: data.Password.ValueString(),
 	}
 

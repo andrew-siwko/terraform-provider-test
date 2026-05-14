@@ -10,6 +10,13 @@ terraform {
   }
 }
 
+provider "mirror" {
+  # this is a private network address.
+  endpoint = "http://daddy.siwko.org:18083/" 
+  username = ""
+  password = ""
+}
+
 resource "mirror_variable" "rhel_test_1" {
   value = "Running on RHEL 9.7"
 }
