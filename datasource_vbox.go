@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 
+	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
@@ -12,10 +13,18 @@ import (
 // Ensure the implementation satisfies the expected interfaces.
 var _ datasource.DataSource = &vmsDataSource{}
 
-// vmsDataSourceModel maps the data source schema data.
+// The nested structure for a single VM
+type vmModel struct {
+    Name   types.String `tfsdk:"name"`
+    Memory types.Int64  `tfsdk:"memory"`
+    CPUs   types.Int64  `tfsdk:"cpus"`
+    State  types.String `tfsdk:"state"`
+}
+
+// The main Data Source model
 type vmsDataSourceModel struct {
-    ID      types.String `tfsdk:"id"`
-    Names   types.List   `tfsdk:"names"` // List of VM names
+    ID  types.String `tfsdk:"id"`
+    VMs types.List   `tfsdk:"vms"` // Changed from "Names" to "VMs"
 }
 
 // NewVmsDataSource is a helper function to simplify the provider implementation.
@@ -57,36 +66,53 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
                 Computed:            true,
                 Description:         "Identifier for the data source.",
             },
-            "names": schema.ListAttribute{
-                ElementType: types.StringType,
-                Computed:    true,
-                Description: "List of all VirtualBox VM names.",
+          "vms": schema.ListNestedAttribute{
+                Computed: true,
+                NestedObject: schema.NestedAttributeObject{
+                    Attributes: map[string]schema.Attribute{
+                        "name":   schema.StringAttribute{Computed: true},
+                        "memory": schema.Int64Attribute{Computed: true},
+                        "cpus":   schema.Int64Attribute{Computed: true},
+                        "state":  schema.StringAttribute{Computed: true},
+                    },
+                },
+                Description: "List of VMs with their details.",
             },
-        },
+    },
     }
 }
 
-// Read refreshes the Terraform state.
 func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, resp *datasource.ReadResponse) {
     var data vmsDataSourceModel
 
-    // 1. Get the client from the provider
-    // 2. Call your GetVMNames()
-    names, err := d.client.GetVMNames()
+    vms, err := d.client.GetDetailedVMs()
     if err != nil {
         resp.Diagnostics.AddError("Client Error", err.Error())
         return
     }
 
-    // Convert []string to types.List
-    namesList, diags := types.ListValueFrom(ctx, types.StringType, names)
+    // 2. Define the attribute types for the list conversion
+    // These MUST match the types in vmModel and your Schema exactly.
+    vmObjectType := types.ObjectType{
+        AttrTypes: map[string]attr.Type{
+            "name":   types.StringType,
+            "memory": types.Int64Type,
+            "cpus":   types.Int64Type,
+            "state":  types.StringType,
+        },
+    }
+
+    // 3. Convert the slice of vmModel structs into a types.List
+    vmsList, diags := types.ListValueFrom(ctx, vmObjectType, vms)
     resp.Diagnostics.Append(diags...)
     if resp.Diagnostics.HasError() {
         return
-    }    // 3. Map to your Go struct model
-    
-    data.Names = namesList
+    }
 
-    // 4. Set the state
+    // 4. Update the model
+    data.ID = types.StringValue("vbox-vms-list")
+    data.VMs = vmsList // Note: this must match your struct field name
+
+    // 5. Set the state
     resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
