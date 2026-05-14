@@ -92,7 +92,7 @@ func (d *vmsDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, re
           "vms": schema.ListNestedAttribute{
                 Computed: true,
                 NestedObject: schema.NestedAttributeObject{
-                    Attributes: getVMSchemaAttributes()
+                    Attributes: getVMSchemaAttributes(),
                 },
                 Description: "List of VMs with their details.",
             },
@@ -109,29 +109,14 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
         return
     }
 
-    // 2. Define the attribute types for the list conversion
-    // These MUST match the types in vmModel and your Schema exactly.
-    // vmObjectType := types.ObjectType{
-    //     AttrTypes: map[string]attr.Type{
-    //         "name":   types.StringType,
-    //         "memory": types.Int64Type,
-    //         "cpus":   types.Int64Type,
-    //         "state":  types.StringType,
-    //         "description": types.StringType,
-    //     },
-    // }
-
-    // 3. Convert the slice of vmModel structs into a types.List
     vmsList, diags := types.ListValueFrom(ctx, vmObjectType, vms)
     resp.Diagnostics.Append(diags...)
     if resp.Diagnostics.HasError() {
         return
     }
 
-    // 4. Update the model
     data.ID = types.StringValue("vbox-vms-list")
-    data.VMs = vmsList // Note: this must match your struct field name
+    data.VMs = vmsList
 
-    // 5. Set the state
     resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
