@@ -22,6 +22,15 @@ type vmModel struct {
     Description types.String `tfsdk:"description"`
 }
 
+var vmObjectType = types.ObjectType{
+    AttrTypes: map[string]attr.Type{
+        "name":        types.StringType,
+        "memory":      types.Int64Type,
+        "cpus":        types.Int64Type,
+        "state":       types.StringType,
+        "description": types.StringType,
+    },
+}
 // The main Data Source model
 type vmsDataSourceModel struct {
     ID  types.String `tfsdk:"id"`
@@ -95,15 +104,15 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
 
     // 2. Define the attribute types for the list conversion
     // These MUST match the types in vmModel and your Schema exactly.
-    vmObjectType := types.ObjectType{
-        AttrTypes: map[string]attr.Type{
-            "name":   types.StringType,
-            "memory": types.Int64Type,
-            "cpus":   types.Int64Type,
-            "state":  types.StringType,
-            "description": types.StringType,
-        },
-    }
+    // vmObjectType := types.ObjectType{
+    //     AttrTypes: map[string]attr.Type{
+    //         "name":   types.StringType,
+    //         "memory": types.Int64Type,
+    //         "cpus":   types.Int64Type,
+    //         "state":  types.StringType,
+    //         "description": types.StringType,
+    //     },
+    // }
 
     // 3. Convert the slice of vmModel structs into a types.List
     vmsList, diags := types.ListValueFrom(ctx, vmObjectType, vms)
