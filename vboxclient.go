@@ -1,19 +1,18 @@
 package main
 
 // this did not work
-// gowsdl -p vboxapi http://daddy.siwko.org:18083/?wsdl > /vboxapi/vbox_bindings.go
+// gowsdl -p vboxapi http://daddy.siwko.org:18083/?wsdl > /vbox_interface.go
 
 import (
-	"github.com/andrew/terraform-provider-test/vboxapi" // The generated code
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hooklift/gowsdl/soap"
 )
 
 func (c *VBoxClient) GetVMNames() ([]string, error) {
 	soapClient := soap.NewClient(c.Endpoint)
-	service := vboxapi.NewVboxPortType(soapClient)
+	service := NewVboxPortType(soapClient)
 
-	resp, err := service.IWebsessionManager_logon(&vboxapi.IWebsessionManager_logon{
+	resp, err := service.IWebsessionManager_logon(&IWebsessionManager_logon{
 		Username: c.Username, // Can be ""
 		Password: c.Password, // Can be ""
 	})
@@ -23,7 +22,7 @@ func (c *VBoxClient) GetVMNames() ([]string, error) {
 
 	vboxHandle := resp.Returnval
 
-	machinesResp, err := service.IVirtualBox_getMachines(&vboxapi.IVirtualBox_getMachines{
+	machinesResp, err := service.IVirtualBox_getMachines(&IVirtualBox_getMachines{
 		This: vboxHandle,
 	})
 	if err != nil {
@@ -32,7 +31,7 @@ func (c *VBoxClient) GetVMNames() ([]string, error) {
 
 	var names []string
 	for _, machineHandle := range machinesResp.Returnval {
-		nameResp, err := service.IMachine_getName(&vboxapi.IMachine_getName{
+		nameResp, err := service.IMachine_getName(&IMachine_getName{
 			This: machineHandle,
 		})
 		if err == nil {
@@ -40,7 +39,7 @@ func (c *VBoxClient) GetVMNames() ([]string, error) {
 		}
 	}
 
-	service.IWebsessionManager_logoff(&vboxapi.IWebsessionManager_logoff{
+	service.IWebsessionManager_logoff(&IWebsessionManager_logoff{
 		RefIVirtualBox: vboxHandle,
 	})
 
@@ -49,9 +48,9 @@ func (c *VBoxClient) GetVMNames() ([]string, error) {
 
 func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 	soapClient := soap.NewClient(c.Endpoint)
-	service := vboxapi.NewVboxPortType(soapClient)
+	service := NewVboxPortType(soapClient)
 
-	resp, err := service.IWebsessionManager_logon(&vboxapi.IWebsessionManager_logon{
+	resp, err := service.IWebsessionManager_logon(&IWebsessionManager_logon{
 		Username: c.Username, // Can be ""
 		Password: c.Password, // Can be ""
 	})
@@ -62,7 +61,7 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 	vboxHandle := resp.Returnval
 
 	// Get Machine Handles
-	machinesResp, err := service.IVirtualBox_getMachines(&vboxapi.IVirtualBox_getMachines{
+	machinesResp, err := service.IVirtualBox_getMachines(&IVirtualBox_getMachines{
 		This: vboxHandle,
 	})
 	if err != nil {
@@ -73,16 +72,16 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 
 	for _, handle := range machinesResp.Returnval {
 		// Get Name
-		n, _ := service.IMachine_getName(&vboxapi.IMachine_getName{This: handle})
+		n, _ := service.IMachine_getName(&IMachine_getName{This: handle})
 		
 		// Get Memory (VirtualBox returns MB)
-		m, _ := service.IMachine_getMemorySize(&vboxapi.IMachine_getMemorySize{This: handle})
+		m, _ := service.IMachine_getMemorySize(&IMachine_getMemorySize{This: handle})
 		
 		// Get CPU Count
-		cp, _ := service.IMachine_getCPUCount(&vboxapi.IMachine_getCPUCount{This: handle})
+		cp, _ := service.IMachine_getCPUCount(&IMachine_getCPUCount{This: handle})
 		
 		// Get State
-		s, _ := service.IMachine_getState(&vboxapi.IMachine_getState{This: handle})
+		s, _ := service.IMachine_getState(&IMachine_getState{This: handle})
 
 		var stateString string
 		if s != nil && s.Returnval != nil {
@@ -101,7 +100,7 @@ func (c *VBoxClient) GetDetailedVMs() ([]vmModel, error) {
 	}
 
 	// Always Logoff!
-	service.IWebsessionManager_logoff(&vboxapi.IWebsessionManager_logoff{
+	service.IWebsessionManager_logoff(&IWebsessionManager_logoff{
 		RefIVirtualBox: vboxHandle,
 	})
 
