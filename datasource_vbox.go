@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
@@ -54,3 +55,4 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
 
 	resp.Diagnostics.Append(resp.State.Set(ctx, &state)...)
 }
+
