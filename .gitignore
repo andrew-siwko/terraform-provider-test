@@ -1,2 +1,4 @@
 terraform-provider-test.exe
 terraform-provider-test
+go.sum
+go.mod
