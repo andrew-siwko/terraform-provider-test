@@ -50,6 +50,8 @@ var diskObjectType = types.ObjectType{
     AttrTypes: map[string]attr.Type{
         "path":     types.StringType,
         "size_bytes": types.Int64Type,
+        "size_mb":    types.Int64Type,
+        "size_gb":    types.Int64Type,
         "type":     types.StringType,
     },
 }
