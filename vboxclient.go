@@ -1,7 +1,7 @@
 package main
 
-// this did not work
-// gowsdl -p vboxapi http://daddy.siwko.org:18083/?wsdl > /vbox_interface.go
+// gowsdl http://daddy.siwko.org:18083/?wsdl > vbox_interface.go
+// on the virtualbox machine: vboxwebsrv -H 0.0.0.0 -A null
 
 import (
 	"context"
