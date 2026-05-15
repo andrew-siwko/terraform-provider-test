@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
@@ -144,7 +145,17 @@ func (d *vmsDataSource) Read(ctx context.Context, req datasource.ReadRequest, re
 
     vms, err := d.client.GetDetailedVMs(ctx)
     if err != nil {
-        resp.Diagnostics.AddError("Client Error", err.Error())
+        resp.Diagnostics.AddError("VirtualBox API Connection Failure", fmt.Sprintf(
+                "Unable to connect to the VirtualBox WebService at %s.\n\n"+
+                "Details: %s\n\n"+
+                "Troubleshooting Steps:\n"+
+                "1. Verify that vboxwebsrv is running on the host.\n"+
+                "2. Ensure port is open and accessible from your network.\n"+
+                "3. Check if host is online.",
+                d.client.Endpoint,
+                err.Error(),
+            ),
+        )
         return
     }
 
