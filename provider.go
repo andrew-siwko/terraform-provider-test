@@ -30,7 +30,7 @@ func (p *mirrorProvider) Metadata(_ context.Context, _ provider.MetadataRequest,
 func (p *mirrorProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
 	resp.Schema = provschema.Schema{
 		Attributes: map[string]provschema.Attribute{
-			"endpoint": provschema.StringAttribute{
+			"vboxwebsrv_endpoint": provschema.StringAttribute{
 				Required:    true,
 				Description: "The VirtualBox Web Service URL (e.g., http://127.0.0.1:18083).",
 			},
@@ -49,7 +49,7 @@ func (p *mirrorProvider) Schema(_ context.Context, _ provider.SchemaRequest, res
 func (p *mirrorProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {
 	// Define a local model to match the schema
 	var data struct {
-		Endpoint types.String `tfsdk:"endpoint"`
+		Endpoint types.String `tfsdk:"vboxwebsrv_endpoint"`
 		Username types.String `tfsdk:"username"`
 		Password types.String `tfsdk:"password"`
 	}
