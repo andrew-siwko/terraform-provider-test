@@ -16,6 +16,8 @@ var _ datasource.DataSource = &vmsDataSource{}
 type diskModel struct {
     Path string `tfsdk:"path"`
     Size int64  `tfsdk:"size_bytes"`
+    SizeMB int64  `tfsdk:"size_mb"`
+    SizeGB int64  `tfsdk:"size_gb"`
     Type string `tfsdk:"type"` // e.g., HardDisk or DVD
 }
 
@@ -71,6 +73,8 @@ func getVMSchemaAttributes() map[string]schema.Attribute {
                 Attributes: map[string]schema.Attribute{
                     "path":       schema.StringAttribute{Computed: true},
                     "size_bytes": schema.Int64Attribute{Computed: true},
+                    "size_mb":    schema.Int64Attribute{Computed: true},
+                    "size_gb":    schema.Int64Attribute{Computed: true},
                     "type":       schema.StringAttribute{Computed: true},
                 },
             },

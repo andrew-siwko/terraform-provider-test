@@ -110,9 +110,14 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
                     mediumType = string(*typeResp.Returnval)
                 }
 				// Here you can create a diskModel and append it to a list of disks for the VM
+				sizeInBytes := sizeResp.Returnval
+				sizeInMB := sizeInBytes / (1024 * 1024)
+				sizeInGB := sizeInBytes / (1024 * 1024 * 1024)
 				disk := diskModel{
 					Path:     locationResp.Returnval,
 					Size:     sizeResp.Returnval,
+					SizeMB:   sizeInMB,
+					SizeGB:   sizeInGB,
 					Type:     mediumType,
 				}
 				disks = append(disks, disk)
