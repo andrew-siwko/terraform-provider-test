@@ -65,6 +65,16 @@ func getVMSchemaAttributes() map[string]schema.Attribute {
             ElementType: types.StringType,
             Description: "List of storage controllers attached to the VM.",
         },
+        "disks": schema.ListNestedAttribute{
+            Computed: true,
+            NestedObject: schema.NestedAttributeObject{
+                Attributes: map[string]schema.Attribute{
+                    "path":       schema.StringAttribute{Computed: true},
+                    "size_bytes": schema.Int64Attribute{Computed: true},
+                    "type":       schema.StringAttribute{Computed: true},
+                },
+            },
+        },
     }
 }
 // The main Data Source model
