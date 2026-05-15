@@ -12,9 +12,9 @@ terraform {
 
 provider "mirror" {
   # this is a private network address.
-  # endpoint = "http://daddy.siwko.org:18083/" 
+  endpoint = "http://daddy.siwko.org:18083/" 
   # bogus for error testing
-  endpoint = "http://daddy.siwko.org:18082/" 
+  # endpoint = "http://daddy.siwko.org:18082/" 
   username = ""
   password = ""
 }
