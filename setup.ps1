@@ -1,5 +1,6 @@
 # Create the file in your user profile directory
 $rcPath = "$env:USERPROFILE\terraform.rc"
+$rcPath = "$env:APPDATA\terraform.rc"
 $rcContent = @"
 provider_installation {
   dev_overrides {
@@ -10,3 +11,4 @@ provider_installation {
 "@
 
 $rcContent | Out-File -FilePath $rcPath -Encoding ascii
+go build -o terraform-provider-property-mirror.exe
