@@ -3,3 +3,4 @@ terraform-provider-test
 go.sum
 go.mod
 .terraform/terraform.tfstate
+terraform-provider-property-mirror.exe
