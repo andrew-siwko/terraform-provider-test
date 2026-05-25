@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
@@ -15,7 +14,7 @@ func main() {
 	})
 
 	if err != nil {
-		fmt.Print("Ending terraform-provider-test\n")
+		// fmt.Print("Ending terraform-provider-test\n")
 		// maybe we coult test the web service here.
 		log.Fatal(err.Error())
 	}
