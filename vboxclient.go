@@ -215,20 +215,22 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 	soapClient := soap.NewClient(c.Endpoint)
 	service := NewVboxPortType(soapClient)
 
-	resp, err := service.IWebsessionManager_logon(&IWebsessionManager_logon{
-		Username: c.Username, // Can be ""
-		Password: c.Password, // Can be ""
-	})
+	// let's logo with the configured credentials
+	// if this fails, return the error
+	logon_credentials := new(IWebsessionManager_logon)
+	logon_credentials.Username = c.Username
+	logon_credentials.Password = c.Password
+	resp, err := service.IWebsessionManager_logon(logon_credentials)
 	if err != nil {
 		return nil, err
 	}
-
+	// store the handle for use
 	vboxHandle := resp.Returnval
 
-	// Get Machine Handles
-	machinesResp, err := service.IVirtualBox_getMachines(&IVirtualBox_getMachines{
-		This: vboxHandle,
-	})
+	req := new(IVirtualBox_getMachines)
+	req.This = vboxHandle
+	machinesResp, err := service.IVirtualBox_getMachines(req)
+
 	if err != nil {
 		return nil, err
 	}
@@ -236,26 +238,33 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 	var results []vmModel
 
 	for _, handle := range machinesResp.Returnval {
-		// Get Name
-		n, _ := service.IMachine_getName(&IMachine_getName{This: handle})
+		name_val, _ := service.IMachine_getName(&IMachine_getName{This: handle})
+		machine_name := name_val.Returnval
 
-		// Get Memory (VirtualBox returns MB)
-		m, _ := service.IMachine_getMemorySize(&IMachine_getMemorySize{This: handle})
+		mem_val, _ := service.IMachine_getMemorySize(&IMachine_getMemorySize{This: handle})
+		machine_memory := mem_val.Returnval
 
-		// Get CPU Count
-		cp, _ := service.IMachine_getCPUCount(&IMachine_getCPUCount{This: handle})
+		cpu_val, _ := service.IMachine_getCPUCount(&IMachine_getCPUCount{This: handle})
+		machine_cpus := cpu_val.Returnval
 
 		// Get State
-		s, _ := service.IMachine_getState(&IMachine_getState{This: handle})
+		state_val, _ := service.IMachine_getState(&IMachine_getState{This: handle})
+		var machine_state string
+		if state_val.Returnval != nil {
+			machine_state = string(*state_val.Returnval)
+		} else {
+			machine_state = "Unknown"
+		}
 
 		d, _ := service.IMachine_getDescription(&IMachine_getDescription{This: handle})
 
-		id, _ := service.IMachine_getId(&IMachine_getId{This: handle})
+		id_val, _ := service.IMachine_getId(&IMachine_getId{This: handle})
+		machine_id := id_val.Returnval
+
 		storage, _ := service.IMachine_getStorageControllers(&IMachine_getStorageControllers{This: handle})
 		storageControllersList, _ := types.ListValueFrom(ctx, types.StringType, storage.Returnval)
 
 		var disks []diskModel
-		// 1. Get all Medium Attachments for this VM
 		attachmentsResp, _ := service.IMachine_getMediumAttachments(&IMachine_getMediumAttachments{This: handle})
 
 		for _, attachment := range attachmentsResp.Returnval {
@@ -287,10 +296,6 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 		}
 		disksList, _ := types.ListValueFrom(ctx, diskObjectType, disks)
 
-		// --- READ GUEST IP ADDRESSES ---
-		// --- DYNAMICALLY ENUMERATE GUEST PROPERTIES ---
-		// --- FETCH VIRTUAL HARDWARE MAC ADDRESSES ---
-		// --- FETCH VIRTUAL HARDWARE MAC ADDRESSES VIA HANDLES ---
 		var rawIPs []string
 
 		for slot := uint32(0); slot < 4; slot++ {
@@ -347,7 +352,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 			var diags diag.Diagnostics
 			ipsList, diags = types.ListValueFrom(ctx, types.StringType, rawIPs)
 			if diags.HasError() {
-				return nil, fmt.Errorf("failed to process IP list mapping for VM %s", id.Returnval)
+				return nil, fmt.Errorf("failed to process IP list mapping for VM %s", machine_id)
 			}
 		}
 		// func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
@@ -375,19 +380,12 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 		// func (service *vboxPortType) IMachine_getClipboardMode(request *IMachine_getClipboardMode) (*IMachine_getClipboardModeResponse, error) {
 		// func (service *vboxPortType) IMachine_getClipboardFileTransfersEnabled(request *IMachine_getClipboardFileTransfersEnabled) (*IMachine_getClipboardFileTransfersEnabledResponse, error) {
 
-		var stateString string
-		if s != nil && s.Returnval != nil {
-			stateString = string(*s.Returnval)
-		} else {
-			stateString = "Unknown"
-		}
-
 		results = append(results, vmModel{
-			ID:                 types.StringValue(id.Returnval),
-			Name:               types.StringValue(n.Returnval),
-			Memory:             types.Int64Value(int64(m.Returnval)),
-			CPUs:               types.Int64Value(int64(cp.Returnval)),
-			State:              types.StringValue(string(stateString)),
+			ID:                 types.StringValue(machine_id),
+			Name:               types.StringValue(machine_name),
+			Memory:             types.Int64Value(int64(machine_memory)),
+			CPUs:               types.Int64Value(int64(machine_cpus)),
+			State:              types.StringValue(machine_state),
 			Description:        types.StringValue(d.Returnval),
 			StorageControllers: storageControllersList,
 			Disks:              disksList,
