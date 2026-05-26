@@ -4,17 +4,16 @@ package main
 // on the virtualbox machine: vboxwebsrv -H 0.0.0.0 -A null
 
 import (
-	"context"
-	"fmt"
-	"os"
-
 	"bufio"
 	"bytes"
-	"os/exec"
-	"strings"
-
+	"context"
+	"fmt"
 	"net"
+	"os"
+	"os/exec"
 	"regexp"
+	"runtime"
+	"strings"
 	"sync"
 	"time"
 
@@ -25,6 +24,25 @@ import (
 )
 
 func WakeUpSubnet() {
+	fmt.Fprintln(os.Stderr, "[ARP-WAKE] Initiating cross-platform subnet warming...")
+
+	if runtime.GOOS == "linux" {
+		// Linux specific optimization: Fire quick, non-blocking background shell pings
+		// This forces the Linux bridge kernel module to track the target MAC neighbors safely
+		cmdStr := `for ip in 50 51; do for host in {1..254}; do ping -c 1 -W 1 192.168.$ip.$host >/dev/null 2>&1 & done; done`
+		cmd := exec.Command("bash", "-c", cmdStr)
+		if err := cmd.Run(); err != nil {
+			fmt.Fprintf(os.Stderr, "[ARP-WARN] Linux sweep failed: %v\n", err)
+		}
+	} else {
+		OldWakeUpSubnet()
+	}
+
+	// Essential pause to let the Linux interface finish updating the neighbor table states
+	time.Sleep(4000 * time.Millisecond)
+	fmt.Fprintln(os.Stderr, "[ARP-WAKE] Subnet warming phase completed.")
+}
+func OldWakeUpSubnet() {
 	var wg sync.WaitGroup
 	subnets := []string{"192.168.50", "192.168.51"}
 
