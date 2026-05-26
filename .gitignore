@@ -16,3 +16,4 @@ terraform-provider-property-mirror
 .terraform/providers/registry.terraform.io/linode/linode/3.13.0/linux_amd64/README.md
 .terraform/providers/registry.terraform.io/linode/linode/3.13.0/linux_amd64/terraform-provider-linode_v3.13.0
 
+terraform.rc
