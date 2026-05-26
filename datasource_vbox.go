@@ -33,6 +33,7 @@ type vmModel struct {
 	StorageControllers types.List   `tfsdk:"storage_controllers"`
 	Disks              types.List   `tfsdk:"disks"`
 	IPAddresses        types.List   `tfsdk:"ip_addresses"`
+	MACAddresses       types.List   `tfsdk:"mac_addresses"`
 }
 
 var vmObjectType = types.ObjectType{
@@ -46,6 +47,7 @@ var vmObjectType = types.ObjectType{
 		"storage_controllers": types.ListType{ElemType: types.StringType},
 		"disks":               types.ListType{ElemType: diskObjectType},
 		"ip_addresses":        types.ListType{ElemType: types.StringType},
+		"mac_addresses":       types.ListType{ElemType: types.StringType},
 	},
 }
 
@@ -88,6 +90,11 @@ func getVMSchemaAttributes() map[string]schema.Attribute {
 			Computed:    true,
 			ElementType: types.StringType,
 			Description: "List of IP addresses assigned to the VM's network interfaces.",
+		},
+		"mac_addresses": schema.ListAttribute{
+			Computed:    true,
+			ElementType: types.StringType,
+			Description: "List of MAC addresses assigned to the VM's network interfaces.",
 		},
 	}
 }

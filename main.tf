@@ -74,6 +74,7 @@ output "vm_map" {
       cpus         = vm.cpus
       memory_mb    = vm.memory
       ip_addresses = vm.ip_addresses
+      mac_addresses = vm.mac_addresses
     }
   }
 }

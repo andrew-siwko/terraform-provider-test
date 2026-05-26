@@ -297,6 +297,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 		disksList, _ := types.ListValueFrom(ctx, diskObjectType, disks)
 
 		var rawIPs []string
+		var rawMACs []string
 
 		for slot := uint32(0); slot < 4; slot++ {
 			adapterResp, err := service.IMachine_getNetworkAdapterContext(ctx, &IMachine_getNetworkAdapter{
@@ -327,6 +328,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 						if err == nil && macResp != nil && macResp.Returnval != "" {
 							// Transform "080027XXXXXX" into Windows ARP style "08-00-27-XX-XX-XX"
 							formattedMac := formatMACAddress(macResp.Returnval)
+							rawMACs = append(rawMACs, formattedMac)
 
 							// 3. Query our local host routing cache for an IP pairing
 							if ip, found := lookupIPInARPCache(formattedMac); found {
@@ -353,6 +355,21 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 			ipsList, diags = types.ListValueFrom(ctx, types.StringType, rawIPs)
 			if diags.HasError() {
 				return nil, fmt.Errorf("failed to process IP list mapping for VM %s", machine_id)
+			}
+		}
+		var macsList types.List
+
+		if len(rawMACs) == 0 {
+			var diags diag.Diagnostics
+			macsList, diags = types.ListValue(types.StringType, []attr.Value{})
+			if diags.HasError() {
+				return nil, fmt.Errorf("failed to initialize empty list representation")
+			}
+		} else {
+			var diags diag.Diagnostics
+			macsList, diags = types.ListValueFrom(ctx, types.StringType, rawMACs)
+			if diags.HasError() {
+				return nil, fmt.Errorf("failed to process MAC list mapping for VM %s", machine_id)
 			}
 		}
 		// func (service *vboxPortType) IMachine_getDescription(request *IMachine_getDescription) (*IMachine_getDescriptionResponse, error) {
@@ -390,6 +407,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 			StorageControllers: storageControllersList,
 			Disks:              disksList,
 			IPAddresses:        ipsList,
+			MACAddresses:       macsList,
 		})
 	}
 
