@@ -323,7 +323,7 @@ func (c *VBoxClient) GetDetailedVMs(ctx context.Context) ([]vmModel, error) {
 							This: adapterHandle,
 						})
 
-						fmt.Fprintln(os.Stderr, "macResp.Returnval", macResp.Returnval)
+						fmt.Fprintln(os.Stderr, machine_name, "macResp.Returnval", macResp.Returnval)
 						if err == nil && macResp != nil && macResp.Returnval != "" {
 							// Transform "080027XXXXXX" into Windows ARP style "08-00-27-XX-XX-XX"
 							formattedMac := formatMACAddress(macResp.Returnval)
