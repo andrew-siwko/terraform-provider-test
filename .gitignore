@@ -4,3 +4,8 @@ go.sum
 go.mod
 .terraform/terraform.tfstate
 terraform-provider-property-mirror.exe
+.terraform.lock.hcl
+.terraform/providers/registry.terraform.io/linode/linode/3.13.0/windows_amd64/terraform-provider-linode_v3.13.0.exe
+.terraform/providers/registry.terraform.io/linode/linode/3.13.0/windows_amd64/README.md
+.terraform/providers/registry.terraform.io/linode/linode/3.13.0/windows_amd64/LICENSE
+.terraform/providers/registry.terraform.io/linode/linode/3.13.0/windows_amd64/CHANGELOG.md
