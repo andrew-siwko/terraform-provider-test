@@ -85,6 +85,9 @@ locals {
     if vm.state == "Running" && length(vm.ip_addresses) > 0
   }
 }
+output "active_vbox_vm_map" {
+  value = local.active_vbox_vms
+}
 
 # terraform import linode_domain.dns_zone 3417841
 resource "linode_domain" "dns_zone" {
