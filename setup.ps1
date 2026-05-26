@@ -4,7 +4,7 @@ $rcPath = "$env:APPDATA\terraform.rc"
 $rcContent = @"
 provider_installation {
   dev_overrides {
-    "registry.terraform.io/andrew/property-mirror" = "C:/Users/asiwk/OneDrive/python/terraform-provider-test"
+    "andrew/property-mirror" = "C:/Users/asiwk/OneDrive/python/terraform-provider-test"
   }
   direct {}
 }
