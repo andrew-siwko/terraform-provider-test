@@ -1,7 +1,7 @@
 cat <<EOF > ~/.terraformrc
 provider_installation {
   dev_overrides {
-    "andrew/property-mirror" = "$(pwd)"
+    "registry.terraform.io/andrew/property-mirror" = "$(pwd)"
   }
   direct {}
 }

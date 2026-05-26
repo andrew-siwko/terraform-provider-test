@@ -14,8 +14,7 @@ func main() {
 	// newPrintMacs()
 	// fmt.Print("Starting terraform-provider-test\n")
 	err := providerserver.Serve(context.Background(), New, providerserver.ServeOpts{
-		// Address: "registry.terraform.io/andrew/property-mirror",
-		Address: "andrew/property-mirror",
+		Address: "registry.terraform.io/andrew/property-mirror",
 	})
 
 	if err != nil {

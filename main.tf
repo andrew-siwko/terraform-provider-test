@@ -2,7 +2,7 @@
 terraform {
   required_providers {
     mirror = {
-      source = "andrew/property-mirror"
+      source = "registry.terraform.io/andrew/property-mirror"
     }
     linode = {
       source = "linode/linode"
