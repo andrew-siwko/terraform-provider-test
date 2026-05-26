@@ -14,6 +14,7 @@ import (
 	"strings"
 
 	"net"
+	"regexp"
 	"sync"
 	"time"
 
@@ -62,7 +63,49 @@ func WakeUpSubnet() {
 	// fmt.Fprintln(os.Stderr, "[ARP-WAKE] Subnet sweep completed successfully.")
 }
 
+// IPRegex safely extracts ipv4 sequences from lines
+var ipRegex = regexp.MustCompile(`\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b`)
+
 func lookupIPInARPCache(targetMac string) (string, bool) {
+	if targetMac == "" {
+		return "", false
+	}
+
+	// Normalize target MAC to plain hex characters (lowercase, no colons/hyphens)
+	cleanTarget := strings.ToLower(strings.NewReplacer("-", "", ":", "").Replace(targetMac))
+
+	// Execute standard platform ARP utility
+	cmd := exec.Command("arp", "-a")
+	var out bytes.Buffer
+	cmd.Stdout = &out
+
+	if err := cmd.Run(); err != nil {
+		return "", false
+	}
+
+	scanner := bufio.NewScanner(&out)
+	for scanner.Scan() {
+		line := strings.ToLower(strings.TrimSpace(scanner.Text()))
+		if line == "" {
+			continue
+		}
+
+		// Normalize the entire row string to strip punctuation from potential MAC targets
+		cleanLine := strings.NewReplacer("-", "", ":", "").Replace(line)
+
+		// Check if this specific row contains our 12-character target hex MAC address
+		if strings.Contains(cleanLine, cleanTarget) {
+			// Extract the IP address safely out of the row line using regex
+			foundIP := ipRegex.FindString(line)
+			if foundIP != "" {
+				return foundIP, true
+			}
+		}
+	}
+
+	return "", false
+}
+func OldlookupIPInARPCache(targetMac string) (string, bool) {
 	if targetMac == "" {
 		fmt.Fprintln(os.Stderr, "NO MAC SPECIFIED")
 		return "", false
