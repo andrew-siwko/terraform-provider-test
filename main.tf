@@ -4,11 +4,26 @@ terraform {
     mirror = {
       source = "andrew/property-mirror"
     }
+    linode = {
+      source = "linode/linode"
+      version = "~> 3.13.0"
+    }
   }
   backend "local" {
     path = "/container_shared/tfstate/property-mirror.tfstate"
   }
 }
+
+variable "LINODE_API_KEY" {
+  description = "The key to the Linode API"
+  type        = string
+  sensitive   = true
+}
+
+provider "linode" {
+  token = var.LINODE_API_KEY
+}
+
 
 provider "mirror" {
   # this is a private network address.
@@ -52,7 +67,48 @@ output "coffee_price" {
 data "mirror_vms" "all" {
 
 }
+output "vm_map" {
+  value = {
+    for vm in data.mirror_vms.all.vms : vm.name => {
+      state        = vm.state
+      cpus         = vm.cpus
+      memory_mb    = vm.memory
+      ip_addresses = vm.ip_addresses
+    }
+  }
+}
 
-output "vm_list" {
-  value = data.mirror_vms.all
+locals {
+  # Filter for VMs that are running and have at least one valid IP address
+  active_vbox_vms = {
+    for vm in data.mirror_vms.all.vms : vm.name => vm.ip_addresses[0]
+    if vm.state == "Running" && length(vm.ip_addresses) > 0
+  }
+}
+
+# terraform import linode_domain.dns_zone 3417841
+resource "linode_domain" "dns_zone" {
+  type        = "master"
+  domain      = "siwko.org"
+  soa_email   = "asiwko@siwko.org"
+  refresh_sec = 30
+  retry_sec   = 30
+  ttl_sec     = 30
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+
+resource "linode_domain_record" "virtualbox_records" {
+  for_each = local.active_vbox_vms
+
+  domain_id   = linode_domain.dns_zone.id
+  record_type = "A"
+  ttl_sec     = 30 # Match your aggressive local cluster testing profile
+
+  # each.key is the VM name (e.g., "ansible-control")
+  name        = "vbox_${each.key}"
+  
+  # each.value is the resolved IP address (e.g., "192.168.51.48")
+  target      = each.value
 }
